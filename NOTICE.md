@@ -1,11 +1,13 @@
 # 来源与许可
 
-`public/data/bwiki-2026-10-14.json` 与 `docs/evidence/` 是洛克王国：世界 BWIKI 玩家社区数据的派生整理。原来源：
+`public/data/bwiki-2026-10-14.json`、`public/data/team-2026-10-14.json` 与 `docs/evidence/` 中 BWIKI 资料是洛克王国：世界 BWIKI 玩家社区数据的派生整理。原来源：
 
 - https://wiki.biligame.com/nrc/精灵列表
 - https://wiki.biligame.com/nrc/技能列表
 - https://wiki.biligame.com/nrc/特性列表
 - https://wiki.biligame.com/nrc/游戏描述图鉴
+- https://wiki.biligame.com/nrc/克制计算器
+- https://wiki.biligame.com/nrc/多多 （30 种性格名称及增减属性关系，见 `src/team-stats.mjs` 中数据映射；该映射按同一数据许可署名）
 - JSON 元数据列出的 `Module:Pets/data/` 五个公开数据模块及对应修订。
 
 作者与维护者署名为“洛克王国：世界 BWIKI 玩家社区贡献者”；具体贡献记录见各来源页面的历史。本站声明：原创文字及有权授权的整理成果按 CC BY-SA 4.0 使用。项目对此进行了字段筛选、命名规范、技能学习关系展开和完整性校验；派生资料继续采用同一许可。

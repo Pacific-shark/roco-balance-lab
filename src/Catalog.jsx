@@ -112,7 +112,8 @@ export default function Catalog() {
       </div>
       <p className="catalog-boundary">
         BWIKI · 2026-10-14
-        读取。这里用于核对资料和确定实验范围；全量数据尚未接入对战引擎。训练页目前只模拟六只精灵。
+        读取。这里用于核对资料和确定实验范围；全量数据尚未接入对战引擎。6v6
+        团队实验目前覆盖 10 个形态与 42 个已注册技能。
       </p>
       <div className="catalog-controls">
         <div className="segmented">

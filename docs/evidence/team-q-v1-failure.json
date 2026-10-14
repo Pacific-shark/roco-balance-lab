@@ -1,0 +1,9 @@
+{
+  "seed": 42,
+  "episodes": 4000,
+  "algorithm": "independent-linear-q-team-v1",
+  "ruleScore": 0.10416666666666667,
+  "drawRate": 0.375,
+  "meanSwitches": 79.04166666666667,
+  "reason": "Policy cycles through switches; no balance conclusions permitted"
+}
