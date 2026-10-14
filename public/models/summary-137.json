@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "independent-q-v1",
+  "rules": "subset-0.1.0",
+  "dataVersion": "S3 公开图鉴快照 · 2026-09-01",
+  "seed": 137,
+  "episodes": 24000,
+  "env": {
+    "policy": "both",
+    "distribution": "uniform",
+    "hp": 400,
+    "startEnergy": 10,
+    "maxTurns": 40,
+    "loadout": "native"
+  },
+  "patch": null,
+  "hyperparameters": {
+    "alpha": 0.18,
+    "gamma": 0.98,
+    "epsilonStart": 0.8,
+    "epsilonEnd": 0.08,
+    "shaping": 0.1
+  },
+  "transitions": 72520,
+  "history": [
+    {
+      "episode": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.4,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 1
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.4166666666666667,
+          "randomScore": 0.4666666666666667,
+          "games": 180,
+          "fallbackRate": 1
+        }
+      ],
+      "aWins": 0,
+      "bWins": 0,
+      "draws": 0
+    },
+    {
+      "episode": 2000,
+      "epsilon": 0.74003,
+      "aWins": 1013,
+      "bWins": 987,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.4666666666666667,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.23829787234042554
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.45,
+          "randomScore": 0.4666666666666667,
+          "games": 180,
+          "fallbackRate": 0.2109704641350211
+        }
+      ]
+    },
+    {
+      "episode": 4000,
+      "epsilon": 0.6800299999999999,
+      "aWins": 2026,
+      "bWins": 1974,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.16593886462882096
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.16666666666666666
+        }
+      ]
+    },
+    {
+      "episode": 6000,
+      "epsilon": 0.62003,
+      "aWins": 3021,
+      "bWins": 2979,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.4666666666666667,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.14782608695652175
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.48333333333333334,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.10714285714285714
+        }
+      ]
+    },
+    {
+      "episode": 8000,
+      "epsilon": 0.56003,
+      "aWins": 4022,
+      "bWins": 3978,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.1645021645021645
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5166666666666667,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.08520179372197309
+        }
+      ]
+    },
+    {
+      "episode": 10000,
+      "epsilon": 0.50003,
+      "aWins": 5027,
+      "bWins": 4973,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.16228070175438597
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5333333333333333,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.07207207207207207
+        }
+      ]
+    },
+    {
+      "episode": 12000,
+      "epsilon": 0.44003000000000003,
+      "aWins": 6019,
+      "bWins": 5981,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.1288888888888889
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.08520179372197309
+        }
+      ]
+    },
+    {
+      "episode": 14000,
+      "epsilon": 0.38003000000000003,
+      "aWins": 7013,
+      "bWins": 6987,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5333333333333333,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.0990990990990991
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.08849557522123894
+        }
+      ]
+    },
+    {
+      "episode": 16000,
+      "epsilon": 0.32003,
+      "aWins": 8025,
+      "bWins": 7975,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.1
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5166666666666667,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.08888888888888889
+        }
+      ]
+    },
+    {
+      "episode": 18000,
+      "epsilon": 0.26003000000000004,
+      "aWins": 9022,
+      "bWins": 8978,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5333333333333333,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.0958904109589041
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5166666666666667,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.08035714285714286
+        }
+      ]
+    },
+    {
+      "episode": 20000,
+      "epsilon": 0.20003,
+      "aWins": 10034,
+      "bWins": 9966,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5333333333333333,
+          "randomScore": 0.5666666666666667,
+          "games": 180,
+          "fallbackRate": 0.09174311926605505
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.55,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.08108108108108109
+        }
+      ]
+    },
+    {
+      "episode": 22000,
+      "epsilon": 0.14003,
+      "aWins": 11059,
+      "bWins": 10941,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5333333333333333,
+          "randomScore": 0.5666666666666667,
+          "games": 180,
+          "fallbackRate": 0.06912442396313365
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5166666666666667,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.0945945945945946
+        }
+      ]
+    },
+    {
+      "episode": 24000,
+      "epsilon": 0.08003000000000003,
+      "aWins": 12081,
+      "bWins": 11919,
+      "draws": 0,
+      "bench": [
+        {
+          "agent": "AI A",
+          "ruleScore": 0.5333333333333333,
+          "randomScore": 0.5333333333333333,
+          "games": 180,
+          "fallbackRate": 0.0779816513761468
+        },
+        {
+          "agent": "AI B",
+          "ruleScore": 0.5166666666666667,
+          "randomScore": 0.5,
+          "games": 180,
+          "fallbackRate": 0.08108108108108109
+        }
+      ]
+    }
+  ],
+  "states": [
+    16401,
+    16401
+  ],
+  "elapsedMs": 828,
+  "analysis": {
+    "base": {
+      "env": {
+        "policy": "selfplay",
+        "distribution": "uniform",
+        "hp": 400,
+        "startEnergy": 10,
+        "maxTurns": 40,
+        "loadout": "native"
+      },
+      "patch": null,
+      "matrix": [
+        [
+          null,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          null,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          null,
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          null,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          null,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          null
+        ]
+      ],
+      "cells": [
+        [
+          null,
+          {
+            "games": 8,
+            "turns": 1,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2.25,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 1,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 7,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 3,
+            "capped": 0
+          }
+        ],
+        [
+          {
+            "games": 8,
+            "turns": 1,
+            "capped": 0
+          },
+          null,
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 3.75,
+            "capped": 0
+          }
+        ],
+        [
+          {
+            "games": 8,
+            "turns": 2.25,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          null,
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          }
+        ],
+        [
+          {
+            "games": 8,
+            "turns": 1,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          null,
+          {
+            "games": 8,
+            "turns": 1,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          }
+        ],
+        [
+          {
+            "games": 8,
+            "turns": 7,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 1,
+            "capped": 0
+          },
+          null,
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          }
+        ],
+        [
+          {
+            "games": 8,
+            "turns": 3,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 3.75,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          {
+            "games": 8,
+            "turns": 2,
+            "capped": 0
+          },
+          null
+        ]
+      ],
+      "ranking": [
+        {
+          "id": "020",
+          "score": 0.8,
+          "counters": 1
+        },
+        {
+          "id": "004",
+          "score": 0.6,
+          "counters": 2
+        },
+        {
+          "id": "007",
+          "score": 0.6,
+          "counters": 2
+        },
+        {
+          "id": "010",
+          "score": 0.4,
+          "counters": 3
+        },
+        {
+          "id": "043",
+          "score": 0.4,
+          "counters": 3
+        },
+        {
+          "id": "029",
+          "score": 0.2,
+          "counters": 4
+        }
+      ],
+      "battles": 120,
+      "capped": 0,
+      "cappedRate": 0,
+      "meanTurns": 2.3333333333333335
+    },
+    "traitDelta": 0.10000000000000009,
+    "coverageDelta": 0,
+    "skills": [
+      {
+        "move": "peck",
+        "delta": 0
+      },
+      {
+        "move": "fan",
+        "delta": 0
+      },
+      {
+        "move": "dive",
+        "delta": 0
+      },
+      {
+        "move": "first",
+        "delta": 0
+      }
+    ],
+    "moves": {
+      "俯冲猛击": 7
+    },
+    "openers": {
+      "俯冲猛击": 3,
+      "俯冲猛击 → 俯冲猛击": 2
+    },
+    "vs": [
+      {
+        "opponent": "004",
+        "opening": "俯冲猛击",
+        "score": 1,
+        "turns": 1
+      },
+      {
+        "opponent": "007",
+        "opening": "俯冲猛击",
+        "score": 0,
+        "turns": 2
+      },
+      {
+        "opponent": "010",
+        "opening": "俯冲猛击 → 俯冲猛击",
+        "score": 1,
+        "turns": 2
+      },
+      {
+        "opponent": "043",
+        "opening": "俯冲猛击",
+        "score": 1,
+        "turns": 1
+      },
+      {
+        "opponent": "029",
+        "opening": "俯冲猛击 → 俯冲猛击",
+        "score": 1,
+        "turns": 2
+      }
+    ],
+    "fallbackRate": 0
+  }
+}
