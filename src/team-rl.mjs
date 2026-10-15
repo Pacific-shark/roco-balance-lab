@@ -293,17 +293,23 @@ function samplePolicy(rows, rng, temperature) {
 }
 export function trainTeams(
   data,
-  { episodes = 4000, seed = 42, patch = null, onProgress = () => {} } = {},
+  { episodes = 4000, seed = 42, patch = null, onProgress = () => {}, initialAgents = null, focusTeamId = null } = {},
 ) {
   if (!Number.isInteger(episodes) || episodes < 100 || episodes > 50000)
     throw Error("团队训练局数须在 100—50000 之间");
   if (!Number.isInteger(seed) || seed < 0) throw Error("随机种子无效");
+  if (!Array.isArray(data.teams) || data.teams.length < 2)
+    throw Error("自博弈至少需要两支完整队伍");
+  if (focusTeamId && !data.teams.some(t=>t.id===focusTeamId))
+    throw Error("指定的适应训练队伍不存在");
+  if (initialAgents && (initialAgents.length !== 2 || initialAgents.some(a => !a.weights || Object.values(a.weights).some(w => !Number.isFinite(w)))))
+    throw Error("初始策略无效");
   const rng = seededRandom(seed),
-    agents = [
+    agents = initialAgents ? structuredClone(initialAgents) : [
       { name: "AI A", weights: { ...TEAM_POLICY_PRIOR } },
       { name: "AI B", weights: { ...TEAM_POLICY_PRIOR } },
     ],
-    archive = [],
+    archive = initialAgents ? structuredClone(initialAgents) : [],
     history = [];
   const returnBaselines = [{}, {}];
   let decisions = 0,
@@ -314,7 +320,7 @@ export function trainTeams(
     updates = 0;
   const checkpoint = Math.max(100, Math.floor(episodes / 8));
   for (let ep = 0; ep < episodes; ep++) {
-    const ai = Math.floor(rng() * data.teams.length);
+    const ai = focusTeamId ? data.teams.findIndex(t=>t.id===focusTeamId) : Math.floor(rng() * data.teams.length);
     let bi = Math.floor(rng() * (data.teams.length - 1));
     if (bi >= ai) bi++;
     const state = createTeamBattle(
@@ -429,6 +435,7 @@ export function trainTeams(
     seed,
     episodes,
     patch,
+    focusTeamId,
     agents,
     history,
     decisions,
@@ -442,7 +449,7 @@ export function trainTeams(
       temperatureEnd: 0.25,
       historicalFrequency: 5,
       fixedRuleFrequency: 5,
-      initialization: "公开的启发式权重；非从零学习，不计作训练收益",
+      initialization: initialAgents ? "从指定策略继续训练；历史池含训练前快照" : "公开的启发式权重；非从零学习，不计作训练收益",
       prior: TEAM_POLICY_PRIOR,
       reward: "整场胜负；魔力差与总生命差的势函数塑形",
       information: "双方完整实验阵容可见；不读取对手当前指令",

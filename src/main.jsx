@@ -25,6 +25,7 @@ import Training from "./Training.jsx";
 import Catalog from "./Catalog.jsx";
 import TeamLab from "./TeamLab.jsx";
 import TeamProduct from "./TeamProduct.jsx";
+import ResearchLab from "./ResearchLab.jsx";
 import { trainedPolicies, learnedPolicy } from "./rl.mjs";
 import "./style.css";
 
@@ -115,7 +116,7 @@ function App() {
     [patch, setPatch] = useState(initial.patch),
     [idea, setIdea] = useState(initial.idea),
     [note, setNote] = useState(initial.note);
-  const [tab, setTab] = useState("team"),
+  const [tab, setTab] = useState("research"),
     [result, setResult] = useState(null),
     [notice, setNotice] = useState(""),
     [matrixMode, setMatrixMode] = useState("base");
@@ -264,6 +265,7 @@ function App() {
         </div>
         <nav aria-label="主导航">
           {[
+            ["research", "matrix", "精灵研究"],
             ["team", "matrix", "6v6 团队实验"],
             ["catalog", "doc", "图鉴与机制"],
             ["training", "matrix", "旧版 · 单挑训练"],
@@ -283,13 +285,13 @@ function App() {
           ))}
         </nav>
         <div className="rail-foot">
-          个人策划作品 · v0.2.1<small>郝宝焜 / 2026</small>
+          私人研究 · v0.3.0<small>郝宝焜 / 2026</small>
           <a
             href="https://github.com/Pacific-shark/roco-balance-lab"
             target="_blank"
             rel="noreferrer"
           >
-            查看源码 ↗
+            私有仓库 ↗
           </a>
         </div>
       </aside>
@@ -297,7 +299,7 @@ function App() {
         <header className="top">
           <div>
             <h1>
-              {tab === "team"
+              {tab === "research" ? "精灵研究 · 私人项目" : tab === "team"
                 ? "6v6 团队实验"
                 : tab === "catalog"
                   ? "图鉴与机制"
@@ -310,7 +312,7 @@ function App() {
                         : "这个项目想解决什么"}
             </h1>
             <p>
-              {tab === "team"
+              {tab === "research" ? "以个体为评价对象，在多套完整队伍中寻找依据。" : tab === "team"
                 ? "在完整队伍中追踪机制收益，再检验调整是否有效。"
                 : tab === "catalog"
                   ? "先核对数据与学习条件，再确定模拟哪些机制。"
@@ -323,7 +325,7 @@ function App() {
                         : "一次小范围的策划验证，保留过程，也保留疑问。"}
             </p>
           </div>
-          {!["team", "catalog", "product"].includes(tab) && (
+          {!["research", "team", "catalog", "product"].includes(tab) && (
             <button
               className="primary export"
               onClick={exportReport}
@@ -337,13 +339,14 @@ function App() {
         </header>
         {tab !== "catalog" ? (
           <p className="data-readiness">
-            {["team", "product"].includes(tab)
+            {["research", "team", "product"].includes(tab)
               ? "6v6 机制子集 · 10 种形态 / 42 个技能。规则仍需游戏内录像校准。"
               : "旧版 1v1 调试环境 · 不代表本游戏 PVP。请使用 6v6 团队实验检查团队机制。"}
             <button onClick={() => setTab("catalog")}>查看数据范围 ↗</button>
           </p>
         ) : null}
         {tab === "catalog" ? <Catalog /> : null}
+        {tab === "research" ? <ResearchLab /> : null}
         {tab === "team" ? <TeamLab /> : null}
         {tab === "training" ? (
           <Training

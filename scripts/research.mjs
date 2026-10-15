@@ -1,0 +1,10 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {runResearch} from '../src/research.mjs';
+const data=JSON.parse(await readFile(new URL('../public/data/team-2026-10-14.json',import.meta.url),'utf8'));
+const manifest=JSON.parse(await readFile(new URL('../public/data/research-readiness.json',import.meta.url),'utf8'));
+const quick=process.argv.includes('--quick');
+const config={target:'pet_000028',seeds:quick?[42]:[42,137,256],population:quick?2:4,generations:quick?1:2,episodes:100,adaptEpisodes:100,keep:quick?1:2};
+const result=runResearch(data,manifest,config,p=>console.log(JSON.stringify(p)));
+const dir=new URL('../work/research/',import.meta.url);await mkdir(dir,{recursive:true});
+await writeFile(new URL(quick?'quick.json':'latest.json',dir),JSON.stringify(result));
+console.log(JSON.stringify(result.summary,null,2));

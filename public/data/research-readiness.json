@@ -1,0 +1,15 @@
+{
+  "version": "audit-2026-10-15",
+  "information": "full-information-prototype",
+  "rules": [
+    {"id":"format","label":"6v6、四点魔力、聚能五点","critical":true,"status":"user-confirmed","source":"用户实战说明，待录像样例"},
+    {"id":"stats","label":"种族值、资质、性格与取整公式","critical":true,"status":"pending","source":"社区面板约定；性格加减 10% 经用户确认"},
+    {"id":"order","label":"同速、应对、换人及事件结算顺序","critical":true,"status":"pending","source":"待逐回合录像校准"},
+    {"id":"skills","label":"技能与特性的合法来源及例外","critical":true,"status":"partial","source":"现有 10 形态、42 技能子集"}
+  ],
+  "sources": [
+    {"url":"https://www.taptap.cn/moment/652567489254788736","title":"官方战斗教程（2025 测试期）","status":"located-not-calibrated"},
+    {"url":"https://www.bilibili.com/video/BV1nS3m6eEMs/","title":"洛神杯正赛回放","status":"located-not-annotated"},
+    {"url":"https://wiki.biligame.com/nrc/公告/S2赛季平衡性调整说明","title":"S2 平衡公告转载","status":"read-design-reference"}
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "name": "roco-balance-lab",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "private": true,
   "type": "module",
   "description": "A small, explainable balance experiment workbench for a game design portfolio",
@@ -9,7 +9,8 @@
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4197 --strictPort",
     "test": "node --test test/*.test.mjs",
-    "experiment": "node scripts/experiment.mjs"
+    "experiment": "node scripts/experiment.mjs",
+    "research": "node scripts/research.mjs"
   },
   "engines": {
     "node": ">=22.12.0"
