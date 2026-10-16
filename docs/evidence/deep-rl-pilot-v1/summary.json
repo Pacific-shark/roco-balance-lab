@@ -1,0 +1,538 @@
+{
+  "scope": "engineering-pilot",
+  "apiTokens": 0,
+  "testSplitUsed": false,
+  "runs": [
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 104,
+      "trainingRoundCaps": 0,
+      "parametersPerAgent": 44317,
+      "elapsedSeconds": 31.28100000001723,
+      "initialHashes": [
+        "9bce2badaac60ee81d5708b17a7e7da1e8554ea53d90fcb7518001d1f584e186",
+        "7999f1df532cf44afe94b17da68be20b537bc6a0dd64f481d2713f989d2e4da8"
+      ],
+      "finalHashes": [
+        "46ff1502a3218c135db69c6509528067ea6246d614b9788484b2aa0be2b20a07",
+        "31769c0f468a069d70ed50fbf9390c02754c097d3bcb7ca14fd32d4e9b9ae111"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2170,
+        "rule": 542,
+        "history": 1384
+      },
+      "error": null,
+      "config": {
+        "architecture": "linear",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 108,
+      "trainingRoundCaps": 1,
+      "parametersPerAgent": 44317,
+      "elapsedSeconds": 16.453000000008615,
+      "initialHashes": [
+        "cbc2f22a27c2dddb71fa762b7fe253f3e43103ff91ac302b1b32abae5ced8a52",
+        "6b38888b223ac910865b44215e3d2c0789bf310244e126ec3b21c5b2da8f41a0"
+      ],
+      "finalHashes": [
+        "20fa77941b6046862ee914ce105fe522a0909602dea9b0f4e677c94e7522510a",
+        "f4b791427adf26778d0f7a4b684aaa3296a40a20d1c8ba5e269c87928fee03df"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2380,
+        "rule": 633,
+        "history": 1083
+      },
+      "error": null,
+      "config": {
+        "architecture": "linear",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 94,
+      "trainingRoundCaps": 0,
+      "parametersPerAgent": 44317,
+      "elapsedSeconds": 16.359000000025844,
+      "initialHashes": [
+        "2f909705d2bdc7e9efd0f4a44021b45a8c5aaadb9f56720534d9aa5689c0a314",
+        "80ffe2abd5834f7d82ee6ca68dedc1274edc629cae5bff94e61714787d497e72"
+      ],
+      "finalHashes": [
+        "921ece22b50d88b3404fe1caa285f61b691bf91725597f9fd0c9a2911824404a",
+        "6bb6aac5a69666c6ad88957631b65b2349757b2923dc86314d5dbcc8c31cf113"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2533,
+        "rule": 610,
+        "history": 953
+      },
+      "error": null,
+      "config": {
+        "architecture": "linear",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 84,
+      "trainingRoundCaps": 1,
+      "parametersPerAgent": 223181,
+      "elapsedSeconds": 18.734000000025844,
+      "initialHashes": [
+        "4920306bf370b393de3a75863b455141b75111b7176a877ce9d9769adc5b76e9",
+        "9f6d9fa092580520fe8f85259533ff699712551a44ea5455da8e6c8787b20bb6"
+      ],
+      "finalHashes": [
+        "1152052ac9bf60b8038f0f0e5158d956749bdaeb07fcf3700b2240b7496d1236",
+        "f9bc0de5d9105ccfd019784feb4c9f63fe7c40e5151751c06c0506c616205f68"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2245,
+        "rule": 493,
+        "history": 1358
+      },
+      "error": null,
+      "config": {
+        "architecture": "mlp",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 83,
+      "trainingRoundCaps": 1,
+      "parametersPerAgent": 223181,
+      "elapsedSeconds": 19.530999999988126,
+      "initialHashes": [
+        "e0eb6a7701bd7258531fdfde4b122cc70cab69c33d781849cfc56782e6c5460b",
+        "8468ff1f4edcd839a74f37e9f57f8e335d3b616e9212abbcb3f8318da04ec054"
+      ],
+      "finalHashes": [
+        "2d5c9574c2717455ff57d5acc2ccd233cead4e2447f8639d93cc5b42e03d1769",
+        "ffba1448c78f20cab2baa98c024f15158b5611393c681a190ddcdc4da4c9afac"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2446,
+        "rule": 530,
+        "history": 1120
+      },
+      "error": null,
+      "config": {
+        "architecture": "mlp",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 93,
+      "trainingRoundCaps": 0,
+      "parametersPerAgent": 223181,
+      "elapsedSeconds": 18.35999999998603,
+      "initialHashes": [
+        "32d64e303e3651e0d7b21c7d62407b26fb6cdcd87fa3c0c83adca66843076bc0",
+        "8bad581583528db102c630f278a149e99d5f4f34b0c4cea4f740a242e158ba9f"
+      ],
+      "finalHashes": [
+        "843b161c23098c32f4c9fbcbd35cbc6296c19ab153eba8f1bdb4ae21745c1330",
+        "43d29151a78cc0949cecb3c4bc05a4a92023112a26ec9c1f0d8377330b38181f"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2661,
+        "rule": 572,
+        "history": 863
+      },
+      "error": null,
+      "config": {
+        "architecture": "mlp",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 82,
+      "trainingRoundCaps": 1,
+      "parametersPerAgent": 69506,
+      "elapsedSeconds": 25.625,
+      "initialHashes": [
+        "40a171354c3e337f792e57082c3523a51c0b16deee9c369b3f5f139f39665a24",
+        "4c9b92507a2c490abdb4c8fb1f1d6cf9b83f07de15f9761f7cef0aa35b12dc65"
+      ],
+      "finalHashes": [
+        "9d4b6d3bc722bcaa4529dec7de150239fd9fb563796c92c7c5923b7e59243c7c",
+        "433ae835502f1095edac529e05ce3134ee918a52e3a3257311b76e5fcc9c87cd"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2294,
+        "rule": 506,
+        "history": 1296
+      },
+      "error": null,
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 88,
+      "trainingRoundCaps": 0,
+      "parametersPerAgent": 69506,
+      "elapsedSeconds": 25.046999999991385,
+      "initialHashes": [
+        "2067f035dd834b22a0045d22a48a14c2043a9646ce0cd08234b8b2b5cc78c08a",
+        "b450a3dc34b677ef733d4d1da8b38ae35c0464f894bfacbb0bcf976e380ef000"
+      ],
+      "finalHashes": [
+        "02ec27636808f8787e83a65e9eae253d6ae89ad82aab4b370c6efcad1a085f20",
+        "e33427bd15add7df3c99161bddaac5b578414299200bde58844d8efda201240c"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2425,
+        "rule": 572,
+        "history": 1099
+      },
+      "error": null,
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    },
+    {
+      "status": "completed",
+      "trainingSteps": 4096,
+      "completedTrainingGames": 86,
+      "trainingRoundCaps": 1,
+      "parametersPerAgent": 69506,
+      "elapsedSeconds": 28.67200000002049,
+      "initialHashes": [
+        "278fc548da9f1c6d671cd1eb5d9cd701a779d21220b4755c9fadb69246b948bc",
+        "337254af77b7e75e2498fbb694357cc0546493f6dbed928694f36c7a0e8fb94d"
+      ],
+      "finalHashes": [
+        "3c943b5f1c0598c4c7b7172a8113f939642584a1a41eb08739181f26668ad724",
+        "08c58b75875f4be86d0b8ed9cc8c87c41181ddb617daa130c14823da0354f3a1"
+      ],
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "validationReturnDelta": 0.0,
+      "opponentDecisionCounts": {
+        "self": 2643,
+        "rule": 602,
+        "history": 851
+      },
+      "error": null,
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+      }
+    }
+  ]
+}
