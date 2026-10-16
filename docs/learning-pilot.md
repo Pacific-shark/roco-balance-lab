@@ -2,6 +2,8 @@
 
 2026-10-16 · 当前实现说明
 
+**评价路线更新：** 主流程保留全部特性，模型比较使用 [共同冻结对手交叉评估](algorithm-plan-v5.md)。下文第 3 步是历史诊断复现，需要显式参数；它不再作为精灵强度或特色的主要评价。
+
 实际成绩、失败案例和解释见 [训练与配队试点结果](learning-results-2026-10-16.md)。[第一轮文档](learning-pilot-v1.md)作为历史记录保留；其中的“尚未接入工作台”等状态仅对应 v1。
 
 ## 训练如何实现
@@ -43,8 +45,8 @@ foreach ($seed in 42,137,256) {
   .venv-rl/Scripts/python.exe -m learning.resource_outcomes --before ".local/my-base/entity_mlp-$seed/model.pt" --after ".local/my-mixed/entity_mlp-$seed/model.pt"
 }
 
-# 3. 固定全部三个种子做有限候选筛选与特性对照。
-.venv-rl/Scripts/python.exe -m learning.research .local/my-mixed/entity_mlp-42/model.pt .local/my-mixed/entity_mlp-137/model.pt .local/my-mixed/entity_mlp-256/model.pt --target pet_000028 --candidates 6 --max-seconds 360 --output .local/my-study/report.json
+# 3. 仅在需要复现历史诊断时显式开启；新模型比较见 algorithm-plan-v5.md。
+.venv-rl/Scripts/python.exe -m learning.research .local/my-mixed/entity_mlp-42/model.pt .local/my-mixed/entity_mlp-137/model.pt .local/my-mixed/entity_mlp-256/model.pt --target pet_000028 --candidates 6 --max-seconds 360 --legacy-trait-diagnostic --output .local/my-study/report.json
 
 # 4. 重算分母和逐局胜负后生成工作台摘要。
 .venv-rl/Scripts/python.exe -m learning.audit --groups my-base my-mixed --research .local/my-study/report.json

@@ -60,12 +60,15 @@ def paired_delta(base,changed):
     return sum(a[k]-b[k] for k in a)/len(a)
 
 
-def run(checkpoints,output,target,count,seconds):
+def run(checkpoints,output,target,count,seconds,*,legacy_trait_diagnostic=False):
+    if not legacy_trait_diagnostic:
+        raise ValueError('Trait-removal research is a legacy diagnostic. Use learning.league for intact-trait model evaluation, or explicitly opt in with --legacy-trait-diagnostic.')
     if output.exists():raise FileExistsError('Use a new report path')
     if not output.resolve().is_relative_to(ROOT/'.local'):raise ValueError('Keep raw research output in .local')
     output.parent.mkdir(parents=True,exist_ok=True)
     torch.set_num_threads(1);started=time.monotonic();deadline=started+seconds
     result={'scope':'restricted-prototype','status':'running','canPublishBalanceConclusion':False,
+            'protocol':'legacy-trait-removal-diagnostic','primarySpeciesEvaluation':False,
             'target':target,'candidateCount':count,'apiTokens':0,'checkpoints':[],'screening':[],'selected':[],
             'limitations':['Finite candidate generation; no global optimum or complete dex coverage.',
                 'Frozen policies; candidate-specific adaptation and both-side retraining are not implemented in this neural pipeline.',
@@ -127,9 +130,11 @@ def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('checkpoints',type=Path,nargs='+')
     p.add_argument('--target',default='pet_000028');p.add_argument('--candidates',type=int,default=6)
     p.add_argument('--max-seconds',type=int,default=240);p.add_argument('--output',type=Path,required=True)
+    p.add_argument('--legacy-trait-diagnostic',action='store_true',help='Explicit opt-in to the archived trait-removal method; not a species-strength metric')
     a=p.parse_args()
+    if not a.legacy_trait_diagnostic:p.error('This legacy diagnostic requires --legacy-trait-diagnostic. Current intact-trait model evaluation: python -m learning.league --help')
     if not 1<=len(a.checkpoints)<=3 or not 2<=a.candidates<=12 or not 30<=a.max_seconds<=600:p.error('checkpoints 1..3, candidates 2..12, seconds 30..600')
-    return 0 if run(a.checkpoints,a.output,a.target,a.candidates,a.max_seconds)['status']=='completed' else 2
+    return 0 if run(a.checkpoints,a.output,a.target,a.candidates,a.max_seconds,legacy_trait_diagnostic=a.legacy_trait_diagnostic)['status']=='completed' else 2
 
 
 if __name__=='__main__':raise SystemExit(main())
