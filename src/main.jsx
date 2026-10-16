@@ -26,6 +26,7 @@ import Catalog from "./Catalog.jsx";
 import TeamLab from "./TeamLab.jsx";
 import TeamProduct from "./TeamProduct.jsx";
 import ResearchLab from "./ResearchLab.jsx";
+import ResearchWorkbench from "./ResearchWorkbench.jsx";
 import { trainedPolicies, learnedPolicy } from "./rl.mjs";
 import "./style.css";
 
@@ -110,13 +111,13 @@ function Metric({ label, value, help }) {
     </div>
   );
 }
-function App() {
+function LegacyApp({ initialTab = "research", onBack }) {
   const [initial] = useState(readDraft),
     [env, setEnv] = useState(initial.env),
     [patch, setPatch] = useState(initial.patch),
     [idea, setIdea] = useState(initial.idea),
     [note, setNote] = useState(initial.note);
-  const [tab, setTab] = useState("research"),
+  const [tab, setTab] = useState(initialTab),
     [result, setResult] = useState(null),
     [notice, setNotice] = useState(""),
     [matrixMode, setMatrixMode] = useState("base");
@@ -264,6 +265,7 @@ function App() {
           洛克平衡实验室<small>Roco Balance Lab</small>
         </div>
         <nav aria-label="主导航">
+          <button onClick={onBack}>← 研究工作台</button>
           {[
             ["research", "matrix", "精灵研究"],
             ["team", "matrix", "6v6 团队实验"],
@@ -977,5 +979,10 @@ function Fighter({ id, hp, energy, maxHp }) {
       </p>
     </div>
   );
+}
+function App() {
+  const [legacy, setLegacy] = useState(null);
+  return legacy ? <LegacyApp key={legacy} initialTab={legacy} onBack={() => setLegacy(null)} />
+    : <ResearchWorkbench onNavigate={setLegacy} />;
 }
 createRoot(document.getElementById("root")).render(<App />);

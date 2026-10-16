@@ -1,0 +1,71 @@
+{
+  "reviewDate": "2026-10-16",
+  "nodeTestsPassed": 72,
+  "pythonTestsPassed": 32,
+  "latestFocusedNodeTestsPassed": 7,
+  "productionBuild": "passed",
+  "browser": "hidden Codex IAB",
+  "desktopViewport": [
+    1536,
+    1024
+  ],
+  "mobileViewport": [
+    390,
+    844
+  ],
+  "consoleErrors": 0,
+  "checks": [
+    "page identity",
+    "nonblank",
+    "no framework overlay",
+    "search",
+    "target selection",
+    "formal mode blocked",
+    "create local experiment",
+    "completed report",
+    "lineup details",
+    "project plan",
+    "mobile width"
+  ],
+  "sample": {
+    "trainingEpisodes": 100,
+    "evaluationBattles": 112,
+    "apiCalls": 0,
+    "apiTokens": 0,
+    "scope": "prototype-only",
+    "context": {
+      "snapshotId": "76225b1032927147725a4347cfaea36eec806f249353f1ca2bb299869f5f417c",
+      "engineHash": "40efe48551e76e307bc32b3a4d0c9a8e7c846cf0185661e36d09d5444432bf6f",
+      "dataVersion": "bwiki-team-2026-10-14-build1",
+      "catalogVersion": "s4-2026-10-15"
+    }
+  },
+  "limits": [
+    "formal current-game training not started",
+    "no assertion of current-game optimal lineups",
+    "browser screenshots kept outside repository",
+    "CPU and development conversation are not free"
+  ],
+  "designComparison": {
+    "reference": "docs/design/workbench-concept.png",
+    "inspected": [
+      "copy hierarchy",
+      "table and form layout",
+      "font sizes",
+      "white/teal palette",
+      "spacing and navigation",
+      "mobile stacking"
+    ],
+    "fixes": [
+      "removed inherited 40px navigation top margin",
+      "distinguished same-name forms",
+      "made report dialog modal and keyboard dismissible"
+    ],
+    "intentionalDifferences": [
+      "actual dex IDs and data order",
+      "pagination",
+      "real completed task rows",
+      "source and execution version explanation"
+    ]
+  }
+}

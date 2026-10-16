@@ -1,0 +1,461 @@
+{
+  "version": "pilot-engineering-diagnostics-v1",
+  "createdAt": "2026-10-15T08:20:52.214Z",
+  "stage": "A-inventory-and-B-engineering-checks; C-training-blocked",
+  "formalTrainingRuns": 0,
+  "llmCallsInDiagnosticLoop": 0,
+  "strengthConclusionsAllowed": false,
+  "admission": {
+    "trainingAllowed": false,
+    "blockers": [
+      {
+        "id": "current-version",
+        "reason": "pending",
+        "detail": "当前版本公告及历史调整未完成逐项对账，不能把 Config 版本标签当实战认证。"
+      },
+      {
+        "id": "legal-roster-and-builds",
+        "reason": "pending",
+        "detail": "最高常规形态由进化图识别；PVP 准入、血脉／技能共存与整队限制尚待核准。"
+      },
+      {
+        "id": "panel-and-damage",
+        "reason": "partial",
+        "detail": "仅公测面板样例；当前版本及伤害边界未完成实机对照。"
+      },
+      {
+        "id": "mechanism-closure",
+        "reason": "partial",
+        "detail": "所有候选技能、动态获取、首领化及关键交互尚未完整实现和核准。"
+      },
+      {
+        "id": "observations",
+        "reason": "pending",
+        "detail": "玩家可见信息协议尚待目标 PVP 录像逐字段核准；旧策略读取完整配置。"
+      },
+      {
+        "id": "policy-capability",
+        "reason": "pending",
+        "detail": "需通过相关战术能力题与多对手基线，不能只检查自博弈胜率。"
+      },
+      {
+        "id": "evaluation-protocol",
+        "reason": "pending",
+        "detail": "正式预算、验证池与独立测试池尚未冻结。"
+      },
+      {
+        "id": "pet_000007",
+        "reason": "target-not-certified"
+      },
+      {
+        "id": "pet_000007",
+        "reason": "incomplete-mechanism-or-legality"
+      },
+      {
+        "id": "pet_000006",
+        "reason": "target-not-certified"
+      },
+      {
+        "id": "pet_000006",
+        "reason": "incomplete-mechanism-or-legality"
+      },
+      {
+        "id": "pet_000005",
+        "reason": "target-not-certified"
+      },
+      {
+        "id": "pet_000005",
+        "reason": "incomplete-mechanism-or-legality"
+      },
+      {
+        "id": "pet_000034",
+        "reason": "target-not-certified"
+      },
+      {
+        "id": "pet_000034",
+        "reason": "incomplete-mechanism-or-legality"
+      },
+      {
+        "id": "pet_000094",
+        "reason": "target-not-certified"
+      },
+      {
+        "id": "pet_000094",
+        "reason": "incomplete-mechanism-or-legality"
+      },
+      {
+        "id": "pet_000028",
+        "reason": "target-not-certified"
+      },
+      {
+        "id": "pet_000028",
+        "reason": "incomplete-mechanism-or-legality"
+      }
+    ]
+  },
+  "sourceDeclaredVersion": "s4-2026-10-15",
+  "simulatorDataVersion": "bwiki-team-2026-10-14-build1",
+  "simulatorRules": "team-0.2.2-panel20",
+  "observationProtocol": "pilot-visible-v1-provisional",
+  "hiddenStateAudit": {
+    "fullStateFeatureLeaks": [
+      "teamHealthLead",
+      "teamEnergyLead"
+    ],
+    "isolatedViewsEqual": true,
+    "note": "A synthetic paired-state information-flow test, not validation of live-game visibility."
+  },
+  "smoke": {
+    "seeds": [
+      42,
+      137,
+      256
+    ],
+    "games": 36,
+    "decisions": 2227,
+    "elapsedMs": 1245.0902,
+    "decisionsPerSecond": 1788.6254345267514,
+    "prototypeCapTerminations": 0,
+    "peakRssBytes": 66605056,
+    "rows": [
+      {
+        "seed": 42,
+        "case": 0,
+        "decisions": 72,
+        "rounds": 65,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 1,
+        "decisions": 58,
+        "rounds": 53,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 2,
+        "decisions": 60,
+        "rounds": 53,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 3,
+        "decisions": 85,
+        "rounds": 78,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 4,
+        "decisions": 80,
+        "rounds": 73,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 5,
+        "decisions": 68,
+        "rounds": 62,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 6,
+        "decisions": 79,
+        "rounds": 72,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 7,
+        "decisions": 41,
+        "rounds": 35,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 8,
+        "decisions": 58,
+        "rounds": 54,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 9,
+        "decisions": 83,
+        "rounds": 76,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 10,
+        "decisions": 57,
+        "rounds": 50,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 42,
+        "case": 11,
+        "decisions": 76,
+        "rounds": 69,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 0,
+        "decisions": 31,
+        "rounds": 27,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 1,
+        "decisions": 64,
+        "rounds": 57,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 2,
+        "decisions": 67,
+        "rounds": 61,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 3,
+        "decisions": 70,
+        "rounds": 63,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 4,
+        "decisions": 49,
+        "rounds": 43,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 5,
+        "decisions": 30,
+        "rounds": 26,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 6,
+        "decisions": 81,
+        "rounds": 74,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 7,
+        "decisions": 39,
+        "rounds": 32,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 8,
+        "decisions": 75,
+        "rounds": 70,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 9,
+        "decisions": 59,
+        "rounds": 54,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 10,
+        "decisions": 58,
+        "rounds": 51,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 137,
+        "case": 11,
+        "decisions": 36,
+        "rounds": 29,
+        "termination": "prototype-terminal",
+        "leftKnown": 5,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 0,
+        "decisions": 44,
+        "rounds": 38,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 1,
+        "decisions": 39,
+        "rounds": 32,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 5
+      },
+      {
+        "seed": 256,
+        "case": 2,
+        "decisions": 61,
+        "rounds": 54,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 3,
+        "decisions": 39,
+        "rounds": 33,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 4,
+        "decisions": 68,
+        "rounds": 61,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 5,
+        "decisions": 70,
+        "rounds": 63,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 6,
+        "decisions": 62,
+        "rounds": 56,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 7,
+        "decisions": 59,
+        "rounds": 52,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 8,
+        "decisions": 88,
+        "rounds": 81,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 9,
+        "decisions": 81,
+        "rounds": 74,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 10,
+        "decisions": 49,
+        "rounds": 45,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      },
+      {
+        "seed": 256,
+        "case": 11,
+        "decisions": 91,
+        "rounds": 86,
+        "termination": "prototype-terminal",
+        "leftKnown": 6,
+        "rightKnown": 6
+      }
+    ],
+    "note": "Uniform legal-action policies; no parameter updates, no win-rate ranking, old bounded mechanics only."
+  },
+  "machine": {
+    "platform": "win32",
+    "arch": "x64",
+    "node": "v24.19.0",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12700H",
+    "logicalCpus": 20
+  },
+  "sourceHashes": {
+    "src/team-engine.mjs": "e2383de0a699f4b67412e1db12cd8310f36995a4f150c30d94070eaa90fa58bb",
+    "src/pilot-observation.mjs": "16e1a155f4cc902f63f0258515e9e0509824f0085313bc6e62c610acf5a5e806",
+    "src/pilot-admission.mjs": "80116cdf6a11a8d6f164b424373106d992f857d236688f3ed414281acb33b5dd",
+    "public/data/team-2026-10-14.json": "53cae7ffce21c0ee37d5cc29df46ff5a5e2652b34a60b351e647e1b6f252b453"
+  }
+}

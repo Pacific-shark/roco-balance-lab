@@ -9,3 +9,7 @@ __pycache__/
 .cache/
 
 work/
+.local/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal

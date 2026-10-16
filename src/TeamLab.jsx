@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { runTeamBattle, TEAM_RULE_VERSION } from "./team-engine.mjs";
-import { teamLearnedPolicy, teamRulePolicy } from "./team-rl.mjs";
+import { teamLearnedPolicy, teamRulePolicy, TEAM_POLICY_PRIOR } from "./team-rl.mjs";
 import {
   calculatePanel,
   STAT_LABELS,
@@ -142,8 +142,14 @@ export default function TeamLab() {
     )
       .then(([d, m, e]) => {
         if (live) {
-          if (m.dataVersion !== d.version || m.rules !== TEAM_RULE_VERSION)
-            throw Error("模型与引擎版本不一致，请刷新后重试");
+          if (m.dataVersion !== d.version || m.rules !== TEAM_RULE_VERSION) {
+            setData(d);
+            setModel({rules: TEAM_RULE_VERSION, dataVersion: d.version, untrained: true, seed: 0, episodes: 0, updates: 0, agents: [{weights: {...TEAM_POLICY_PRIOR}}, {weights: {...TEAM_POLICY_PRIOR}}]});
+            setEvaluation(null);
+            setMode("tactical");
+            setError("五星面板已修正，旧模型及成绩已停用。当前仅用规则策略预览，未重新训练；当前赛季机制仍待核验。");
+            return;
+          }
           setData({ ...d, teams: m.trainingTeams ?? d.teams });
           setModel(m);
           setEvaluation(e);
@@ -208,7 +214,7 @@ export default function TeamLab() {
         }),
       );
       if (m.dataVersion !== data.version || m.rules !== TEAM_RULE_VERSION)
-        throw Error("模型与当前引擎版本不一致，请刷新后重试");
+        throw Error("该模型使用旧面板规则，不能用于当前引擎；请重新训练。");
       setModel(m);
       setData((d) => ({ ...d, teams: m.trainingTeams ?? d.teams }));
       setEvaluation(e);
@@ -335,7 +341,7 @@ export default function TeamLab() {
           <span>聚能 +5</span>
           <span>独立血量与能量</span>
           <span>同时提交行动</span>
-          <span>性格 +10% / −10%</span>
+          <span>五星60级 · 性格 +20% / −10% · 当前赛季待复验</span>
         </div>
       </section>
       <div className="team-quality">
@@ -416,7 +422,7 @@ export default function TeamLab() {
             value={mode}
             onChange={(e) => change(setMode, e.target.value)}
           >
-            <option value="learned">强化学习 · 冻结模型</option>
+            <option value="learned" disabled={model.untrained}>强化学习 · 冻结模型</option>
             <option value="tactical">规则基线 · 换人与输出</option>
             <option value="aggressive">规则基线 · 直接输出</option>
           </select>
@@ -449,7 +455,7 @@ export default function TeamLab() {
         disabled={busy}
         onChange={(d) => change(setData, d)}
       />
-      {!configurationMatches ? (
+      {!configurationMatches && !model.untrained ? (
         <p className="team-note">
           当前培养配置已修改，回放正在用旧模型检验新配置。原训练得分暂不展示；重新搜索并训练后才能形成这一配置的评估记录。
         </p>
@@ -586,7 +592,7 @@ export default function TeamLab() {
         </p>
         <button
           className="primary"
-          disabled={variant === "baseline" || busy}
+          disabled={variant === "baseline" || busy || model.untrained}
           onClick={compare}
         >
           运行团队机制对照
@@ -680,8 +686,7 @@ export default function TeamLab() {
           </div>
         ) : null}
         <p>
-          当前模型：种子 {model.seed} · {model.episodes.toLocaleString()}{" "}
-          场团队对战 · {model.updates.toLocaleString()} 次参数更新。
+          {model.untrained ? "当前为未训练的初始化策略，默认用规则策略预览；没有新训练成绩。" : <>当前模型：种子 {model.seed} · {model.episodes.toLocaleString()} 场团队对战 · {model.updates.toLocaleString()} 次参数更新。</>}
         </p>
         <div className="team-setup">
           <label>
@@ -744,7 +749,7 @@ export default function TeamLab() {
           <button disabled={busy} onClick={() => loadModel(137)}>
             读取种子 137
           </button>
-          <button onClick={() => download("6v6-强化学习模型.json", model)}>
+          <button disabled={model.untrained} onClick={() => download("6v6-强化学习模型.json", model)}>
             下载团队模型
           </button>
         </div>

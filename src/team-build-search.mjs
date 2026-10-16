@@ -166,7 +166,7 @@ export function optimizeTeamBuilds(
         { scenarios: "each opponent, agent role 0", keep: 12 },
         { scenarios: "all opponents and both agent roles", keep: 1 },
       ],
-      panelRule: "六维之一 +10%，另一项 -10%（用户确认）",
+      panelRule: "五星60级：六维之一 +20%，另一项 -10%；公测实机样例通过，当前赛季待复验",
       referenceModel: {
         seed: model.seed,
         episodes: model.episodes,

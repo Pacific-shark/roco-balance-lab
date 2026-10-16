@@ -1,6 +1,7 @@
 import { calculatePanel, validateBuild, statPanel } from "./team-stats.mjs";
+import { reduceIntegerDamage } from "./battle-arithmetic.mjs";
 export { statPanel } from "./team-stats.mjs";
-export const TEAM_RULE_VERSION = "team-0.2.1";
+export const TEAM_RULE_VERSION = "team-0.2.3-exact-guard";
 export const TEAM_RULES = Object.freeze({
   teamSize: 6,
   magic: 4,
@@ -201,15 +202,13 @@ export function teamDamage(
       counterBonus *
       a.nextAttack,
   );
-  const perHit = Math.max(
+  const baseDamage = Math.max(
     0,
     Math.floor(
-      Math.floor(
-        Math.round((a.stats[atk] * display * 37) / 41) / b.stats[def],
-      ) *
-        (1 - b.guard),
+      Math.round((a.stats[atk] * display * 37) / 41) / b.stats[def],
     ),
   );
+  const perHit = reduceIntegerDamage(baseDamage, b.guard);
   return {
     total: perHit * (e.hits ?? 1),
     perHit,

@@ -2,14 +2,59 @@
   "version": "audit-2026-10-15",
   "information": "full-information-prototype",
   "rules": [
-    {"id":"format","label":"6v6、四点魔力、聚能五点","critical":true,"status":"user-confirmed","source":"用户实战说明，待录像样例"},
-    {"id":"stats","label":"种族值、资质、性格与取整公式","critical":true,"status":"pending","source":"社区面板约定；性格加减 10% 经用户确认"},
-    {"id":"order","label":"同速、应对、换人及事件结算顺序","critical":true,"status":"pending","source":"待逐回合录像校准"},
-    {"id":"skills","label":"技能与特性的合法来源及例外","critical":true,"status":"partial","source":"现有 10 形态、42 技能子集"}
+    {
+      "id": "format",
+      "label": "6v6、四点魔力、聚能五点",
+      "critical": true,
+      "status": "user-confirmed",
+      "source": "用户实战说明，待录像样例"
+    },
+    {
+      "id": "stats",
+      "label": "五星60级面板：当前赛季复验与边界覆盖",
+      "critical": true,
+      "status": "partial",
+      "source": "已修正为1.2/1/0.9与两步取整，公测实机音速犬六维全部匹配。当前赛季、生命性格及更多边界仍待独立样例核验。见 docs/evidence/stat-panel-game-fixture.json"
+    },
+    {
+      "id": "order",
+      "label": "同速、应对、换人及事件结算顺序",
+      "critical": true,
+      "status": "partial",
+      "source": "9月30日官方离场顺序已形成独立解析器并通过检查；概率与完整事件交错未知。旧引擎固定同速优先方尚未迁移。"
+    },
+    {
+      "id": "skills",
+      "label": "技能与特性的合法来源及例外",
+      "critical": true,
+      "status": "partial",
+      "source": "现有 10 形态、42 技能子集"
+    }
   ],
   "sources": [
-    {"url":"https://www.taptap.cn/moment/652567489254788736","title":"官方战斗教程（2025 测试期）","status":"located-not-calibrated"},
-    {"url":"https://www.bilibili.com/video/BV1nS3m6eEMs/","title":"洛神杯正赛回放","status":"located-not-annotated"},
-    {"url":"https://wiki.biligame.com/nrc/公告/S2赛季平衡性调整说明","title":"S2 平衡公告转载","status":"read-design-reference"}
-  ]
+    {
+      "url": "https://www.taptap.cn/moment/652567489254788736",
+      "title": "官方战斗教程（2025 测试期）",
+      "status": "original-image-read-test-era-not-current-certification"
+    },
+    {
+      "url": "https://www.bilibili.com/video/BV1nS3m6eEMs/",
+      "title": "洛神杯正赛回放",
+      "status": "located-not-annotated"
+    },
+    {
+      "url": "https://wiki.biligame.com/nrc/公告/S2赛季平衡性调整说明",
+      "title": "S2 平衡公告转载",
+      "status": "read-design-reference"
+    }
+  ],
+  "officialRuleReview": {
+    "path": "docs/evidence/official-battle-rules-2026-10-15.json",
+    "status": "official-text-reviewed-game-validation-incomplete",
+    "formalTrainingAllowed": false
+  },
+  "engineeringVerification": {
+    "path": "docs/evidence/mechanics-engine-checks-2026-10-15.json",
+    "formalTrainingAllowed": false
+  }
 }

@@ -1,0 +1,54 @@
+{
+  "reviewDate": "2026-10-16",
+  "scope": "常规6v6；文字资料和用户补充核查，未完成游戏逐事件实测",
+  "trainingAllowed": false,
+  "userConfirmed": [
+    {"id": "evolution-uses", "claim": "进化之力每局一次", "value": 1, "sourceType": "user-firsthand-report", "officialCurrentVersionCertified": false},
+    {"id": "resonance-action-cost", "claim": "共鸣不占普通行动", "value": false, "sourceType": "user-firsthand-report", "doesNotEstablish": "完整事件先后与取消时点"},
+    {"id": "unused-wish-expiry", "claim": "愿力共鸣当回合不用，下回合临时替换消失", "sourceType": "user-firsthand-report", "doesNotEstablish": "未使用是否扣除或返还共鸣次数"}
+  ],
+  "uncertainUserReports": [
+    {"id": "grass-max-uses", "report": "一次还是两次，不确定", "acceptedValue": null},
+    {"id": "lord-hp-inheritance", "report": "按比例，但不确定", "acceptedValue": null},
+    {"id": "lord-other-state-inheritance", "report": "只是变身", "acceptedValue": null, "reason": "未明确逐字段与特殊例外，不等同于重置，也不自动证明全部状态无变化"}
+  ],
+  "webFindings": [
+    {
+      "id": "rank-dependent-team-preview",
+      "status": "corroborated-original-player-reports-not-official-current-ui-certification",
+      "claim": "玩家资料区分大师明牌与大师以下暗牌；不能统一隐藏所有未登场精灵身份",
+      "sources": [
+        {"url": "https://www.taptap.cn/moment/803064688114925608", "title": "首席全胜上大师", "sourceType": "original-player-post", "access": "full-page-text", "displayedPublicationDate": "05/11", "supports": "大师明牌、大师以下暗牌的模式差异"},
+        {"url": "https://www.taptap.cn/review/50508777", "title": "一啖一个芙记 对 洛克王国：世界的评价", "sourceType": "original-player-review", "access": "search-index-text; direct-page-fetch-failed", "displayedModifiedAt": "14小时前", "absolutePublicationDateVerified": false, "supports": "大师以下开局看不到阵容，与大师明牌相区分"},
+        {"url": "https://www.sina.cn/news/detail/5287643426324551.html", "title": "春兔武队PVP配队分享", "sourceType": "player-account-post", "displayedPublicationDate": "2026-04-14", "access": "search-index-text", "supports": "大师段位可看到对方阵容"}
+      ],
+      "notEstablished": ["当前官方界面的确切字段", "双方不同段位匹配时的适用规则", "预览与首发锁定的先后", "血脉和共鸣是否公开", "完整配招是否公开"],
+      "implementation": "现有观察接口仍需按模式区分阵容预览；本轮未修改观察接口或开放全状态"
+    },
+    {
+      "id": "grass-timing-and-bench",
+      "status": "unresolved-after-public-text-search",
+      "knownSources": [
+        {"url": "https://rocom.qq.com/web202507/sub/detail.html?newsid=18852676", "sourceType": "official-S4-announcement", "effectiveDate": "2026-09-10", "supports": "任意血脉；立即15%、回合末15%、持续3回合", "evidenceOrigin": "previous-turn-reviewed-official-announcement"},
+        {"url": "https://www.taptap.cn/moment/859530354707399378", "sourceType": "official-fix-announcement", "publicationDate": "2026-10-15", "supports": "双向光速与第三回合额外触发的修复", "evidenceOrigin": "previous-turn-reviewed-official-announcement; direct-text-fetch-failed-this-turn"}
+      ],
+      "unresolved": ["当前每局次数与冷却", "发动当回合末是否计入三回合", "换下后效果是否保留", "场下是否继续治疗", "场下倒计时是否推进", "回场剩余触发次数", "力竭时效果如何处理"],
+      "excluded": [
+        {"url": "https://shouyou.3dmgame.com/gl/569289.html", "reason": "2025年测试期草魔法描述，早于S4调整"},
+        {"url": "https://rocomwiki.com/items/104001", "reason": "搜索索引仍显示恢复50%，与已读S4调整不一致；直读超时，不能作为现行证据"},
+        {"url": "https://www.sina.cn/news/detail/5350647471804399.html", "reason": "两次指暴风眼操作，并非光合治愈次数；且是PVE攻略"},
+        {"localFile": ".cache/pilot-source/Terms.parsed.json", "termId": "1021", "reason": "光合印记描述为回合末获得能量，不是光合治愈，不能互相替代"}
+      ]
+    }
+  ],
+  "localChecks": {
+    "resonanceUnitTests": {"command": "python -m unittest discover -s test -p pilot_resonance_test.py", "passed": 12, "failed": 0},
+    "manifest": {"command": "python scripts/prepare-pilot.py --offline", "refreshedFrom": "existing-pinned-community-snapshot", "freshNetworkDataClaimed": false},
+    "preflight": {"command": "node scripts/pilot-preflight.mjs", "trainingAllowed": false, "blockerCount": 19},
+    "brief": {"date": "2026-10-16", "pdfPages": 2, "pdfHyperlinks": 34, "characterMarginCheck": "passed", "editableDocx": true},
+    "trainingEpisodesRunThisTurn": 0,
+    "newGameReplayChecks": 0
+  },
+  "verificationBoundary": "已搜到资料不等于已验证所有结算。未确定的项保留空值，不代入最终训练；不以网页抓取日期推断游戏生效日期。",
+  "workplaceConstraint": "本轮仅使用网页文字检索和本地文件操作；未打开可见游戏网页、播放视频或音频。"
+}

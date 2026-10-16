@@ -1,0 +1,58 @@
+{
+  "capturedAt": "2026-10-15T08:12:01.341611+00:00",
+  "modules": [
+    {
+      "name": "Catalog",
+      "revision": 18675,
+      "modifiedAt": "2026-10-15T02:53:27Z",
+      "sha256": "96e6dd6248a395ec7dbc810ad90c9953eb2657d2a68d2e410405ae87b99f3e04",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Catalog?oldid=18675"
+    },
+    {
+      "name": "Index",
+      "revision": 18679,
+      "modifiedAt": "2026-10-15T02:53:31Z",
+      "sha256": "306b98944964adf4945f13fb932507719cf217439cb6a595f708512e03d04bc7",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Index?oldid=18679"
+    },
+    {
+      "name": "Skills",
+      "revision": 16558,
+      "modifiedAt": "2026-09-26T08:35:58Z",
+      "sha256": "ce511bcc0b05af8fef439ba12cb1f698892d4a1fbd56f14f73ec4af0b71a6a6d",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Skills?oldid=16558"
+    },
+    {
+      "name": "Learnsets",
+      "revision": 13094,
+      "modifiedAt": "2026-09-12T18:07:44Z",
+      "sha256": "c6976bb30f5d7cec5ffc275f772a3edc8b769d45b39b7daddec3f670f31923d5",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Learnsets?oldid=13094"
+    },
+    {
+      "name": "Terms",
+      "revision": 7078,
+      "modifiedAt": "2026-09-09T10:00:15Z",
+      "sha256": "f1830685d31732d3634f8857e14eec75b85ea56b923ceef218ede18182056488",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Terms?oldid=7078"
+    },
+    {
+      "name": "Evolutions",
+      "revision": 18677,
+      "modifiedAt": "2026-10-15T02:53:29Z",
+      "sha256": "26c8131c063845e8f59d60f5d46ea3b68fa2a3b29025b153e0699d2026647a13",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Evolutions?oldid=18677"
+    },
+    {
+      "name": "Config",
+      "revision": 18676,
+      "modifiedAt": "2026-10-15T02:53:28Z",
+      "sha256": "ee872c5771eb93cddacf4bdbc3c970d8ee18a110c4863a92463f8ec7b4b7f9df",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Config?oldid=18676"
+    }
+  ],
+  "source": "洛克王国：世界 BWIKI 及贡献者",
+  "license": "CC BY-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "currentGameVersionCertified": false
+}

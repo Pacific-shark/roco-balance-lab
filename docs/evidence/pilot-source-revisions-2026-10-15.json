@@ -1,0 +1,125 @@
+{
+  "requestedUrl": "https://wiki.biligame.com/nrc/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp&titles=Module%3APets%2Fdata%2FCatalog%7CModule%3APets%2Fdata%2FIndex%7CModule%3APets%2Fdata%2FSkills%7CModule%3APets%2Fdata%2FLearnsets%7CModule%3APets%2Fdata%2FTerms%7CModule%3APets%2Fdata%2FEvolutions%7CModule%3APets%2Fdata%2FConfig&format=json",
+  "queriedOn": "2026-10-15",
+  "response": {
+    "batchcomplete": "",
+    "query": {
+      "normalized": [
+        {
+          "from": "Module:Pets/data/Catalog",
+          "to": "模块:Pets/data/Catalog"
+        },
+        {
+          "from": "Module:Pets/data/Index",
+          "to": "模块:Pets/data/Index"
+        },
+        {
+          "from": "Module:Pets/data/Skills",
+          "to": "模块:Pets/data/Skills"
+        },
+        {
+          "from": "Module:Pets/data/Learnsets",
+          "to": "模块:Pets/data/Learnsets"
+        },
+        {
+          "from": "Module:Pets/data/Terms",
+          "to": "模块:Pets/data/Terms"
+        },
+        {
+          "from": "Module:Pets/data/Evolutions",
+          "to": "模块:Pets/data/Evolutions"
+        },
+        {
+          "from": "Module:Pets/data/Config",
+          "to": "模块:Pets/data/Config"
+        }
+      ],
+      "pages": {
+        "6395": {
+          "pageid": 6395,
+          "ns": 828,
+          "title": "模块:Pets/data/Catalog",
+          "revisions": [
+            {
+              "revid": 18675,
+              "parentid": 17306,
+              "timestamp": "2026-10-15T02:53:27Z"
+            }
+          ]
+        },
+        "6393": {
+          "pageid": 6393,
+          "ns": 828,
+          "title": "模块:Pets/data/Config",
+          "revisions": [
+            {
+              "revid": 18676,
+              "parentid": 17307,
+              "timestamp": "2026-10-15T02:53:28Z"
+            }
+          ]
+        },
+        "6398": {
+          "pageid": 6398,
+          "ns": 828,
+          "title": "模块:Pets/data/Evolutions",
+          "revisions": [
+            {
+              "revid": 18677,
+              "parentid": 16539,
+              "timestamp": "2026-10-15T02:53:29Z"
+            }
+          ]
+        },
+        "6394": {
+          "pageid": 6394,
+          "ns": 828,
+          "title": "模块:Pets/data/Index",
+          "revisions": [
+            {
+              "revid": 18679,
+              "parentid": 16418,
+              "timestamp": "2026-10-15T02:53:31Z"
+            }
+          ]
+        },
+        "6397": {
+          "pageid": 6397,
+          "ns": 828,
+          "title": "模块:Pets/data/Learnsets",
+          "revisions": [
+            {
+              "revid": 13094,
+              "parentid": 12252,
+              "timestamp": "2026-09-12T18:07:44Z"
+            }
+          ]
+        },
+        "6396": {
+          "pageid": 6396,
+          "ns": 828,
+          "title": "模块:Pets/data/Skills",
+          "revisions": [
+            {
+              "revid": 16558,
+              "parentid": 13491,
+              "timestamp": "2026-09-26T08:35:58Z"
+            }
+          ]
+        },
+        "6401": {
+          "pageid": 6401,
+          "ns": 828,
+          "title": "模块:Pets/data/Terms",
+          "revisions": [
+            {
+              "revid": 7078,
+              "parentid": 6608,
+              "timestamp": "2026-09-09T10:00:15Z"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "version": "silent-mechanics-check-v1",
+  "reviewedAt": "2026-10-15",
+  "engineVersion": "team-0.2.3-exact-guard",
+  "mode": "public-text-and-local-execution-no-browser-or-media-playback",
+  "formalTrainingStarted": false,
+  "savedNewModels": false,
+  "currentGameVersionCertified": false,
+  "newGameComparisonCases": 0,
+  "checks": [
+    {
+      "id": "exact-defense-reduction",
+      "result": "passed",
+      "scope": "integer-arithmetic-correctness",
+      "implementation": "src/battle-arithmetic.mjs",
+      "wiredIntoEngine": true,
+      "regressions": [
+        {
+          "baseDamage": 100,
+          "reduction": 0.8,
+          "before": 19,
+          "after": 20
+        },
+        {
+          "baseDamage": 100,
+          "reduction": 0.9,
+          "before": 9,
+          "after": 10
+        },
+        {
+          "baseDamage": 200,
+          "reduction": 0.8,
+          "before": 39,
+          "after": 40
+        }
+      ],
+      "integerPercentCrossChecks": 30003,
+      "limitation": "保持原型逐段取整位置；不能据此认证游戏整条伤害链。"
+    },
+    {
+      "id": "external-damage-example",
+      "result": "passed",
+      "scope": "third-party-calculator-consistency",
+      "source": "https://roco-showdown.com/battle-use-guide",
+      "input": {
+        "attack": 234,
+        "defense": 226,
+        "basePower": 75,
+        "fixedPower": 20,
+        "powerBonus": 0.5,
+        "stab": 1.25,
+        "effectiveness": 2
+      },
+      "expected": {
+        "displayPower": 356,
+        "damage": 332
+      },
+      "limitation": "作者公开计算示例，不是游戏中逐帧观察的扣血值，也不是腾讯官方公式。"
+    },
+    {
+      "id": "acquired-defense-cooldown",
+      "result": "passed",
+      "scope": "official-statement-conformance-with-synthetic-acquisition",
+      "source": "https://www.taptap.cn/moment/807717284377265364",
+      "implementation": "src/team-engine.mjs",
+      "tested": "公共冷却期间向当前技能槽注入已注册防御技能，合法动作与执行入口均拒绝；拒绝前不扣资源、不改变状态。",
+      "limitation": "未实现借用/取念/巧变的随机抽取，也未证明抽到冷却技能后的游戏处置方式。"
+    },
+    {
+      "id": "photosynthesis-bloodline-scope",
+      "result": "passed",
+      "scope": "official-prerequisite-conformance",
+      "source": "https://rocom.qq.com/web202507/sub/detail.html?newsid=18852676",
+      "implementation": "scripts/pilot_builds.py",
+      "tested": "普通、草、首领及已登记特殊血脉不被草魔法血脉门槛误拒；仍检查装备、额度、冷却和身份，不借机首领化。",
+      "limitation": "特殊血脉排位准入仍待核准；所有魔法 executionAllowed 保持 false，治疗效果未接入。"
+    },
+    {
+      "id": "simultaneous-exit-order",
+      "result": "passed",
+      "scope": "isolated-official-order-contract",
+      "source": "https://www.taptap.cn/moment/854137912525063544?group_id=228326",
+      "implementation": "src/battle-event-order.mjs",
+      "wiredIntoEngine": false,
+      "tested": "交换双方速度核对离场/换入各自的先后关系；同速列出两条分支，缺少外部结果时拒绝；相同结果可重放。",
+      "samplingDistribution": null,
+      "fullEventInterleavingVerified": false,
+      "limitation": "不假设均匀分布，不假设高速入场一定早于低速离场；旧引擎固定同速优先方尚未迁移。"
+    }
+  ],
+  "testRuns": [
+    {
+      "kind": "node-initial-regression",
+      "passed": 36,
+      "command": "node --test --test-isolation=none --test-name-pattern='^(?!(same seed learns|search freezes))' test/battle-mechanics-audit.test.mjs test/team.test.mjs test/team-builds.test.mjs test/pilot.test.mjs",
+      "exclusionEffective": false,
+      "note": "实际输出36项全部执行；包括旧套件三次100局内存算法训练。没有写模型、没有正式试点训练，不将其冒充0训练运行。"
+    },
+    {
+      "kind": "python",
+      "passed": 32,
+      "command": "python -X utf8 -m unittest discover -s test -p \"*_test.py\" -v",
+      "trainingEpisodes": 0
+    },
+    {
+      "kind": "node-focused-final",
+      "passed": 21,
+      "command": "node --test --test-isolation=none test/battle-mechanics-audit.test.mjs test/pilot.test.mjs",
+      "trainingEpisodes": 0
+    }
+  ],
+  "distinctNodeTestsPassedAcrossRuns": 40,
+  "training": {
+    "formalRuns": 0,
+    "inMemoryUnitRegressionEpisodes": 300,
+    "savedModels": 0,
+    "strengthConclusionsProduced": false
+  },
+  "sourceAccess": [
+    {
+      "url": "https://rocomwiki.com/items/104002",
+      "status": "failed",
+      "detail": "TLS EOF / web text fetch failed; not used as newly verified evidence"
+    },
+    {
+      "url": "https://saurlax.com/blog/rocom-question",
+      "status": "failed",
+      "detail": "web fetch timeout; search snippets contain quiz options, not established answers"
+    }
+  ],
+  "remaining": [
+    "当前版本面板与伤害链的独立游戏样例；尤其生命性格、取整、减伤、多段和附加伤害",
+    "三类共鸣的现行次数、冷却与取消边界，首领化资源/槽位/状态继承，治疗触发细节",
+    "完整事件交错、随机集合与概率，动态技能执行和失败处理；不能只接通排序函数就称复刻完成",
+    "全量合法配置及动态依赖实现、玩家信息边界和学习器迁移"
+  ]
+}

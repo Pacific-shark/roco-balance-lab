@@ -1,0 +1,607 @@
+{
+  "assessedAt": "2026-10-15",
+  "status": "needs-current-game-validation",
+  "latestVersionCertified": false,
+  "gameFormulaVerified": false,
+  "formalTrainingReady": false,
+  "scope": "All rows in the existing 625-form snapshot, including forms not confirmed legal for PVP. These are scalar calculations, not legal full builds or game observations.",
+  "assumptions": {
+    "level": 60,
+    "growthStars": 5,
+    "initialIVs": [
+      0,
+      7,
+      8,
+      9,
+      10
+    ],
+    "candidateNatureMultipliers": [
+      0.9,
+      1,
+      1.2
+    ],
+    "excludes": [
+      "awakening",
+      "battle buffs",
+      "traits modifying stats"
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://news.17173.com/content/03292026/165133482.shtml",
+      "kind": "official-guide",
+      "supports": "Growth increases individual aptitude and the positive nature effect; does not establish the complete current rounding formula."
+    },
+    {
+      "url": "https://www.bilibili.com/opus/1138388134177800227",
+      "kind": "original-player-research-2025-test",
+      "supports": "Historical five-star IV x6 and positive nature x1.2; one-stage final rounding; explicitly test-era, not current-version certification."
+    },
+    {
+      "url": "https://roco-showdown.com/battle-use-guide",
+      "kind": "calculator-author-documentation",
+      "supports": "Two-stage rounding; neutral attack example base128/IV10=234 and defense base121/IV10=226. Calculator examples, not independent game observations."
+    },
+    {
+      "url": "https://github.com/alvg233/rock-pvp-tool",
+      "kind": "calculator-author-documentation",
+      "supports": "Positive nature x1.2 and single-stage formula in README. README has outdated HP description conflicting with its own later changelog; do not use as game ground truth."
+    }
+  ],
+  "checks": {
+    "forms": 625,
+    "scalarCases": 56250,
+    "positiveNatureChangedCases": 18750,
+    "roundingDisagreementCases": 8857
+  },
+  "handChecks": [
+    {
+      "label": "Neutral example, not game verification",
+      "base": 128,
+      "initialIV": 10,
+      "hp": false,
+      "multiplier": 1,
+      "expectedFromCalculator": 234,
+      "actualLegacy": 234
+    },
+    {
+      "label": "Neutral example, not game verification",
+      "base": 121,
+      "initialIV": 10,
+      "hp": false,
+      "multiplier": 1,
+      "expectedFromCalculator": 226,
+      "actualLegacy": 226
+    },
+    {
+      "label": "Nature sensitivity; candidate only",
+      "base": 128,
+      "initialIV": 10,
+      "hp": false,
+      "oldPositive": 252,
+      "candidatePositive": 271
+    }
+  ],
+  "positiveNatureExamples": [
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 405,
+      "singleStageCandidate": 433,
+      "twoStageCandidate": 432
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 7,
+      "nature": "up",
+      "legacy": 444,
+      "singleStageCandidate": 476,
+      "twoStageCandidate": 476
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 8,
+      "nature": "up",
+      "legacy": 450,
+      "singleStageCandidate": 482,
+      "twoStageCandidate": 482
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 455,
+      "singleStageCandidate": 488,
+      "twoStageCandidate": 488
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 10,
+      "nature": "up",
+      "legacy": 461,
+      "singleStageCandidate": 494,
+      "twoStageCandidate": 494
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 162,
+      "singleStageCandidate": 173,
+      "twoStageCandidate": 172
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 7,
+      "nature": "up",
+      "legacy": 189,
+      "singleStageCandidate": 201,
+      "twoStageCandidate": 201
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 8,
+      "nature": "up",
+      "legacy": 192,
+      "singleStageCandidate": 205,
+      "twoStageCandidate": 205
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 195,
+      "singleStageCandidate": 209,
+      "twoStageCandidate": 208
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 10,
+      "nature": "up",
+      "legacy": 199,
+      "singleStageCandidate": 212,
+      "twoStageCandidate": 212
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "def",
+      "base": 107,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 191,
+      "singleStageCandidate": 203,
+      "twoStageCandidate": 204
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "def",
+      "base": 107,
+      "initialIV": 7,
+      "nature": "up",
+      "legacy": 216,
+      "singleStageCandidate": 231,
+      "twoStageCandidate": 231
+    }
+  ],
+  "roundingDiscriminators": [
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 405,
+      "singleStageCandidate": 433,
+      "twoStageCandidate": 432
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 0,
+      "nature": "down",
+      "legacy": 349,
+      "singleStageCandidate": 350,
+      "twoStageCandidate": 349
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "hp",
+      "base": 122,
+      "initialIV": 10,
+      "nature": "down",
+      "legacy": 395,
+      "singleStageCandidate": 396,
+      "twoStageCandidate": 395
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 162,
+      "singleStageCandidate": 173,
+      "twoStageCandidate": 172
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "atk",
+      "base": 84,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 195,
+      "singleStageCandidate": 209,
+      "twoStageCandidate": 208
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "def",
+      "base": 107,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 191,
+      "singleStageCandidate": 203,
+      "twoStageCandidate": 204
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "def",
+      "base": 107,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 223,
+      "singleStageCandidate": 239,
+      "twoStageCandidate": 238
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "def",
+      "base": 107,
+      "initialIV": 9,
+      "nature": "down",
+      "legacy": 191,
+      "singleStageCandidate": 192,
+      "twoStageCandidate": 191
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "spa",
+      "base": 84,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 162,
+      "singleStageCandidate": 173,
+      "twoStageCandidate": 172
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "spa",
+      "base": 84,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 195,
+      "singleStageCandidate": 209,
+      "twoStageCandidate": 208
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "spd",
+      "base": 107,
+      "initialIV": 0,
+      "nature": "up",
+      "legacy": 191,
+      "singleStageCandidate": 203,
+      "twoStageCandidate": 204
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "spd",
+      "base": 107,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 223,
+      "singleStageCandidate": 239,
+      "twoStageCandidate": 238
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "spd",
+      "base": 107,
+      "initialIV": 9,
+      "nature": "down",
+      "legacy": 191,
+      "singleStageCandidate": 192,
+      "twoStageCandidate": 191
+    },
+    {
+      "id": "pet_000558",
+      "title": "圣光迪莫",
+      "stat": "spe",
+      "base": 92,
+      "initialIV": 8,
+      "nature": "up",
+      "legacy": 202,
+      "singleStageCandidate": 215,
+      "twoStageCandidate": 216
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "hp",
+      "base": 120,
+      "initialIV": 8,
+      "nature": "down",
+      "legacy": 384,
+      "singleStageCandidate": 383,
+      "twoStageCandidate": 384
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "atk",
+      "base": 80,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 191,
+      "singleStageCandidate": 203,
+      "twoStageCandidate": 204
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "def",
+      "base": 113,
+      "initialIV": 7,
+      "nature": "up",
+      "legacy": 223,
+      "singleStageCandidate": 239,
+      "twoStageCandidate": 238
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "def",
+      "base": 113,
+      "initialIV": 7,
+      "nature": "down",
+      "legacy": 191,
+      "singleStageCandidate": 192,
+      "twoStageCandidate": 191
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "def",
+      "base": 113,
+      "initialIV": 10,
+      "nature": "up",
+      "legacy": 234,
+      "singleStageCandidate": 251,
+      "twoStageCandidate": 250
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "def",
+      "base": 113,
+      "initialIV": 10,
+      "nature": "down",
+      "legacy": 200,
+      "singleStageCandidate": 201,
+      "twoStageCandidate": 200
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "spa",
+      "base": 80,
+      "initialIV": 9,
+      "nature": "up",
+      "legacy": 191,
+      "singleStageCandidate": 203,
+      "twoStageCandidate": 204
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "spd",
+      "base": 113,
+      "initialIV": 7,
+      "nature": "up",
+      "legacy": 223,
+      "singleStageCandidate": 239,
+      "twoStageCandidate": 238
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "spd",
+      "base": 113,
+      "initialIV": 7,
+      "nature": "down",
+      "legacy": 191,
+      "singleStageCandidate": 192,
+      "twoStageCandidate": 191
+    },
+    {
+      "id": "pet_000561",
+      "title": "圣水迪莫",
+      "stat": "spd",
+      "base": 113,
+      "initialIV": 10,
+      "nature": "up",
+      "legacy": 234,
+      "singleStageCandidate": 251,
+      "twoStageCandidate": 250
+    }
+  ],
+  "currentGameObservedPanels": [],
+  "historicalGameFixture": {
+    "sourceUrl": "https://www.bilibili.com/video/BV1zwXDBBE1m/",
+    "author": "新月sama",
+    "publishedAt": "2026-03-29",
+    "observedAt": "2026-10-15",
+    "sourceTimeRange": "00:25–00:34",
+    "screenshot": "stat-panel-video-0028.png",
+    "formulaScreenshot": "stat-formula-video-0043.png",
+    "kind": "game-panel-in-original-author-video",
+    "versionScope": "公测初期；不是2026年10月当前版本样本，录像未显示精确客户端版本",
+    "pet": "音速犬",
+    "mode": "闪耀大赛队伍编辑",
+    "level": 60,
+    "growthStars": 5,
+    "nature": "固执",
+    "natureEvidence": "画面显示物攻绿箭头、魔攻红箭头；名称由本项目性格表映射",
+    "baseStats": {
+      "hp": 85,
+      "atk": 128,
+      "def": 101,
+      "spa": 46,
+      "spd": 82,
+      "spe": 120
+    },
+    "displayedAptitude": {
+      "hp": 0,
+      "atk": 48,
+      "def": 48,
+      "spa": 0,
+      "spd": 0,
+      "spe": 42
+    },
+    "initialIVs": {
+      "hp": 0,
+      "atk": 8,
+      "def": 8,
+      "spa": 0,
+      "spd": 0,
+      "spe": 7
+    },
+    "ivEvidence": "画面直接显示48、48、42；初始8、8、7按五星六倍关系折算，并非独立显示",
+    "observedPanel": {
+      "hp": 315,
+      "atk": 262,
+      "def": 198,
+      "spa": 105,
+      "spd": 150,
+      "spe": 215
+    },
+    "unknown": [
+      "具体客户端版本",
+      "觉醒状态未显示；未将觉醒作为额外加成"
+    ],
+    "currentSeasonVerified": false
+  },
+  "historicalObservedChecks": [
+    {
+      "stat": "hp",
+      "observed": 315,
+      "corrected": 315,
+      "legacy": 315,
+      "singleStage": 315
+    },
+    {
+      "stat": "atk",
+      "observed": 262,
+      "corrected": 262,
+      "legacy": 245,
+      "singleStage": 263
+    },
+    {
+      "stat": "def",
+      "observed": 198,
+      "corrected": 198,
+      "legacy": 198,
+      "singleStage": 198
+    },
+    {
+      "stat": "spa",
+      "observed": 105,
+      "corrected": 105,
+      "legacy": 105,
+      "singleStage": 105
+    },
+    {
+      "stat": "spd",
+      "observed": 150,
+      "corrected": 150,
+      "legacy": 150,
+      "singleStage": 150
+    },
+    {
+      "stat": "spe",
+      "observed": 215,
+      "corrected": 215,
+      "legacy": 215,
+      "singleStage": 215
+    }
+  ],
+  "implementationStatus": "Corrected engine matches all six observed launch-version stats. Current-season certification remains blocked.",
+  "requiredObservationFields": [
+    "source URL or local screenshot/video path",
+    "capture date and game patch",
+    "form ID",
+    "PVP mode",
+    "level",
+    "growth stars",
+    "six base stats with version",
+    "six initial IVs",
+    "nature",
+    "six observed panel stats",
+    "awakening state and battle modifiers",
+    "image region or video timestamp"
+  ],
+  "acceptance": [
+    "Verify current five-star nature coefficients and IV growth against actual game panels.",
+    "Use discriminating inputs where the candidates disagree; include HP and non-HP, positive/negative/neutral nature, IV0/7/8/9/10 and half-integer boundaries.",
+    "Record observed values before evaluating formulas; never generate observed values with the calculator.",
+    "Resolve all mismatches and obtain independent holdout observations before approving a formula. Passing these diagnostic comparisons alone cannot certify it.",
+    "After approval, version the engine formula and invalidate old policy weights/evaluations; rerun calibration before training."
+  ]
+}
