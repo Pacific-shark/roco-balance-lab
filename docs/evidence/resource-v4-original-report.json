@@ -1,0 +1,6654 @@
+{
+  "scope": "curriculum-method-pilot",
+  "status": "completed",
+  "config": {
+    "architecture": "entity_mlp",
+    "seed": 42,
+    "steps": 4096,
+    "envs": 4,
+    "horizon": 32,
+    "hidden": 64,
+    "epochs": 3,
+    "learningRate": 0.0003,
+    "threads": 1,
+    "maxSeconds": 240,
+    "shaping": 0,
+    "evalEvery": 8192,
+    "trainPool": 32,
+    "parentTrainingSteps": 32768,
+    "curriculum": true
+  },
+  "trainingSteps": 4096,
+  "completedTrainingGames": 2508,
+  "apiTokens": 0,
+  "canPublishBalanceConclusion": false,
+  "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+  "parentCheckpointSha256": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+  "initialHashes": [
+    "ac0d0ebf72ceeb4b440fab0589f2a6322d331559c6f68996e9320e1815e437f0",
+    "d90a9f250d804963d99fcc07a92c699f1eebe3bc3ee58ce0e6c900e60f0bbb63"
+  ],
+  "parametersPerAgent": 45122,
+  "updates": [
+    {
+      "agent": 0,
+      "steps": 32,
+      "games": 32,
+      "wins": 0,
+      "retentionKL": 2.895216312026605e-05,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": 0.0409279428422451,
+        "valueLoss": 0.4027695556481679,
+        "entropy": 0.15517344077428183,
+        "gradientNorm": 2.832088311513265,
+        "approxKL": 1.2715269501010578e-06
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 64,
+      "games": 63,
+      "wins": 1,
+      "retentionKL": 0.00013898516772314906,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004105016589164734,
+        "valueLoss": 0.39358700315157574,
+        "entropy": 0.18834379812081656,
+        "gradientNorm": 2.1505563259124756,
+        "approxKL": 6.635890652736028e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 96,
+      "games": 94,
+      "wins": 2,
+      "retentionKL": 0.00041568820597603917,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.005836414794127147,
+        "valueLoss": 0.32068360845247906,
+        "entropy": 0.211558664838473,
+        "gradientNorm": 1.8435356219609578,
+        "approxKL": 5.534644393871228e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 128,
+      "games": 124,
+      "wins": 4,
+      "retentionKL": 0.0009000365389510989,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.008925886203845343,
+        "valueLoss": 0.44984205563863117,
+        "entropy": 0.2542026837666829,
+        "gradientNorm": 1.7728652159372966,
+        "approxKL": 0.0001319746564452847
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 160,
+      "games": 155,
+      "wins": 5,
+      "retentionKL": 0.0016007251106202602,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0068921782076358795,
+        "valueLoss": 0.249567449092865,
+        "entropy": 0.27981942892074585,
+        "gradientNorm": 1.3711519638697307,
+        "approxKL": 7.50758529951175e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 192,
+      "games": 185,
+      "wins": 7,
+      "retentionKL": 0.002509420970454812,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.008836299180984497,
+        "valueLoss": 0.44539915521939594,
+        "entropy": 0.3323359191417694,
+        "gradientNorm": 1.5805790026982625,
+        "approxKL": 0.00021788493419686952
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 224,
+      "games": 214,
+      "wins": 10,
+      "retentionKL": 0.0035825385712087154,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01099737361073494,
+        "valueLoss": 0.6614462733268738,
+        "entropy": 0.38614168763160706,
+        "gradientNorm": 2.173502763112386,
+        "approxKL": 0.00018948611492911974
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 256,
+      "games": 244,
+      "wins": 12,
+      "retentionKL": 0.004783393815159798,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.009092068920532862,
+        "valueLoss": 0.4433567523956299,
+        "entropy": 0.4282216827074687,
+        "gradientNorm": 1.6500504811604817,
+        "approxKL": 0.0001233040044705073
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 288,
+      "games": 273,
+      "wins": 14,
+      "retentionKL": 0.005933190230280161,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007211469113826752,
+        "valueLoss": 0.5075831413269043,
+        "entropy": 0.47489205996195477,
+        "gradientNorm": 1.5214132865269978,
+        "approxKL": 0.0001636137409756581
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 320,
+      "games": 296,
+      "wins": 18,
+      "retentionKL": 0.006850941572338343,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0072257692615191145,
+        "valueLoss": 0.9488264520963033,
+        "entropy": 0.5225019852320353,
+        "gradientNorm": 2.3732449213663735,
+        "approxKL": 0.00021106699326386055
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 352,
+      "games": 325,
+      "wins": 20,
+      "retentionKL": 0.007715238723903894,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.005940736581881841,
+        "valueLoss": 0.4812231659889221,
+        "entropy": 0.5663221081097921,
+        "gradientNorm": 1.2538692553838093,
+        "approxKL": 0.00013480300549417734
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 384,
+      "games": 350,
+      "wins": 25,
+      "retentionKL": 0.00860715750604868,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007781028747558594,
+        "valueLoss": 0.9171611070632935,
+        "entropy": 0.6048611998558044,
+        "gradientNorm": 2.1155010064442954,
+        "approxKL": 0.00022147068132956824
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 416,
+      "games": 376,
+      "wins": 28,
+      "retentionKL": 0.009533166885375977,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007916346192359924,
+        "valueLoss": 0.6276482343673706,
+        "entropy": 0.6326641837755839,
+        "gradientNorm": 1.5299758911132812,
+        "approxKL": 0.00013694000275184712
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 448,
+      "games": 403,
+      "wins": 32,
+      "retentionKL": 0.010630428791046143,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006749703238407771,
+        "valueLoss": 0.7480517625808716,
+        "entropy": 0.6829080382982889,
+        "gradientNorm": 1.451046625773112,
+        "approxKL": 0.00016053696162998676
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 480,
+      "games": 428,
+      "wins": 37,
+      "retentionKL": 0.011905933730304241,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006924261251697317,
+        "valueLoss": 0.804046094417572,
+        "entropy": 0.7246008316675822,
+        "gradientNorm": 1.5942158699035645,
+        "approxKL": 0.0001643812283873558
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 512,
+      "games": 455,
+      "wins": 43,
+      "retentionKL": 0.013317272067070007,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006034240126609802,
+        "valueLoss": 0.8327123324076334,
+        "entropy": 0.7466761867205302,
+        "gradientNorm": 1.3417396545410156,
+        "approxKL": 0.0001431865772853295
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 544,
+      "games": 478,
+      "wins": 48,
+      "retentionKL": 0.014779855497181416,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006595355768998464,
+        "valueLoss": 0.802311360836029,
+        "entropy": 0.7489435076713562,
+        "gradientNorm": 1.5562316179275513,
+        "approxKL": 0.00011013083470364411
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 576,
+      "games": 503,
+      "wins": 56,
+      "retentionKL": 0.01626800373196602,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006918653845787048,
+        "valueLoss": 0.9368309179941813,
+        "entropy": 0.7840556899706522,
+        "gradientNorm": 1.7859805822372437,
+        "approxKL": 9.858379295716684e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 608,
+      "games": 524,
+      "wins": 64,
+      "retentionKL": 0.017484910786151886,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.003585550934076309,
+        "valueLoss": 0.9458097219467163,
+        "entropy": 0.7531105875968933,
+        "gradientNorm": 2.005014499028524,
+        "approxKL": 7.127334053317706e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 640,
+      "games": 550,
+      "wins": 70,
+      "retentionKL": 0.018687263131141663,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.005324540038903554,
+        "valueLoss": 0.8486900329589844,
+        "entropy": 0.8532994985580444,
+        "gradientNorm": 1.4160397450129192,
+        "approxKL": 6.075420727332433e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 672,
+      "games": 575,
+      "wins": 75,
+      "retentionKL": 0.020053597167134285,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004590274145205815,
+        "valueLoss": 0.8181510170300802,
+        "entropy": 0.8374873797098795,
+        "gradientNorm": 1.428698976834615,
+        "approxKL": 6.375407489637534e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 704,
+      "games": 599,
+      "wins": 81,
+      "retentionKL": 0.021236363798379898,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0036264906326929727,
+        "valueLoss": 0.8214515248934428,
+        "entropy": 0.8410930037498474,
+        "gradientNorm": 0.9360786279042562,
+        "approxKL": 5.689007230103016e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 736,
+      "games": 626,
+      "wins": 85,
+      "retentionKL": 0.022297604009509087,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00465728094180425,
+        "valueLoss": 0.7633470892906189,
+        "entropy": 0.9020244479179382,
+        "gradientNorm": 1.8816522757212322,
+        "approxKL": 4.656271388133367e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 768,
+      "games": 652,
+      "wins": 90,
+      "retentionKL": 0.023473670706152916,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004684219757715861,
+        "valueLoss": 0.7598888874053955,
+        "entropy": 0.9012672702471415,
+        "gradientNorm": 1.2491774559020996,
+        "approxKL": 4.459300544112921e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 800,
+      "games": 676,
+      "wins": 97,
+      "retentionKL": 0.024574104696512222,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0037325285375118256,
+        "valueLoss": 0.8492149909337362,
+        "entropy": 0.8860930403073629,
+        "gradientNorm": 1.280807654062907,
+        "approxKL": 3.739089394609133e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 832,
+      "games": 697,
+      "wins": 104,
+      "retentionKL": 0.025045109912753105,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.002047460526227951,
+        "valueLoss": 0.8254680037498474,
+        "entropy": 0.8543929855028788,
+        "gradientNorm": 1.673647403717041,
+        "approxKL": 1.7384843279918034e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 864,
+      "games": 721,
+      "wins": 112,
+      "retentionKL": 0.025188187137246132,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0031369229157765708,
+        "valueLoss": 0.8275525371233622,
+        "entropy": 0.870868980884552,
+        "gradientNorm": 1.3478363752365112,
+        "approxKL": 1.3480273385842642e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 896,
+      "games": 743,
+      "wins": 119,
+      "retentionKL": 0.025407414883375168,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.003408068170150121,
+        "valueLoss": 0.7781775792439779,
+        "entropy": 0.8734376827875773,
+        "gradientNorm": 1.2072147528330486,
+        "approxKL": 1.5956660111745197e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 928,
+      "games": 764,
+      "wins": 127,
+      "retentionKL": 0.025732330977916718,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0038800264398256936,
+        "valueLoss": 0.7427067756652832,
+        "entropy": 0.8347719510396322,
+        "gradientNorm": 1.343946099281311,
+        "approxKL": 1.8665605845550697e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 960,
+      "games": 783,
+      "wins": 136,
+      "retentionKL": 0.026078317314386368,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0038278947273890176,
+        "valueLoss": 0.6918827096621195,
+        "entropy": 0.7694105903307596,
+        "gradientNorm": 1.5655854940414429,
+        "approxKL": 1.870485721156001e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 992,
+      "games": 802,
+      "wins": 144,
+      "retentionKL": 0.02623899094760418,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.003969018658002217,
+        "valueLoss": 0.6778858304023743,
+        "entropy": 0.8115733663241068,
+        "gradientNorm": 1.0168463786443074,
+        "approxKL": 2.191204112023115e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1024,
+      "games": 827,
+      "wins": 151,
+      "retentionKL": 0.0261532012373209,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.003784921020269394,
+        "valueLoss": 0.8775536815325419,
+        "entropy": 0.9083847602208456,
+        "gradientNorm": 2.095884164174398,
+        "approxKL": 1.8032170676936705e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1056,
+      "games": 848,
+      "wins": 160,
+      "retentionKL": 0.02598225325345993,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00449069341023763,
+        "valueLoss": 0.7280514041582743,
+        "entropy": 0.8525667985280355,
+        "gradientNorm": 1.0125697255134583,
+        "approxKL": 2.3693292556951444e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1088,
+      "games": 870,
+      "wins": 168,
+      "retentionKL": 0.02609807439148426,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004961461449662845,
+        "valueLoss": 0.7703017592430115,
+        "entropy": 0.8651206096013387,
+        "gradientNorm": 1.4059926271438599,
+        "approxKL": 2.6582701442142326e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1120,
+      "games": 889,
+      "wins": 176,
+      "retentionKL": 0.026367541402578354,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006395302712917328,
+        "valueLoss": 0.791543980439504,
+        "entropy": 0.7929031054178873,
+        "gradientNorm": 1.4309794505437214,
+        "approxKL": 7.84122385084629e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1152,
+      "games": 916,
+      "wins": 180,
+      "retentionKL": 0.026715610176324844,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004637047648429871,
+        "valueLoss": 0.8958152135213217,
+        "entropy": 0.9715981086095175,
+        "gradientNorm": 3.063227812449137,
+        "approxKL": 2.8997038801511128e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1184,
+      "games": 935,
+      "wins": 189,
+      "retentionKL": 0.027179459109902382,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004934612661600113,
+        "valueLoss": 0.6435268918673197,
+        "entropy": 0.8033234079678854,
+        "gradientNorm": 1.525826374689738,
+        "approxKL": 2.6389335592587788e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1216,
+      "games": 958,
+      "wins": 199,
+      "retentionKL": 0.02779971994459629,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0059455086787541704,
+        "valueLoss": 0.7422658801078796,
+        "entropy": 0.871331254641215,
+        "gradientNorm": 1.422071099281311,
+        "approxKL": 3.687001299113035e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1248,
+      "games": 975,
+      "wins": 209,
+      "retentionKL": 0.028444696217775345,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00622378538052241,
+        "valueLoss": 0.6302014390627543,
+        "entropy": 0.7678928772608439,
+        "gradientNorm": 2.278729279836019,
+        "approxKL": 4.2475915203491844e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1280,
+      "games": 998,
+      "wins": 219,
+      "retentionKL": 0.02916146256029606,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007323009272416432,
+        "valueLoss": 0.7321138779322306,
+        "entropy": 0.8776537378629049,
+        "gradientNorm": 1.5091674327850342,
+        "approxKL": 5.722076942523321e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1312,
+      "games": 1016,
+      "wins": 228,
+      "retentionKL": 0.03007267229259014,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.008458573371171951,
+        "valueLoss": 0.6051992774009705,
+        "entropy": 0.7675153414408366,
+        "gradientNorm": 1.7349343697230022,
+        "approxKL": 7.127465020554762e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1344,
+      "games": 1036,
+      "wins": 237,
+      "retentionKL": 0.03125482052564621,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.009184324803451696,
+        "valueLoss": 0.6336936752001444,
+        "entropy": 0.7585887511571249,
+        "gradientNorm": 1.6774184703826904,
+        "approxKL": 8.294998163667817e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1376,
+      "games": 1053,
+      "wins": 249,
+      "retentionKL": 0.032647714018821716,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.008032049983739853,
+        "valueLoss": 0.5013730823993683,
+        "entropy": 0.745520810286204,
+        "gradientNorm": 2.1448022524515786,
+        "approxKL": 7.044475448007385e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1408,
+      "games": 1068,
+      "wins": 260,
+      "retentionKL": 0.03416110575199127,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007678753075500329,
+        "valueLoss": 0.404432346423467,
+        "entropy": 0.6643882393836975,
+        "gradientNorm": 1.9172346989313762,
+        "approxKL": 6.493909556108217e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1440,
+      "games": 1085,
+      "wins": 268,
+      "retentionKL": 0.035908009856939316,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.009761585543553034,
+        "valueLoss": 0.7819382349650065,
+        "entropy": 0.6700217723846436,
+        "gradientNorm": 2.3749399185180664,
+        "approxKL": 0.00012582541482212642
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1472,
+      "games": 1103,
+      "wins": 278,
+      "retentionKL": 0.03798258304595947,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.011081264664729437,
+        "valueLoss": 0.56694229443868,
+        "entropy": 0.6992762088775635,
+        "gradientNorm": 2.0997369289398193,
+        "approxKL": 0.00011510138089458148
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1504,
+      "games": 1121,
+      "wins": 291,
+      "retentionKL": 0.040406543761491776,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.011863889793554941,
+        "valueLoss": 0.4581575194994609,
+        "entropy": 0.7367627620697021,
+        "gradientNorm": 2.135232448577881,
+        "approxKL": 0.00012982448485369483
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1536,
+      "games": 1138,
+      "wins": 301,
+      "retentionKL": 0.04319475218653679,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.013116968174775442,
+        "valueLoss": 0.5350943406422933,
+        "entropy": 0.6784249941507975,
+        "gradientNorm": 2.2752453486124673,
+        "approxKL": 0.0001601351541467011
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1568,
+      "games": 1153,
+      "wins": 313,
+      "retentionKL": 0.04632708430290222,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.010885149240493774,
+        "valueLoss": 0.3130221764246623,
+        "entropy": 0.608539362748464,
+        "gradientNorm": 1.8849406639734905,
+        "approxKL": 0.00013090099673718214
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1600,
+      "games": 1169,
+      "wins": 323,
+      "retentionKL": 0.04983044043183327,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.015258523325125376,
+        "valueLoss": 0.4730149308840434,
+        "entropy": 0.6195870836575826,
+        "gradientNorm": 2.4619144598642984,
+        "approxKL": 0.0002527678249559055
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1632,
+      "games": 1181,
+      "wins": 334,
+      "retentionKL": 0.05344722792506218,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006828218698501587,
+        "valueLoss": 0.1977816422780355,
+        "entropy": 0.5778540174166361,
+        "gradientNorm": 1.495007594426473,
+        "approxKL": 8.04425993313392e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1664,
+      "games": 1195,
+      "wins": 346,
+      "retentionKL": 0.05720990151166916,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.009477769335110983,
+        "valueLoss": 0.2567852834860484,
+        "entropy": 0.546059250831604,
+        "gradientNorm": 1.7698783079783122,
+        "approxKL": 8.984635739276807e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1696,
+      "games": 1211,
+      "wins": 358,
+      "retentionKL": 0.06134762242436409,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.013292355462908745,
+        "valueLoss": 0.3879668116569519,
+        "entropy": 0.5129435062408447,
+        "gradientNorm": 2.3900046348571777,
+        "approxKL": 0.00017026877806832394
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1728,
+      "games": 1225,
+      "wins": 371,
+      "retentionKL": 0.06599599123001099,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.009502290864475071,
+        "valueLoss": 0.18685249984264374,
+        "entropy": 0.5233097275098165,
+        "gradientNorm": 1.5721112092336018,
+        "approxKL": 0.00010994447317595284
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1760,
+      "games": 1241,
+      "wins": 383,
+      "retentionKL": 0.07103986293077469,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01418992131948471,
+        "valueLoss": 0.3951460123062134,
+        "entropy": 0.45550509293874103,
+        "gradientNorm": 2.648765484491984,
+        "approxKL": 0.00020979154699792465
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1792,
+      "games": 1255,
+      "wins": 394,
+      "retentionKL": 0.07625257223844528,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012617316717902819,
+        "valueLoss": 0.3299358586470286,
+        "entropy": 0.4557544191678365,
+        "gradientNorm": 2.3382676442464194,
+        "approxKL": 0.00017128525845085582
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1824,
+      "games": 1270,
+      "wins": 406,
+      "retentionKL": 0.08178157359361649,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.014066371445854505,
+        "valueLoss": 0.3209058145682017,
+        "entropy": 0.41552917162577313,
+        "gradientNorm": 2.4947712421417236,
+        "approxKL": 0.0002311452990397811
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1856,
+      "games": 1285,
+      "wins": 420,
+      "retentionKL": 0.08773837983608246,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007715857898195584,
+        "valueLoss": 0.17551928758621216,
+        "entropy": 0.46261512239774066,
+        "gradientNorm": 1.4118779102961223,
+        "approxKL": 7.232614249611895e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1888,
+      "games": 1298,
+      "wins": 432,
+      "retentionKL": 0.0940416157245636,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0073901986082394915,
+        "valueLoss": 0.17603860795497894,
+        "entropy": 0.4320884148279826,
+        "gradientNorm": 1.3661588430404663,
+        "approxKL": 7.524081350614627e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1920,
+      "games": 1312,
+      "wins": 445,
+      "retentionKL": 0.1006132960319519,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007523845881223679,
+        "valueLoss": 0.17426136136054993,
+        "entropy": 0.4273245135943095,
+        "gradientNorm": 1.383925159772237,
+        "approxKL": 7.771378538260858e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1952,
+      "games": 1327,
+      "wins": 458,
+      "retentionKL": 0.10732829570770264,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.011053413152694702,
+        "valueLoss": 0.2543305953343709,
+        "entropy": 0.4045969446500142,
+        "gradientNorm": 2.1092705726623535,
+        "approxKL": 0.00015204260125756264
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 1984,
+      "games": 1338,
+      "wins": 469,
+      "retentionKL": 0.11253644526004791,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00034351150194803876,
+        "valueLoss": 0.0826420709490776,
+        "entropy": 0.4446225663026174,
+        "gradientNorm": 0.2877236306667328,
+        "approxKL": 2.5191014477362234e-05
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 2016,
+      "games": 1352,
+      "wins": 483,
+      "retentionKL": 0.1169390007853508,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0012219821413358052,
+        "valueLoss": 0.08220149576663971,
+        "entropy": 0.42675450444221497,
+        "gradientNorm": 0.4513336618741353,
+        "approxKL": 2.2986981396873793e-06
+      }
+    },
+    {
+      "agent": 0,
+      "steps": 2048,
+      "games": 1364,
+      "wins": 495,
+      "retentionKL": 0.12032254040241241,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00039573510487874347,
+        "valueLoss": 0.06508844842513402,
+        "entropy": 0.4519004126389821,
+        "gradientNorm": 0.37127502759297687,
+        "approxKL": 2.013222547248006e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 32,
+      "games": 31,
+      "wins": 1,
+      "retentionKL": 6.0563223087228835e-05,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006790640453497569,
+        "valueLoss": 0.7916813691457113,
+        "entropy": 0.14162234961986542,
+        "gradientNorm": 3.663389523824056,
+        "approxKL": 7.393191723773877e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 64,
+      "games": 61,
+      "wins": 2,
+      "retentionKL": 0.0001897274050861597,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004987788697083791,
+        "valueLoss": 0.6472426255544027,
+        "entropy": 0.16001925865809122,
+        "gradientNorm": 2.9263156255086265,
+        "approxKL": 5.741706506038705e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 96,
+      "games": 92,
+      "wins": 3,
+      "retentionKL": 0.0003849629429168999,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.005831576883792877,
+        "valueLoss": 0.5072314838568369,
+        "entropy": 0.18098937968413034,
+        "gradientNorm": 2.8161142667134604,
+        "approxKL": 5.7487787368396916e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 128,
+      "games": 124,
+      "wins": 3,
+      "retentionKL": 0.0006089683156460524,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": 0.059504106640815735,
+        "valueLoss": 0.29366397857666016,
+        "entropy": 0.18748929599920908,
+        "gradientNorm": 2.4082682927449546,
+        "approxKL": 2.353025289873282e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 160,
+      "games": 155,
+      "wins": 4,
+      "retentionKL": 0.0008935222285799682,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0049225712815920515,
+        "valueLoss": 0.32773706316947937,
+        "entropy": 0.22272412975629172,
+        "gradientNorm": 2.1082619031270347,
+        "approxKL": 3.940146416425705e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 192,
+      "games": 185,
+      "wins": 5,
+      "retentionKL": 0.0012685232795774937,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.005079203595717748,
+        "valueLoss": 0.32762544353802997,
+        "entropy": 0.244220236937205,
+        "gradientNorm": 1.6321552991867065,
+        "approxKL": 5.6468668238570295e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 224,
+      "games": 211,
+      "wins": 8,
+      "retentionKL": 0.0016794801922515035,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.008756875991821289,
+        "valueLoss": 0.7843300700187683,
+        "entropy": 0.289798508087794,
+        "gradientNorm": 2.5562992890675864,
+        "approxKL": 0.00017747296563660106
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 256,
+      "games": 237,
+      "wins": 13,
+      "retentionKL": 0.0021872343495488167,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0101247305671374,
+        "valueLoss": 1.0457170009613037,
+        "entropy": 0.3567894995212555,
+        "gradientNorm": 3.26961882909139,
+        "approxKL": 0.0003173477210414906
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 288,
+      "games": 265,
+      "wins": 15,
+      "retentionKL": 0.0028109026607125998,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007759119073549907,
+        "valueLoss": 0.478363037109375,
+        "entropy": 0.3663802444934845,
+        "gradientNorm": 1.9369467894236247,
+        "approxKL": 0.0002185678070721527
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 320,
+      "games": 288,
+      "wins": 20,
+      "retentionKL": 0.0035149333998560905,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.011060517281293869,
+        "valueLoss": 1.069859464963277,
+        "entropy": 0.42235425114631653,
+        "gradientNorm": 3.5381081899007163,
+        "approxKL": 0.0003246930136810988
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 352,
+      "games": 319,
+      "wins": 22,
+      "retentionKL": 0.0043311286717653275,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0063261861602465315,
+        "valueLoss": 0.31074031194051105,
+        "entropy": 0.4259631633758545,
+        "gradientNorm": 1.601717511812846,
+        "approxKL": 8.463412329244117e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 384,
+      "games": 346,
+      "wins": 25,
+      "retentionKL": 0.005278822034597397,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.010865590845545134,
+        "valueLoss": 0.623739222685496,
+        "entropy": 0.48362959424654645,
+        "gradientNorm": 2.6579137643178306,
+        "approxKL": 0.00023273276747204363
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 416,
+      "games": 371,
+      "wins": 31,
+      "retentionKL": 0.0063111684285104275,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012137946983178457,
+        "valueLoss": 1.0125717322031658,
+        "entropy": 0.5406473875045776,
+        "gradientNorm": 3.45989720026652,
+        "approxKL": 0.0002947802228542666
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 448,
+      "games": 396,
+      "wins": 36,
+      "retentionKL": 0.0073636192828416824,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.011236650248368582,
+        "valueLoss": 0.9112582206726074,
+        "entropy": 0.5406546592712402,
+        "gradientNorm": 3.248537540435791,
+        "approxKL": 0.00019995382172055542
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 480,
+      "games": 420,
+      "wins": 43,
+      "retentionKL": 0.008440844714641571,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.014030062283078829,
+        "valueLoss": 1.1293865442276,
+        "entropy": 0.6113542914390564,
+        "gradientNorm": 4.1597293217976885,
+        "approxKL": 0.0002748115415063997
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 512,
+      "games": 444,
+      "wins": 48,
+      "retentionKL": 0.009551724418997765,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012874898811181387,
+        "valueLoss": 0.8909994761149088,
+        "entropy": 0.600584884484609,
+        "gradientNorm": 3.5550604661305747,
+        "approxKL": 0.00022075364540796727
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 544,
+      "games": 467,
+      "wins": 54,
+      "retentionKL": 0.010655248537659645,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0130263219277064,
+        "valueLoss": 0.9526098370552063,
+        "entropy": 0.6252713004748026,
+        "gradientNorm": 3.7153943379720054,
+        "approxKL": 0.0002367563865846023
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 576,
+      "games": 485,
+      "wins": 64,
+      "retentionKL": 0.011731404811143875,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012317347650726637,
+        "valueLoss": 1.2618035475413005,
+        "entropy": 0.6199521621068319,
+        "gradientNorm": 4.873242060343425,
+        "approxKL": 0.0002417811677635958
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 608,
+      "games": 508,
+      "wins": 69,
+      "retentionKL": 0.012817014940083027,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.013091289748748144,
+        "valueLoss": 0.8087421854337057,
+        "entropy": 0.6374767621358236,
+        "gradientNorm": 3.567434390385946,
+        "approxKL": 0.00021167693679065755
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 640,
+      "games": 530,
+      "wins": 76,
+      "retentionKL": 0.014027958735823631,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01518622413277626,
+        "valueLoss": 0.8857192198435465,
+        "entropy": 0.6640482544898987,
+        "gradientNorm": 4.092668692270915,
+        "approxKL": 0.0002584102767286822
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 672,
+      "games": 550,
+      "wins": 84,
+      "retentionKL": 0.015376885421574116,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.015194850663344065,
+        "valueLoss": 0.8871925870577494,
+        "entropy": 0.643838127454122,
+        "gradientNorm": 3.980310837427775,
+        "approxKL": 0.0002493037172826007
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 704,
+      "games": 570,
+      "wins": 93,
+      "retentionKL": 0.01691683754324913,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01584692547718684,
+        "valueLoss": 0.8687909046808878,
+        "entropy": 0.6608709494272867,
+        "gradientNorm": 4.413085460662842,
+        "approxKL": 0.00026307279282870394
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 736,
+      "games": 589,
+      "wins": 103,
+      "retentionKL": 0.018582236021757126,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01579600541541974,
+        "valueLoss": 0.8286556204160055,
+        "entropy": 0.652596672375997,
+        "gradientNorm": 4.464239597320557,
+        "approxKL": 0.0002521678009846558
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 768,
+      "games": 607,
+      "wins": 112,
+      "retentionKL": 0.02033618465065956,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01621963083744049,
+        "valueLoss": 0.7449920574824015,
+        "entropy": 0.6013730764389038,
+        "gradientNorm": 4.3822251955668134,
+        "approxKL": 0.0002548407840852936
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 800,
+      "games": 625,
+      "wins": 120,
+      "retentionKL": 0.022256014868617058,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.01719569539030393,
+        "valueLoss": 0.6968611280123392,
+        "entropy": 0.6059619585673014,
+        "gradientNorm": 4.272713820139567,
+        "approxKL": 0.0002990893165891369
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 832,
+      "games": 640,
+      "wins": 131,
+      "retentionKL": 0.02441459707915783,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.013573716084162394,
+        "valueLoss": 0.5378420154253641,
+        "entropy": 0.556483527024587,
+        "gradientNorm": 3.6985085010528564,
+        "approxKL": 0.00018098920312089226
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 864,
+      "games": 658,
+      "wins": 140,
+      "retentionKL": 0.026747802272439003,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.017503868555650115,
+        "valueLoss": 0.6376429597536722,
+        "entropy": 0.5496689875920614,
+        "gradientNorm": 4.50450865427653,
+        "approxKL": 0.0003077892082122465
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 896,
+      "games": 674,
+      "wins": 153,
+      "retentionKL": 0.02908255346119404,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012314895167946815,
+        "valueLoss": 0.43904871741930646,
+        "entropy": 0.5441168546676636,
+        "gradientNorm": 3.643789370854696,
+        "approxKL": 0.00013621607407306632
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 928,
+      "games": 690,
+      "wins": 164,
+      "retentionKL": 0.031411297619342804,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.015092268586158752,
+        "valueLoss": 0.4755476911862691,
+        "entropy": 0.5200290083885193,
+        "gradientNorm": 4.008723894755046,
+        "approxKL": 0.00020613968566370508
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 960,
+      "games": 704,
+      "wins": 176,
+      "retentionKL": 0.03375042602419853,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.010594920876125494,
+        "valueLoss": 0.2935810188452403,
+        "entropy": 0.4972460667292277,
+        "gradientNorm": 3.0569291909535727,
+        "approxKL": 9.8546122899279e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 992,
+      "games": 717,
+      "wins": 187,
+      "retentionKL": 0.036094605922698975,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.010429679105679194,
+        "valueLoss": 0.25177037219206494,
+        "entropy": 0.5211819807688395,
+        "gradientNorm": 2.8753480116526284,
+        "approxKL": 0.00011085292013982932
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1024,
+      "games": 733,
+      "wins": 200,
+      "retentionKL": 0.038508396595716476,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012860743949810663,
+        "valueLoss": 0.30669371287027997,
+        "entropy": 0.48240270217259723,
+        "gradientNorm": 3.3174824714660645,
+        "approxKL": 0.0001490177819505334
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1056,
+      "games": 747,
+      "wins": 214,
+      "retentionKL": 0.0408916175365448,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0024922837813695273,
+        "valueLoss": 0.06683473040660222,
+        "entropy": 0.484062393506368,
+        "gradientNorm": 1.1063677072525024,
+        "approxKL": 8.005862279484669e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1088,
+      "games": 761,
+      "wins": 227,
+      "retentionKL": 0.043348170816898346,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00713522732257843,
+        "valueLoss": 0.12969787418842316,
+        "entropy": 0.4608752429485321,
+        "gradientNorm": 1.9996051390965779,
+        "approxKL": 4.774479505916437e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1120,
+      "games": 775,
+      "wins": 238,
+      "retentionKL": 0.04593096300959587,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.012495793402194977,
+        "valueLoss": 0.31826481223106384,
+        "entropy": 0.4112657805283864,
+        "gradientNorm": 3.412419637044271,
+        "approxKL": 0.00015022809384390712
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1152,
+      "games": 789,
+      "wins": 252,
+      "retentionKL": 0.047900065779685974,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0018532325824101765,
+        "valueLoss": 0.03231215476989746,
+        "entropy": 0.4782576262950897,
+        "gradientNorm": 0.4509533445040385,
+        "approxKL": 8.246124101181826e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1184,
+      "games": 803,
+      "wins": 264,
+      "retentionKL": 0.0497414655983448,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.009906262159347534,
+        "valueLoss": 0.23705740769704184,
+        "entropy": 0.44550468524297077,
+        "gradientNorm": 2.8760904471079507,
+        "approxKL": 9.701870537052552e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1216,
+      "games": 816,
+      "wins": 277,
+      "retentionKL": 0.05205884203314781,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0010521442939837773,
+        "valueLoss": 0.029860214019815128,
+        "entropy": 0.41335023442904156,
+        "gradientNorm": 0.36929232875506085,
+        "approxKL": 1.5434343367815018e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1248,
+      "games": 829,
+      "wins": 290,
+      "retentionKL": 0.05467212572693825,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0011737079670031865,
+        "valueLoss": 0.028463705132404964,
+        "entropy": 0.41045211752255756,
+        "gradientNorm": 0.3451233009497325,
+        "approxKL": 1.9966973923146725e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1280,
+      "games": 842,
+      "wins": 302,
+      "retentionKL": 0.057588350027799606,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006489905218283336,
+        "valueLoss": 0.12488429993391037,
+        "entropy": 0.39230971535046893,
+        "gradientNorm": 2.041555404663086,
+        "approxKL": 4.279547526190678e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1312,
+      "games": 856,
+      "wins": 315,
+      "retentionKL": 0.06061914563179016,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.007089085876941681,
+        "valueLoss": 0.12248066316048305,
+        "entropy": 0.430414617061615,
+        "gradientNorm": 2.0323074658711753,
+        "approxKL": 7.937520664806168e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1344,
+      "games": 869,
+      "wins": 328,
+      "retentionKL": 0.06261910498142242,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00034414542218049365,
+        "valueLoss": 0.01974642463028431,
+        "entropy": 0.43694522976875305,
+        "gradientNorm": 0.218480184674263,
+        "approxKL": 3.4772480527559915e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1376,
+      "games": 881,
+      "wins": 340,
+      "retentionKL": 0.0628201961517334,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0006718660394350687,
+        "valueLoss": 0.01782543460528056,
+        "entropy": 0.4135669469833374,
+        "gradientNorm": 0.2523396114508311,
+        "approxKL": 9.178766049444675e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1408,
+      "games": 893,
+      "wins": 351,
+      "retentionKL": 0.06313863396644592,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004418171010911465,
+        "valueLoss": 0.11897323032220204,
+        "entropy": 0.3828227420647939,
+        "gradientNorm": 2.1580549081166587,
+        "approxKL": 1.9876713243623573e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1440,
+      "games": 906,
+      "wins": 364,
+      "retentionKL": 0.06371183693408966,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0005712931354840597,
+        "valueLoss": 0.012291275275250277,
+        "entropy": 0.40395039319992065,
+        "gradientNorm": 0.2140842725833257,
+        "approxKL": 2.4043605662882328e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1472,
+      "games": 919,
+      "wins": 377,
+      "retentionKL": 0.06433629244565964,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": 1.739710569381714e-05,
+        "valueLoss": 0.010459446658690771,
+        "entropy": 0.3851017852624257,
+        "gradientNorm": 0.2355905423561732,
+        "approxKL": 1.5685994488497576e-07
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1504,
+      "games": 932,
+      "wins": 390,
+      "retentionKL": 0.06538178026676178,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00046120087305704754,
+        "valueLoss": 0.009211195011933645,
+        "entropy": 0.40124733249346417,
+        "gradientNorm": 0.25586090485254925,
+        "approxKL": 4.026708969225486e-07
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1536,
+      "games": 947,
+      "wins": 403,
+      "retentionKL": 0.06714785099029541,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.006207480405767758,
+        "valueLoss": 0.23532691101233164,
+        "entropy": 0.3673831621805827,
+        "gradientNorm": 3.209693113962809,
+        "approxKL": 3.8456909048060574e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1568,
+      "games": 960,
+      "wins": 416,
+      "retentionKL": 0.06946366280317307,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0008201971650123596,
+        "valueLoss": 0.007192304513106744,
+        "entropy": 0.397503266731898,
+        "gradientNorm": 0.26772598425547284,
+        "approxKL": 1.5142237922797601e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1600,
+      "games": 973,
+      "wins": 429,
+      "retentionKL": 0.07152721285820007,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00012645497918128967,
+        "valueLoss": 0.00634828411663572,
+        "entropy": 0.4408078094323476,
+        "gradientNorm": 0.10570056488116582,
+        "approxKL": 4.003198894982537e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1632,
+      "games": 985,
+      "wins": 441,
+      "retentionKL": 0.07380643486976624,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0010821931064128876,
+        "valueLoss": 0.0050230082124471664,
+        "entropy": 0.41090600689252216,
+        "gradientNorm": 0.3072557846705119,
+        "approxKL": 2.700893674045801e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1664,
+      "games": 997,
+      "wins": 453,
+      "retentionKL": 0.07667545974254608,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00048591817418734234,
+        "valueLoss": 0.003916793192426364,
+        "entropy": 0.45390162865320843,
+        "gradientNorm": 0.1806231439113617,
+        "approxKL": 9.227097810556491e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1696,
+      "games": 1008,
+      "wins": 464,
+      "retentionKL": 0.07791398465633392,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00010916093985239665,
+        "valueLoss": 0.004817057556162278,
+        "entropy": 0.45637475450833637,
+        "gradientNorm": 0.3660317659378052,
+        "approxKL": 6.2353598574797315e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1728,
+      "games": 1021,
+      "wins": 477,
+      "retentionKL": 0.07806531339883804,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00033877044916152954,
+        "valueLoss": 0.0025575360438476005,
+        "entropy": 0.48074907064437866,
+        "gradientNorm": 0.1909518986940384,
+        "approxKL": 1.074382453225553e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1760,
+      "games": 1032,
+      "wins": 488,
+      "retentionKL": 0.0763988122344017,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00143853606035312,
+        "valueLoss": 0.0036218231543898582,
+        "entropy": 0.510894238948822,
+        "gradientNorm": 0.5653913418451945,
+        "approxKL": 7.14759905046473e-05
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1792,
+      "games": 1043,
+      "wins": 499,
+      "retentionKL": 0.07260609418153763,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004353143274784088,
+        "valueLoss": 0.003033721431468924,
+        "entropy": 0.46744194626808167,
+        "gradientNorm": 0.7190680305163065,
+        "approxKL": 0.00027949176728725433
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1824,
+      "games": 1055,
+      "wins": 511,
+      "retentionKL": 0.06965739279985428,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.0008378264804681143,
+        "valueLoss": 0.0019638664865245423,
+        "entropy": 0.39920148253440857,
+        "gradientNorm": 0.15524159371852875,
+        "approxKL": 0.00024197107025732598
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1856,
+      "games": 1067,
+      "wins": 523,
+      "retentionKL": 0.06756976246833801,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.004215059181054433,
+        "valueLoss": 0.00135251860289524,
+        "entropy": 0.4493039945761363,
+        "gradientNorm": 0.6171776254971822,
+        "approxKL": 0.0004673288397801419
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1888,
+      "games": 1081,
+      "wins": 537,
+      "retentionKL": 0.06644568592309952,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": 0.0007442577431599299,
+        "valueLoss": 0.0008561274929282566,
+        "entropy": 0.3869026104609172,
+        "gradientNorm": 0.17025682826836905,
+        "approxKL": 3.6448861161867776e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1920,
+      "games": 1094,
+      "wins": 550,
+      "retentionKL": 0.06596870720386505,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": 0.000261649489402771,
+        "valueLoss": 0.0006061468739062548,
+        "entropy": 0.35544044772783917,
+        "gradientNorm": 0.13967561721801758,
+        "approxKL": 7.742006952563921e-07
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1952,
+      "games": 1107,
+      "wins": 563,
+      "retentionKL": 0.06557677686214447,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -2.0341792454322178e-05,
+        "valueLoss": 0.0010626519409318764,
+        "entropy": 0.3956182301044464,
+        "gradientNorm": 0.0856727734208107,
+        "approxKL": 6.24321789170305e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 1984,
+      "games": 1120,
+      "wins": 576,
+      "retentionKL": 0.06519895792007446,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -9.894371032714844e-06,
+        "valueLoss": 0.000609953848955532,
+        "entropy": 0.3521885275840759,
+        "gradientNorm": 0.11465690036614735,
+        "approxKL": 6.564854023357232e-08
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 2016,
+      "games": 1131,
+      "wins": 587,
+      "retentionKL": 0.06488204747438431,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": -0.00020505612095197043,
+        "valueLoss": 0.0009170173628566166,
+        "entropy": 0.359058956305186,
+        "gradientNorm": 0.20553777118523917,
+        "approxKL": 6.146971524382631e-06
+      }
+    },
+    {
+      "agent": 1,
+      "steps": 2048,
+      "games": 1144,
+      "wins": 600,
+      "retentionKL": 0.0645989328622818,
+      "ppo": {
+        "updates": 3,
+        "learnedDecisions": 32,
+        "policyLoss": 1.78820143143336e-05,
+        "valueLoss": 0.0004031827168849607,
+        "entropy": 0.3297487795352936,
+        "gradientNorm": 0.10075416167577107,
+        "approxKL": 1.129519660025835e-07
+      }
+    }
+  ],
+  "limits": [
+    "Actual win/loss PPO on scripted artificial positions; this is a different training distribution.",
+    "KL anchors come only from the ordinary training population; no validation/test observations are fitted.",
+    "Variants 3..5 are held out by slot permutation only, not new species or new mechanics."
+  ],
+  "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e",
+  "trainerHash": "8e7f60a894b0ad72b1eaef42f2643416ba4383a5b1efdccd1bb59ac0bc62bf1d",
+  "initialValidation": {
+    "split": "validation",
+    "battles": 32,
+    "wins": 12,
+    "losses": 20,
+    "roundCaps": 0,
+    "winFraction": 0.375,
+    "roundCapFraction": 0.0,
+    "meanReturn": -0.25,
+    "rows": [
+      {
+        "case": 0,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82026,
+        "return": 1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 1,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82027,
+        "return": -1,
+        "winner": 1,
+        "rounds": 15,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 2,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82028,
+        "return": 1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 3,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82029,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 4,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82030,
+        "return": -1,
+        "winner": 0,
+        "rounds": 17,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 5,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82031,
+        "return": -1,
+        "winner": 0,
+        "rounds": 10,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 6,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82032,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 7,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82033,
+        "return": 1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 8,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82034,
+        "return": 1,
+        "winner": 0,
+        "rounds": 15,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 9,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82035,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 10,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82036,
+        "return": -1,
+        "winner": 1,
+        "rounds": 17,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 11,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82037,
+        "return": 1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 12,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82038,
+        "return": -1,
+        "winner": 0,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 13,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82039,
+        "return": -1,
+        "winner": 0,
+        "rounds": 17,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 14,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82040,
+        "return": 1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 15,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82041,
+        "return": 1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 16,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82042,
+        "return": -1,
+        "winner": 1,
+        "rounds": 15,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 17,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82043,
+        "return": -1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 18,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82044,
+        "return": -1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 19,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82045,
+        "return": -1,
+        "winner": 1,
+        "rounds": 15,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 20,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82046,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 21,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82047,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 22,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82048,
+        "return": -1,
+        "winner": 0,
+        "rounds": 11,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 23,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82049,
+        "return": 1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 24,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82050,
+        "return": -1,
+        "winner": 1,
+        "rounds": 11,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 25,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82051,
+        "return": -1,
+        "winner": 1,
+        "rounds": 23,
+        "decisions": 30,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 26,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82052,
+        "return": 1,
+        "winner": 0,
+        "rounds": 21,
+        "decisions": 28,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 27,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82053,
+        "return": 1,
+        "winner": 0,
+        "rounds": 21,
+        "decisions": 28,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 28,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82054,
+        "return": 1,
+        "winner": 1,
+        "rounds": 17,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 29,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82055,
+        "return": 1,
+        "winner": 1,
+        "rounds": 18,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 30,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82056,
+        "return": -1,
+        "winner": 0,
+        "rounds": 20,
+        "decisions": 27,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 31,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82057,
+        "return": -1,
+        "winner": 0,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      }
+    ],
+    "behavior": {
+      "attack": 444,
+      "focus": 16,
+      "switch": 16,
+      "status": 2,
+      "defense": 3
+    },
+    "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+  },
+  "initialCapabilities": {
+    "version": "resource-under-threat-2",
+    "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+    "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e",
+    "rows": [
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9509339332580566,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9201115965843201,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9509339332580566,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9201115965843201,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9509339332580566,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9201115369796753,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9509339332580566,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9201115369796753,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9669613242149353,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9636303186416626,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9669613242149353,
+        "success": false
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9636303186416626,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9669614434242249,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9636303186416626,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9669614434242249,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9636303186416626,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.951125979423523,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.920234203338623,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.951125979423523,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.920234203338623,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9511260390281677,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9202342629432678,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9511260390281677,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9202342629432678,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.967074990272522,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9637086391448975,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.967074990272522,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9637086391448975,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9670750498771667,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9637084007263184,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9670750498771667,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9637084007263184,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9513176679611206,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9203569889068604,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9513176679611206,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9203569889068604,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9513176679611206,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9203569889068604,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9513176679611206,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9203569889068604,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9671882390975952,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9637866020202637,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9671882390975952,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9637866020202637,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9671882390975952,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9637865424156189,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9671882390975952,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9637865424156189,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.022284656763076782,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.019365794956684113,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.02228466048836708,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9963797926902771,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.9993076324462891,
+        "success": true
+      }
+    ],
+    "byKind": {
+      "finish": {
+        "cases": 48,
+        "successes": 47,
+        "successFraction": 0.9791666666666666,
+        "firstActionProbability": 0.9505358710885048
+      },
+      "focus": {
+        "cases": 48,
+        "successes": 0,
+        "successFraction": 0.0,
+        "firstActionProbability": 0.020825226791203022
+      },
+      "switch": {
+        "cases": 48,
+        "successes": 47,
+        "successFraction": 0.9791666666666666,
+        "firstActionProbability": 0.9978437125682831
+      }
+    }
+  },
+  "trainedValidation": {
+    "split": "validation",
+    "battles": 32,
+    "wins": 14,
+    "losses": 18,
+    "roundCaps": 0,
+    "winFraction": 0.4375,
+    "roundCapFraction": 0.0,
+    "meanReturn": -0.125,
+    "rows": [
+      {
+        "case": 0,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82026,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 1,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82027,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 2,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82028,
+        "return": 1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 3,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82029,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 4,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82030,
+        "return": 1,
+        "winner": 1,
+        "rounds": 15,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 5,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82031,
+        "return": -1,
+        "winner": 0,
+        "rounds": 10,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 6,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82032,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 7,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82033,
+        "return": -1,
+        "winner": 0,
+        "rounds": 18,
+        "decisions": 25,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 8,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82034,
+        "return": 1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 9,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82035,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 10,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82036,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 11,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82037,
+        "return": 1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 12,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82038,
+        "return": -1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 19,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 13,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82039,
+        "return": -1,
+        "winner": 0,
+        "rounds": 17,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 14,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82040,
+        "return": 1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 15,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82041,
+        "return": 1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 16,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82042,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 17,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82043,
+        "return": -1,
+        "winner": 1,
+        "rounds": 11,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 18,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82044,
+        "return": -1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 19,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82045,
+        "return": -1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 20,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82046,
+        "return": 1,
+        "winner": 1,
+        "rounds": 17,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 21,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82047,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 22,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82048,
+        "return": -1,
+        "winner": 0,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 23,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82049,
+        "return": 1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 24,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82050,
+        "return": 1,
+        "winner": 0,
+        "rounds": 18,
+        "decisions": 25,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 25,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82051,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 26,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82052,
+        "return": 1,
+        "winner": 0,
+        "rounds": 17,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 27,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82053,
+        "return": 1,
+        "winner": 0,
+        "rounds": 21,
+        "decisions": 28,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 28,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82054,
+        "return": 1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 29,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82055,
+        "return": 1,
+        "winner": 1,
+        "rounds": 18,
+        "decisions": 24,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 30,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82056,
+        "return": -1,
+        "winner": 0,
+        "rounds": 25,
+        "decisions": 32,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 31,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82057,
+        "return": 1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      }
+    ],
+    "behavior": {
+      "attack": 446,
+      "focus": 17,
+      "switch": 12,
+      "defense": 3,
+      "status": 4,
+      "fullEnergyFocus": 1
+    },
+    "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+  },
+  "trainedCapabilities": {
+    "version": "resource-under-threat-2",
+    "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+    "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e",
+    "rows": [
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9445921182632446,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9723532199859619,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9445921182632446,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9723532199859619,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9445921182632446,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9723531007766724,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9445921182632446,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9723531007766724,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.988311231136322,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9865469932556152,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.988311231136322,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9865469932556152,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9883112907409668,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9865469932556152,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9883112907409668,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9865469932556152,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9448124170303345,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.972443699836731,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9448124170303345,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.972443699836731,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9448123574256897,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.972443699836731,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9448123574256897,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.972443699836731,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9883803725242615,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9866001605987549,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9883803725242615,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9866001605987549,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.9883803725242615,
+        "success": false
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9866001605987549,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9883803725242615,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9866001605987549,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9450321197509766,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9725338220596313,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9450321197509766,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          2
+        ],
+        "firstActionProbability": 0.9725338220596313,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9450322389602661,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9725339412689209,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9450322389602661,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9725339412689209,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9884490966796875,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9866530895233154,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9884490966796875,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          1
+        ],
+        "firstActionProbability": 0.9866530895233154,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.9884490966796875,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.986653208732605,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          3
+        ],
+        "firstActionProbability": 0.9884490966796875,
+        "success": true
+      },
+      {
+        "kind": "finish",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          0
+        ],
+        "firstActionProbability": 0.986653208732605,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9912691116333008,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9912691116333008,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912691116333008,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912691116333008,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          1
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          0
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": true
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4,
+          2
+        ],
+        "firstActionProbability": 0.9825765490531921,
+        "success": false
+      },
+      {
+        "kind": "focus",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4,
+          3
+        ],
+        "firstActionProbability": 0.9912689924240112,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 0,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 1,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 2,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          10
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          7
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 3,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          9
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          6
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829369544983,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 4,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 0,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          8
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 0,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 0,
+        "policy": 1,
+        "actions": [
+          4
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": false
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 0,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.4743829667568207,
+        "success": true
+      },
+      {
+        "kind": "switch",
+        "variant": 5,
+        "side": 1,
+        "tieFirst": 1,
+        "policy": 1,
+        "actions": [
+          5
+        ],
+        "firstActionProbability": 0.6967906355857849,
+        "success": true
+      }
+    ],
+    "byKind": {
+      "finish": {
+        "cases": 48,
+        "successes": 47,
+        "successFraction": 0.9791666666666666,
+        "firstActionProbability": 0.9730590383211771
+      },
+      "focus": {
+        "cases": 48,
+        "successes": 24,
+        "successFraction": 0.5,
+        "firstActionProbability": 0.9869227806727091
+      },
+      "switch": {
+        "cases": 48,
+        "successes": 25,
+        "successFraction": 0.5208333333333334,
+        "firstActionProbability": 0.585586796204249
+      }
+    }
+  },
+  "finalHashes": [
+    "7b560b077405ea8975740a9938a3b80d3091ca2ef50852ea84b2ed1ab2af3d83",
+    "9f53e1a958307f15b3e89faf34e0a34b6a534a7f00698eeeba29b304931a38a7"
+  ],
+  "validationReturnDelta": 0.125,
+  "elapsedSeconds": 41.76600000000326
+}

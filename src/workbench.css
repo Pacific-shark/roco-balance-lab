@@ -12,6 +12,90 @@
   display: grid;
   grid-template-columns: 225px minmax(0, 1fr);
 }
+.wb-learning {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  gap: 16px;
+}
+.wb-learning > *,
+.wb-learning-team {
+  min-width: 0;
+}
+.wb-learning .wb-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+}
+.wb-learning-picker {
+  display: grid;
+  gap: 8px;
+  font-weight: 600;
+}
+.wb-learning-picker select {
+  width: 100%;
+  min-width: 0;
+  font-weight: 400;
+}
+.wb-learning-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  padding: 18px;
+  background: #f1f6f3;
+  border-radius: 6px;
+}
+.wb-learning-facts span,
+.wb-learning-facts strong {
+  display: block;
+}
+.wb-learning-facts span {
+  color: #60716b;
+  font-size: 13px;
+}
+.wb-learning-facts strong {
+  font-size: 26px;
+  font-variant-numeric: tabular-nums;
+}
+.wb-learning-hash {
+  display: block;
+  overflow-wrap: anywhere;
+  font-size: 11px;
+  margin-top: 8px;
+}
+.wb-learning-study {
+  margin: 28px 0;
+  padding-top: 20px;
+  border-top: 1px solid #dce4df;
+}
+.wb-learning-team {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid #dce4df;
+  border-radius: 12px;
+  background: #f9fbf8;
+}
+.wb-learning-team h4 {
+  margin: 0 0 12px;
+  line-height: 1.7;
+}
+.wb-learning-lineup {
+  padding-left: 20px;
+}
+.wb-learning-lineup li {
+  margin: 12px 0;
+  line-height: 1.7;
+}
+@media (max-width: 600px) {
+  .wb-learning-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .wb-learning-facts strong {
+    font-size: 23px;
+  }
+  .wb-learning .wb-table-wrap {
+    overflow-x: auto;
+  }
+}
 .workbench * {
   box-sizing: border-box;
 }
@@ -337,6 +421,11 @@
   z-index: 100;
 }
 .wb-dialog > header {
+  position: sticky;
+  top: -24px;
+  background: white;
+  z-index: 1;
+  padding-top: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;

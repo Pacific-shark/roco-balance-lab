@@ -3,6 +3,7 @@ import torch
 from learning.bridge import BattleBridge
 from learning.models import ActorCritic, masked_distribution, tensor_observations
 from learning.ppo import generalized_advantage, clipped_loss, update_policy
+from learning.rewards import shape_rewards, visible_potential
 
 torch.set_num_threads(1)
 
@@ -59,7 +60,7 @@ class LearningTest(unittest.TestCase):
         torch.testing.assert_close(seq.probs[1],dlast.probs);torch.testing.assert_close(v[1],vlast)
 
     def test_all_architectures_update_on_sequences_and_preserve_masks(self):
-        for architecture in ("linear","mlp","entity_gru"):
+        for architecture in ("linear","mlp","entity_mlp","entity_gru"):
             with self.subTest(architecture=architecture):
                 torch.manual_seed(9);model=ActorCritic(self.schema,architecture)
                 initial={k:v.detach().clone() for k,v in model.state_dict().items()}
@@ -81,6 +82,44 @@ class LearningTest(unittest.TestCase):
     def test_two_learners_do_not_share_parameters(self):
         a=ActorCritic(self.schema,"mlp");b=ActorCritic(self.schema,"mlp")
         self.assertTrue(all(x.data_ptr()!=y.data_ptr() for x,y in zip(a.parameters(),b.parameters())))
+
+    def test_potential_telescopes_and_ignores_reset_state(self):
+        phi=torch.tensor([.2,.5,-.4]);gamma=.99
+        rewards=torch.tensor([0.,0.,1.])
+        after=torch.tensor([.5,-.4,999.])
+        shaped=shape_rewards(rewards,phi,after,torch.tensor([False,False,True]))
+        discount=torch.tensor([1.,gamma,gamma**2])
+        self.assertAlmostEqual(float((shaped*discount).sum()),float((rewards*discount).sum())-.2,places=6)
+        torch.testing.assert_close(shape_rewards(rewards,phi,after,torch.tensor([False,False,True]),0),rewards)
+
+    def test_feedforward_vectorization_preserves_probabilities_and_values(self):
+        for architecture in ('linear','mlp','entity_mlp'):
+            model=ActorCritic(self.schema,architecture)
+            observations={k:torch.stack([v,v*.9]) if k!='mask' else torch.stack([v,v]) for k,v in self.obs.items()}
+            starts=torch.tensor([[True,True],[False,False]])
+            seq,values=model.sequence(observations,model.initial_hidden(2),starts)
+            for t in range(2):
+                step,value,_=model.step({k:v[t] for k,v in observations.items()},model.initial_hidden(2),starts[t])
+                torch.testing.assert_close(seq.probs[t],step.probs)
+                torch.testing.assert_close(values[t],value)
+
+    def test_ppo_learns_a_rewarded_legal_action_not_just_changes_weights(self):
+        torch.manual_seed(19)
+        model=ActorCritic(self.schema,'mlp')
+        optimizer=torch.optim.Adam(model.parameters(),lr=.003)
+        obs={k:v[:1].repeat(32,*([1]*(v.ndim-1))).unsqueeze(0) for k,v in self.obs.items()}
+        starts=torch.ones(1,32,dtype=torch.bool);hidden=model.initial_hidden(32)
+        target=int(torch.where(obs['mask'][0,0])[0][-1])
+        for _ in range(40):
+            with torch.no_grad():
+                dist,values=model.sequence(obs,hidden,starts)
+                actions=dist.sample();logp=dist.log_prob(actions)
+                rewards=torch.where(actions==target,1.,-1.)
+            batch={'observations':obs,'starts':starts,'initial_hidden':hidden,'actions':actions,'logp':logp,
+                   'learn':torch.ones_like(actions,dtype=torch.bool),'advantage':rewards-values,'returns':rewards}
+            update_policy(model,optimizer,batch)
+        with torch.no_grad():dist,_=model.sequence(obs,hidden,starts)
+        self.assertGreater(float(dist.probs[0,0,target]),.95)
 
 
 if __name__=="__main__":unittest.main()

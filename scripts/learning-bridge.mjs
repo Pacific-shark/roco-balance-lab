@@ -11,6 +11,8 @@ import {
 import { createLearningEncoder } from "../src/learning-observation.mjs";
 import { seededRandom } from "../src/team-rl.mjs";
 import { candidateTeam, teamKey } from "../src/research.mjs";
+import {capabilityCases,createCapabilityCase,capabilitySucceeded,CAPABILITY_VERSION} from '../src/learning-capabilities.mjs';
+import {expandTrainingPopulation} from '../src/learning-population.mjs';
 
 export async function createLearningBridge() {
   const files = [
@@ -23,6 +25,9 @@ export async function createLearningBridge() {
     "src/team-rl.mjs",
     "src/research.mjs",
     "scripts/learning-bridge.mjs",
+    "src/learning-capabilities.mjs",
+    "src/learning-features.mjs",
+    "src/learning-population.mjs",
   ];
   const contents = await Promise.all(
     files.map((f) => readFile(new URL("../" + f, import.meta.url))),
@@ -35,7 +40,7 @@ export async function createLearningBridge() {
   let rng,
     envs = [],
     split;
-  function initialize(seed, count) {
+  function initialize(seed, count, trainPool) {
     if (
       !Number.isInteger(seed) ||
       seed < 0 ||
@@ -63,6 +68,7 @@ export async function createLearningBridge() {
       validation: extra.slice(0, 2),
       test: extra.slice(2),
     };
+    split.train=expandTrainingPopulation(data,split,trainPool??4);
     envs = Array.from({ length: count }, () => null);
   }
   function reset(index, options = {}) {
@@ -77,7 +83,8 @@ export async function createLearningBridge() {
       if (b >= a) b++;
     }
     if (!pool[a] || !pool[b] || a === b) throw Error("Invalid team pairing");
-    const state = createTeamBattle(data, pool[a].members, pool[b].members, {
+    const probe = options.capability ? createCapabilityCase(data,options.capability) : null;
+    const state = probe?.state ?? createTeamBattle(data, pool[a].members, pool[b].members, {
       tieFirst: options.tieFirst ?? Math.floor(rng() * 2),
     });
     envs[index] = {
@@ -85,8 +92,14 @@ export async function createLearningBridge() {
       memories: [createPilotMemory(0), createPilotMemory(1)],
       previous: [-1, -1],
       views: null,
+      probe,
+      probeSteps: 0,
     };
-    return observation(envs[index]);
+    const result=observation(envs[index]);
+    if(probe) result.probe={kind:probe.kind,side:probe.side,horizon:probe.horizon,
+      enemySlot:Array.from({length:12},(_,i)=>i).find(i=> {try{return encoder.command(envs[index].views[1-probe.side],i)===probe.enemyAction;}catch{return false;}}),
+      expectedSlots:Array.from({length:12},(_,i)=>i).filter(i=> {try{return probe.expectedCommands.includes(encoder.command(envs[index].views[probe.side],i));}catch{return false;}})};
+    return result;
   }
   function observation(env) {
     env.views = [0, 1].map((s) =>
@@ -128,15 +141,17 @@ export async function createLearningBridge() {
             winner === "draw" ? "prototype-round-cap" : "prototype-victory",
         }
       : null;
+    env.probeSteps++;
+    const probe=env.probe ? {success:capabilitySucceeded(env.probe,env.state),finished:done||env.probeSteps>=env.probe.horizon} : null;
     const next = done ? (autoReset ? reset(index) : null) : observation(env);
-    return { next, rewards, done, terminal };
+    return { next, rewards, done, terminal, ...(probe ? {probe} : {}) };
   }
   return {
     request(message) {
       if (message.scope && message.scope !== "prototype")
         throw Error("Only restricted prototype experiments are available");
       if (message.op === "init") {
-        initialize(message.seed ?? 42, message.envs ?? 4);
+        initialize(message.seed ?? 42, message.envs ?? 4, message.trainPool);
         return {
           schema: encoder.schema,
           executionHash,
@@ -153,6 +168,7 @@ export async function createLearningBridge() {
         };
       }
       if (!split) throw Error("Initialize bridge first");
+      if(message.op==='capabilities') return {version:CAPABILITY_VERSION,cases:capabilityCases(),scope:'synthetic-evaluation-only'};
       if (message.op === "reset")
         return reset(message.index ?? 0, message.options);
       if (message.op === "step") {

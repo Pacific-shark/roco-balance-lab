@@ -5,7 +5,7 @@ import torch
 from torch import nn
 from torch.distributions import Categorical
 
-ARCHITECTURES = ("linear", "mlp", "entity_gru")
+ARCHITECTURES = ("linear", "mlp", "entity_mlp", "entity_gru")
 
 
 def tensor_observations(rows):
@@ -41,7 +41,7 @@ class ActorCritic(nn.Module):
         else:
             self.pet_encoder = nn.Sequential(nn.Linear(pet_dim, hidden), nn.Tanh())
             self.context = nn.Sequential(nn.Linear(4 * hidden + global_dim, hidden), nn.Tanh())
-            self.memory = nn.GRUCell(hidden, hidden)
+            self.memory = nn.GRUCell(hidden, hidden) if architecture=='entity_gru' else None
             self.action_encoder = nn.Sequential(nn.Linear(action_dim, hidden), nn.Tanh())
             self.actor = nn.Sequential(nn.Linear(2 * hidden, hidden), nn.Tanh(), nn.Linear(hidden, 1))
             self.critic = nn.Linear(hidden, 1)
@@ -57,7 +57,7 @@ class ActorCritic(nn.Module):
 
     def step(self, observation, hidden, episode_start):
         pets, actions, global_obs = (observation[k] for k in ("pets", "actions", "global"))
-        if self.architecture != "entity_gru":
+        if self.architecture in ('linear','mlp'):
             x = self.body(torch.cat((pets.flatten(1), actions.flatten(1), global_obs), dim=-1))
             return masked_distribution(self.actor(x), observation["mask"]), self.critic(x).squeeze(-1), hidden * 0
         # Pool only present entities. Unknown opponent members are not zero-valued known pets.
@@ -71,13 +71,20 @@ class ActorCritic(nn.Module):
             pooled.append((part_e * active[:, part]).sum(1))
         x = self.context(torch.cat((*pooled, global_obs), dim=-1))
         hidden = hidden * (~episode_start.bool()).unsqueeze(-1)
-        hidden = self.memory(x, hidden)
+        hidden = self.memory(x, hidden) if self.memory is not None else x
         action_embedding = self.action_encoder(actions)
         context = hidden[:, None, :].expand(-1, 12, -1)
         logits = self.actor(torch.cat((context, action_embedding), dim=-1)).squeeze(-1)
         return masked_distribution(logits, observation["mask"]), self.critic(hidden).squeeze(-1), hidden
 
     def sequence(self, observations, initial_hidden, episode_starts):
+        if self.architecture != 'entity_gru':
+            # Feedforward models have no temporal dependence; evaluate the batch
+            # in one operation without changing sequence alignment or masks.
+            time, batch = episode_starts.shape
+            flat = {k: v.reshape(time*batch, *v.shape[2:]) for k,v in observations.items()}
+            distribution, value, _ = self.step(flat, self.initial_hidden(time*batch), episode_starts.reshape(-1))
+            return Categorical(logits=distribution.logits.reshape(time,batch,-1)), value.reshape(time,batch)
         hidden = initial_hidden.detach()
         logits, values = [], []
         for t in range(episode_starts.shape[0]):

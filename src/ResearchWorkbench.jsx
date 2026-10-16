@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./workbench.css";
+import LearningEvidence from "./LearningEvidence.jsx";
 
 const api = async (path, options) => {
   const response = await fetch(`api/${path}`, options);
@@ -284,6 +285,17 @@ export default function ResearchWorkbench({ onNavigate }) {
           <button onClick={() => onNavigate("catalog")}>精灵资料</button>
           <button onClick={() => onNavigate("team")}>6v6 原型</button>
           <button onClick={viewPlan}>方法与边界</button>
+          <button
+            onClick={async () => {
+              try {
+                setDialog({ type: "learning", data: await api("learning") });
+              } catch (e) {
+                setError(e.message);
+              }
+            }}
+          >
+            学习验证
+          </button>
         </nav>
         <div className="wb-rail-foot">
           私人项目{" "}
@@ -616,12 +628,16 @@ export default function ResearchWorkbench({ onNavigate }) {
             title={
               dialog.type === "plan"
                 ? "项目方案"
-                : name(dialog.data.config.target) + " · 实验详情"
+                : dialog.type === "learning"
+                  ? "学习验证"
+                  : name(dialog.data.config.target) + " · 实验详情"
             }
             onClose={() => setDialog(null)}
           >
             {dialog.type === "plan" ? (
               <pre className="wb-plan">{dialog.data.text}</pre>
+            ) : dialog.type === "learning" ? (
+              <LearningEvidence data={dialog.data} />
             ) : dialog.data.report ? (
               <Report run={dialog.data} />
             ) : (

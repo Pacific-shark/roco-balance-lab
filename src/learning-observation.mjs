@@ -1,6 +1,7 @@
 // The encoder accepts ONLY the projected observation, never the battle state.
 // All species/move dictionaries are public prototype metadata, not opponent builds.
-export const LEARNING_OBSERVATION_VERSION = "visible-vector-1-provisional";
+import {combatFeatures,combatFeatureNames} from './learning-features.mjs';
+export const LEARNING_OBSERVATION_VERSION = "visible-vector-2-provisional";
 export const ACTION_COUNT = 12;
 const one = (keys, values) => keys.map((k) => (values.includes(k) ? 1 : 0));
 const bounded = (x, scale = 1) => Math.max(-5, Math.min(5, (x ?? 0) / scale));
@@ -61,6 +62,7 @@ export function createLearningEncoder(data) {
     "guard",
     "nextAttack",
     "priority",
+    ...combatFeatureNames,
     ...petNames.map((x) => "actorOrSwitchTarget:" + x),
   ];
   const schema = {
@@ -193,6 +195,7 @@ export function createLearningEncoder(data) {
         bounded(e.guard),
         bounded(e.nextAttack, 3),
         bounded(e.priority, 1000),
+        ...combatFeatures(data,view,m,i),
         ...actor,
       ];
     });
@@ -209,22 +212,23 @@ export function createLearningEncoder(data) {
   function command(view, slot) {
     if (!Number.isInteger(slot) || slot < 0 || slot >= ACTION_COUNT)
       throw Error("Invalid action slot");
-    const encoded = encode(view);
-    if (!encoded.mask[slot])
-      throw Error("Masked action rejected before battle mutation");
-    return slot < 4
-      ? "move:" + view.own.pets[view.own.active].moves[slot].id
+    const value = slot < 4
+      ? (view.own.pets[view.own.active] ? "move:" + view.own.pets[view.own.active].moves[slot].id : null)
       : slot === 4
         ? "focus"
         : slot === 11
           ? "wait"
           : "switch:" + (slot - 5);
+    if (!view.legalActions.includes(value))
+      throw Error("Masked action rejected before battle mutation");
+    return value;
   }
   // Deliberately modest visible-only opponent. No exact damage or hidden stats.
   function rule(view, style = "attack") {
-    const e = encode(view),
-      active = view.own.pets[view.own.active];
-    const scores = e.mask.map((valid, i) => {
+    const active = view.own.pets[view.own.active];
+    const scores = Array.from({length: 12}, (_,i) => {
+      const candidate = i<4 ? (active ? 'move:'+active.moves[i].id : null) : i===4 ? 'focus' : i===11 ? 'wait' : 'switch:'+(i-5);
+      const valid=view.legalActions.includes(candidate);
       if (!valid) return -Infinity;
       if (i === 11) return 0;
       if (i >= 5) {

@@ -1,0 +1,20 @@
+{
+  "url": "http://127.0.0.1:4201/",
+  "title": "洛克研究室 · 6v6研究工作台",
+  "options": 23,
+  "exportBattles": 960,
+  "errors": [],
+  "documentOverflow": false,
+  "desktop": "1440x1000",
+  "mobile": "390x844",
+  "browser": "headless Edge via Playwright; Browser plugin unavailable",
+  "checks": [
+    "open evidence",
+    "switch experiments",
+    "show frozen team study",
+    "expand lineups",
+    "download evidence",
+    "mobile navigation",
+    "close dialog"
+  ]
+}

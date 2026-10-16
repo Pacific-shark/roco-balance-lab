@@ -184,6 +184,19 @@ export async function createResearchServer({
         return json(res, 403, { error: "请求来源不受信任" });
       const url = new URL(req.url, "http://127.0.0.1");
       const path = url.pathname;
+      if (req.method === "GET" && path === "/api/learning") {
+        try {
+          return json(
+            res,
+            200,
+            await readJson("docs/evidence/learning-progress-v2.json"),
+          );
+        } catch (e) {
+          if (e.code === "ENOENT")
+            return json(res, 200, { runs: [], limitations: [] });
+          throw e;
+        }
+      }
       if (req.method === "GET" && path === "/api/overview")
         return json(res, 200, {
           snapshotId: snapshot,

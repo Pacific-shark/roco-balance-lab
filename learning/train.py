@@ -9,12 +9,15 @@ import hashlib
 import json
 from pathlib import Path
 import time
+from collections import Counter
 import numpy as np
 import torch
 
 from .bridge import BattleBridge, ROOT
 from .models import ARCHITECTURES, ActorCritic, tensor_observations
 from .ppo import generalized_advantage, update_policy
+from .rewards import visible_potential, shape_rewards
+from .capabilities import evaluate_capabilities
 
 
 class BudgetExpired(Exception):
@@ -49,6 +52,7 @@ def frozen(model):
 def evaluate(models, node, expected_hash, deadline, *, split="validation", seed=82026):
     """Fixed visible-rule opponents; separate from training RNG and datasets."""
     rows = []
+    behavior = Counter()
     with torch.random.fork_rng(devices=[]), BattleBridge(node) as bridge:
         metadata = bridge.request(op="init", seed=seed, envs=1, scope="prototype")
         if metadata["executionHash"] != expected_hash:
@@ -68,6 +72,11 @@ def evaluate(models, node, expected_hash, deadline, *, split="validation", seed=
                 with torch.no_grad():
                     dist, _, hidden = model.step(tensor_observations([current["observation"][seat]]), hidden, start)
                     own_action = int(dist.sample().item())
+                obs=current['observation'][seat]
+                if obs['global'][1]:
+                    kind=next(k for k in ('attack','defense','status','focus','switch','wait') if obs['actions'][own_action][metadata['schema']['actionNames'].index(k)])
+                    behavior[kind]+=1
+                    if kind=='focus' and any(p[2] and p[4]>=1 for p in obs['pets'][:6]):behavior['fullEnergyFocus']+=1
                 actions = [0, 0]
                 actions[seat] = own_action
                 actions[1-seat] = current["rules"][1-seat][style]
@@ -85,7 +94,7 @@ def evaluate(models, node, expected_hash, deadline, *, split="validation", seed=
     caps = len(rows)-wins-losses
     return {"split": split, "battles": len(rows), "wins": wins, "losses": losses,
             "roundCaps": caps, "winFraction": wins/len(rows), "roundCapFraction": caps/len(rows),
-            "meanReturn": (wins-losses)/len(rows), "rows": rows,
+            "meanReturn": (wins-losses)/len(rows), "rows": rows, "behavior":dict(behavior),
             "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."}
 
 
@@ -117,12 +126,12 @@ def run_experiment(config, output, node=None):
                          "test split remains unopened"]}
     try:
         with BattleBridge(node) as bridge:
-            metadata = bridge.request(op="init", envs=config["envs"], seed=config["seed"], scope="prototype")
+            metadata = bridge.request(op="init", envs=config["envs"], seed=config["seed"], scope="prototype",trainPool=config.get('trainPool',4))
             schema = metadata["schema"]
             report.update({"environmentHash": metadata["executionHash"], "dataVersion": metadata["dataVersion"],
                            "schema": schema, "split": metadata["split"], "torchVersion": torch.__version__})
             source_hash = hashlib.sha256()
-            for name in ("bridge.py", "models.py", "ppo.py", "train.py"):
+            for name in ("bridge.py", "models.py", "ppo.py", "train.py", "rewards.py", "capabilities.py"):
                 source_hash.update(name.encode())
                 source_hash.update((ROOT / "learning" / name).read_bytes())
             report["trainerHash"] = source_hash.hexdigest()
@@ -132,6 +141,8 @@ def run_experiment(config, output, node=None):
             report["initialHashes"] = initial_hashes
             report["parametersPerAgent"] = sum(p.numel() for p in models[0].parameters())
             report["initialValidation"] = evaluate(models, node, metadata["executionHash"], deadline)
+            report['initialCapabilities']=evaluate_capabilities(models,node,deadline)
+            report['validationCurve']=[]
             current = metadata["observations"]
             hidden = [m.initial_hidden(config["envs"]) for m in models]
             starts = torch.ones(config["envs"], dtype=torch.bool)
@@ -176,6 +187,10 @@ def run_experiment(config, output, node=None):
                                            "logp": logps[side], "values": values[side], "rewards": torch.tensor([r["rewards"][side] for r in result], dtype=torch.float32),
                                            "dones": dones, "starts": starts, "learn": learn[:, side]}.items():
                             row[key].append(value)
+                        if config.get('shaping',0):
+                            before=visible_potential(observations[side])
+                            after=visible_potential(tensor_observations([(r['next'] or current[i])['observation'][side] for i,r in enumerate(result)]))
+                            row['rewards'][-1]=shape_rewards(row['rewards'][-1],before,after,dones,config['shaping'])
                     report["trainingSteps"] += config["envs"]
                     for i, result_row in enumerate(result):
                         if result_row["done"]:
@@ -209,7 +224,12 @@ def run_experiment(config, output, node=None):
                 report["finalHashes"] = [parameter_hash(m) for m in models]
                 report["elapsedSeconds"] = time.monotonic()-started
                 write_json(output / "report.json", report)
+                if config.get('evalEvery',0) and report['trainingSteps']%config['evalEvery']==0 and report['trainingSteps']<config['steps']:
+                    score=evaluate(models,node,metadata['executionHash'],deadline)
+                    report['validationCurve'].append({'trainingSteps':report['trainingSteps'],**score})
+                    print(json.dumps({'event':'validation','steps':report['trainingSteps'],'wins':score['wins'],'battles':score['battles']}),flush=True)
             report["trainedValidation"] = evaluate(models, node, metadata["executionHash"], deadline)
+            report['trainedCapabilities']=evaluate_capabilities(models,node,deadline)
             report["validationReturnDelta"] = report["trainedValidation"]["meanReturn"]-report["initialValidation"]["meanReturn"]
             report["status"] = "completed"
     except (BudgetExpired, TimeoutError) as exc:
@@ -232,12 +252,18 @@ def main():
     parser.add_argument("--max-seconds", type=int, default=180, help="Per-run cumulative budget including evaluations")
     parser.add_argument("--threads", type=int, default=1)
     parser.add_argument("--node")
+    parser.add_argument('--shaping',type=float,choices=(0.,1.),default=0.,help='Visible potential difference; 0 keeps terminal-only control')
+    parser.add_argument('--eval-every',type=int,default=8192)
+    parser.add_argument('--train-pool',type=int,default=4)
     parser.add_argument("--output", type=Path, default=ROOT/".local/deep-rl")
     args = parser.parse_args()
     if not 1 <= args.envs <= 16 or not 1 <= args.threads <= 4 or not 30 <= args.max_seconds <= 600:
         parser.error("envs 1..16, threads 1..4, max-seconds 30..600")
     if not 128 <= args.steps <= 65536 or args.steps % (args.envs*32):
         parser.error("steps 128..65536 and divisible by envs*32")
+    if args.eval_every<0 or args.eval_every%(args.envs*32):
+        parser.error('eval-every must be zero or a multiple of envs*32')
+    if not 4<=args.train_pool<=64:parser.error('train-pool must be 4..64')
     if len(set(args.seeds)) != len(args.seeds) or not 1 <= len(args.seeds) <= 5 or any(s<0 or s>2**31-1 for s in args.seeds):
         parser.error("Use 1..5 distinct seeds in 0..2^31-1")
     if len(set(args.models)) != len(args.models):
@@ -252,6 +278,7 @@ def main():
             config = {"architecture": architecture, "seed": seed, "steps": args.steps, "envs": args.envs,
                       "horizon": 32, "hidden": 64, "epochs": 3, "learningRate": 3e-4,
                       "threads": args.threads, "maxSeconds": args.max_seconds}
+            config.update(shaping=args.shaping,evalEvery=args.eval_every,trainPool=args.train_pool)
             print(json.dumps({"event": "start", **config}), flush=True)
             result = run_experiment(config, output/f"{architecture}-{seed}", args.node)
             compact = {key: result.get(key) for key in ("status", "trainingSteps", "completedTrainingGames", "trainingRoundCaps",
