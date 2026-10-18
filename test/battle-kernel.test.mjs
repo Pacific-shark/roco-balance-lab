@@ -60,6 +60,25 @@ function lead(state, a = 0, b = 0) {
   stepKernelBattle(data, state, [`switch:${a}`, `switch:${b}`]);
   return state;
 }
+test("salt gathering heals per hit but adds only one permanent hit per use",()=>{
+  const salt=moveId("聚盐");
+  const carrier=Object.keys(data.creatures).find(id=>data.creatures[id].name==="鳗尾兽");
+  assert.ok(carrier);
+  const m=member(carrier);
+  m.moves=[salt,...m.moves.filter(id=>id!==salt).slice(0,3)];
+  const first=[m,...ids.filter(id=>id!==carrier).slice(0,5).map(id=>member(id))];
+  const s=createKernelBattle(data,[first,ids.map(id=>member(id))],{purpose:"mechanism-test"});
+  lead(s);
+  const p=s.teams[0].pets[0];
+  p.hp=1;
+  for(let use=1;use<=3;use++){
+    p.energy=10;
+    const events=stepKernelBattle(data,s,["move:0","focus"]);
+    assert.equal(p.moves[0].hits,use);
+    assert.equal(events.find(e=>e.kind==="move"&&e.move===salt).hits,use+1);
+    assert.equal(events.filter(e=>e.kind==="heal"&&e.source?.id===salt).length,use+1);
+  }
+});
 const pet = (s, side = 0) => s.teams[side].pets[s.teams[side].active];
 const use = (s, side, name) =>
   "move:" + pet(s, side).moves.findIndex((m) => m.id === moveId(name));

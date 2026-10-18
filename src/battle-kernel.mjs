@@ -120,9 +120,11 @@ function createPet(data, member) {
 export function createKernelBattle(
   data,
   teams,
-  { purpose, tieFirst = 0, resonance = null, maxRounds = 100 } = {},
+  { purpose, scope, tieFirst = 0, resonance = null, maxRounds = 100 } = {},
 ) {
-  if (purpose !== "mechanism-test")
+  const experimental = purpose === "experimental-training" &&
+    scope === "supported-builds-incomplete-rules";
+  if (purpose !== "mechanism-test" && !experimental)
     throw Error("Full-roster training admission has not passed");
   if (resonance !== null) throw Error("Resonance execution not yet complete");
   if (
@@ -137,6 +139,7 @@ export function createKernelBattle(
   const state = {
     version: KERNEL_VERSION,
     purpose,
+    ...(experimental ? { scope, gameVerified: false } : {}),
     round: 1,
     phase: "lead",
     tieFirst,
@@ -947,8 +950,8 @@ function execute(data, state, side, index, choice, enemyKind, first) {
       .reduce((n, e) => n + e.fraction, 0);
   if (total && drain) heal(state, side, p, scale(total, drain), source);
   if (move.kind === "attack") p.nextPower = { amount: 0, multiply: 1 };
-  for (let repeat = 0; repeat < (move.kind === "status" ? hits : 1); repeat++)
-    for (const op of ops.filter((e) => move.kind !== "attack" || !e.perHit))
+  for (const op of ops.filter((e) => move.kind !== "attack" || !e.perHit))
+    for (let repeat = 0; repeat < (move.kind === "status" && op.perHit ? hits : 1); repeat++)
       apply(data, state, side, op, { source, slot, move, cost });
   if (move.kind === "defense") p.defenseCooldown = 2;
   trigger(data, state, side, "afterMove", { move, slot, cost });

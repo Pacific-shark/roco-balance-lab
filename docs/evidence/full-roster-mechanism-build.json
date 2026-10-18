@@ -1,6 +1,6 @@
 {
   "version": "full-roster-mechanism-build-1",
-  "createdAt": "2026-10-18T12:58:58.923Z",
+  "createdAt": "2026-10-18T14:09:09.548Z",
   "sourceSnapshotHash": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
   "sourceManifest": {
     "capturedAt": "2026-10-15T08:12:01.341611+00:00",
@@ -114,13 +114,13 @@
   "programVersion": "battle-programs-1",
   "sources": {
     "src/battle-programs.mjs": "16ef5c7814141880ace81cea29c31f5785a6d563758414d85bc7eb4ca01a5556",
-    "src/battle-kernel.mjs": "387bb23dcfe3c64f9e443c926979066ff235b4e21d60c495b2f5ada219d041de",
+    "src/battle-kernel.mjs": "b9251e1a93e6645640107a76cc09f6ed40a330e5c542a851b3b8f6ad599fe30c",
     "src/team-stats.mjs": "d975764b02e534930cfc3a5b48ed7aba8c073e3c21c4e09e118a95a2cb0d57d6",
     "src/battle-arithmetic.mjs": "dfcad3292a9bd1934884bf24b38aa3f739f663ba12f295e69d0710de219d9c53",
     "src/team-engine.mjs": "519b1887bf6e4248c4ffcf4b88d1f8c9a28f3279f491d2f3e0485aee9801397f",
     "scripts/compile-battle-catalog.mjs": "823c32b0455cd993fda25c6574aff650d23674b05243f91e22fd45f67ee1e6f9",
     "scripts/kernel-regression.mjs": "600cd92b7b1f3b4781db0878be370e29dd436bd1d8f12ddcfbfe370a4eb6c70f",
-    "test/battle-kernel.test.mjs": "50e52a7b309fd989f600e95da1897d19476c83f90582eaf28cd87560cd8476dd"
+    "test/battle-kernel.test.mjs": "3268d37dbe0fce7d57ab0f2cfa3040576c168e3cb69971aed893af9afb385e8f"
   },
   "trainingAllowed": false,
   "modelAllocated": false,
