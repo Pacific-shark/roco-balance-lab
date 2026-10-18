@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-18",
+  "purpose": "阅读案例，非可执行配队；暂未接入训练器。",
+  "sourceSnapshot": "data/catalog-s4-20261015.json",
+  "sourceSha256": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
+  "freshnessEvidence": "docs/evidence/pvp-trait-reading-2026-10-18.json#/sourceRevisionCheck",
+  "sourceAgreementIsNotLiveCertification": true,
+  "trainingStarted": false,
+  "cases": [
+    {
+      "bvid": "BV11cJY6JE7Y",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "publishedDateCst": "2026-10-17",
+      "fullBuildValidated": false,
+      "trainingReady": false,
+      "gameReplayVerified": false,
+      "modeLegalityCertified": false,
+      "id": "weekly51-electric-water",
+      "title": "电环水队",
+      "authorCategory": "热门阵容顶分队",
+      "frameSeconds": [
+        50
+      ],
+      "commentaryWindowSeconds": [
+        41,
+        63
+      ],
+      "sixMembersVisuallyIdentified": true,
+      "members": [
+        {
+          "id": "pet_000005",
+          "name": "水灵",
+          "traitId": "skill_000030",
+          "traitName": "浸润"
+        },
+        {
+          "id": "pet_000174",
+          "name": "荆棘电环",
+          "traitId": "skill_000081",
+          "traitName": "防过载保护"
+        },
+        {
+          "id": "pet_000106",
+          "name": "彩蝶鲨",
+          "traitId": "skill_000033",
+          "traitName": "水翼推进"
+        },
+        {
+          "id": "pet_000071",
+          "name": "火羽",
+          "traitId": "skill_000069",
+          "traitName": "不死鸟"
+        },
+        {
+          "id": "pet_000217",
+          "name": "冰钻布鲁斯",
+          "traitId": "skill_000040",
+          "traitName": "冰钻"
+        },
+        {
+          "id": "pet_000477",
+          "name": "古卷执政官",
+          "traitId": "skill_000142",
+          "traitName": "图书守卫者"
+        }
+      ],
+      "lesson": "前排水系行动给彩蝶鲨准备条件，再结合速度支持与收尾；支援必须连到进场和兑现。",
+      "questions": [
+        "何时继续铺垫，何时换人？",
+        "速冻与脱离之后是否真的产生安全进场机会？",
+        "对方利用低费攻击限制时，谁能继续进攻？"
+      ],
+      "exactBuild": null,
+      "missingBeforeTraining": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ]
+    },
+    {
+      "bvid": "BV11cJY6JE7Y",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "publishedDateCst": "2026-10-17",
+      "fullBuildValidated": false,
+      "trainingReady": false,
+      "gameReplayVerified": false,
+      "modeLegalityCertified": false,
+      "id": "weekly51-water-sand",
+      "title": "水沙队",
+      "authorCategory": "热门阵容上分队",
+      "frameSeconds": [
+        115
+      ],
+      "commentaryWindowSeconds": [
+        107,
+        127
+      ],
+      "sixMembersVisuallyIdentified": true,
+      "members": [
+        {
+          "id": "pet_000005",
+          "name": "水灵",
+          "traitId": "skill_000030",
+          "traitName": "浸润"
+        },
+        {
+          "id": "pet_000106",
+          "name": "彩蝶鲨",
+          "traitId": "skill_000033",
+          "traitName": "水翼推进"
+        },
+        {
+          "id": "pet_000217",
+          "name": "冰钻布鲁斯",
+          "traitId": "skill_000040",
+          "traitName": "冰钻"
+        },
+        {
+          "id": "pet_000071",
+          "name": "火羽",
+          "traitId": "skill_000069",
+          "traitName": "不死鸟"
+        },
+        {
+          "id": "pet_000480",
+          "name": "窃光蚊",
+          "traitId": "skill_000148",
+          "traitName": "血型吸引"
+        },
+        {
+          "id": "pet_000307",
+          "name": "九幽菇",
+          "traitId": "skill_000116",
+          "traitName": "多人宿舍"
+        }
+      ],
+      "lesson": "共同小轴可以搭配不同联防与进攻成员，不能把六个位置全部视作固定配方。",
+      "questions": [
+        "替换支援位后，改善哪些对位、付出哪些代价？",
+        "相同成员在两套构筑里是否承担不同职责？"
+      ],
+      "exactBuild": null,
+      "missingBeforeTraining": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ]
+    },
+    {
+      "bvid": "BV11cJY6JE7Y",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "publishedDateCst": "2026-10-17",
+      "fullBuildValidated": false,
+      "trainingReady": false,
+      "gameReplayVerified": false,
+      "modeLegalityCertified": false,
+      "id": "weekly51-pure-rain",
+      "title": "纯血雨天队",
+      "authorCategory": "科研阵容",
+      "frameSeconds": [
+        291,
+        300
+      ],
+      "commentaryWindowSeconds": [
+        283,
+        305
+      ],
+      "sixMembersVisuallyIdentified": true,
+      "members": [
+        {
+          "id": "pet_000005",
+          "name": "水灵",
+          "traitId": "skill_000030",
+          "traitName": "浸润"
+        },
+        {
+          "id": "pet_000059",
+          "name": "卷毛鸭",
+          "traitId": "skill_000115",
+          "traitName": "得寸进尺"
+        },
+        {
+          "id": "pet_000106",
+          "name": "彩蝶鲨",
+          "traitId": "skill_000033",
+          "traitName": "水翼推进"
+        },
+        {
+          "id": "pet_000516",
+          "name": "雅丹鬃",
+          "traitId": "skill_000167",
+          "traitName": "天通地明"
+        },
+        {
+          "id": "pet_000174",
+          "name": "荆棘电环",
+          "traitId": "skill_000081",
+          "traitName": "防过载保护"
+        },
+        {
+          "id": "pet_000182",
+          "name": "贝古斯",
+          "traitId": "skill_000086",
+          "traitName": "贪心算法"
+        }
+      ],
+      "lesson": "天气依赖与水系使用累计分开考察；作者将此阵容列在科研栏目，不具备与顶分队相同的实绩证据。",
+      "questions": [
+        "开天气损失的行动是否有回报？",
+        "卷毛鸭的天气条件怎样中断？",
+        "天气被覆盖后还有哪些进攻路径？"
+      ],
+      "exactBuild": null,
+      "missingBeforeTraining": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ]
+    },
+    {
+      "bvid": "BV11cJY6JE7Y",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "publishedDateCst": "2026-10-17",
+      "fullBuildValidated": false,
+      "trainingReady": false,
+      "gameReplayVerified": false,
+      "modeLegalityCertified": false,
+      "id": "weekly51-rain-counter",
+      "title": "雨天杀手队（部分成员确认）",
+      "authorCategory": "热门阵容上分队",
+      "frameSeconds": [
+        246
+      ],
+      "commentaryWindowSeconds": [
+        238,
+        260
+      ],
+      "sixMembersVisuallyIdentified": false,
+      "members": [
+        {
+          "id": "pet_000422",
+          "name": "斑枭",
+          "traitId": "skill_000131",
+          "traitName": "逐魂鸟"
+        },
+        {
+          "id": "pet_000007",
+          "name": "魔力猫",
+          "traitId": "skill_000003",
+          "traitName": "氧循环"
+        }
+      ],
+      "lesson": "对成熟小轴的针对也要纳入学习；特性文本支持低费伤害限制，不足以证明整套反制必胜。",
+      "questions": [
+        "斑枭入场前是否能安全承接尚未减费的攻击？",
+        "逼退后对方能否换进其他进攻手？",
+        "针对水沙是否牺牲了其他环境对位？"
+      ],
+      "exactBuild": null,
+      "missingBeforeTraining": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ]
+    }
+  ],
+  "checkedSourceConnections": [
+    {
+      "petId": "pet_000005",
+      "skillId": "skill_000424",
+      "name": "润泽",
+      "learningSource": "skill_stones"
+    },
+    {
+      "petId": "pet_000005",
+      "skillId": "skill_000429",
+      "name": "水泡盾",
+      "learningSource": "native_skills"
+    },
+    {
+      "petId": "pet_000174",
+      "skillId": "skill_000551",
+      "name": "速冻",
+      "learningSource": "skill_stones",
+      "termId": "1032",
+      "correctedAsr": "速动"
+    },
+    {
+      "petId": "pet_000106",
+      "skillId": "skill_000643",
+      "name": "贮藏",
+      "learningSource": "skill_stones"
+    },
+    {
+      "petId": "pet_000106",
+      "skillId": "skill_000423",
+      "name": "天洪",
+      "learningSource": "native_skills"
+    }
+  ],
+  "interpretationRules": [
+    "Author claims and observed video frames are distinct from game-verified rules.",
+    "No advertised rank or win rate is an independently measured outcome.",
+    "Skill connections only confirm source availability, not exact slots or complete legality.",
+    "All intrinsic traits remain active in intended training.",
+    "Known examples seed learning; never reward selecting a prescribed teammate.",
+    "Do not merge researcher, beginner and high-rank lineups into one certified benchmark."
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-10-18",
-  "method": "public-metadata-and-local-audio-transcription",
+  "method": "public-metadata-local-audio-transcription-and-selected-frame-inspection",
   "records": [
     {
       "bvid": "BV1s2ga6tECt",
@@ -191,6 +191,192 @@
       "fullBuildValidated": false,
       "privateTranscript": ".local/pvp-study/BV1ErHt6vEik.asr.json",
       "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV1aYpY6uEUx",
+      "url": "https://www.bilibili.com/video/BV1aYpY6uEUx/",
+      "title": "【洛克时报49.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，环境沉淀趋于稳定了？来看看节后玩什么阵容",
+      "uploader": "树池来了",
+      "publishedAt": "2026-10-10T03:30:47+00:00",
+      "cid": 42613736066,
+      "durationSeconds": 390,
+      "collectedAt": "2026-10-18T15:43:03.533308+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "8bf1b6d9c12359df2775aebfee4202e5a823ce04407ccd5ec3b2d7b8cbb395b0",
+      "audioBytes": 3227241,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "a92a8fcb056791578c2e36848c38219f66831fe2b3466edd6ff9cd3215987324",
+      "segments": 177,
+      "durationAfterVad": 389.979125,
+      "evidenceUse": "versioned-author-commentary-and-study-hypotheses",
+      "focusWindowsSeconds": [
+        [
+          246,
+          289
+        ],
+        [
+          311,
+          378
+        ]
+      ],
+      "fullTranscriptRead": true,
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1aYpY6uEUx.asr.json",
+      "authorPerformanceClaimsIndependentlyVerified": false,
+      "note": "ASR names and numbers require cross-check; author rankings are not measured game results. No transcript is published.",
+      "framesInspected": []
+    },
+    {
+      "bvid": "BV11cJY6JE7Y",
+      "url": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "title": "【洛克时报51.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，我说想回到国庆之前，怎么回到上个赛季了？",
+      "uploader": "树池来了",
+      "publishedAt": "2026-10-17T03:40:58+00:00",
+      "cid": 42809296802,
+      "durationSeconds": 368,
+      "collectedAt": "2026-10-18T15:43:25.881230+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "5795d9020cce207768c303ca6a17c5e615b59d7d914e03de475771440b9c9a8d",
+      "audioBytes": 3037722,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "1d4b5fdb52cdb4a6def8f8fb63c021dabf8a7c60e292a199433f906d732aa109",
+      "segments": 172,
+      "durationAfterVad": 367.0378125,
+      "evidenceUse": "versioned-author-commentary-and-study-hypotheses",
+      "focusWindowsSeconds": [
+        [
+          41,
+          84
+        ],
+        [
+          107,
+          127
+        ],
+        [
+          238,
+          260
+        ],
+        [
+          283,
+          305
+        ],
+        [
+          328,
+          350
+        ]
+      ],
+      "fullTranscriptRead": true,
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV11cJY6JE7Y.asr.json",
+      "authorPerformanceClaimsIndependentlyVerified": false,
+      "note": "ASR names and numbers require cross-check; author rankings are not measured game results. No transcript is published.",
+      "videoSha256": "4e8966496a91892342c74b369087aa3bd78c4a0ad65d088dbbc64709c66c5cae",
+      "framesInspected": [
+        {
+          "requestedSecond": 50,
+          "actualSecond": 50.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "d1f9ff67355f225b8a14a4ffa4fe4bb54dfa0b813fe007e12e72d02cd4eea986"
+        },
+        {
+          "requestedSecond": 71,
+          "actualSecond": 71.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "9b6ea9d2b75c0517d56aaddc242628b175c17e85d3d12881c1b26b2e213494a3"
+        },
+        {
+          "requestedSecond": 115,
+          "actualSecond": 115.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "405321b65f7ce1bbb66201494c218b7aa6414cfc02250222bec0fb22c6c43c18"
+        },
+        {
+          "requestedSecond": 246,
+          "actualSecond": 246.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "3eb90a5b5a6b82a30343df1e3ea36df7ac4609e9f5b3580b50b27f56b1dddcad"
+        },
+        {
+          "requestedSecond": 291,
+          "actualSecond": 291.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "39db06dd195ec7f606eb13a248370c26d47813d364807d62ecaec827908c69e3"
+        },
+        {
+          "requestedSecond": 300,
+          "actualSecond": 300.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "61b137ce8c8e5bb170307c17d608c41981cbb6cc491dc13c523b3cf3a4877eb2"
+        },
+        {
+          "requestedSecond": 342,
+          "actualSecond": 342.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "4cbb074fced89b740dc2f639a1c7de00797cb665cc8779f1fa949873627d12dc"
+        }
+      ],
+      "corrections": [
+        {
+          "rawAsr": "速动",
+          "resolved": "速冻",
+          "evidence": "01:11 title, 05:42 subtitle; Skills skill_000551 and Terms 1032",
+          "implication": "Apply opponent slow marks; do not model as a direct allied speed boost."
+        }
+      ]
+    },
+    {
+      "bvid": "BV1Q8YQ6JEFN",
+      "url": "https://www.bilibili.com/video/BV1Q8YQ6JEFN/",
+      "title": "洛克王国PVP攻略周报第三十期（S4最新周报）包含阵容一图流",
+      "uploader": "沐木-洛克王国世界",
+      "publishedAt": "2026-09-12T04:10:25+00:00",
+      "cid": 41814065319,
+      "durationSeconds": 302,
+      "collectedAt": "2026-10-18T15:43:46.409632+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "e0e634a5f3899e00a5752b603d61dc36994b95c0a2b23a9666b543f791e84594",
+      "audioBytes": 2492370,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "dd538005a19e481a149fa2e77f4e036cab7f4d54012684a9342be5577f2e6364",
+      "segments": 131,
+      "durationAfterVad": 301.139625,
+      "evidenceUse": "versioned-author-commentary-and-study-hypotheses",
+      "focusWindowsSeconds": [
+        [
+          12,
+          37
+        ],
+        [
+          57,
+          78
+        ],
+        [
+          87,
+          113
+        ]
+      ],
+      "fullTranscriptRead": true,
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1Q8YQ6JEFN.asr.json",
+      "authorPerformanceClaimsIndependentlyVerified": false,
+      "note": "ASR names and numbers require cross-check; author rankings are not measured game results. No transcript is published.",
+      "framesInspected": []
     }
   ],
   "modelApiCalls": 0,
@@ -206,5 +392,6 @@
     "Old-season teaching is not current-meta certification.",
     "Two S4 videos excluded from gameplay claims.",
     "Source metadata and local transcript hashes do not establish game-event correctness."
-  ]
+  ],
+  "updatedAt": "2026-10-18T15:49:39.504686+00:00"
 }
