@@ -50,9 +50,14 @@ def main():
             fromfile="training-bridge",tofile="evaluation-bridge"))
         (evidence/"replay-output-fix.diff").write_text(delta,encoding="utf-8")
     initial,trained=report["initialTest"],report["trainedTest"]
-    lines=["# 扩展执行器上的双智能体训练结果", "", "2026-10-18 · 私人项目 · 受限规则实验", "",
+    review_note = (
+        "> **2026-10-18 复审：撤回对配队筛选有效性的判断。** 本文保留历史构筑和原始计数供排错，不作为配队推荐、个体强度或平衡结论。水灵＋彩蝶鲨训练覆盖不足，选中队伍携带落雨但没有水系攻击技能；完整审查见 [雨天小轴复审](rain-core-review-2026-10-18.md)。"
+        if args.evidence == "kernel-ppo-20261018-v4"
+        else "> **仅为工程记录：未验证配队研究有效性。** 不作为配队推荐、个体强度或平衡结论。"
+    )
+    lines=["# 双智能体训练工程记录（配队研究未通过审查）", "", "2026-10-18 · 私人项目 · 受限规则实验", "", review_note, "",
            f"已完成 **{report['trainingSteps']:,} 步环境交互、{report['completedTrainingGames']:,} 场训练对局**。两个独立实体 GRU 策略通过 PPO 更新；冻结后，在相同留出条件上，未训练模型胜 {initial['wins']}/{initial['battles']} 场，训练后胜 {trained['wins']}/{trained['battles']} 场。", "",
-           "这个结果用于检查学习和配队筛选是否有效。它不能直接证明精灵强弱，也不能把以下队伍叫作正式服最优配队。", "",
+           "这个结果仅记录策略参数更新后，对这组固定规则对手的胜局变化。它没有验证真实游戏中的配队协同，也没有完成用户要求的配队研究。以下队伍不作为推荐。", "",
            "## 留出测试结果", "",
            "| 固定在队中的研究对象 | 未训练模型胜局 | 训练后胜局 | 训练后负局 | 达到回合上限 | 不同对手构筑 |",
            "| --- | ---: | ---: | ---: | ---: | ---: |"]

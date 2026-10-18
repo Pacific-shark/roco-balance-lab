@@ -1,0 +1,485 @@
+{
+  "reviewDate": "2026-10-18",
+  "run": "kernel-ppo-20261018-v4",
+  "assessment": "needs-revision",
+  "permittedUse": "engineering-validation-only",
+  "teamResearchAccepted": false,
+  "newTrainingStarted": false,
+  "reason": "Random builds and weak rule opponents do not validate team synergy or individual strength.",
+  "artifacts": {
+    "manifest": {
+      "path": "docs/evidence/kernel-ppo-20261018-v4/manifest.json",
+      "sha256": "132d1b1e0edf7d5ca102893c8a74a5036aa5e9f0ba5ee355cbb9c568f764733e"
+    },
+    "report": {
+      "path": "docs/evidence/kernel-ppo-20261018-v4/report.json",
+      "sha256": "46aa252cc907b99fc6df2bb3c483392246c288bf8d8c61fbc9b1dce07cf6ce01"
+    },
+    "snapshot": {
+      "path": "data/catalog-s4-20261015.json",
+      "sha256": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db"
+    }
+  },
+  "snapshotCertifiedForCurrentGame": false,
+  "pairInExecutablePool": [
+    {
+      "id": "pet_000005",
+      "name": "水灵",
+      "included": true,
+      "trait": {
+        "id": "skill_000030",
+        "name": "浸润",
+        "version": "battle-programs-1",
+        "sourceDescription": "使用水系技能后，全技能能耗-1。",
+        "sourceTerms": [],
+        "rules": [
+          {
+            "trigger": "afterMove",
+            "ops": [
+              {
+                "op": "cost",
+                "target": "self",
+                "amount": -1,
+                "permanent": false
+              }
+            ],
+            "type": "水"
+          }
+        ],
+        "status": "compiled",
+        "pending": [],
+        "gameVerified": false
+      }
+    },
+    {
+      "id": "pet_000106",
+      "name": "彩蝶鲨",
+      "included": true,
+      "trait": {
+        "id": "skill_000033",
+        "name": "水翼推进",
+        "version": "battle-programs-1",
+        "sourceDescription": "己方精灵每使用1次水系技能，自己入场时获得全技能能耗-1。",
+        "sourceTerms": [],
+        "rules": [
+          {
+            "trigger": "entry",
+            "ops": [
+              {
+                "op": "costFromTeamTypeUses",
+                "type": "水",
+                "amount": -1
+              }
+            ]
+          }
+        ],
+        "status": "compiled",
+        "pending": [],
+        "gameVerified": false
+      }
+    }
+  ],
+  "splits": {
+    "train": {
+      "teams": 96,
+      "withWater": 34,
+      "withShark": 3,
+      "withBoth": 1,
+      "pairs": [
+        {
+          "index": 30,
+          "pairMembers": [
+            {
+              "id": "pet_000005",
+              "name": "水灵",
+              "moves": [
+                {
+                  "id": "skill_000547",
+                  "name": "寒风吹"
+                },
+                {
+                  "id": "skill_000428",
+                  "name": "泡沫幻影"
+                },
+                {
+                  "id": "skill_000443",
+                  "name": "潮汐"
+                },
+                {
+                  "id": "skill_000420",
+                  "name": "气泡"
+                }
+              ]
+            },
+            {
+              "id": "pet_000106",
+              "name": "彩蝶鲨",
+              "moves": [
+                {
+                  "id": "skill_000418",
+                  "name": "甩水"
+                },
+                {
+                  "id": "skill_000272",
+                  "name": "魔法增效"
+                },
+                {
+                  "id": "skill_000423",
+                  "name": "天洪"
+                },
+                {
+                  "id": "skill_000649",
+                  "name": "虫蛊"
+                }
+              ]
+            }
+          ],
+          "rainCarriers": []
+        }
+      ]
+    },
+    "candidates": {
+      "teams": 36,
+      "withWater": 15,
+      "withShark": 3,
+      "withBoth": 2,
+      "pairs": [
+        {
+          "index": 1,
+          "pairMembers": [
+            {
+              "id": "pet_000005",
+              "name": "水灵",
+              "moves": [
+                {
+                  "id": "skill_000255",
+                  "name": "突袭"
+                },
+                {
+                  "id": "skill_000429",
+                  "name": "水泡盾"
+                },
+                {
+                  "id": "skill_000428",
+                  "name": "泡沫幻影"
+                },
+                {
+                  "id": "skill_000427",
+                  "name": "落雨"
+                }
+              ]
+            },
+            {
+              "id": "pet_000106",
+              "name": "彩蝶鲨",
+              "moves": [
+                {
+                  "id": "skill_000307",
+                  "name": "能量炮"
+                },
+                {
+                  "id": "skill_000421",
+                  "name": "水炮"
+                },
+                {
+                  "id": "skill_000278",
+                  "name": "快速移动"
+                },
+                {
+                  "id": "skill_000436",
+                  "name": "水花四溅"
+                }
+              ]
+            }
+          ],
+          "rainCarriers": [
+            {
+              "id": "pet_000005",
+              "name": "水灵",
+              "moves": [
+                {
+                  "id": "skill_000255",
+                  "name": "突袭"
+                },
+                {
+                  "id": "skill_000429",
+                  "name": "水泡盾"
+                },
+                {
+                  "id": "skill_000428",
+                  "name": "泡沫幻影"
+                },
+                {
+                  "id": "skill_000427",
+                  "name": "落雨"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "pairMembers": [
+            {
+              "id": "pet_000106",
+              "name": "彩蝶鲨",
+              "moves": [
+                {
+                  "id": "skill_000423",
+                  "name": "天洪"
+                },
+                {
+                  "id": "skill_000278",
+                  "name": "快速移动"
+                },
+                {
+                  "id": "skill_000700",
+                  "name": "回旋风暴"
+                },
+                {
+                  "id": "skill_000649",
+                  "name": "虫蛊"
+                }
+              ]
+            },
+            {
+              "id": "pet_000005",
+              "name": "水灵",
+              "moves": [
+                {
+                  "id": "skill_000420",
+                  "name": "气泡"
+                },
+                {
+                  "id": "skill_000540",
+                  "name": "冰墙"
+                },
+                {
+                  "id": "skill_000429",
+                  "name": "水泡盾"
+                },
+                {
+                  "id": "skill_000428",
+                  "name": "泡沫幻影"
+                }
+              ]
+            }
+          ],
+          "rainCarriers": []
+        }
+      ]
+    },
+    "validation": {
+      "teams": 4,
+      "withWater": 0,
+      "withShark": 0,
+      "withBoth": 0,
+      "pairs": []
+    },
+    "test": {
+      "teams": 8,
+      "withWater": 0,
+      "withShark": 0,
+      "withBoth": 0,
+      "pairs": []
+    }
+  },
+  "waterCandidatePairs": [
+    {
+      "index": 1,
+      "selected": false,
+      "validation": {
+        "win": 8,
+        "loss": 8
+      }
+    },
+    {
+      "index": 5,
+      "selected": false,
+      "validation": {
+        "loss": 12,
+        "win": 4
+      }
+    }
+  ],
+  "selectedWaterTeam": {
+    "index": 3,
+    "members": [
+      {
+        "id": "pet_000246",
+        "name": "卡瓦重（雪山附近的样子）",
+        "moves": [
+          {
+            "id": "skill_000558",
+            "name": "冷凝"
+          },
+          {
+            "id": "skill_000530",
+            "name": "暴风雪"
+          },
+          {
+            "id": "skill_000368",
+            "name": "抽枝"
+          },
+          {
+            "id": "skill_000648",
+            "name": "尾后针"
+          }
+        ]
+      },
+      {
+        "id": "pet_000080",
+        "name": "武者鸡",
+        "moves": [
+          {
+            "id": "skill_000312",
+            "name": "先发制人"
+          },
+          {
+            "id": "skill_000286",
+            "name": "防御"
+          },
+          {
+            "id": "skill_000675",
+            "name": "缠丝劲"
+          },
+          {
+            "id": "skill_000379",
+            "name": "闪燃"
+          }
+        ]
+      },
+      {
+        "id": "pet_000174",
+        "name": "荆棘电环",
+        "moves": [
+          {
+            "id": "skill_000581",
+            "name": "电弧"
+          },
+          {
+            "id": "skill_000764",
+            "name": "掠影"
+          },
+          {
+            "id": "skill_000592",
+            "name": "电流"
+          },
+          {
+            "id": "skill_000584",
+            "name": "引雷"
+          }
+        ]
+      },
+      {
+        "id": "pet_000351",
+        "name": "晶石蜗（火山琉璃的样子）",
+        "moves": [
+          {
+            "id": "skill_000498",
+            "name": "跺地"
+          },
+          {
+            "id": "skill_000523",
+            "name": "蓄势待发"
+          },
+          {
+            "id": "skill_000499",
+            "name": "地刺"
+          },
+          {
+            "id": "skill_000754",
+            "name": "灵光"
+          }
+        ]
+      },
+      {
+        "id": "pet_000005",
+        "name": "水灵",
+        "moves": [
+          {
+            "id": "skill_000255",
+            "name": "突袭"
+          },
+          {
+            "id": "skill_000427",
+            "name": "落雨"
+          },
+          {
+            "id": "skill_000443",
+            "name": "潮汐"
+          },
+          {
+            "id": "skill_000429",
+            "name": "水泡盾"
+          }
+        ]
+      },
+      {
+        "id": "pet_000036",
+        "name": "叮叮恶魔",
+        "moves": [
+          {
+            "id": "skill_000769",
+            "name": "撕裂"
+          },
+          {
+            "id": "skill_000324",
+            "name": "热身运动"
+          },
+          {
+            "id": "skill_000690",
+            "name": "龙卷风"
+          },
+          {
+            "id": "skill_000705",
+            "name": "羽化加速"
+          }
+        ]
+      }
+    ],
+    "waterAttackSlots": []
+  },
+  "relevantUnsupportedMoves": [
+    {
+      "id": "skill_000441",
+      "name": "洗礼",
+      "status": "unsupported",
+      "description": "驱散自己的减益，并获得全技能能耗-1。",
+      "pending": [
+        "驱散自己的减益",
+        "并获得全技能能耗-1"
+      ]
+    },
+    {
+      "id": "skill_000440",
+      "name": "涌泉",
+      "status": "unsupported",
+      "description": "造成魔伤，本技能能耗每-1，威力+10。",
+      "pending": [
+        "本技能能耗每-1",
+        "威力+10"
+      ]
+    },
+    {
+      "id": "skill_000442",
+      "name": "盐水浴",
+      "status": "unsupported",
+      "description": "自己获得全技能能耗-2，应对防御：改为技能能耗-3。",
+      "pending": [
+        "技能能耗-3"
+      ]
+    },
+    {
+      "id": "skill_000643",
+      "name": "贮藏",
+      "status": "unsupported",
+      "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。",
+      "pending": [
+        "每携带1个0能耗技能",
+        "额外+50%"
+      ]
+    }
+  ],
+  "meaning": "Counts describe frozen build exposure, not executed cooperation. Compiled programs are not game-conformance evidence. No real-game synergy magnitude is estimated."
+}
