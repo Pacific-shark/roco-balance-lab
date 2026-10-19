@@ -1,6 +1,6 @@
 // Exact, fail-closed compilation of pinned source descriptions. A recognized
 // prefix never licenses an unrecognized suffix; text is never evaluated as code.
-export const PROGRAM_VERSION = "battle-programs-2";
+export const PROGRAM_VERSION = "battle-programs-3";
 const stats = {
   物攻: ["atk"],
   魔攻: ["spa"],
@@ -35,6 +35,7 @@ const operations = [
   "attackPower",
   "attackHits",
   "carriedZeroCostBuff",
+  "clearMarksUnlessDefended",
 ];
 export const PROGRAM_OPS = Object.freeze(operations);
 
@@ -69,6 +70,8 @@ function buff(text) {
 function clause(raw, base) {
   const text = clean(raw).replace(/^(?:并|且|随后|额外使|额外|使用后)/u, "");
   let m;
+  if (text === "若本次攻击未被防御技能应对,则驱散双方所有印记" && base.kind === "attack")
+    return [{ op: "clearMarksUnlessDefended" }];
   if (
     (m = text.match(
       /^每(?:次)?成功?应对(?:成功)?1次[,，]本技能(威力|连击数)永久([+-]\d+)$/u,
@@ -368,6 +371,7 @@ function parsePart(text, base) {
     .replaceAll("每次使用后，", "每次使用后,")
     .replaceAll("下一次攻击时，", "下一次攻击时,")
     .replaceAll("回合结束时，", "回合结束时,")
+    .replaceAll("若本次攻击未被防御技能应对，", "若本次攻击未被防御技能应对,")
     .replace(/(造成(?:物伤|魔伤))并/g, "$1，")
     .replace(/(减伤\d+%)并/g, "$1，")
     .replace(/(将天气改为[^，]+)，/gu, "$1,");
@@ -548,9 +552,9 @@ export function compileMove(id, source) {
   }
   const plain = parsePart(text, base);
   let response = parsePart(counterText, base);
-  const amount = counterText.match(/^获得(\d+)层$/u);
+  const amount = counterText.match(/^(?:额外)?获得(\d+)层$/u);
   if (
-    replace &&
+    (replace || counterText.startsWith("额外")) &&
     amount &&
     plain.ops.length === 1 &&
     plain.ops[0].op === "status"
@@ -590,7 +594,10 @@ export function compileTrait(id, source) {
     return false;
   };
   let recognized = false;
-  if (text === "敌方精灵离场时，自己获得全技能能耗-3") {
+  if (text === "每场战斗1次，受到致命伤害时保留1血，且敌方获得15层灼烧") {
+    rules.push(traitEntry("static", [{ op: "surviveLethalOnce", hp: 1, enemyBurn: 15 }]));
+    recognized = true;
+  } else if (text === "敌方精灵离场时，自己获得全技能能耗-3") {
     recognized = effect("enemyExit", "自己获得全技能能耗-3");
   } else if (text === "敌方精灵离场后，更换入场的精灵失去3能量") {
     rules.push(

@@ -5,7 +5,7 @@ import { reduceIntegerDamage } from "./battle-arithmetic.mjs";
 import { typeMultiplier } from "./team-engine.mjs";
 import { assertProgram, compileCatalogPrograms } from "./battle-programs.mjs";
 
-export const KERNEL_VERSION = "battle-kernel-2";
+export const KERNEL_VERSION = "battle-kernel-3";
 const statKeys = ["atk", "spa", "def", "spd", "spe"];
 const zeros = () => Object.fromEntries(statKeys.map((k) => [k, 0]));
 const active = (state, side) =>
@@ -108,6 +108,7 @@ function createPet(data, member) {
     trapUntil: 0,
     scheduled: [],
     koCounted: false,
+    lethalSurvivalUsed: false,
   };
   for (const rule of program.rules.filter((r) => r.trigger === "initial"))
     for (const op of rule.ops) {
@@ -207,10 +208,24 @@ function heal(state, side, pet, amount, source) {
   });
   return pet.hp - before;
 }
-function hurt(state, side, pet, amount, source) {
-  const lost = Math.min(pet.hp, Math.max(0, Math.floor(amount)));
+// Damage-stage primitive. Caller supplies damage after arithmetic/mitigation;
+// replay fixtures can test the observed transition without inventing hidden stats.
+export function applyKernelDamage(data, state, side, pet, amount, source) {
+  const attempted = Math.max(0, Math.floor(amount)), before = pet.hp;
+  const survival = staticOps(pet).find((o) => o.op === "surviveLethalOnce");
+  const survives = before > 0 && attempted >= before && survival &&
+    !pet.lethalSurvivalUsed && source.kind !== "health-consumption" &&
+    source.reason !== "freeze-threshold";
+  const lost = Math.min(before, survives ? Math.max(0, before - survival.hp) : attempted);
   pet.hp -= lost;
-  emit(state, { kind: "damage", side, pet: pet.id, amount: lost, source });
+  emit(state, { kind: "damage", side, pet: pet.id, amount: lost, attempted, before, after: pet.hp, source });
+  if (survives) {
+    pet.lethalSurvivalUsed = true;
+    const traitSource = { kind: "trait", id: pet.program.id };
+    emit(state, { kind: "survive-lethal", side, pet: pet.id, hp: pet.hp, source: traitSource });
+    if (active(state, 1 - side))
+      addKernelStatus(data, state, 1 - side, "灼烧", survival.enemyBurn, traitSource);
+  }
   if (pet.hp > 0 && pet.hp * 100 < pet.maxHp * pet.statuses.冻结 * 5) {
     pet.hp = 0;
     emit(state, { kind: "freeze-ko", side, pet: pet.id, source });
@@ -286,7 +301,8 @@ export function addKernelStatus(data, state, side, name, amount, source) {
   if (name === "引电")
     while (pet.statuses.引电 >= 2) {
       pet.statuses.引电 -= 2;
-      hurt(
+      applyKernelDamage(
+        data,
         state,
         side,
         pet,
@@ -295,7 +311,7 @@ export function addKernelStatus(data, state, side, name, amount, source) {
       );
     }
   if (name === "冻结" && pet.hp * 100 < pet.maxHp * pet.statuses.冻结 * 5)
-    hurt(state, side, pet, pet.hp, { ...source, reason: "freeze-threshold" });
+    applyKernelDamage(data, state, side, pet, pet.hp, { ...source, reason: "freeze-threshold" });
 }
 
 function quantity(state, side, selector) {
@@ -348,6 +364,19 @@ function apply(data, state, side, op, ctx) {
     return;
   }
   switch (op.op) {
+    case "clearMarksUnlessDefended": {
+      // A committed defense is not sufficient: it must have executed against
+      // this still-active defender. Failed/interrupt-cancelled actions do not count.
+      const defended = state.roundRecords.some((r) => r.side === 1 - side &&
+        r.pet === other.id && r.kind === "defense" && r.counter &&
+        r.entered === other.entered);
+      if (!defended) {
+        const before = state.teams.map((t) => structuredClone(t.marks));
+        for (const t of state.teams) t.marks = { positive: null, negative: null };
+        emit(state, { kind: "marks-cleared", before, source });
+      } else emit(state, { kind: "mark-clear-blocked", reason: "defended", source });
+      break;
+    }
     case "carriedZeroCostBuff": {
       const carriedCosts = own.moves.map((_, i) =>
         kernelCarriedMoveCost(data, state, side, i),
@@ -510,7 +539,7 @@ function apply(data, state, side, op, ctx) {
       state.weatherTurns = op.turns;
       break;
     case "loseCurrentHp":
-      hurt(state, side, own, scale(own.hp, op.fraction), source);
+      applyKernelDamage(data, state, side, own, scale(own.hp, op.fraction), { kind: "health-consumption", trigger: source });
       break;
     case "powerFromTeamTypeUses":
       own.power += (state.teams[side].typeUses[op.type] ?? 0) * op.amount;
@@ -625,7 +654,7 @@ function entry(data, state, side, index, deferEffects = false) {
       const thorns = mark(state, side, "棘刺"),
         energy = mark(state, side, "降灵");
       if (thorns)
-        hurt(state, side, p, scale(p.maxHp, 0.06 * thorns), {
+        applyKernelDamage(data, state, side, p, scale(p.maxHp, 0.06 * thorns), {
           kind: "mark",
           name: "棘刺",
         });
@@ -972,7 +1001,8 @@ function execute(data, state, side, index, choice, enemyKind, first) {
   let total = 0;
   if (move.kind === "attack")
     for (let n = 0; n < hits && enemy.hp > 0 && p.hp > 0; n++) {
-      total += hurt(
+      total += applyKernelDamage(
+        data,
         state,
         1 - side,
         enemy,
@@ -1060,6 +1090,7 @@ function execute(data, state, side, index, choice, enemyKind, first) {
     pet: p.id,
     move: move.id,
     kind: move.kind,
+    entered: p.entered,
     type: move.type,
     cost,
     counter,
@@ -1190,7 +1221,8 @@ function endPass(data, state) {
     if (p.hp <= 0) continue;
     const poison = p.statuses.中毒;
     if (poison)
-      hurt(
+      applyKernelDamage(
+        data,
         state,
         side,
         p,
@@ -1199,7 +1231,8 @@ function endPass(data, state) {
       );
     const poisonMark = mark(state, side, "中毒");
     if (poisonMark)
-      hurt(
+      applyKernelDamage(
+        data,
         state,
         side,
         p,
@@ -1208,7 +1241,8 @@ function endPass(data, state) {
       );
     const burn = p.statuses.灼烧;
     if (burn) {
-      hurt(
+      applyKernelDamage(
+        data,
         state,
         side,
         p,
@@ -1245,6 +1279,8 @@ function endPass(data, state) {
 }
 
 export function stepKernelBattle(data, state, actions) {
+  if (state.version !== KERNEL_VERSION)
+    throw Error("Kernel version mismatch: old states require an explicit migration, not silent continuation");
   if (!Array.isArray(actions) || actions.length !== 2)
     throw Error("Two simultaneous actions required");
   for (let s = 0; s < 2; s++)

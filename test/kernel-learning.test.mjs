@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {makePools,metadata,newEnvironment,observations,observe,advance,legalMap,ruleAction,SCHEMA,data} from "../src/kernel-learning.mjs";
+import {makePools,metadata,newEnvironment,observations,observe,advance,legalMap,ruleAction,SCHEMA,data,CANDIDATES} from "../src/kernel-learning.mjs";
 import {createKernelBattle,addKernelMark} from "../src/battle-kernel.mjs";
 const pools=makePools();
 test("experimental admission is explicit and formal training stays blocked",()=>{
@@ -14,9 +14,10 @@ test("experimental admission is explicit and formal training stays blocked",()=>
 test("train, candidates, selection opponents and test builds are disjoint",()=>{
   const meta=metadata(pools), hashes=Object.values(meta.splitHashes).flat();
   assert.equal(new Set(hashes).size,hashes.length);
-  assert.equal(meta.executableForms,107);
+  assert.equal(meta.executableForms,CANDIDATES.length);
   assert.equal(meta.fullRosterAdmission,false);
-  assert.equal(new Set(pools.train.flat().map((p)=>p.id)).size,107);
+  assert.deepEqual([...new Set(pools.train.flat().map((p)=>p.id))].sort(),CANDIDATES.map((r)=>r.id).sort());
+  assert.ok(CANDIDATES.some((r)=>r.id==="pet_000071")); // 不死鸟 is now executable.
   for(const team of Object.values(pools).flat())assert.equal(new Set(team.map(p=>data.creatures[p.id].handbook_id)).size,6);
   assert.deepEqual(makePools(),pools);
 });

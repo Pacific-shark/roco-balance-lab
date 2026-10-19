@@ -102,6 +102,8 @@ export async function compileAll() {
     "scripts/kernel-regression.mjs",
     "test/battle-kernel.test.mjs",
     "test/pvp-baseline.test.mjs",
+    "test/pvp-observed-mechanisms.test.mjs",
+    "test/pvp-baseline-audit.test.mjs",
   ];
   const sources = Object.fromEntries(
     await Promise.all(
@@ -131,6 +133,8 @@ export async function compileAll() {
       (p) => p.rules && p.status === "compiled",
     ).length,
     gameReplayConformanceCases: 0,
+    partialObservedTransitionCases: 1,
+    partialObservedTransitionEvidence: "docs/evidence/pvp-observed-events-2026-10-19.json",
     apiTokens: 0,
     compilationMeans:
       "Fully parsed into supported kernel operations; not live-game certification.",
@@ -143,6 +147,8 @@ export async function compileAll() {
       "Pivot/re-entry action cancellation, first-entry immunity, trap expiry, carried passive timing and replacement-effect interleaving are implementation fixtures awaiting current-game calibration.",
       "Five-star panels reuse the launch-game fixture; current season conformance is not certified.",
       "Stockpile counts current carried costs including its own slot; exclusion of one-use conditional discounts remains provisional until checked against game traces.",
+      "Firebird matches one observed ordinary-damage transition only. Multi-hit, indirect damage, self-consumption and freeze-KO boundaries remain source-based implementations awaiting game traces.",
+      "Mark clearing depends on a successfully executed current-entrant defense. No game trace yet verifies this boundary or freeze's conditional extra layers.",
     ],
     unsupported: definitions
       .filter((p) => p.status !== "compiled")

@@ -1,0 +1,142 @@
+{
+  "kind": "partial-game-observations",
+  "reviewedAt": "2026-10-19T09:31:43.891367+00:00",
+  "source": {
+    "bvid": "BV1s8J46KENM",
+    "url": "https://www.bilibili.com/video/BV1s8J46KENM/",
+    "title": "槐与阴恶堕水队 疯狂连胜发泄兽欲！舍弃大脑爽到高潮",
+    "uploader": "小泉-豪炎",
+    "cid": 42797632652,
+    "publishedAt": "2026-10-16T14:31:03+00:00",
+    "durationSeconds": 445,
+    "description": "",
+    "collectedAt": "2026-10-19T09:15:07.057542+00:00",
+    "method": "public-audio-local-faster-whisper-small",
+    "modelApiCalls": 0,
+    "modelApiTokens": 0,
+    "gameReplayVerified": false,
+    "audioSha256": "6bb93232be87c41e72450f24a3e5db55aaf7d272d3f514177b52752d5b0a7e99",
+    "audioBytes": 3654796
+  },
+  "videoSha256": "3ef941308bdd770cfdf3469c7e7e71f6386560846b7e0158b6ae8f87dff83b1b",
+  "inspectionMethod": "Manual review of selected static frames and unverified local ASR; not full-video visual review.",
+  "fullBattleReplaysVerified": 0,
+  "partialTransitionsMatched": 1,
+  "events": [
+    {
+      "id": "firebird-lethal-ordinary-damage",
+      "status": "partial-transition-matched",
+      "timeWindowSeconds": [
+        245,
+        250
+      ],
+      "participants": {
+        "receiver": "pet_000071",
+        "opponent": "pet_000505"
+      },
+      "observations": {
+        "hpBefore": 286,
+        "maxHp": 354,
+        "displayedIncomingDamage": 320,
+        "traitBanner": "不死鸟",
+        "hpAfter": 1,
+        "enemyBurnLayersAtTrigger": 15
+      },
+      "frames": [
+        {
+          "requestedSecond": 245.0,
+          "actualSecond": 245.0,
+          "path": "BV1s8J46KENM.frame-0245.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "b8b6871e8956eca1999ec1a7651db3220d7c53f1168e621aad3614d69367f3eb"
+        },
+        {
+          "requestedSecond": 247.0,
+          "actualSecond": 247.0,
+          "path": "BV1s8J46KENM.frame-0247.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "f84baea9f10abac76334d7ba8768d34f44b4f3ee5b307e4183cab3c68ae59027"
+        },
+        {
+          "requestedSecond": 250.0,
+          "actualSecond": 250.0,
+          "path": "BV1s8J46KENM.frame-0250.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "cf8f0abcc10709d4eebbf8ef4f8ad937dfbaff390f1bf0906c002df6e640227c"
+        }
+      ],
+      "test": "test/pvp-observed-mechanisms.test.mjs",
+      "testInputs": "Observed damage is an input to the damage-stage primitive, not a value recomputed from hidden attacker stats.",
+      "notVerified": [
+        "damage formula",
+        "full six-member battle",
+        "once-per-battle reset boundaries",
+        "multi-hit survival timing",
+        "indirect damage",
+        "freeze threshold",
+        "self-consumption",
+        "counter-action timing"
+      ]
+    },
+    {
+      "id": "shark-visible-cost-snapshots",
+      "status": "observed-not-replay-certified",
+      "sourceMoveOrder": [
+        "回旋风暴",
+        "灵媒",
+        "贮藏",
+        "天洪"
+      ],
+      "observations": [
+        {
+          "at": 124,
+          "costs": [
+            1,
+            1,
+            0,
+            5
+          ]
+        },
+        {
+          "at": 148,
+          "costs": [
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "frames": [
+        {
+          "requestedSecond": 124.0,
+          "actualSecond": 124.0,
+          "path": "BV1s8J46KENM.frame-0124.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "6f89476924267f72292772cd62cae9984e4aec9246f6813e87bfd078d6dc60c3"
+        },
+        {
+          "requestedSecond": 148.0,
+          "actualSecond": 148.0,
+          "path": "BV1s8J46KENM.frame-0148.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "2743bb446aee54f6c9c3b4772365cec1a2a8ac31b5bcf7e40c11bdd6a33e1799"
+        }
+      ],
+      "notVerified": [
+        "uninterrupted event sequence",
+        "exact allied water-use count before entry",
+        "which counter event caused permanent reduction"
+      ],
+      "warning": "Do not infer a replay by joining endpoint snapshots or compare different slot orders without mapping IDs."
+    }
+  ],
+  "buildRelationship": "Same six own species visually present, but the firebird skill loadout differs from the weekly image. This is not a complete replay of the transcribed baseline.",
+  "modelApiCalls": 0,
+  "newResearchTrainingRuns": 0
+}
