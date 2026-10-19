@@ -1,6 +1,6 @@
 {
   "version": "full-roster-mechanism-build-1",
-  "createdAt": "2026-10-18T14:09:09.548Z",
+  "createdAt": "2026-10-19T09:03:08.866Z",
   "sourceSnapshotHash": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
   "sourceManifest": {
     "capturedAt": "2026-10-15T08:12:01.341611+00:00",
@@ -110,17 +110,18 @@
     ],
     "status": "same-revisions"
   },
-  "kernelVersion": "battle-kernel-1",
-  "programVersion": "battle-programs-1",
+  "kernelVersion": "battle-kernel-2",
+  "programVersion": "battle-programs-2",
   "sources": {
-    "src/battle-programs.mjs": "16ef5c7814141880ace81cea29c31f5785a6d563758414d85bc7eb4ca01a5556",
-    "src/battle-kernel.mjs": "b9251e1a93e6645640107a76cc09f6ed40a330e5c542a851b3b8f6ad599fe30c",
+    "src/battle-programs.mjs": "d0373b6c3d47a6b941b4e940cefc68dfd6a251488482edd32c5bd1ef30e6466d",
+    "src/battle-kernel.mjs": "068ec66b9ef92edd13d40bd8dd66162da7838def9f87d2ad1c8b406392ceed41",
     "src/team-stats.mjs": "d975764b02e534930cfc3a5b48ed7aba8c073e3c21c4e09e118a95a2cb0d57d6",
     "src/battle-arithmetic.mjs": "dfcad3292a9bd1934884bf24b38aa3f739f663ba12f295e69d0710de219d9c53",
     "src/team-engine.mjs": "519b1887bf6e4248c4ffcf4b88d1f8c9a28f3279f491d2f3e0485aee9801397f",
-    "scripts/compile-battle-catalog.mjs": "823c32b0455cd993fda25c6574aff650d23674b05243f91e22fd45f67ee1e6f9",
+    "scripts/compile-battle-catalog.mjs": "28322591860e938acc320d4ed581218c2d46ae1003f96aea04327a0d513e4dde",
     "scripts/kernel-regression.mjs": "600cd92b7b1f3b4781db0878be370e29dd436bd1d8f12ddcfbfe370a4eb6c70f",
-    "test/battle-kernel.test.mjs": "3268d37dbe0fce7d57ab0f2cfa3040576c168e3cb69971aed893af9afb385e8f"
+    "test/battle-kernel.test.mjs": "3268d37dbe0fce7d57ab0f2cfa3040576c168e3cb69971aed893af9afb385e8f",
+    "test/pvp-baseline.test.mjs": "3535f2e69bda2c0b2e89dcb2ce0ca19d085ff7e1c5e37ecbf7d85d27bef1be44"
   },
   "trainingAllowed": false,
   "modelAllocated": false,
@@ -129,7 +130,7 @@
     "sourceCandidates": 259,
     "researchTargets": 3,
     "requiredMoves": 579,
-    "compiledMoves": 346,
+    "compiledMoves": 347,
     "requiredTraits": 207,
     "compiledTraits": 75,
     "fullyCompiledSourceForms": 0
@@ -278,7 +279,6 @@
     "skill_000640",
     "skill_000641",
     "skill_000642",
-    "skill_000643",
     "skill_000644",
     "skill_000650",
     "skill_000652",
@@ -2486,7 +2486,7 @@
       "researchTarget": false,
       "traitCompiled": true,
       "sourceMoves": 45,
-      "compiledSourceMoves": 36,
+      "compiledSourceMoves": 37,
       "legalPvpStatus": "pending",
       "unsupportedMoveIds": [
         "skill_000288",
@@ -2496,8 +2496,7 @@
         "skill_000442",
         "skill_000477",
         "skill_000533",
-        "skill_000566",
-        "skill_000643"
+        "skill_000566"
       ]
     },
     {
@@ -3225,7 +3224,7 @@
       "researchTarget": false,
       "traitCompiled": true,
       "sourceMoves": 50,
-      "compiledSourceMoves": 34,
+      "compiledSourceMoves": 35,
       "legalPvpStatus": "pending",
       "unsupportedMoveIds": [
         "skill_000275",
@@ -3240,7 +3239,6 @@
         "skill_000637",
         "skill_000638",
         "skill_000641",
-        "skill_000643",
         "skill_000658",
         "skill_000728",
         "skill_000742"
@@ -5360,7 +5358,7 @@
       "researchTarget": false,
       "traitCompiled": false,
       "sourceMoves": 47,
-      "compiledSourceMoves": 29,
+      "compiledSourceMoves": 30,
       "legalPvpStatus": "pending",
       "unsupportedMoveIds": [
         "skill_000294",
@@ -5373,7 +5371,6 @@
         "skill_000633",
         "skill_000634",
         "skill_000638",
-        "skill_000643",
         "skill_000644",
         "skill_000650",
         "skill_000652",
@@ -5390,7 +5387,7 @@
       "researchTarget": false,
       "traitCompiled": false,
       "sourceMoves": 47,
-      "compiledSourceMoves": 29,
+      "compiledSourceMoves": 30,
       "legalPvpStatus": "pending",
       "unsupportedMoveIds": [
         "skill_000294",
@@ -5403,7 +5400,6 @@
         "skill_000633",
         "skill_000634",
         "skill_000638",
-        "skill_000643",
         "skill_000644",
         "skill_000650",
         "skill_000652",
@@ -5529,7 +5525,7 @@
       "researchTarget": false,
       "traitCompiled": false,
       "sourceMoves": 52,
-      "compiledSourceMoves": 26,
+      "compiledSourceMoves": 27,
       "legalPvpStatus": "pending",
       "unsupportedMoveIds": [
         "skill_000275",
@@ -5554,7 +5550,6 @@
         "skill_000639",
         "skill_000640",
         "skill_000642",
-        "skill_000643",
         "skill_000653",
         "skill_000656",
         "skill_000810"
@@ -7175,7 +7170,7 @@
       "researchTarget": false,
       "traitCompiled": false,
       "sourceMoves": 45,
-      "compiledSourceMoves": 38,
+      "compiledSourceMoves": 39,
       "legalPvpStatus": "pending",
       "unsupportedMoveIds": [
         "skill_000298",
@@ -7183,8 +7178,7 @@
         "skill_000442",
         "skill_000444",
         "skill_000477",
-        "skill_000566",
-        "skill_000643"
+        "skill_000566"
       ]
     },
     {
@@ -7737,7 +7731,7 @@
       ]
     }
   ],
-  "controlledMoveTestCases": 1050,
+  "controlledMoveTestCases": 1053,
   "compiledTraitDefinitions": 81,
   "gameReplayConformanceCases": 0,
   "apiTokens": 0,
@@ -7748,7 +7742,8 @@
     "End-event order, percentage rounding, status retention and re-entry preheat need current-game traces.",
     "Passive/mark multiplication and counter timing need interaction conformance fixtures.",
     "Pivot/re-entry action cancellation, first-entry immunity, trap expiry, carried passive timing and replacement-effect interleaving are implementation fixtures awaiting current-game calibration.",
-    "Five-star panels reuse the launch-game fixture; current season conformance is not certified."
+    "Five-star panels reuse the launch-game fixture; current season conformance is not certified.",
+    "Stockpile counts current carried costs including its own slot; exclusion of one-use conditional discounts remains provisional until checked against game traces."
   ],
   "unsupported": [
     {
@@ -10594,16 +10589,6 @@
       "description": "己方队伍获得2次随机奉献。",
       "unparsed": [
         "己方队伍获得2次随机奉献"
-      ]
-    },
-    {
-      "id": "skill_000643",
-      "name": "贮藏",
-      "kind": "status",
-      "description": "自己获得双攻+50%，每携带1个0能耗技能，额外+50%。",
-      "unparsed": [
-        "每携带1个0能耗技能",
-        "额外+50%"
       ]
     },
     {

@@ -5,7 +5,7 @@ import { reduceIntegerDamage } from "./battle-arithmetic.mjs";
 import { typeMultiplier } from "./team-engine.mjs";
 import { assertProgram, compileCatalogPrograms } from "./battle-programs.mjs";
 
-export const KERNEL_VERSION = "battle-kernel-1";
+export const KERNEL_VERSION = "battle-kernel-2";
 const statKeys = ["atk", "spa", "def", "spd", "spe"];
 const zeros = () => Object.fromEntries(statKeys.map((k) => [k, 0]));
 const active = (state, side) =>
@@ -32,7 +32,8 @@ export function kernelCatalog(snapshot, types) {
 export function sourceLegalMoves(data, member) {
   const c = data.creatures[member.id];
   if (!c) throw Error("Unknown creature");
-  if (!data.bloodlines.some((b) => b.id === member.bloodline))
+  const bloodline = data.bloodlines.find((b) => b.id === member.bloodline);
+  if (!bloodline)
     throw Error("An explicit known bloodline is required");
   // Only source-consistent elementary/lord bloodline paths are executable here.
   if (member.bloodline > 19)
@@ -46,7 +47,7 @@ export function sourceLegalMoves(data, member) {
     ...list(l.blood_skills)
       .filter(
         (x) =>
-          x.blood === member.bloodline &&
+          x.blood === bloodline.name &&
           Number.isInteger(x.level) &&
           x.level <= 60,
       )
@@ -347,6 +348,30 @@ function apply(data, state, side, op, ctx) {
     return;
   }
   switch (op.op) {
+    case "carriedZeroCostBuff": {
+      const carriedCosts = own.moves.map((_, i) =>
+        kernelCarriedMoveCost(data, state, side, i),
+      );
+      const zeroCostCount = carriedCosts.filter((cost) => cost === 0).length;
+      emit(state, {
+        kind: "carried-cost-snapshot",
+        side,
+        pet: own.id,
+        costs: carriedCosts,
+        zeroCostCount,
+        source,
+      });
+      apply(data, state, side, {
+        op: "buff",
+        target: "self",
+        changes: ["atk", "spa"].map((stat) => ({
+          stat,
+          amount: op.base + op.perMove * zeroCostCount,
+          unit: "ratio",
+        })),
+      }, ctx);
+      break;
+    }
     case "statusImmunity":
       if (!own.statusImmunities.includes(op.name))
         own.statusImmunities.push(op.name);
@@ -624,16 +649,30 @@ function selectedMove(data, pet, index, choice) {
 }
 const decodeMove = (action) => action.slice(5).split(":").map(Number);
 export function kernelMoveCost(data, state, side, index, choice) {
+  return modifiedMoveCost(
+    data, state, side, index, selectedMove(data, active(state, side), index, choice), true,
+  );
+}
+
+// Carried costs include current lasting reductions/increases, marks and auras.
+// An unchosen action branch's "this use" discount is not a carried discount.
+// This distinction remains an explicit game-conformance question for the new
+// stockpile fixture; it is not a claim that live-game boundary cases are verified.
+export function kernelCarriedMoveCost(data, state, side, index) {
+  const p = active(state, side);
+  return modifiedMoveCost(data, state, side, index, data.programs[p.moves[index].id], false);
+}
+
+function modifiedMoveCost(data, state, side, index, move, includeImmediate) {
   const p = active(state, side),
-    slot = p.moves[index],
-    move = selectedMove(data, p, index, choice);
+    slot = p.moves[index];
   let value =
     move.cost +
     slot.cost +
     p.cost +
     p.permanentCost -
     mark(state, side, "湿润");
-  value += move.ops
+  value += (includeImmediate ? (move.ops ?? []) : [])
     .filter(
       (op) => op.op === "immediateCost" && whenPasses(state, side, op.when, {}),
     )

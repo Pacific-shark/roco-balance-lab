@@ -1,6 +1,6 @@
 // Exact, fail-closed compilation of pinned source descriptions. A recognized
 // prefix never licenses an unrecognized suffix; text is never evaluated as code.
-export const PROGRAM_VERSION = "battle-programs-1";
+export const PROGRAM_VERSION = "battle-programs-2";
 const stats = {
   物攻: ["atk"],
   魔攻: ["spa"],
@@ -34,6 +34,7 @@ const operations = [
   "skillHits",
   "attackPower",
   "attackHits",
+  "carriedZeroCostBuff",
 ];
 export const PROGRAM_OPS = Object.freeze(operations);
 
@@ -340,6 +341,20 @@ function clause(raw, base) {
 
 function parsePart(text, base) {
   if (!text) return { ops: [], unknown: [] };
+  // This entire clause links the base bonus and the carried-cost multiplier.
+  // Keep it atomic so that an unknown continuation cannot become a partial buff.
+  const stockpile = clean(text).match(
+    /^自己获得双攻\+(\d+)%[，,]每携带1个0能耗技能[，,]额外\+(\d+)%$/u,
+  );
+  if (stockpile)
+    return {
+      ops: [{
+        op: "carriedZeroCostBuff",
+        base: Number(stockpile[1]) / 100,
+        perMove: Number(stockpile[2]) / 100,
+      }],
+      unknown: [],
+    };
   // These comma-bearing phrases form indivisible clauses.
   text = text
     .replace(
