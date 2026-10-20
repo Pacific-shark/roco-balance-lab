@@ -1,0 +1,88 @@
+{
+  "videos": [
+    {
+      "source": {
+        "bvid": "BV13xJ969EKh",
+        "url": "https://www.bilibili.com/video/BV13xJ969EKh/",
+        "title": "【闪耀快报】云云云电环水队一图原来这样构筑！这套摔炮队三分钟一把快速上分！",
+        "uploader": "搞零王",
+        "cid": 42785508551,
+        "publishedAt": "2026-10-16T06:22:51+00:00",
+        "durationSeconds": 101,
+        "description": "",
+        "collectedAt": "2026-10-19T09:14:57.813928+00:00",
+        "method": "public-audio-local-faster-whisper-small",
+        "modelApiCalls": 0,
+        "modelApiTokens": 0,
+        "gameReplayVerified": false,
+        "audioSha256": "cf5e2d5025ff4c14c79f361330c76b4da8c5ff4b75b39815e9609e56435fd28a",
+        "audioBytes": 833240
+      },
+      "asrSegmentsRead": 15,
+      "asrSha256": "9fba2b83b7eaaabdbed252700230238d0e8ff06388bf7b2197276d3d722bb862",
+      "asrNeedsVisualVerification": true,
+      "fullVisualReview": false
+    },
+    {
+      "source": {
+        "bvid": "BV1s8J46KENM",
+        "url": "https://www.bilibili.com/video/BV1s8J46KENM/",
+        "title": "槐与阴恶堕水队 疯狂连胜发泄兽欲！舍弃大脑爽到高潮",
+        "uploader": "小泉-豪炎",
+        "cid": 42797632652,
+        "publishedAt": "2026-10-16T14:31:03+00:00",
+        "durationSeconds": 445,
+        "description": "",
+        "collectedAt": "2026-10-19T09:15:07.057542+00:00",
+        "method": "public-audio-local-faster-whisper-small",
+        "modelApiCalls": 0,
+        "modelApiTokens": 0,
+        "gameReplayVerified": false,
+        "audioSha256": "6bb93232be87c41e72450f24a3e5db55aaf7d272d3f514177b52752d5b0a7e99",
+        "audioBytes": 3654796
+      },
+      "asrSegmentsRead": 81,
+      "asrSha256": "2c9cd75c0672f7f1e31418a8d3bb9dd735a723193b4bd459e176fe60fdaed711",
+      "asrNeedsVisualVerification": true,
+      "fullVisualReview": false
+    }
+  ],
+  "baselineFrame": {
+    "requestedSecond": 15.0,
+    "actualSecond": 15.0,
+    "path": "BV13xJ969EKh.frame-0015.00.png",
+    "width": 852,
+    "height": 480,
+    "sha256": "60f1b776b8bbb7d0cfe36c47c0f1c73a82b0ae9e0f56876592e62b51521dd27d"
+  },
+  "skillIconUrls": {
+    "Skill_101077.png": "https://patchwiki.biligame.com/images/nrc/4/4d/23cfcj8nhq0oj4s8ryl6jvyshbhiirg.png",
+    "Skill_101079.png": "https://patchwiki.biligame.com/images/nrc/d/df/1769tvhvslr2pd3fzd0b7bh1gbuydfz.png",
+    "Skill_104001.png": "https://patchwiki.biligame.com/images/nrc/7/79/5ygyu9plji4wg5nwshq9jdfvzvk1h25.png",
+    "Skill_105012.png": "https://patchwiki.biligame.com/images/nrc/4/4a/oieao9ogbi75ypubxgpc2f86v2ren89.png",
+    "Skill_108019.png": "https://patchwiki.biligame.com/images/nrc/6/67/jcfl5zg0blvd21iomphf87adu7hzclg.png",
+    "Skill_108020.png": "https://patchwiki.biligame.com/images/nrc/4/48/bx3q941v3jk3ny0x5hfk3s3pojes20p.png",
+    "Skill_108022.png": "https://patchwiki.biligame.com/images/nrc/0/01/2jx9d2yieg38t7vhfgoeg5zp8cwpg7v.png",
+    "Skill_108024.png": "https://patchwiki.biligame.com/images/nrc/f/f1/7ftcdbf4d2ze8x21clatfvb4bp7xxg2.png",
+    "Skill_108028.png": "https://patchwiki.biligame.com/images/nrc/4/47/a2ewib6ihyi01yhqd6gobdnf3oa34nn.png",
+    "Skill_114017.png": "https://patchwiki.biligame.com/images/nrc/f/fe/sns95zqq4yq30h7tddpxhduqpuicrel.png",
+    "Skill_116016.png": "https://patchwiki.biligame.com/images/nrc/3/36/quiualy3l9wpvxwoxv5h3yk8tvcccc6.png",
+    "Skill_201088.png": "https://patchwiki.biligame.com/images/nrc/a/a2/mvrvbabckdrcuk3g5a5x6v0i4hkeh59.png",
+    "Skill_201092.png": "https://patchwiki.biligame.com/images/nrc/c/ce/m7xl6pyt9n0c14f4hbjvbsj4yfai3s6.png",
+    "Skill_208034.png": "https://patchwiki.biligame.com/images/nrc/d/d8/7fhhk78k0ulvjxceb1v5xjxkldqqo6y.png",
+    "Skill_212013.png": "https://patchwiki.biligame.com/images/nrc/c/ce/6d67tcx1vat83tv8ykri2wmfr027ybl.png",
+    "Skill_214022.png": "https://patchwiki.biligame.com/images/nrc/0/0d/g38d89luiacgun95twmnane7b6uzk6z.png",
+    "Skill_303012.png": "https://patchwiki.biligame.com/images/nrc/f/ff/8dgn1fl42lkvx0frlf5nbpq8l9ast2n.png",
+    "Skill_700021.png": "https://patchwiki.biligame.com/images/nrc/8/87/ipvdcukg7bwnpeul3o5gmwhqsc7ie8w.png",
+    "Skill_700030.png": "https://patchwiki.biligame.com/images/nrc/8/81/l291v39503tj1opre1ehi6p5b6us19w.png",
+    "Skill_702051.png": "https://patchwiki.biligame.com/images/nrc/b/bf/ak6r243kqtdt5v7w7h0plyck4jsfzqq.png",
+    "Skill_703102.png": "https://patchwiki.biligame.com/images/nrc/9/91/eem4fqi0x3w23bwt8hcms3stbzs570w.png",
+    "Skill_703104.png": "https://patchwiki.biligame.com/images/nrc/4/49/b3qhyq02lpha4m7nz52hcfmjpsa9n11.png",
+    "Skill_704010.png": "https://patchwiki.biligame.com/images/nrc/a/aa/gv00zktdkiiheqa38mbw95ephh71vig.png",
+    "Skill_705004.png": "https://patchwiki.biligame.com/images/nrc/d/d1/73iruqr4zx8sfxvegwbijoedjv2vigh.png",
+    "Skill_705015.png": "https://patchwiki.biligame.com/images/nrc/4/44/24eq32lven9gckfjeh56bzg2t9wrq18.png",
+    "Skill_705018.png": "https://patchwiki.biligame.com/images/nrc/b/be/nzf21n9kadg5rzomwvojxg8hpqqtzqw.png",
+    "Skill_709005.png": "https://patchwiki.biligame.com/images/nrc/1/10/jxd1koqg076j295wh4vjyh9hovn74v7.png"
+  },
+  "mediaPolicy": "Raw public media and full transcripts remain ignored local research files."
+}

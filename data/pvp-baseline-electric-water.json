@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "electric-water-weekly51",
+  "title": "电环水队：公开阵容图的逐槽转录",
+  "reviewedAt": "2026-10-19",
+  "catalogSha256": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
+  "sources": [
+    {"id": "weekly51", "url": "https://www.bilibili.com/video/BV11cJY6JE7Y/", "uploader": "树池来了", "publishedDate": "2026-10-17", "seconds": [50], "role": "阵容名称、作者分类、六人图"},
+    {"id": "quick-report", "url": "https://www.bilibili.com/video/BV13xJ969EKh/", "uploader": "搞零王", "publishedDate": "2026-10-16", "seconds": [15,25,35,45], "role": "更清楚的同一张阵容图及讲解；不是独立实测"}
+  ],
+  "transcriptionMethod": "两张视频帧人工核对；难辨技能用 BWIKI 同一技能 ID 的原始图标逐一比对。没有用生成式修图恢复文字。",
+  "sourceClaim": "一图流署名云云云；周报归类为热门顶分队。排名、胜率未经本项目独立验证。",
+  "members": [
+    {
+      "id": "pet_000005", "name": "水灵", "bloodline": 4,
+      "nature": "胆小", "natureDirection": {"up": "spe", "down": "atk"},
+      "aptitudeStats": ["hp", "spa", "spe"], "sourceAptitudeValues": null,
+      "moves": ["skill_000424", "skill_000429", "skill_000420", "skill_000547"],
+      "moveNames": ["润泽", "水泡盾", "气泡", "寒风吹"],
+      "role": "前期站场、压血与水系次数铺垫，自身也保有进攻压力。",
+      "slotReasons": ["强化魔攻，选择启动时机", "应对攻击并强化；不能假定每次都应对成功", "水系输出并推进己方水系使用次数", "冰系补盲并压低对方魔防；不计入水系次数"]
+    },
+    {
+      "id": "pet_000174", "name": "荆棘电环", "bloodline": 9,
+      "nature": "踏实", "natureDirection": {"up": "hp", "down": "spe"},
+      "aptitudeStats": ["def", "hp", "spd"], "sourceAptitudeValues": null,
+      "moves": ["skill_000551", "skill_000332", "skill_000557", "skill_000325"],
+      "moveNames": ["速冻", "倾泻", "冰点", "晒太阳"],
+      "role": "减速、印记干预与强化反制，行动后脱离；负责创造进场机会。",
+      "slotReasons": ["给敌方两层减速印记", "未被防御应对时清双方印记，可能同时清掉自己的收益", "冻结压力，抓防御追加冻结", "清敌方增益；不能连固有特性一起删除"]
+    },
+    {
+      "id": "pet_000106", "name": "彩蝶鲨", "bloodline": 15,
+      "nature": "胆小", "natureDirection": {"up": "spe", "down": "atk"},
+      "aptitudeStats": ["hp", "spa", "spe"], "sourceAptitudeValues": null,
+      "moves": ["skill_000423", "skill_000643", "skill_000753", "skill_000700"],
+      "moveNames": ["天洪", "贮藏", "灵媒", "回旋风暴"],
+      "role": "进场兑现水系铺垫，强化后从水、幽、翼三个攻击类型中选择。",
+      "slotReasons": ["主力水系攻击；抓状态永久减费", "按携带零费技能数量提高双攻，入场时点影响收益", "幽血脉专属补盲，必须支付血脉机会成本", "翼系补盲，与灵媒争取不同对位"]
+    },
+    {
+      "id": "pet_000071", "name": "火羽", "bloodline": 5,
+      "nature": "聪明", "natureDirection": {"up": "spa", "down": "atk"},
+      "aptitudeStats": ["hp", "spa", "spd"], "sourceAptitudeValues": null,
+      "moves": ["skill_000749", "skill_000458", "skill_000332", "skill_000385"],
+      "moveNames": ["幽灵爆发", "虹光冲击", "倾泻", "高温回火"],
+      "role": "承伤缓冲、清印记和中转，保命次数是有限资源。",
+      "slotReasons": ["高威力幽系攻击，同时有能耗负担", "光血脉补盲", "干预对方印记体系，但可能被防御阻止", "攻击后脱离，把行动转成换人机会"]
+    },
+    {
+      "id": "pet_000217", "name": "冰钻布鲁斯", "bloodline": 3,
+      "nature": "固执", "natureDirection": {"up": "atk", "down": "spa"},
+      "aptitudeStats": ["atk", "hp", "spe"], "sourceAptitudeValues": null,
+      "moves": ["skill_000530", "skill_000271", "skill_000376", "skill_000312"],
+      "moveNames": ["暴风雪", "力量增效", "火焰冲锋", "先发制人"],
+      "role": "物理进攻支线、冰火补盲与先手收尾，避免全队只依赖魔攻水伤。",
+      "slotReasons": ["冰系攻击并附冻结", "用行动换物攻增益", "火血脉补充打击面", "先手攻击补足收尾，但受能耗和伤害阈值限制"]
+    },
+    {
+      "id": "pet_000477", "name": "古卷执政官", "bloodline": 5,
+      "nature": "胆小", "natureDirection": {"up": "spe", "down": "atk"},
+      "aptitudeStats": ["hp", "spa", "spe"], "sourceAptitudeValues": null,
+      "moves": ["skill_000310", "skill_000312", "skill_000458", "skill_000321"],
+      "moveNames": ["湮灭", "先发制人", "虹光冲击", "彗星"],
+      "role": "残局进攻与最后一轮交换；一魔力入场特性及彗星结算都影响价值。",
+      "slotReasons": ["普通系高威力输出", "先手收残，不能按魔攻面板估算物攻招伤害", "光血脉补盲", "随自身失血降低威力，使用后耗尽生命；终局胜负顺序未核准"]
+    }
+  ],
+  "resonance": {
+    "name": "草魔法", "source": "quick-report 48—53秒讲解与阵容图绿色图标",
+    "coexistsWithWishOrLord": false, "exactUsageLimit": null,
+    "currentSeasonExecutionVerified": false
+  },
+  "analysisCultivationPolicy": {
+    "level": 60, "growthStars": 5, "valueOnThreeListedAptitudes": 10, "otherAptitudes": 0,
+    "meaning": "按用户要求使用上限资质的研究起点；数值由项目设定，不冒充原作者实测天分，也不称全局最优。",
+    "natureSearchCompleted": false, "aptitudeSearchCompleted": false,
+    "currentSeasonPanelRevalidated": false
+  },
+  "modeLegalityCertified": false,
+  "fullGameReplayVerified": false,
+  "trainingAllowed": false
+}

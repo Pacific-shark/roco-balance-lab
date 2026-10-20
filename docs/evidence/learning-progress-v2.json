@@ -1,0 +1,5660 @@
+{
+  "version": 3,
+  "archivedAt": "2026-10-16T09:28:52.076136+00:00",
+  "scope": "prototype-only",
+  "canPublishBalanceConclusion": false,
+  "assessment": "share-with-caveats",
+  "runs": [
+    {
+      "id": "deep-rl-pilot-v1/entity_gru-137",
+      "sourceReportSha256": "5d9b034ecb5f3d30bd5e588b839cfe029862584da6729da98c41e6bff4537ed6",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 88,
+      "elapsedSeconds": 25.05,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/entity_gru-256",
+      "sourceReportSha256": "7e70c893f36f179ea24e8531fbd6d6f480826f131c6c713be453a13ed0a9f699",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 86,
+      "elapsedSeconds": 28.67,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/entity_gru-42",
+      "sourceReportSha256": "21eee6acfb8242d0f7ead34e1febade1d180ad6a9b7a9c3398ae67111498ef91",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 82,
+      "elapsedSeconds": 25.62,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/linear-137",
+      "sourceReportSha256": "1d704168a4ffd1cd337087404a2427551957e94582074a10585edf83834a7421",
+      "status": "completed",
+      "config": {
+        "architecture": "linear",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 108,
+      "elapsedSeconds": 16.45,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/linear-256",
+      "sourceReportSha256": "bdce4abed300af536b4fe7101a5f1026862f2b3d094733ae51af0ca6192d687f",
+      "status": "completed",
+      "config": {
+        "architecture": "linear",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 94,
+      "elapsedSeconds": 16.36,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/linear-42",
+      "sourceReportSha256": "3f32a7e275ace0ed9a8f45a0c726cf785c303b0f8e58fbf84a86a6e501789b15",
+      "status": "completed",
+      "config": {
+        "architecture": "linear",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 104,
+      "elapsedSeconds": 31.28,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/mlp-137",
+      "sourceReportSha256": "b2b220e765b8df141b1e985ae5400728589ebd945e92d6b87983c1d55ef7c306",
+      "status": "completed",
+      "config": {
+        "architecture": "mlp",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 83,
+      "elapsedSeconds": 19.53,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/mlp-256",
+      "sourceReportSha256": "f61c5073826b50434432efe90f5031877e5e8eaeb0010470b2adf743c54e068a",
+      "status": "completed",
+      "config": {
+        "architecture": "mlp",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 93,
+      "elapsedSeconds": 18.36,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-pilot-v1/mlp-42",
+      "sourceReportSha256": "75e41180c6b71a32602b00b6da0cd7ecbcee5ac674a6b5e5bdcd543e5cdf3bc0",
+      "status": "completed",
+      "config": {
+        "architecture": "mlp",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 120
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 84,
+      "elapsedSeconds": 18.73,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-longer-control/mlp-42",
+      "sourceReportSha256": "a271e1c4a4357ea9a472f9b91beb9b26a012699d2599623eb62a8b82a8e88582",
+      "status": "budget-exhausted",
+      "config": {
+        "architecture": "mlp",
+        "seed": 42,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 240
+      },
+      "trainingSteps": 18432,
+      "completedTrainingGames": 531,
+      "elapsedSeconds": 240.36,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0
+      },
+      "trainedValidation": null,
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0
+        }
+      ],
+      "capabilities": {},
+      "parameterUpdatesVerified": true,
+      "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+      "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+      "apiTokens": 0,
+      "error": "Cumulative run time budget exhausted",
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-potential-v2/mlp-137",
+      "sourceReportSha256": "32458c7c25323a16f61a8c633a303e3c0e0ef6932131566da994f2de8ba3f741",
+      "status": "completed",
+      "config": {
+        "architecture": "mlp",
+        "seed": 137,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1287,
+      "elapsedSeconds": 256.3,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 1,
+        "losses": 31,
+        "roundCaps": 0,
+        "winFraction": 0.03125,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.9375,
+        "behavior": {
+          "attack": 305,
+          "status": 92,
+          "defense": 37,
+          "switch": 21,
+          "focus": 13,
+          "fullEnergyFocus": 1
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 95,
+            "attack": 206,
+            "focus": 30,
+            "status": 62,
+            "defense": 34,
+            "fullEnergyFocus": 12
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 57,
+            "attack": 240,
+            "focus": 19,
+            "status": 71,
+            "defense": 26,
+            "fullEnergyFocus": 5
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "status": 73,
+            "attack": 286,
+            "switch": 27,
+            "defense": 35,
+            "focus": 14,
+            "fullEnergyFocus": 3
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 1,
+          "losses": 31,
+          "roundCaps": 0,
+          "winFraction": 0.03125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.9375,
+          "behavior": {
+            "attack": 305,
+            "status": 92,
+            "defense": 37,
+            "switch": 21,
+            "focus": 13,
+            "fullEnergyFocus": 1
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42853868131836254
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.33351996541023254
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6666126251220703
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 35,
+            "successFraction": 0.7291666666666666,
+            "firstActionProbability": 0.7380132713976005
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 5,
+            "successFraction": 0.10416666666666667,
+            "firstActionProbability": 0.3106722968320052
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 34,
+            "successFraction": 0.7083333333333334,
+            "firstActionProbability": 0.6900351146856943
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "f969d140207e678408174608d98f899f5c058d0259e458bd9f4756dbb96e8e41",
+      "trainerHash": "b19a9b08ad3bbf0ef8e7d73eb3c37e1fecfab26136320b74c4f26bbcd684e669",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-potential-v2/mlp-256",
+      "sourceReportSha256": "ee4b2bb2257cc2fc9d75c90f71ceeb4eedc307274d4888d59829cc75f68f4253",
+      "status": "completed",
+      "config": {
+        "architecture": "mlp",
+        "seed": 256,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1302,
+      "elapsedSeconds": 230.0,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 1,
+        "losses": 31,
+        "roundCaps": 0,
+        "winFraction": 0.03125,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.9375,
+        "behavior": {
+          "switch": 29,
+          "defense": 43,
+          "attack": 344,
+          "status": 65,
+          "focus": 4,
+          "fullEnergyFocus": 1
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 77,
+            "attack": 251,
+            "defense": 25,
+            "status": 68,
+            "focus": 12,
+            "fullEnergyFocus": 6
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 28,
+            "defense": 36,
+            "attack": 290,
+            "focus": 9,
+            "status": 52,
+            "fullEnergyFocus": 3
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "attack": 315,
+            "switch": 27,
+            "defense": 38,
+            "status": 48,
+            "focus": 7,
+            "fullEnergyFocus": 2
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 1,
+          "losses": 31,
+          "roundCaps": 0,
+          "winFraction": 0.03125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.9375,
+          "behavior": {
+            "switch": 29,
+            "defense": 43,
+            "attack": 344,
+            "status": 65,
+            "focus": 4,
+            "fullEnergyFocus": 1
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.4285858211417993
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.33335353682438534
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.666563535730044
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 38,
+            "successFraction": 0.7916666666666666,
+            "firstActionProbability": 0.7484074576447407
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.2123168616866072
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 41,
+            "successFraction": 0.8541666666666666,
+            "firstActionProbability": 0.7881434708833694
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "f969d140207e678408174608d98f899f5c058d0259e458bd9f4756dbb96e8e41",
+      "trainerHash": "b19a9b08ad3bbf0ef8e7d73eb3c37e1fecfab26136320b74c4f26bbcd684e669",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-potential-v2/mlp-42",
+      "sourceReportSha256": "9d3c5140f7084dc6cd06d3bac3a65a33367b2e26ae753309e79ee47030cd6de7",
+      "status": "completed",
+      "config": {
+        "architecture": "mlp",
+        "seed": 42,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1318,
+      "elapsedSeconds": 162.17,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "attack": 333,
+          "focus": 5,
+          "switch": 16,
+          "defense": 33,
+          "status": 54
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 58,
+            "defense": 32,
+            "attack": 247,
+            "focus": 11,
+            "status": 76,
+            "fullEnergyFocus": 2
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "attack": 307,
+            "switch": 29,
+            "defense": 38,
+            "status": 68,
+            "focus": 1
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 1,
+          "losses": 31,
+          "roundCaps": 0,
+          "winFraction": 0.03125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.9375,
+          "behavior": {
+            "attack": 333,
+            "focus": 4,
+            "switch": 15,
+            "defense": 27,
+            "status": 57,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "attack": 333,
+            "focus": 5,
+            "switch": 16,
+            "defense": 33,
+            "status": 54
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42852552110950154
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.3334096545974414
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6666035900513331
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 35,
+            "successFraction": 0.7291666666666666,
+            "firstActionProbability": 0.7428052441682667
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.1854028906673193
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 37,
+            "successFraction": 0.7708333333333334,
+            "firstActionProbability": 0.8142355481783549
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "f969d140207e678408174608d98f899f5c058d0259e458bd9f4756dbb96e8e41",
+      "trainerHash": "b19a9b08ad3bbf0ef8e7d73eb3c37e1fecfab26136320b74c4f26bbcd684e669",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-generalization-v3/entity_gru-137",
+      "sourceReportSha256": "38f7011e1408be96d0e634e5ad37c6aee770a708c64e4ebc40d0c90fa722a540",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 137,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1254,
+      "elapsedSeconds": 320.97,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 17,
+        "losses": 15,
+        "roundCaps": 0,
+        "winFraction": 0.53125,
+        "roundCapFraction": 0.0,
+        "meanReturn": 0.0625,
+        "behavior": {
+          "attack": 431,
+          "focus": 56,
+          "switch": 37,
+          "defense": 6,
+          "fullEnergyFocus": 2,
+          "status": 8
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 3,
+          "losses": 29,
+          "roundCaps": 0,
+          "winFraction": 0.09375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.8125,
+          "behavior": {
+            "switch": 42,
+            "attack": 354,
+            "focus": 24,
+            "defense": 11,
+            "status": 33,
+            "fullEnergyFocus": 4
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 6,
+          "losses": 26,
+          "roundCaps": 0,
+          "winFraction": 0.1875,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.625,
+          "behavior": {
+            "attack": 409,
+            "focus": 28,
+            "status": 26,
+            "switch": 71,
+            "defense": 5,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 8,
+          "losses": 24,
+          "roundCaps": 0,
+          "winFraction": 0.25,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.5,
+          "behavior": {
+            "attack": 418,
+            "focus": 18,
+            "status": 11,
+            "switch": 49,
+            "defense": 3,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 17,
+          "losses": 15,
+          "roundCaps": 0,
+          "winFraction": 0.53125,
+          "roundCapFraction": 0.0,
+          "meanReturn": 0.0625,
+          "behavior": {
+            "attack": 431,
+            "focus": 56,
+            "switch": 37,
+            "defense": 6,
+            "fullEnergyFocus": 2,
+            "status": 8
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42870523035526276
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.3336734473705292
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6664647161960602
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 43,
+            "successFraction": 0.8958333333333334,
+            "firstActionProbability": 0.9298641408483187
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 4,
+            "successFraction": 0.08333333333333333,
+            "firstActionProbability": 0.1800072950621446
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 46,
+            "successFraction": 0.9583333333333334,
+            "firstActionProbability": 0.9740945100784302
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-generalization-v3/entity_gru-256",
+      "sourceReportSha256": "5812363375db38fea444f28c3f7bebeeba86058bd186fb4fd4442e47ff5d6d03",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 256,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1278,
+      "elapsedSeconds": 245.97,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 21,
+        "losses": 11,
+        "roundCaps": 0,
+        "winFraction": 0.65625,
+        "roundCapFraction": 0.0,
+        "meanReturn": 0.3125,
+        "behavior": {
+          "defense": 6,
+          "attack": 474,
+          "focus": 13,
+          "switch": 16,
+          "fullEnergyFocus": 1,
+          "status": 5
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 2,
+          "losses": 30,
+          "roundCaps": 0,
+          "winFraction": 0.0625,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.875,
+          "behavior": {
+            "switch": 78,
+            "attack": 355,
+            "defense": 11,
+            "status": 23,
+            "focus": 23,
+            "fullEnergyFocus": 7
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 7,
+          "losses": 25,
+          "roundCaps": 0,
+          "winFraction": 0.21875,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.5625,
+          "behavior": {
+            "attack": 457,
+            "focus": 29,
+            "defense": 9,
+            "switch": 56,
+            "status": 18,
+            "fullEnergyFocus": 6
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 19,
+          "losses": 13,
+          "roundCaps": 0,
+          "winFraction": 0.59375,
+          "roundCapFraction": 0.0,
+          "meanReturn": 0.1875,
+          "behavior": {
+            "attack": 463,
+            "switch": 29,
+            "focus": 17,
+            "status": 7,
+            "defense": 2,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 21,
+          "losses": 11,
+          "roundCaps": 0,
+          "winFraction": 0.65625,
+          "roundCapFraction": 0.0,
+          "meanReturn": 0.3125,
+          "behavior": {
+            "defense": 6,
+            "attack": 474,
+            "focus": 13,
+            "switch": 16,
+            "fullEnergyFocus": 1,
+            "status": 5
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42849481229980785
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.33376340568065643
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6661231517791748
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 45,
+            "successFraction": 0.9375,
+            "firstActionProbability": 0.9070907160639763
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 6,
+            "successFraction": 0.125,
+            "firstActionProbability": 0.18897153080130616
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 46,
+            "successFraction": 0.9583333333333334,
+            "firstActionProbability": 0.9276308616002401
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-generalization-v3/entity_gru-42",
+      "sourceReportSha256": "1721983882ced4644300a4fdb596f361989e71a190fc8c651038d9600b5b8847",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 42,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1238,
+      "elapsedSeconds": 230.8,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 203,
+          "attack": 137,
+          "defense": 22,
+          "status": 35,
+          "focus": 44,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 10,
+        "losses": 22,
+        "roundCaps": 0,
+        "winFraction": 0.3125,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.375,
+        "behavior": {
+          "attack": 391,
+          "switch": 35,
+          "defense": 12,
+          "status": 11,
+          "focus": 38,
+          "fullEnergyFocus": 4
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 203,
+            "attack": 137,
+            "defense": 22,
+            "status": 35,
+            "focus": 44,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 44,
+            "attack": 369,
+            "focus": 22,
+            "status": 36,
+            "defense": 13,
+            "fullEnergyFocus": 2
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 8,
+          "losses": 24,
+          "roundCaps": 0,
+          "winFraction": 0.25,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.5,
+          "behavior": {
+            "attack": 428,
+            "status": 13,
+            "defense": 9,
+            "switch": 23,
+            "focus": 20,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 9,
+          "losses": 23,
+          "roundCaps": 0,
+          "winFraction": 0.28125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.4375,
+          "behavior": {
+            "attack": 387,
+            "switch": 40,
+            "status": 23,
+            "focus": 31,
+            "fullEnergyFocus": 4,
+            "defense": 14
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 10,
+          "losses": 22,
+          "roundCaps": 0,
+          "winFraction": 0.3125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.375,
+          "behavior": {
+            "attack": 391,
+            "switch": 35,
+            "defense": 12,
+            "status": 11,
+            "focus": 38,
+            "fullEnergyFocus": 4
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42841994514067966
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.33354852348566055
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6664499938488007
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 43,
+            "successFraction": 0.8958333333333334,
+            "firstActionProbability": 0.8501783162355423
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 8,
+            "successFraction": 0.16666666666666666,
+            "firstActionProbability": 0.29331016540527344
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 46,
+            "successFraction": 0.9583333333333334,
+            "firstActionProbability": 0.9538766443729401
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-generalization-v3/entity_mlp-137",
+      "sourceReportSha256": "8b80202d88887138a6a99bd141e29b1e13576f1ed969586c42def3f44dfe99d1",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 137,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1262,
+      "elapsedSeconds": 293.61,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 12,
+        "losses": 20,
+        "roundCaps": 0,
+        "winFraction": 0.375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.25,
+        "behavior": {
+          "attack": 418,
+          "focus": 48,
+          "switch": 31,
+          "status": 7,
+          "defense": 1,
+          "fullEnergyFocus": 1
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 3,
+          "losses": 29,
+          "roundCaps": 0,
+          "winFraction": 0.09375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.8125,
+          "behavior": {
+            "attack": 375,
+            "switch": 52,
+            "focus": 24,
+            "fullEnergyFocus": 7,
+            "defense": 9,
+            "status": 25
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 6,
+          "losses": 26,
+          "roundCaps": 0,
+          "winFraction": 0.1875,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.625,
+          "behavior": {
+            "attack": 422,
+            "switch": 90,
+            "status": 18,
+            "defense": 5,
+            "focus": 29,
+            "fullEnergyFocus": 7
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 13,
+          "losses": 19,
+          "roundCaps": 0,
+          "winFraction": 0.40625,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.1875,
+          "behavior": {
+            "attack": 468,
+            "switch": 44,
+            "focus": 29,
+            "status": 9,
+            "fullEnergyFocus": 2,
+            "defense": 1
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 12,
+          "losses": 20,
+          "roundCaps": 0,
+          "winFraction": 0.375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.25,
+          "behavior": {
+            "attack": 418,
+            "focus": 48,
+            "switch": 31,
+            "status": 7,
+            "defense": 1,
+            "fullEnergyFocus": 1
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.4285461629430453
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.33333027362823486
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.666555255651474
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 46,
+            "successFraction": 0.9583333333333334,
+            "firstActionProbability": 0.9552916462222735
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 5,
+            "successFraction": 0.10416666666666667,
+            "firstActionProbability": 0.12802656251005828
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 46,
+            "successFraction": 0.9583333333333334,
+            "firstActionProbability": 0.9836649745702744
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-generalization-v3/entity_mlp-256",
+      "sourceReportSha256": "51a47c783c1abd53a2ebf6c48038201d8f2ca7e5a9e6cc816c613d190833774a",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 256,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1215,
+      "elapsedSeconds": 303.19,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 14,
+        "losses": 18,
+        "roundCaps": 0,
+        "winFraction": 0.4375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.125,
+        "behavior": {
+          "attack": 464,
+          "focus": 26,
+          "switch": 35,
+          "fullEnergyFocus": 6,
+          "status": 6,
+          "defense": 1
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 2,
+          "losses": 30,
+          "roundCaps": 0,
+          "winFraction": 0.0625,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.875,
+          "behavior": {
+            "switch": 50,
+            "attack": 326,
+            "defense": 23,
+            "focus": 40,
+            "status": 46,
+            "fullEnergyFocus": 8
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 10,
+          "losses": 22,
+          "roundCaps": 0,
+          "winFraction": 0.3125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.375,
+          "behavior": {
+            "attack": 511,
+            "focus": 18,
+            "status": 13,
+            "defense": 9,
+            "switch": 13
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 9,
+          "losses": 23,
+          "roundCaps": 0,
+          "winFraction": 0.28125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.4375,
+          "behavior": {
+            "attack": 488,
+            "defense": 9,
+            "switch": 32,
+            "status": 14,
+            "focus": 22,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 14,
+          "losses": 18,
+          "roundCaps": 0,
+          "winFraction": 0.4375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.125,
+          "behavior": {
+            "attack": 464,
+            "focus": 26,
+            "switch": 35,
+            "fullEnergyFocus": 6,
+            "status": 6,
+            "defense": 1
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42857541019717854
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.3334496815999349
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6664870977401733
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 47,
+            "successFraction": 0.9791666666666666,
+            "firstActionProbability": 0.9824903334180514
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 10,
+            "successFraction": 0.20833333333333334,
+            "firstActionProbability": 0.49926073011010885
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 24,
+            "successFraction": 0.5,
+            "firstActionProbability": 0.5061872522346675
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-generalization-v3/entity_mlp-42",
+      "sourceReportSha256": "060e85bbce7770c8087397e2a8e66e29d44667be654b483ce7ee815d6310299b",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 42,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "trainingSteps": 32768,
+      "completedTrainingGames": 1247,
+      "elapsedSeconds": 297.01,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 0,
+        "losses": 32,
+        "roundCaps": 0,
+        "winFraction": 0.0,
+        "roundCapFraction": 0.0,
+        "meanReturn": -1.0,
+        "behavior": {
+          "switch": 204,
+          "attack": 135,
+          "defense": 22,
+          "status": 35,
+          "focus": 43,
+          "fullEnergyFocus": 21
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 12,
+        "losses": 20,
+        "roundCaps": 0,
+        "winFraction": 0.375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.25,
+        "behavior": {
+          "attack": 444,
+          "focus": 16,
+          "switch": 16,
+          "status": 2,
+          "defense": 3
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 0,
+          "losses": 32,
+          "roundCaps": 0,
+          "winFraction": 0.0,
+          "roundCapFraction": 0.0,
+          "meanReturn": -1.0,
+          "behavior": {
+            "switch": 204,
+            "attack": 135,
+            "defense": 22,
+            "status": 35,
+            "focus": 43,
+            "fullEnergyFocus": 21
+          }
+        },
+        {
+          "trainingSteps": 8192,
+          "split": "validation",
+          "battles": 32,
+          "wins": 2,
+          "losses": 30,
+          "roundCaps": 0,
+          "winFraction": 0.0625,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.875,
+          "behavior": {
+            "switch": 57,
+            "attack": 375,
+            "focus": 29,
+            "status": 34,
+            "defense": 11,
+            "fullEnergyFocus": 12
+          }
+        },
+        {
+          "trainingSteps": 16384,
+          "split": "validation",
+          "battles": 32,
+          "wins": 6,
+          "losses": 26,
+          "roundCaps": 0,
+          "winFraction": 0.1875,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.625,
+          "behavior": {
+            "attack": 420,
+            "switch": 45,
+            "focus": 19,
+            "defense": 8,
+            "fullEnergyFocus": 4,
+            "status": 7
+          }
+        },
+        {
+          "trainingSteps": 24576,
+          "split": "validation",
+          "battles": 32,
+          "wins": 9,
+          "losses": 23,
+          "roundCaps": 0,
+          "winFraction": 0.28125,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.4375,
+          "behavior": {
+            "attack": 443,
+            "focus": 15,
+            "defense": 8,
+            "switch": 26,
+            "status": 4,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 32768,
+          "split": "validation",
+          "battles": 32,
+          "wins": 12,
+          "losses": 20,
+          "roundCaps": 0,
+          "winFraction": 0.375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.25,
+          "behavior": {
+            "attack": 444,
+            "focus": 16,
+            "switch": 16,
+            "status": 2,
+            "defense": 3
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 23,
+            "successFraction": 0.4791666666666667,
+            "firstActionProbability": 0.42836136370897293
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 2,
+            "successFraction": 0.041666666666666664,
+            "firstActionProbability": 0.3333848988016446
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 30,
+            "successFraction": 0.625,
+            "firstActionProbability": 0.6666409373283386
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 48,
+            "successes": 47,
+            "successFraction": 0.9791666666666666,
+            "firstActionProbability": 0.9505358710885048
+          },
+          "focus": {
+            "cases": 48,
+            "successes": 0,
+            "successFraction": 0.0,
+            "firstActionProbability": 0.005471029008428256
+          },
+          "switch": {
+            "cases": 48,
+            "successes": 47,
+            "successFraction": 0.9791666666666666,
+            "firstActionProbability": 0.9978437125682831
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-resource-v4/entity_mlp-42",
+      "sourceReportSha256": "f44e25c6d8b0df052bda80879b83c458f3ae909d5c1a9bf14ea392216ddc99e0",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 1,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0001,
+        "threads": 1,
+        "maxSeconds": 240,
+        "shaping": 0,
+        "evalEvery": 0,
+        "trainPool": 32,
+        "parentTrainingSteps": 32768,
+        "curriculum": true,
+        "retentionKL": 0.2,
+        "entropy": 0.02,
+        "curriculumKinds": [
+          "focus"
+        ]
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 2508,
+      "elapsedSeconds": 41.77,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 12,
+        "losses": 20,
+        "roundCaps": 0,
+        "winFraction": 0.375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.25,
+        "behavior": {
+          "attack": 444,
+          "focus": 16,
+          "switch": 16,
+          "status": 2,
+          "defense": 3
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 14,
+        "losses": 18,
+        "roundCaps": 0,
+        "winFraction": 0.4375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.125,
+        "behavior": {
+          "attack": 446,
+          "focus": 17,
+          "switch": 12,
+          "defense": 3,
+          "status": 4,
+          "fullEnergyFocus": 1
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 12,
+          "losses": 20,
+          "roundCaps": 0,
+          "winFraction": 0.375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.25,
+          "behavior": {
+            "attack": 444,
+            "focus": 16,
+            "switch": 16,
+            "status": 2,
+            "defense": 3
+          }
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 14,
+          "losses": 18,
+          "roundCaps": 0,
+          "winFraction": 0.4375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.125,
+          "behavior": {
+            "attack": 446,
+            "focus": 17,
+            "switch": 12,
+            "defense": 3,
+            "status": 4,
+            "fullEnergyFocus": 1
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 24
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 0
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 24
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 23
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 12
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 13
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "8e7f60a894b0ad72b1eaef42f2643416ba4383a5b1efdccd1bb59ac0bc62bf1d",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": null,
+      "configurationCorrection": {
+        "originalReportSha256": "02cbaf87864df0dce4b82a3faa4d0c4b9aa9465a274bcc86ab53a02c67a682b0",
+        "reason": "Inherited parent metadata did not describe the curriculum optimizer and vector count; corrected from the archived executed source. Weights and outcomes unchanged.",
+        "previousConfig": {
+          "architecture": "entity_mlp",
+          "seed": 42,
+          "steps": 4096,
+          "envs": 4,
+          "horizon": 32,
+          "hidden": 64,
+          "epochs": 3,
+          "learningRate": 0.0003,
+          "threads": 1,
+          "maxSeconds": 240,
+          "shaping": 0,
+          "evalEvery": 8192,
+          "trainPool": 32,
+          "parentTrainingSteps": 32768,
+          "curriculum": true
+        }
+      }
+    },
+    {
+      "id": "deep-rl-mixed-v5/entity_mlp-137",
+      "sourceReportSha256": "6e5ee3b1d9af6525feb50dd4f7260038abc1c9320b264888f0843d39e61f708a",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 137,
+        "steps": 4096,
+        "envs": 1,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0001,
+        "threads": 1,
+        "maxSeconds": 240,
+        "shaping": 0,
+        "evalEvery": 0,
+        "trainPool": 32,
+        "parentTrainingSteps": 32768,
+        "curriculum": true,
+        "retentionKL": 0.2,
+        "entropy": 0.02,
+        "curriculumKinds": [
+          "focus",
+          "switch"
+        ]
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 1983,
+      "elapsedSeconds": 54.95,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 12,
+        "losses": 20,
+        "roundCaps": 0,
+        "winFraction": 0.375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.25,
+        "behavior": {
+          "attack": 418,
+          "focus": 48,
+          "switch": 31,
+          "status": 7,
+          "defense": 1,
+          "fullEnergyFocus": 1
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 14,
+        "losses": 18,
+        "roundCaps": 0,
+        "winFraction": 0.4375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.125,
+        "behavior": {
+          "attack": 405,
+          "focus": 48,
+          "switch": 25,
+          "defense": 2,
+          "status": 8
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 12,
+          "losses": 20,
+          "roundCaps": 0,
+          "winFraction": 0.375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.25,
+          "behavior": {
+            "attack": 418,
+            "focus": 48,
+            "switch": 31,
+            "status": 7,
+            "defense": 1,
+            "fullEnergyFocus": 1
+          }
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 14,
+          "losses": 18,
+          "roundCaps": 0,
+          "winFraction": 0.4375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.125,
+          "behavior": {
+            "attack": 405,
+            "focus": 48,
+            "switch": 25,
+            "defense": 2,
+            "status": 8
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 23
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 8
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 23
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 23
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 16
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 23
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "7310a11c23254bc3908064c5dc1c5b57f195e1d8d1a471ec322b7e114df870b4",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": {
+        "scope": "held-out slot permutations 3..5; scripted artificial late-game positions",
+        "metric": "actual engine victory, no evaluator-imposed two-turn deadline",
+        "initial": {
+          "battles": 24,
+          "wins": 7,
+          "firstActionCorrect": 7,
+          "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+          "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e"
+        },
+        "trained": {
+          "battles": 24,
+          "wins": 23,
+          "firstActionCorrect": 23,
+          "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+          "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e"
+        },
+        "beforeCheckpointSha256": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+        "afterCheckpointSha256": "7f7ea42553934bf7999ce542478e20ea2ae4bbf93f41ae4468a973d21bb4f9e1",
+        "parameterHashes": [
+          "356caddb510d105660079c7d599bb9f54228ed265fda2ada59d506236cfe9a39",
+          "48eba72fecef033c6f283010c56c8091051a6726dab726e64cfe9a73bb59abab"
+        ],
+        "caveat": "This retrospective metric correction does not certify novel-species or real-match generalization. Original two-turn results remain in the raw training report."
+      },
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-mixed-v5/entity_mlp-256",
+      "sourceReportSha256": "05637f06ca3ea46696fe32981130746d05e1fbda0025cae231335bfd5373db88",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 256,
+        "steps": 4096,
+        "envs": 1,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0001,
+        "threads": 1,
+        "maxSeconds": 240,
+        "shaping": 0,
+        "evalEvery": 0,
+        "trainPool": 32,
+        "parentTrainingSteps": 32768,
+        "curriculum": true,
+        "retentionKL": 0.2,
+        "entropy": 0.02,
+        "curriculumKinds": [
+          "focus",
+          "switch"
+        ]
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 2127,
+      "elapsedSeconds": 48.27,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 14,
+        "losses": 18,
+        "roundCaps": 0,
+        "winFraction": 0.4375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.125,
+        "behavior": {
+          "attack": 464,
+          "focus": 26,
+          "switch": 35,
+          "fullEnergyFocus": 6,
+          "status": 6,
+          "defense": 1
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 13,
+        "losses": 19,
+        "roundCaps": 0,
+        "winFraction": 0.40625,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.1875,
+        "behavior": {
+          "attack": 493,
+          "switch": 49,
+          "focus": 19,
+          "fullEnergyFocus": 1,
+          "status": 5,
+          "defense": 2
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 14,
+          "losses": 18,
+          "roundCaps": 0,
+          "winFraction": 0.4375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.125,
+          "behavior": {
+            "attack": 464,
+            "focus": 26,
+            "switch": 35,
+            "fullEnergyFocus": 6,
+            "status": 6,
+            "defense": 1
+          }
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 13,
+          "losses": 19,
+          "roundCaps": 0,
+          "winFraction": 0.40625,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.1875,
+          "behavior": {
+            "attack": 493,
+            "switch": 49,
+            "focus": 19,
+            "fullEnergyFocus": 1,
+            "status": 5,
+            "defense": 2
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 24
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 5
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 13
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 23
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 15
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 23
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "7310a11c23254bc3908064c5dc1c5b57f195e1d8d1a471ec322b7e114df870b4",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": {
+        "scope": "held-out slot permutations 3..5; scripted artificial late-game positions",
+        "metric": "actual engine victory, no evaluator-imposed two-turn deadline",
+        "initial": {
+          "battles": 24,
+          "wins": 11,
+          "firstActionCorrect": 11,
+          "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+          "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e"
+        },
+        "trained": {
+          "battles": 24,
+          "wins": 21,
+          "firstActionCorrect": 21,
+          "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+          "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e"
+        },
+        "beforeCheckpointSha256": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+        "afterCheckpointSha256": "59173deec7ef1e1525e4f1b41b5ead78ad02835d1ae20c622d14fcd6c32b051b",
+        "parameterHashes": [
+          "5a8b0cdb4aa279426ae684a0c4e57c00e6a0313640ebbf3c320600d39c52b12d",
+          "c80f374c2a928f655924a96578f39266b5f1d76066cc6d7c8f4a04cdf94b2986"
+        ],
+        "caveat": "This retrospective metric correction does not certify novel-species or real-match generalization. Original two-turn results remain in the raw training report."
+      },
+      "configurationCorrection": null
+    },
+    {
+      "id": "deep-rl-mixed-v5/entity_mlp-42",
+      "sourceReportSha256": "b52715ccc69dc54e7b77ab9764be64b3be613e0968b0360139fc0327d076fed5",
+      "status": "completed",
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 42,
+        "steps": 4096,
+        "envs": 1,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0001,
+        "threads": 1,
+        "maxSeconds": 240,
+        "shaping": 0,
+        "evalEvery": 0,
+        "trainPool": 32,
+        "parentTrainingSteps": 32768,
+        "curriculum": true,
+        "retentionKL": 0.2,
+        "entropy": 0.02,
+        "curriculumKinds": [
+          "focus",
+          "switch"
+        ]
+      },
+      "trainingSteps": 4096,
+      "completedTrainingGames": 2172,
+      "elapsedSeconds": 39.91,
+      "initialValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 12,
+        "losses": 20,
+        "roundCaps": 0,
+        "winFraction": 0.375,
+        "roundCapFraction": 0.0,
+        "meanReturn": -0.25,
+        "behavior": {
+          "attack": 444,
+          "focus": 16,
+          "switch": 16,
+          "status": 2,
+          "defense": 3
+        }
+      },
+      "trainedValidation": {
+        "split": "validation",
+        "battles": 32,
+        "wins": 16,
+        "losses": 16,
+        "roundCaps": 0,
+        "winFraction": 0.5,
+        "roundCapFraction": 0.0,
+        "meanReturn": 0.0,
+        "behavior": {
+          "attack": 437,
+          "focus": 16,
+          "status": 3,
+          "switch": 11,
+          "defense": 2,
+          "fullEnergyFocus": 1
+        }
+      },
+      "curve": [
+        {
+          "trainingSteps": 0,
+          "split": "validation",
+          "battles": 32,
+          "wins": 12,
+          "losses": 20,
+          "roundCaps": 0,
+          "winFraction": 0.375,
+          "roundCapFraction": 0.0,
+          "meanReturn": -0.25,
+          "behavior": {
+            "attack": 444,
+            "focus": 16,
+            "switch": 16,
+            "status": 2,
+            "defense": 3
+          }
+        },
+        {
+          "trainingSteps": 4096,
+          "split": "validation",
+          "battles": 32,
+          "wins": 16,
+          "losses": 16,
+          "roundCaps": 0,
+          "winFraction": 0.5,
+          "roundCapFraction": 0.0,
+          "meanReturn": 0.0,
+          "behavior": {
+            "attack": 437,
+            "focus": 16,
+            "status": 3,
+            "switch": 11,
+            "defense": 2,
+            "fullEnergyFocus": 1
+          }
+        }
+      ],
+      "capabilities": {
+        "initialCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 24
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 0
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 24
+          }
+        },
+        "trainedCapabilities": {
+          "finish": {
+            "cases": 24,
+            "successes": 23
+          },
+          "focus": {
+            "cases": 24,
+            "successes": 12
+          },
+          "switch": {
+            "cases": 24,
+            "successes": 23
+          }
+        }
+      },
+      "parameterUpdatesVerified": true,
+      "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+      "trainerHash": "7310a11c23254bc3908064c5dc1c5b57f195e1d8d1a471ec322b7e114df870b4",
+      "apiTokens": 0,
+      "error": null,
+      "resourceOutcomes": {
+        "scope": "held-out slot permutations 3..5; scripted artificial late-game positions",
+        "metric": "actual engine victory, no evaluator-imposed two-turn deadline",
+        "initial": {
+          "battles": 24,
+          "wins": 0,
+          "firstActionCorrect": 0,
+          "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+          "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e"
+        },
+        "trained": {
+          "battles": 24,
+          "wins": 19,
+          "firstActionCorrect": 19,
+          "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+          "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e"
+        },
+        "beforeCheckpointSha256": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+        "afterCheckpointSha256": "f4ac252890e0770e5c1c27004d8c5906a67a5487ccfab931f8009175d390f6ad",
+        "parameterHashes": [
+          "9f687b314c74a0f95362aab314e4198f3a50fc22d897f5db11db46bc7459d7bd",
+          "0fa4efef65b03e6dcf1f215408c2bdcb653135156333fa20bc7ac0ac2003f092"
+        ],
+        "caveat": "This retrospective metric correction does not certify novel-species or real-match generalization. Original two-turn results remain in the raw training report."
+      },
+      "configurationCorrection": null
+    }
+  ],
+  "limitations": [
+    "10 个形态、42 个技能的受限模拟器；不是现行全量 PVP。",
+    "验证只有两套留出构筑；重复座位与训练种子不能当作独立对位。",
+    "能力题为人工构造的六成员残局，不能代表实战中的出现频率。",
+    "胜率采用真实终局；过程奖励不计入验证胜负。",
+    "该页显示已归档实验；测试集未用于调参。"
+  ],
+  "neuralStudy": {
+    "status": "completed",
+    "target": "pet_000028",
+    "candidateCount": 6,
+    "totalBattles": 960,
+    "weightsUnchanged": true,
+    "selected": [
+      {
+        "team": {
+          "id": "search-8185fb74",
+          "name": "目标精灵配队",
+          "members": [
+            {
+              "id": "pet_000028",
+              "moves": [
+                "skill_000359",
+                "skill_000286",
+                "skill_000347",
+                "skill_000341"
+              ],
+              "nature": "逞强",
+              "ivs": {
+                "hp": 8,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000065",
+              "moves": [
+                "skill_000342",
+                "skill_000346",
+                "skill_000359",
+                "skill_000361"
+              ],
+              "nature": "踏实",
+              "ivs": {
+                "hp": 8,
+                "atk": 0,
+                "def": 8,
+                "spa": 0,
+                "spd": 10,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000005",
+              "moves": [
+                "skill_000421",
+                "skill_000418",
+                "skill_000303",
+                "skill_000429"
+              ],
+              "nature": "莽撞",
+              "ivs": {
+                "hp": 10,
+                "atk": 0,
+                "def": 0,
+                "spa": 8,
+                "spd": 10,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000522",
+              "moves": [
+                "skill_000372",
+                "skill_000312",
+                "skill_000346",
+                "skill_000362"
+              ],
+              "nature": "坦率",
+              "ivs": {
+                "hp": 0,
+                "atk": 10,
+                "def": 0,
+                "spa": 0,
+                "spd": 0,
+                "spe": 8
+              }
+            },
+            {
+              "id": "pet_000006",
+              "moves": [
+                "skill_000378",
+                "skill_000399",
+                "skill_000286",
+                "skill_000381"
+              ],
+              "nature": "天真",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 10,
+                "spd": 0,
+                "spe": 8
+              }
+            },
+            {
+              "id": "pet_000007",
+              "moves": [
+                "skill_000353",
+                "skill_000342",
+                "skill_000286",
+                "skill_000361"
+              ],
+              "nature": "胆小",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 10,
+                "spa": 0,
+                "spd": 0,
+                "spe": 10
+              }
+            }
+          ],
+          "lineup": [
+            {
+              "id": "pet_000028",
+              "moves": [
+                "skill_000359",
+                "skill_000286",
+                "skill_000347",
+                "skill_000341"
+              ],
+              "nature": "逞强",
+              "ivs": {
+                "hp": 8,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+              },
+              "name": "奇丽花",
+              "trait": "养分重吸收",
+              "moveNames": [
+                "棘突",
+                "防御",
+                "氧输送",
+                "刺藤"
+              ]
+            },
+            {
+              "id": "pet_000065",
+              "moves": [
+                "skill_000342",
+                "skill_000346",
+                "skill_000359",
+                "skill_000361"
+              ],
+              "nature": "踏实",
+              "ivs": {
+                "hp": 8,
+                "atk": 0,
+                "def": 8,
+                "spa": 0,
+                "spd": 10,
+                "spe": 0
+              },
+              "name": "格兰球",
+              "trait": "生长",
+              "moveNames": [
+                "藤绞",
+                "根吸收",
+                "棘突",
+                "叶绿光束"
+              ]
+            },
+            {
+              "id": "pet_000005",
+              "moves": [
+                "skill_000421",
+                "skill_000418",
+                "skill_000303",
+                "skill_000429"
+              ],
+              "nature": "莽撞",
+              "ivs": {
+                "hp": 10,
+                "atk": 0,
+                "def": 0,
+                "spa": 8,
+                "spd": 10,
+                "spe": 0
+              },
+              "name": "水灵",
+              "trait": "浸润",
+              "moveNames": [
+                "水炮",
+                "甩水",
+                "拍击",
+                "水泡盾"
+              ]
+            },
+            {
+              "id": "pet_000522",
+              "moves": [
+                "skill_000372",
+                "skill_000312",
+                "skill_000346",
+                "skill_000362"
+              ],
+              "nature": "坦率",
+              "ivs": {
+                "hp": 0,
+                "atk": 10,
+                "def": 0,
+                "spa": 0,
+                "spd": 0,
+                "spe": 8
+              },
+              "name": "森巨人",
+              "trait": "盘根木",
+              "moveNames": [
+                "丰收",
+                "先发制人",
+                "根吸收",
+                "顶端优势"
+              ]
+            },
+            {
+              "id": "pet_000006",
+              "moves": [
+                "skill_000378",
+                "skill_000399",
+                "skill_000286",
+                "skill_000381"
+              ],
+              "nature": "天真",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 10,
+                "spd": 0,
+                "spe": 8
+              },
+              "name": "火神",
+              "trait": "助燃",
+              "moveNames": [
+                "火苗",
+                "火焰切割",
+                "防御",
+                "吹火"
+              ]
+            },
+            {
+              "id": "pet_000007",
+              "moves": [
+                "skill_000353",
+                "skill_000342",
+                "skill_000286",
+                "skill_000361"
+              ],
+              "nature": "胆小",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 10,
+                "spa": 0,
+                "spd": 0,
+                "spe": 10
+              },
+              "name": "魔力猫",
+              "trait": "氧循环",
+              "moveNames": [
+                "酶浓度调整",
+                "藤绞",
+                "防御",
+                "叶绿光束"
+              ]
+            }
+          ]
+        },
+        "scores": [
+          {
+            "seed": 42,
+            "baseline": 0.71875,
+            "traitRemoved": 0.6875,
+            "delta": 0.03125,
+            "battlesPerCondition": 32
+          },
+          {
+            "seed": 137,
+            "baseline": 0.65625,
+            "traitRemoved": 0.6875,
+            "delta": -0.03125,
+            "battlesPerCondition": 32
+          },
+          {
+            "seed": 256,
+            "baseline": 0.875,
+            "traitRemoved": 0.875,
+            "delta": 0.0,
+            "battlesPerCondition": 32
+          }
+        ],
+        "dimensions": {
+          "performance": "prototype-heldout-evidence",
+          "contribution": "needs-same-role-replacement",
+          "identity": "frozen-trait-sensitivity-only",
+          "counterplay": "needs-both-side-retraining",
+          "designAlignment": "needs-sourced-design-goal"
+        },
+        "sampleReplay": [
+          {
+            "round": 1,
+            "phase": "lead",
+            "actions": [
+              "switch:2",
+              "switch:1"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 0,
+                "from": null,
+                "to": "pet_000005",
+                "forced": false,
+                "text": "水灵入场"
+              },
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": null,
+                "to": "pet_000076",
+                "forced": false,
+                "text": "火焰猿入场"
+              }
+            ]
+          },
+          {
+            "round": 1,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "focus"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000076",
+                "move": "skill_000421",
+                "cost": 5,
+                "damage": 237,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 237,
+                  "perHit": 237,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 275,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 434,
+                  "bHp": 454,
+                  "energy": 10
+                },
+                "text": "水灵使用水炮，造成 237 伤害"
+              },
+              {
+                "kind": "focus",
+                "side": 1,
+                "actor": "pet_000076",
+                "gained": 5,
+                "text": "火焰猿聚能，回复 5 能量"
+              }
+            ]
+          },
+          {
+            "round": 2,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000381"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000076",
+                "move": "skill_000421",
+                "cost": 3,
+                "damage": 217,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 237,
+                  "perHit": 237,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 275,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 434,
+                  "bHp": 217,
+                  "energy": 5
+                },
+                "text": "水灵使用水炮，造成 217 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000076",
+                "text": "火焰猿力竭，B 队魔力 -1"
+              }
+            ]
+          },
+          {
+            "round": 3,
+            "phase": "replace",
+            "actions": [
+              "wait",
+              "switch:3"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": "pet_000076",
+                "to": "pet_000028",
+                "forced": true,
+                "text": "奇丽花补位"
+              }
+            ]
+          },
+          {
+            "round": 3,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000028",
+                "move": "skill_000421",
+                "cost": 1,
+                "damage": 85,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 85,
+                  "perHit": 85,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 69,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 434,
+                  "bHp": 411,
+                  "energy": 2
+                },
+                "text": "水灵使用水炮，造成 85 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000005",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 192,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 192,
+                  "perHit": 192,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 250,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 326,
+                  "bHp": 434,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 192 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000522",
+                "move": "skill_000359",
+                "energy": 0,
+                "hp": 124,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "奇丽花使用棘突，触发森巨人的特性「盘根木」：生命 +124"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              }
+            ]
+          },
+          {
+            "round": 4,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000028",
+                "move": "skill_000421",
+                "cost": 0,
+                "damage": 85,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 85,
+                  "perHit": 85,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 69,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 242,
+                  "bHp": 326,
+                  "energy": 1
+                },
+                "text": "水灵使用水炮，造成 85 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000005",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 192,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 192,
+                  "perHit": 192,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 250,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 241,
+                  "bHp": 242,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 192 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000522",
+                "move": "skill_000359",
+                "energy": 0,
+                "hp": 124,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "奇丽花使用棘突，触发森巨人的特性「盘根木」：生命 +124"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              }
+            ]
+          },
+          {
+            "round": 5,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000028",
+                "move": "skill_000421",
+                "cost": 0,
+                "damage": 85,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 85,
+                  "perHit": 85,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 69,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 50,
+                  "bHp": 241,
+                  "energy": 1
+                },
+                "text": "水灵使用水炮，造成 85 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000005",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 50,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 192,
+                  "perHit": 192,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 250,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 156,
+                  "bHp": 50,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 50 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000522",
+                "move": "skill_000359",
+                "energy": 0,
+                "hp": 124,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "奇丽花使用棘突，触发森巨人的特性「盘根木」：生命 +124"
+              },
+              {
+                "kind": "ko",
+                "side": 0,
+                "id": "pet_000005",
+                "text": "水灵力竭，A 队魔力 -1"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              }
+            ]
+          },
+          {
+            "round": 6,
+            "phase": "replace",
+            "actions": [
+              "switch:4",
+              "wait"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 0,
+                "from": "pet_000005",
+                "to": "pet_000006",
+                "forced": true,
+                "text": "火神补位"
+              }
+            ]
+          },
+          {
+            "round": 6,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000399",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000006",
+                "target": "pet_000028",
+                "move": "skill_000399",
+                "cost": 3,
+                "damage": 156,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 231,
+                  "perHit": 231,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 250,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 369,
+                  "bHp": 156,
+                  "energy": 10
+                },
+                "text": "火神使用火焰切割，造成 156 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000028",
+                "text": "奇丽花力竭，B 队魔力 -1"
+              }
+            ]
+          },
+          {
+            "round": 7,
+            "phase": "replace",
+            "actions": [
+              "wait",
+              "switch:4"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000522",
+                "forced": true,
+                "text": "森巨人补位"
+              }
+            ]
+          },
+          {
+            "round": 7,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000399",
+              "move:skill_000362"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000006",
+                "target": "pet_000522",
+                "move": "skill_000399",
+                "cost": 3,
+                "damage": 281,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 281,
+                  "perHit": 281,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 300,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1.2,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 369,
+                  "bHp": 413,
+                  "energy": 7
+                },
+                "text": "火神使用火焰切割，造成 281 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000522",
+                "target": "pet_000006",
+                "move": "skill_000362",
+                "cost": 3,
+                "damage": 81,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 81,
+                  "perHit": 81,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 63,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 132,
+                  "bHp": 369,
+                  "energy": 10
+                },
+                "text": "森巨人使用顶端优势，造成 81 伤害"
+              }
+            ]
+          },
+          {
+            "round": 8,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000399",
+              "move:skill_000362"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000006",
+                "target": "pet_000522",
+                "move": "skill_000399",
+                "cost": 3,
+                "damage": 132,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 328,
+                  "perHit": 328,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 350,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1.4,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 288,
+                  "bHp": 132,
+                  "energy": 4
+                },
+                "text": "火神使用火焰切割，造成 132 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000522",
+                "text": "森巨人力竭，B 队魔力 -1"
+              }
+            ]
+          },
+          {
+            "round": 9,
+            "phase": "replace",
+            "actions": [
+              "wait",
+              "switch:5"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": "pet_000522",
+                "to": "pet_000007",
+                "forced": true,
+                "text": "魔力猫补位"
+              }
+            ]
+          },
+          {
+            "round": 9,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000381",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000006",
+                "target": "pet_000007",
+                "move": "skill_000381",
+                "cost": 1,
+                "damage": 258,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 258,
+                  "perHit": 258,
+                  "hits": 1,
+                  "power": 50,
+                  "display": 200,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1.6,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 288,
+                  "bHp": 329,
+                  "energy": 1
+                },
+                "text": "火神使用吹火，造成 258 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000007",
+                "target": "pet_000006",
+                "move": "skill_000361",
+                "cost": 4,
+                "damage": 102,
+                "healed": 32,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 102,
+                  "perHit": 102,
+                  "hits": 1,
+                  "power": 120,
+                  "display": 75,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 71,
+                  "bHp": 288,
+                  "energy": 10
+                },
+                "text": "魔力猫使用叶绿光束，造成 102 伤害，回复 32 生命"
+              }
+            ]
+          },
+          {
+            "round": 10,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000378",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000006",
+                "target": "pet_000007",
+                "move": "skill_000378",
+                "cost": 0,
+                "damage": 103,
+                "healed": 0,
+                "gained": 1,
+                "counter": false,
+                "formula": {
+                  "total": 174,
+                  "perHit": 174,
+                  "hits": 1,
+                  "power": 30,
+                  "display": 135,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1.8,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 186,
+                  "bHp": 103,
+                  "energy": 0
+                },
+                "text": "火神使用火苗，造成 103 伤害，回复 1 能量"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000007",
+                "text": "魔力猫力竭，B 队魔力 -1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "team": {
+          "id": "search-67ccb919",
+          "name": "目标精灵配队",
+          "members": [
+            {
+              "id": "pet_000028",
+              "moves": [
+                "skill_000307",
+                "skill_000341",
+                "skill_000361",
+                "skill_000359"
+              ],
+              "nature": "急躁",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 8,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000094",
+              "moves": [
+                "skill_000504",
+                "skill_000271",
+                "skill_000510",
+                "skill_000519"
+              ],
+              "nature": "固执",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 10,
+                "spd": 0,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000034",
+              "moves": [
+                "skill_000701",
+                "skill_000686",
+                "skill_000312",
+                "skill_000286"
+              ],
+              "nature": "焦虑",
+              "ivs": {
+                "hp": 9,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 7,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000007",
+              "moves": [
+                "skill_000359",
+                "skill_000353",
+                "skill_000246",
+                "skill_000286"
+              ],
+              "nature": "开朗",
+              "ivs": {
+                "hp": 0,
+                "atk": 9,
+                "def": 0,
+                "spa": 0,
+                "spd": 10,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000005",
+              "moves": [
+                "skill_000418",
+                "skill_000429",
+                "skill_000421",
+                "skill_000286"
+              ],
+              "nature": "固执",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 10,
+                "spe": 0
+              }
+            },
+            {
+              "id": "pet_000076",
+              "moves": [
+                "skill_000286",
+                "skill_000379",
+                "skill_000392",
+                "skill_000404"
+              ],
+              "nature": "焦虑",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 9,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+              }
+            }
+          ],
+          "lineup": [
+            {
+              "id": "pet_000028",
+              "moves": [
+                "skill_000307",
+                "skill_000341",
+                "skill_000361",
+                "skill_000359"
+              ],
+              "nature": "急躁",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 8,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+              },
+              "name": "奇丽花",
+              "trait": "养分重吸收",
+              "moveNames": [
+                "能量炮",
+                "刺藤",
+                "叶绿光束",
+                "棘突"
+              ]
+            },
+            {
+              "id": "pet_000094",
+              "moves": [
+                "skill_000504",
+                "skill_000271",
+                "skill_000510",
+                "skill_000519"
+              ],
+              "nature": "固执",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 10,
+                "spd": 0,
+                "spe": 0
+              },
+              "name": "布克棱岩",
+              "trait": "地脉",
+              "moveNames": [
+                "地震",
+                "力量增效",
+                "壁垒",
+                "岩脉崩毁"
+              ]
+            },
+            {
+              "id": "pet_000034",
+              "moves": [
+                "skill_000701",
+                "skill_000686",
+                "skill_000312",
+                "skill_000286"
+              ],
+              "nature": "焦虑",
+              "ivs": {
+                "hp": 9,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 7,
+                "spe": 0
+              },
+              "name": "岚鸟",
+              "trait": "顺风",
+              "moveNames": [
+                "俯冲猛击",
+                "啄击",
+                "先发制人",
+                "防御"
+              ]
+            },
+            {
+              "id": "pet_000007",
+              "moves": [
+                "skill_000359",
+                "skill_000353",
+                "skill_000246",
+                "skill_000286"
+              ],
+              "nature": "开朗",
+              "ivs": {
+                "hp": 0,
+                "atk": 9,
+                "def": 0,
+                "spa": 0,
+                "spd": 10,
+                "spe": 0
+              },
+              "name": "魔力猫",
+              "trait": "氧循环",
+              "moveNames": [
+                "棘突",
+                "酶浓度调整",
+                "抓挠",
+                "防御"
+              ]
+            },
+            {
+              "id": "pet_000005",
+              "moves": [
+                "skill_000418",
+                "skill_000429",
+                "skill_000421",
+                "skill_000286"
+              ],
+              "nature": "固执",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 0,
+                "spa": 0,
+                "spd": 10,
+                "spe": 0
+              },
+              "name": "水灵",
+              "trait": "浸润",
+              "moveNames": [
+                "甩水",
+                "水泡盾",
+                "水炮",
+                "防御"
+              ]
+            },
+            {
+              "id": "pet_000076",
+              "moves": [
+                "skill_000286",
+                "skill_000379",
+                "skill_000392",
+                "skill_000404"
+              ],
+              "nature": "焦虑",
+              "ivs": {
+                "hp": 0,
+                "atk": 0,
+                "def": 9,
+                "spa": 0,
+                "spd": 0,
+                "spe": 0
+              },
+              "name": "火焰猿",
+              "trait": "散热",
+              "moveNames": [
+                "防御",
+                "闪燃",
+                "火云车",
+                "怒火"
+              ]
+            }
+          ]
+        },
+        "scores": [
+          {
+            "seed": 42,
+            "baseline": 0.75,
+            "traitRemoved": 0.78125,
+            "delta": -0.03125,
+            "battlesPerCondition": 32
+          },
+          {
+            "seed": 137,
+            "baseline": 0.875,
+            "traitRemoved": 0.84375,
+            "delta": 0.03125,
+            "battlesPerCondition": 32
+          },
+          {
+            "seed": 256,
+            "baseline": 0.78125,
+            "traitRemoved": 0.78125,
+            "delta": 0.0,
+            "battlesPerCondition": 32
+          }
+        ],
+        "dimensions": {
+          "performance": "prototype-heldout-evidence",
+          "contribution": "needs-same-role-replacement",
+          "identity": "frozen-trait-sensitivity-only",
+          "counterplay": "needs-both-side-retraining",
+          "designAlignment": "needs-sourced-design-goal"
+        },
+        "sampleReplay": [
+          {
+            "round": 1,
+            "phase": "lead",
+            "actions": [
+              "switch:4",
+              "switch:1"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 0,
+                "from": null,
+                "to": "pet_000005",
+                "forced": false,
+                "text": "水灵入场"
+              },
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": null,
+                "to": "pet_000076",
+                "forced": false,
+                "text": "火焰猿入场"
+              }
+            ]
+          },
+          {
+            "round": 1,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "focus"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000076",
+                "move": "skill_000421",
+                "cost": 5,
+                "damage": 194,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 194,
+                  "perHit": 194,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 275,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 383,
+                  "bHp": 454,
+                  "energy": 10
+                },
+                "text": "水灵使用水炮，造成 194 伤害"
+              },
+              {
+                "kind": "focus",
+                "side": 1,
+                "actor": "pet_000076",
+                "gained": 5,
+                "text": "火焰猿聚能，回复 5 能量"
+              }
+            ]
+          },
+          {
+            "round": 2,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000381"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000076",
+                "move": "skill_000421",
+                "cost": 3,
+                "damage": 194,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 194,
+                  "perHit": 194,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 275,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 383,
+                  "bHp": 260,
+                  "energy": 5
+                },
+                "text": "水灵使用水炮，造成 194 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000076",
+                "target": "pet_000005",
+                "move": "skill_000381",
+                "cost": 1,
+                "damage": 40,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 40,
+                  "perHit": 40,
+                  "hits": 1,
+                  "power": 50,
+                  "display": 31,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 66,
+                  "bHp": 383,
+                  "energy": 5
+                },
+                "text": "火焰猿使用吹火，造成 40 伤害"
+              }
+            ]
+          },
+          {
+            "round": 3,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "focus"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000076",
+                "move": "skill_000421",
+                "cost": 1,
+                "damage": 66,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 194,
+                  "perHit": 194,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 275,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 343,
+                  "bHp": 66,
+                  "energy": 2
+                },
+                "text": "水灵使用水炮，造成 66 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000076",
+                "text": "火焰猿力竭，B 队魔力 -1"
+              }
+            ]
+          },
+          {
+            "round": 4,
+            "phase": "replace",
+            "actions": [
+              "wait",
+              "switch:3"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": "pet_000076",
+                "to": "pet_000028",
+                "forced": true,
+                "text": "奇丽花补位"
+              }
+            ]
+          },
+          {
+            "round": 4,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000005",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 177,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 177,
+                  "perHit": 177,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 250,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 411,
+                  "bHp": 343,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 177 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000522",
+                "move": "skill_000359",
+                "energy": 0,
+                "hp": 124,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "奇丽花使用棘突，触发森巨人的特性「盘根木」：生命 +124"
+              },
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000005",
+                "target": "pet_000028",
+                "move": "skill_000421",
+                "cost": 0,
+                "damage": 69,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 69,
+                  "perHit": 69,
+                  "hits": 1,
+                  "power": 110,
+                  "display": 69,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 166,
+                  "bHp": 411,
+                  "energy": 1
+                },
+                "text": "水灵使用水炮，造成 69 伤害"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              }
+            ]
+          },
+          {
+            "round": 5,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000421",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000005",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 166,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 177,
+                  "perHit": 177,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 250,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 342,
+                  "bHp": 166,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 166 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000522",
+                "move": "skill_000359",
+                "energy": 0,
+                "hp": 124,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "奇丽花使用棘突，触发森巨人的特性「盘根木」：生命 +124"
+              },
+              {
+                "kind": "ko",
+                "side": 0,
+                "id": "pet_000005",
+                "text": "水灵力竭，A 队魔力 -1"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              }
+            ]
+          },
+          {
+            "round": 6,
+            "phase": "replace",
+            "actions": [
+              "switch:2",
+              "wait"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 0,
+                "from": "pet_000005",
+                "to": "pet_000034",
+                "forced": true,
+                "text": "岚鸟补位"
+              }
+            ]
+          },
+          {
+            "round": 6,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000701",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000034",
+                "target": "pet_000028",
+                "move": "skill_000701",
+                "cost": 5,
+                "damage": 342,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 457,
+                  "perHit": 457,
+                  "hits": 1,
+                  "power": 140,
+                  "display": 525,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0.5,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 342,
+                  "bHp": 342,
+                  "energy": 10
+                },
+                "text": "岚鸟使用俯冲猛击，造成 342 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000028",
+                "text": "奇丽花力竭，B 队魔力 -1"
+              }
+            ]
+          },
+          {
+            "round": 7,
+            "phase": "replace",
+            "actions": [
+              "wait",
+              "switch:5"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": "pet_000028",
+                "to": "pet_000007",
+                "forced": true,
+                "text": "魔力猫补位"
+              }
+            ]
+          },
+          {
+            "round": 7,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000701",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000034",
+                "target": "pet_000007",
+                "move": "skill_000701",
+                "cost": 5,
+                "damage": 329,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 639,
+                  "perHit": 639,
+                  "hits": 1,
+                  "power": 140,
+                  "display": 525,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0.5,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 342,
+                  "bHp": 329,
+                  "energy": 5
+                },
+                "text": "岚鸟使用俯冲猛击，造成 329 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000007",
+                "text": "魔力猫力竭，B 队魔力 -1"
+              }
+            ]
+          },
+          {
+            "round": 8,
+            "phase": "replace",
+            "actions": [
+              "wait",
+              "switch:0"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 1,
+                "from": "pet_000007",
+                "to": "pet_000065",
+                "forced": true,
+                "text": "格兰球补位"
+              }
+            ]
+          },
+          {
+            "round": 8,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000686",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000034",
+                "target": "pet_000065",
+                "move": "skill_000686",
+                "cost": 0,
+                "damage": 116,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 116,
+                  "perHit": 58,
+                  "hits": 2,
+                  "power": 15,
+                  "display": 56,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0.5,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 342,
+                  "bHp": 394,
+                  "energy": 0
+                },
+                "text": "岚鸟使用啄击，造成 116 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000034",
+                "move": "skill_000361",
+                "cost": 4,
+                "damage": 70,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 70,
+                  "perHit": 70,
+                  "hits": 1,
+                  "power": 120,
+                  "display": 75,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 278,
+                  "bHp": 342,
+                  "energy": 10
+                },
+                "text": "格兰球使用叶绿光束，造成 70 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000065",
+                "to": "pet_000522",
+                "move": "skill_000361",
+                "energy": 0,
+                "hp": 124,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "格兰球使用叶绿光束，触发森巨人的特性「盘根木」：生命 +124"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000065",
+                "sourceKind": "trait",
+                "sourceId": "skill_000012",
+                "sourceName": "生长",
+                "energy": 0,
+                "hp": 47,
+                "text": "格兰球的特性「生长」：自身回合末回复 47 生命"
+              }
+            ]
+          },
+          {
+            "round": 9,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000686",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000034",
+                "target": "pet_000065",
+                "move": "skill_000686",
+                "cost": 0,
+                "damage": 116,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 116,
+                  "perHit": 58,
+                  "hits": 2,
+                  "power": 15,
+                  "display": 56,
+                  "stab": 1.25,
+                  "effectiveness": 2,
+                  "level": 1,
+                  "firstBonus": 0.5,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 272,
+                  "bHp": 325,
+                  "energy": 0
+                },
+                "text": "岚鸟使用啄击，造成 116 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000034",
+                "move": "skill_000361",
+                "cost": 4,
+                "damage": 70,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 70,
+                  "perHit": 70,
+                  "hits": 1,
+                  "power": 120,
+                  "display": 75,
+                  "stab": 1.25,
+                  "effectiveness": 0.5,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 209,
+                  "bHp": 272,
+                  "energy": 6
+                },
+                "text": "格兰球使用叶绿光束，造成 70 伤害"
+              },
+              {
+                "kind": "support",
+                "side": 1,
+                "from": "pet_000065",
+                "to": "pet_000522",
+                "move": "skill_000361",
+                "energy": 0,
+                "hp": 3,
+                "sourceKind": "trait",
+                "sourceId": "skill_000181",
+                "sourceName": "盘根木",
+                "owner": "pet_000522",
+                "text": "格兰球使用叶绿光束，触发森巨人的特性「盘根木」：生命 +3"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000065",
+                "sourceKind": "trait",
+                "sourceId": "skill_000012",
+                "sourceName": "生长",
+                "energy": 0,
+                "hp": 47,
+                "text": "格兰球的特性「生长」：自身回合末回复 47 生命"
+              }
+            ]
+          },
+          {
+            "round": 10,
+            "phase": "battle",
+            "actions": [
+              "switch:0",
+              "focus"
+            ],
+            "events": [
+              {
+                "kind": "switch",
+                "side": 0,
+                "from": "pet_000034",
+                "to": "pet_000028",
+                "forced": false,
+                "text": "奇丽花入场"
+              },
+              {
+                "kind": "focus",
+                "side": 1,
+                "actor": "pet_000065",
+                "gained": 5,
+                "text": "格兰球聚能，回复 5 能量"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000065",
+                "sourceKind": "trait",
+                "sourceId": "skill_000012",
+                "sourceName": "生长",
+                "energy": 0,
+                "hp": 47,
+                "text": "格兰球的特性「生长」：自身回合末回复 47 生命"
+              }
+            ]
+          },
+          {
+            "round": 11,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000359",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000065",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 115,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 115,
+                  "perHit": 115,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 125,
+                  "stab": 1.25,
+                  "effectiveness": 1,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 360,
+                  "bHp": 303,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 115 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000028",
+                "move": "skill_000361",
+                "cost": 4,
+                "damage": 160,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 160,
+                  "perHit": 160,
+                  "hits": 1,
+                  "power": 120,
+                  "display": 150,
+                  "stab": 1.25,
+                  "effectiveness": 1,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 188,
+                  "bHp": 360,
+                  "energy": 7
+                },
+                "text": "格兰球使用叶绿光束，造成 160 伤害"
+              },
+              {
+                "kind": "end",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000065",
+                "sourceKind": "trait",
+                "sourceId": "skill_000012",
+                "sourceName": "生长",
+                "energy": 0,
+                "hp": 47,
+                "text": "格兰球的特性「生长」：自身回合末回复 47 生命"
+              }
+            ]
+          },
+          {
+            "round": 12,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000359",
+              "move:skill_000359"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000065",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 115,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 115,
+                  "perHit": 115,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 125,
+                  "stab": 1.25,
+                  "effectiveness": 1,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 200,
+                  "bHp": 235,
+                  "energy": 10
+                },
+                "text": "奇丽花使用棘突，造成 115 伤害"
+              },
+              {
+                "kind": "move",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000028",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 134,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 134,
+                  "perHit": 134,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 125,
+                  "stab": 1.25,
+                  "effectiveness": 1,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 120,
+                  "bHp": 200,
+                  "energy": 3
+                },
+                "text": "格兰球使用棘突，造成 134 伤害"
+              },
+              {
+                "kind": "end",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000065",
+                "sourceKind": "trait",
+                "sourceId": "skill_000012",
+                "sourceName": "生长",
+                "energy": 0,
+                "hp": 47,
+                "text": "格兰球的特性「生长」：自身回合末回复 47 生命"
+              }
+            ]
+          },
+          {
+            "round": 13,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000361",
+              "focus"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000065",
+                "move": "skill_000361",
+                "cost": 4,
+                "damage": 138,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 138,
+                  "perHit": 138,
+                  "hits": 1,
+                  "power": 120,
+                  "display": 150,
+                  "stab": 1.25,
+                  "effectiveness": 1,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 66,
+                  "bHp": 167,
+                  "energy": 10
+                },
+                "text": "奇丽花使用叶绿光束，造成 138 伤害"
+              },
+              {
+                "kind": "focus",
+                "side": 1,
+                "actor": "pet_000065",
+                "gained": 5,
+                "text": "格兰球聚能，回复 5 能量"
+              },
+              {
+                "kind": "end",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000028",
+                "sourceKind": "trait",
+                "sourceId": "skill_000006",
+                "sourceName": "养分重吸收",
+                "energy": 3,
+                "hp": 0,
+                "text": "奇丽花的特性「养分重吸收」：自身回合末回复 3 能量"
+              },
+              {
+                "kind": "end",
+                "side": 1,
+                "actor": "pet_000065",
+                "target": "pet_000065",
+                "sourceKind": "trait",
+                "sourceId": "skill_000012",
+                "sourceName": "生长",
+                "energy": 0,
+                "hp": 47,
+                "text": "格兰球的特性「生长」：自身回合末回复 47 生命"
+              }
+            ]
+          },
+          {
+            "round": 14,
+            "phase": "battle",
+            "actions": [
+              "move:skill_000359",
+              "move:skill_000361"
+            ],
+            "events": [
+              {
+                "kind": "move",
+                "side": 0,
+                "actor": "pet_000028",
+                "target": "pet_000065",
+                "move": "skill_000359",
+                "cost": 3,
+                "damage": 76,
+                "healed": 0,
+                "gained": 0,
+                "counter": false,
+                "formula": {
+                  "total": 115,
+                  "perHit": 115,
+                  "hits": 1,
+                  "power": 100,
+                  "display": 125,
+                  "stab": 1.25,
+                  "effectiveness": 1,
+                  "level": 1,
+                  "firstBonus": 0,
+                  "counterBonus": 1
+                },
+                "before": {
+                  "aHp": 66,
+                  "bHp": 76,
+                  "energy": 9
+                },
+                "text": "奇丽花使用棘突，造成 76 伤害"
+              },
+              {
+                "kind": "ko",
+                "side": 1,
+                "id": "pet_000065",
+                "text": "格兰球力竭，B 队魔力 -1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceReportSha256": "8751a2f54395a3e03989280e988dd7903e6fc8a508580ed6b9f6134124f68a74",
+    "limitations": [
+      "Finite candidate generation; no global optimum or complete dex coverage.",
+      "Frozen policies; candidate-specific adaptation and both-side retraining are not implemented in this neural pipeline.",
+      "Trait removal measures frozen sensitivity, not total individual contribution or proven imbalance.",
+      "Nature and IVs are sampled legal prototype builds, not certified optima.",
+      "Two held-out opposing builds per split; repeated seeds and seats are not independent matchups."
+    ]
+  }
+}

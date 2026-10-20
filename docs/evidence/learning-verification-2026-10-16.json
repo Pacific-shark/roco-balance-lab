@@ -1,0 +1,68 @@
+{
+  "date": "2026-10-16",
+  "scope": "restricted-prototype",
+  "status": "passed-with-scope-limits",
+  "javascript": {
+    "passed": 84,
+    "failed": 0,
+    "command": "node --test --test-isolation=none test/*.test.mjs"
+  },
+  "python": {
+    "passed": 13,
+    "failed": 0,
+    "command": "python -m unittest discover -s test -p 'learning*_test.py' -v",
+    "note": "Pairing test rerun after adding rejection of duplicate intervention rows."
+  },
+  "build": {
+    "status": "passed",
+    "tool": "Vite 8.3.4"
+  },
+  "ui": {
+    "url": "http://127.0.0.1:4201/",
+    "title": "洛克研究室 · 6v6研究工作台",
+    "options": 23,
+    "exportBattles": 960,
+    "errors": [],
+    "documentOverflow": false,
+    "desktop": "1440x1000",
+    "mobile": "390x844",
+    "browser": "headless Edge via Playwright; Browser plugin unavailable",
+    "checks": [
+      "open evidence",
+      "switch experiments",
+      "show frozen team study",
+      "expand lineups",
+      "download evidence",
+      "mobile navigation",
+      "close dialog"
+    ]
+  },
+  "sourceConsistency": {
+    "v3Runs": 6,
+    "trainingSourcesMatch": true,
+    "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+    "trainerHash": "4a4472f79030f4f95781cff7d1610e6cc0ff1c34d5e4c54b9eeced6c7c7e7f44"
+  },
+  "evidence": {
+    "archivedRuns": 23,
+    "completedRuns": 22,
+    "budgetExhaustedRuns": 1,
+    "archiveFiles": 35,
+    "archiveHashesVerified": true,
+    "researchBattlesRecounted": 960,
+    "frozenWeightsUnchanged": true
+  },
+  "screenshots": [
+    "../images/learning-desktop.png",
+    "../images/learning-mobile.png",
+    "../images/learning-study-desktop.png",
+    "../images/learning-study-mobile.png"
+  ],
+  "remaining": [
+    "10 forms and 42 skills only; not current complete PvP",
+    "Two opposing held-out builds only",
+    "Optimal cultivation and candidate-specific retraining not implemented",
+    "No global team optimum or formal balance claim"
+  ],
+  "visualAssessment": "Desktop and mobile content readable after fixing grid min-content overflow; wide tables scroll within their containers. No visible browser was opened."
+}

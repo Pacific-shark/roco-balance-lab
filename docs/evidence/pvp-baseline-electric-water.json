@@ -1,0 +1,976 @@
+{
+  "kind": "observed-baseline-configuration-audit",
+  "createdAt": "2026-10-19T09:27:01.437Z",
+  "catalogSha256": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
+  "kernelVersion": "battle-kernel-3",
+  "programVersion": "battle-programs-3",
+  "members": [
+    {
+      "id": "pet_000005",
+      "name": "水灵",
+      "bloodline": "水",
+      "nature": "胆小",
+      "role": "前期站场、压血与水系次数铺垫，自身也保有进攻压力。",
+      "analysisIvs": {
+        "hp": 10,
+        "atk": 0,
+        "def": 0,
+        "spa": 10,
+        "spd": 0,
+        "spe": 10
+      },
+      "analysisPanel": {
+        "scope": {
+          "level": 60,
+          "growthStars": 5,
+          "evidence": "launch-game-panel-6-of-6",
+          "currentSeasonVerified": false
+        },
+        "stats": {
+          "hp": 434,
+          "atk": 117,
+          "def": 163,
+          "spa": 233,
+          "spd": 205,
+          "spe": 214
+        },
+        "breakdown": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "base": 125,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 434,
+            "actual": 434
+          },
+          {
+            "key": "atk",
+            "label": "物攻",
+            "base": 58,
+            "iv": 0,
+            "modifier": 0.9,
+            "neutral": 124,
+            "actual": 117
+          },
+          {
+            "key": "def",
+            "label": "物防",
+            "base": 94,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 163,
+            "actual": 163
+          },
+          {
+            "key": "spa",
+            "label": "魔攻",
+            "base": 127,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 233,
+            "actual": 233
+          },
+          {
+            "key": "spd",
+            "label": "魔防",
+            "base": 132,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 205,
+            "actual": 205
+          },
+          {
+            "key": "spe",
+            "label": "速度",
+            "base": 85,
+            "iv": 10,
+            "modifier": 1.2,
+            "neutral": 187,
+            "actual": 214
+          }
+        ]
+      },
+      "sourceAptitudeValues": null,
+      "trait": {
+        "id": "skill_000030",
+        "name": "浸润",
+        "status": "compiled"
+      },
+      "moves": [
+        {
+          "slot": 1,
+          "id": "skill_000424",
+          "name": "润泽",
+          "type": "水",
+          "baseCost": 7,
+          "basePower": 0,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 2,
+          "id": "skill_000429",
+          "name": "水泡盾",
+          "type": "水",
+          "baseCost": 2,
+          "basePower": 0,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 3,
+          "id": "skill_000420",
+          "name": "气泡",
+          "type": "水",
+          "baseCost": 3,
+          "basePower": 100,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 4,
+          "id": "skill_000547",
+          "name": "寒风吹",
+          "type": "冰",
+          "baseCost": 3,
+          "basePower": 70,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        }
+      ]
+    },
+    {
+      "id": "pet_000174",
+      "name": "荆棘电环",
+      "bloodline": "电",
+      "nature": "踏实",
+      "role": "减速、印记干预与强化反制，行动后脱离；负责创造进场机会。",
+      "analysisIvs": {
+        "hp": 10,
+        "atk": 0,
+        "def": 10,
+        "spa": 0,
+        "spd": 10,
+        "spe": 0
+      },
+      "analysisPanel": {
+        "scope": {
+          "level": 60,
+          "growthStars": 5,
+          "evidence": "launch-game-panel-6-of-6",
+          "currentSeasonVerified": false
+        },
+        "stats": {
+          "hp": 461,
+          "atk": 149,
+          "def": 187,
+          "spa": 149,
+          "spd": 185,
+          "spe": 178
+        },
+        "breakdown": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "base": 106,
+            "iv": 10,
+            "modifier": 1.2,
+            "neutral": 401,
+            "actual": 461
+          },
+          {
+            "key": "atk",
+            "label": "物攻",
+            "base": 81,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 149,
+            "actual": 149
+          },
+          {
+            "key": "def",
+            "label": "物防",
+            "base": 85,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 187,
+            "actual": 187
+          },
+          {
+            "key": "spa",
+            "label": "魔攻",
+            "base": 81,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 149,
+            "actual": 149
+          },
+          {
+            "key": "spd",
+            "label": "魔防",
+            "base": 84,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 185,
+            "actual": 185
+          },
+          {
+            "key": "spe",
+            "label": "速度",
+            "base": 120,
+            "iv": 0,
+            "modifier": 0.9,
+            "neutral": 192,
+            "actual": 178
+          }
+        ]
+      },
+      "sourceAptitudeValues": null,
+      "trait": {
+        "id": "skill_000081",
+        "name": "防过载保护",
+        "status": "compiled"
+      },
+      "moves": [
+        {
+          "slot": 1,
+          "id": "skill_000551",
+          "name": "速冻",
+          "type": "冰",
+          "baseCost": 4,
+          "basePower": 0,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 2,
+          "id": "skill_000332",
+          "name": "倾泻",
+          "type": "普通",
+          "baseCost": 3,
+          "basePower": 70,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 3,
+          "id": "skill_000557",
+          "name": "冰点",
+          "type": "冰",
+          "baseCost": 2,
+          "basePower": 0,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 4,
+          "id": "skill_000325",
+          "name": "晒太阳",
+          "type": "普通",
+          "baseCost": 1,
+          "basePower": 0,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "unsupported",
+          "gameVerified": false,
+          "pending": [
+            "驱散敌方所有增益"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pet_000106",
+      "name": "彩蝶鲨",
+      "bloodline": "幽",
+      "nature": "胆小",
+      "role": "进场兑现水系铺垫，强化后从水、幽、翼三个攻击类型中选择。",
+      "analysisIvs": {
+        "hp": 10,
+        "atk": 0,
+        "def": 0,
+        "spa": 10,
+        "spd": 0,
+        "spe": 10
+      },
+      "analysisPanel": {
+        "scope": {
+          "level": 60,
+          "growthStars": 5,
+          "evidence": "launch-game-panel-6-of-6",
+          "currentSeasonVerified": false
+        },
+        "stats": {
+          "hp": 374,
+          "atk": 156,
+          "def": 176,
+          "spa": 201,
+          "spd": 176,
+          "spe": 267
+        },
+        "breakdown": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "base": 90,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 374,
+            "actual": 374
+          },
+          {
+            "key": "atk",
+            "label": "物攻",
+            "base": 98,
+            "iv": 0,
+            "modifier": 0.9,
+            "neutral": 168,
+            "actual": 156
+          },
+          {
+            "key": "def",
+            "label": "物防",
+            "base": 105,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 176,
+            "actual": 176
+          },
+          {
+            "key": "spa",
+            "label": "魔攻",
+            "base": 98,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 201,
+            "actual": 201
+          },
+          {
+            "key": "spd",
+            "label": "魔防",
+            "base": 105,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 176,
+            "actual": 176
+          },
+          {
+            "key": "spe",
+            "label": "速度",
+            "base": 125,
+            "iv": 10,
+            "modifier": 1.2,
+            "neutral": 231,
+            "actual": 267
+          }
+        ]
+      },
+      "sourceAptitudeValues": null,
+      "trait": {
+        "id": "skill_000033",
+        "name": "水翼推进",
+        "status": "compiled"
+      },
+      "moves": [
+        {
+          "slot": 1,
+          "id": "skill_000423",
+          "name": "天洪",
+          "type": "水",
+          "baseCost": 7,
+          "basePower": 150,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 2,
+          "id": "skill_000643",
+          "name": "贮藏",
+          "type": "虫",
+          "baseCost": 2,
+          "basePower": 0,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 3,
+          "id": "skill_000753",
+          "name": "灵媒",
+          "type": "幽",
+          "baseCost": 3,
+          "basePower": 100,
+          "paths": [
+            "幽血脉"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 4,
+          "id": "skill_000700",
+          "name": "回旋风暴",
+          "type": "翼",
+          "baseCost": 3,
+          "basePower": 100,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        }
+      ]
+    },
+    {
+      "id": "pet_000071",
+      "name": "火羽",
+      "bloodline": "光",
+      "nature": "聪明",
+      "role": "承伤缓冲、清印记和中转，保命次数是有限资源。",
+      "analysisIvs": {
+        "hp": 10,
+        "atk": 0,
+        "def": 0,
+        "spa": 10,
+        "spd": 10,
+        "spe": 0
+      },
+      "analysisPanel": {
+        "scope": {
+          "level": 60,
+          "growthStars": 5,
+          "evidence": "launch-game-panel-6-of-6",
+          "currentSeasonVerified": false
+        },
+        "stats": {
+          "hp": 354,
+          "atk": 124,
+          "def": 127,
+          "spa": 208,
+          "spd": 210,
+          "spe": 192
+        },
+        "breakdown": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "base": 78,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 354,
+            "actual": 354
+          },
+          {
+            "key": "atk",
+            "label": "物攻",
+            "base": 65,
+            "iv": 0,
+            "modifier": 0.9,
+            "neutral": 132,
+            "actual": 124
+          },
+          {
+            "key": "def",
+            "label": "物防",
+            "base": 61,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 127,
+            "actual": 127
+          },
+          {
+            "key": "spa",
+            "label": "魔攻",
+            "base": 81,
+            "iv": 10,
+            "modifier": 1.2,
+            "neutral": 182,
+            "actual": 208
+          },
+          {
+            "key": "spd",
+            "label": "魔防",
+            "base": 106,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 210,
+            "actual": 210
+          },
+          {
+            "key": "spe",
+            "label": "速度",
+            "base": 120,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 192,
+            "actual": 192
+          }
+        ]
+      },
+      "sourceAptitudeValues": null,
+      "trait": {
+        "id": "skill_000069",
+        "name": "不死鸟",
+        "status": "compiled"
+      },
+      "moves": [
+        {
+          "slot": 1,
+          "id": "skill_000749",
+          "name": "幽灵爆发",
+          "type": "幽",
+          "baseCost": 5,
+          "basePower": 140,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 2,
+          "id": "skill_000458",
+          "name": "虹光冲击",
+          "type": "光",
+          "baseCost": 3,
+          "basePower": 100,
+          "paths": [
+            "光血脉"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 3,
+          "id": "skill_000332",
+          "name": "倾泻",
+          "type": "普通",
+          "baseCost": 3,
+          "basePower": 70,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 4,
+          "id": "skill_000385",
+          "name": "高温回火",
+          "type": "火",
+          "baseCost": 2,
+          "basePower": 40,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        }
+      ]
+    },
+    {
+      "id": "pet_000217",
+      "name": "冰钻布鲁斯",
+      "bloodline": "火",
+      "nature": "固执",
+      "role": "物理进攻支线、冰火补盲与先手收尾，避免全队只依赖魔攻水伤。",
+      "analysisIvs": {
+        "hp": 10,
+        "atk": 10,
+        "def": 0,
+        "spa": 0,
+        "spd": 0,
+        "spe": 10
+      },
+      "analysisPanel": {
+        "scope": {
+          "level": 60,
+          "growthStars": 5,
+          "evidence": "launch-game-panel-6-of-6",
+          "currentSeasonVerified": false
+        },
+        "stats": {
+          "hp": 345,
+          "atk": 235,
+          "def": 185,
+          "spa": 86,
+          "spd": 157,
+          "spe": 192
+        },
+        "breakdown": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "base": 73,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 345,
+            "actual": 345
+          },
+          {
+            "key": "atk",
+            "label": "物攻",
+            "base": 101,
+            "iv": 10,
+            "modifier": 1.2,
+            "neutral": 204,
+            "actual": 235
+          },
+          {
+            "key": "def",
+            "label": "物防",
+            "base": 114,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 185,
+            "actual": 185
+          },
+          {
+            "key": "spa",
+            "label": "魔攻",
+            "base": 27,
+            "iv": 0,
+            "modifier": 0.9,
+            "neutral": 90,
+            "actual": 86
+          },
+          {
+            "key": "spd",
+            "label": "魔防",
+            "base": 88,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 157,
+            "actual": 157
+          },
+          {
+            "key": "spe",
+            "label": "速度",
+            "base": 90,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 192,
+            "actual": 192
+          }
+        ]
+      },
+      "sourceAptitudeValues": null,
+      "trait": {
+        "id": "skill_000040",
+        "name": "冰钻",
+        "status": "compiled"
+      },
+      "moves": [
+        {
+          "slot": 1,
+          "id": "skill_000530",
+          "name": "暴风雪",
+          "type": "冰",
+          "baseCost": 3,
+          "basePower": 85,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 2,
+          "id": "skill_000271",
+          "name": "力量增效",
+          "type": "普通",
+          "baseCost": 1,
+          "basePower": 0,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 3,
+          "id": "skill_000376",
+          "name": "火焰冲锋",
+          "type": "火",
+          "baseCost": 1,
+          "basePower": 60,
+          "paths": [
+            "火血脉"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 4,
+          "id": "skill_000312",
+          "name": "先发制人",
+          "type": "普通",
+          "baseCost": 2,
+          "basePower": 55,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        }
+      ]
+    },
+    {
+      "id": "pet_000477",
+      "name": "古卷执政官",
+      "bloodline": "光",
+      "nature": "胆小",
+      "role": "残局进攻与最后一轮交换；一魔力入场特性及彗星结算都影响价值。",
+      "analysisIvs": {
+        "hp": 10,
+        "atk": 0,
+        "def": 0,
+        "spa": 10,
+        "spd": 0,
+        "spe": 10
+      },
+      "analysisPanel": {
+        "scope": {
+          "level": 60,
+          "growthStars": 5,
+          "evidence": "launch-game-panel-6-of-6",
+          "currentSeasonVerified": false
+        },
+        "stats": {
+          "hp": 410,
+          "atk": 173,
+          "def": 148,
+          "spa": 220,
+          "spd": 194,
+          "spe": 228
+        },
+        "breakdown": [
+          {
+            "key": "hp",
+            "label": "生命",
+            "base": 111,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 410,
+            "actual": 410
+          },
+          {
+            "key": "atk",
+            "label": "物攻",
+            "base": 115,
+            "iv": 0,
+            "modifier": 0.9,
+            "neutral": 187,
+            "actual": 173
+          },
+          {
+            "key": "def",
+            "label": "物防",
+            "base": 80,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 148,
+            "actual": 148
+          },
+          {
+            "key": "spa",
+            "label": "魔攻",
+            "base": 115,
+            "iv": 10,
+            "modifier": 1,
+            "neutral": 220,
+            "actual": 220
+          },
+          {
+            "key": "spd",
+            "label": "魔防",
+            "base": 122,
+            "iv": 0,
+            "modifier": 1,
+            "neutral": 194,
+            "actual": 194
+          },
+          {
+            "key": "spe",
+            "label": "速度",
+            "base": 95,
+            "iv": 10,
+            "modifier": 1.2,
+            "neutral": 198,
+            "actual": 228
+          }
+        ]
+      },
+      "sourceAptitudeValues": null,
+      "trait": {
+        "id": "skill_000142",
+        "name": "图书守卫者",
+        "status": "compiled"
+      },
+      "moves": [
+        {
+          "slot": 1,
+          "id": "skill_000310",
+          "name": "湮灭",
+          "type": "普通",
+          "baseCost": 5,
+          "basePower": 155,
+          "paths": [
+            "技能石"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 2,
+          "id": "skill_000312",
+          "name": "先发制人",
+          "type": "普通",
+          "baseCost": 2,
+          "basePower": 55,
+          "paths": [
+            "基础可学"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 3,
+          "id": "skill_000458",
+          "name": "虹光冲击",
+          "type": "光",
+          "baseCost": 3,
+          "basePower": 100,
+          "paths": [
+            "光血脉"
+          ],
+          "status": "compiled",
+          "gameVerified": false,
+          "pending": []
+        },
+        {
+          "slot": 4,
+          "id": "skill_000321",
+          "name": "彗星",
+          "type": "普通",
+          "baseCost": 0,
+          "basePower": 240,
+          "paths": [
+            "技能石"
+          ],
+          "status": "unsupported",
+          "gameVerified": false,
+          "pending": [
+            "每失去5%生命",
+            "使用后消耗全部生命"
+          ]
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "members": 6,
+    "sourceConsistentSlots": 24,
+    "compiledSlots": 22,
+    "compiledTraits": 6
+  },
+  "missingMoves": [
+    {
+      "pet": "荆棘电环",
+      "slot": 4,
+      "id": "skill_000325",
+      "name": "晒太阳",
+      "type": "普通",
+      "baseCost": 1,
+      "basePower": 0,
+      "paths": [
+        "基础可学"
+      ],
+      "status": "unsupported",
+      "gameVerified": false,
+      "pending": [
+        "驱散敌方所有增益"
+      ]
+    },
+    {
+      "pet": "古卷执政官",
+      "slot": 4,
+      "id": "skill_000321",
+      "name": "彗星",
+      "type": "普通",
+      "baseCost": 0,
+      "basePower": 240,
+      "paths": [
+        "技能石"
+      ],
+      "status": "unsupported",
+      "gameVerified": false,
+      "pending": [
+        "每失去5%生命",
+        "使用后消耗全部生命"
+      ]
+    }
+  ],
+  "retainedAllObservedSlots": true,
+  "missingMovesSubstituted": false,
+  "blockers": [
+    "晒太阳：增益来源和驱散边界",
+    "彗星：失血分段、生命消耗与终局结算先后",
+    "草魔法完整资源规则及执行",
+    "当前赛季培养、模式合法性核验",
+    "完整六人实战复现与关键机制边界"
+  ],
+  "trainingAllowed": false,
+  "modelAllocated": false,
+  "trainingSteps": 0,
+  "modelApiCalls": 0
+}

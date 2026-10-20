@@ -1,0 +1,233 @@
+{
+  "reviewedAt": "2026-10-15",
+  "scope": "血脉学习条件、愿力强化与首领化；目标为当前常规6v6",
+  "currentGameVersionCertified": false,
+  "sources": [
+    {
+      "id": "official-cultivation",
+      "title": "洛个明白｜性格、天分、血脉、个体资质都是啥？",
+      "publisher": "洛克王国世界（原创：洛学妹）",
+      "publishedAt": "2026-04-02",
+      "url": "https://mp.weixin.qq.com/s/kP6WBAbVaxPVxMUnGdigoQ",
+      "access": "通过内置浏览器读取官方公众号原文",
+      "supports": [
+        "四类血脉",
+        "改血脉解锁对应技能",
+        "技能石有精灵适用限制",
+        "首领血脉奇丽花响应进化之力成为奇丽果"
+      ],
+      "limitation": "公测期官方教程，不等于当前全部结算规则"
+    },
+    {
+      "id": "official-wish-example",
+      "title": "优势对局别大意，愿力冲击需警惕",
+      "publisher": "洛克王国世界",
+      "publishedAt": "2026-04-27",
+      "url": "https://www.taptap.cn/moment/797783824686647996",
+      "access": "已读官方正文；本轮未逐帧审阅视频",
+      "supports": [
+        "愿力冲击是官方对战教学中的博弈机制"
+      ],
+      "limitation": "正文不支持具体数值与时序"
+    },
+    {
+      "id": "wish-game-ui",
+      "title": "愿力强化游戏内说明图",
+      "url": "https://img.cdn1.vip/i/6a5b7d92a52c5_1784380818.webp",
+      "hostArticle": "https://roco.pet/guide/will-strike/",
+      "access": "通过内置浏览器实际查看1275×676游戏说明图",
+      "supports": [
+        "对系别血脉生效",
+        "本回合替换首个技能",
+        "每场两次",
+        "冷却三回合"
+      ],
+      "limitation": "玩家资料站承载的实机截图；截图游戏版本和拍摄日期未核准，不能据此认证当前正式服"
+    },
+    {
+      "id": "bwiki-pinned",
+      "title": "BWIKI固定修订快照",
+      "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Learnsets?oldid=13094",
+      "localManifest": "docs/evidence/pilot-source-manifest.json",
+      "supports": [
+        "三类常规学习来源及血脉名称条件",
+        "首领映射与信物字段",
+        "部分首领特性可生成愿力冲击"
+      ],
+      "limitation": "社区数据源；当前游戏适用性尚待公告和实机复核",
+      "license": "CC BY-SA 4.0，洛克王国：世界 BWIKI及贡献者"
+    },
+    {
+      "id": "user-clarification",
+      "title": "用户本轮实战机制说明",
+      "supports": [
+        "基础可学、技能石、血脉技能三类",
+        "血脉技能依赖当前对应血脉",
+        "系别血脉可使用愿力冲击",
+        "首领血脉可首领化"
+      ]
+    },
+    {
+      "id": "user-correction-2026-10-15-team-resonance",
+      "title": "用户补充共鸣装备与次数条件",
+      "quote": "需要占用共鸣魔法的格子，使用次数是有限制的，且二者和草魔法只能选一个",
+      "supports": [
+        "愿力强化、进化之力、草魔法占用同一共鸣位",
+        "三者互斥",
+        "使用次数有限"
+      ],
+      "limitation": "未提供各魔法当前具体次数、冷却、目标范围与扣除时点；团队资源记录是依据该说明的建模落实，不是完整实机结算认证"
+    },
+    {
+      "id": "launch",
+      "title": "上线小报特别刊：万字更新公告",
+      "url": "https://news.17173.com/content/03182026/104940843.shtml",
+      "publishedAt": "2026-03-18",
+      "effectiveFrom": null,
+      "provenance": "official-attributed-republication",
+      "access": "已读取署名洛克王国世界的转载全文；不是本次打开的官方原站全文",
+      "limitation": "上线基线；无法据此认证后续所有补丁都未修改。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/official-mechanics-review/launch.txt",
+        "sha256": "65ac4c1f7e96e2d4438cb023248d146612a3ee91b36feaf1ff5ad4cd9f939f46"
+      }
+    },
+    {
+      "id": "s4",
+      "title": "S4版本战斗机制与平衡调整",
+      "url": "https://rocom.qq.com/web202507/sub/detail.html?newsid=18852676",
+      "publishedAt": "2026-09-07",
+      "effectiveFrom": "2026-09-10",
+      "provenance": "official-site-original-image",
+      "access": "官网页面及图片已读取；本轮重读平衡长图分段，明确光合治愈描述",
+      "limitation": "其后修复优先；具体效果不等于全部发动边界已知。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/s4-part-5.png",
+        "sha256": "d4c1f1b92e1e0b7d4c3681aaac7d0b99d8e110957a575b2c37fc232fb1acce64"
+      },
+      "imageUrl": "https://static.gametalk.qq.com/image/467/1788784828_c7f4b006f8d1b5c052b175359bad7041.jpg"
+    },
+    {
+      "id": "fix-1015",
+      "title": "10月15日版本更新公告",
+      "url": "https://www.taptap.cn/moment/859530354707399378",
+      "publishedAt": "2026-10-14",
+      "effectiveFrom": "2026-10-15",
+      "provenance": "official-account-original-image",
+      "access": "本轮查看官方长图战斗修复第16—18项；并重读本地截图",
+      "limitation": "补丁明确修复方向，但不直接给出所有数值与取整。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/official-1015-combat-fixes.png",
+        "sha256": "9894d8a45dccaa94a5175b9ead580b2aacdede7ee389c8064c87224f43e12c39"
+      },
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/lsS7-9dwvy5mV4RpQolHjqtsCOH3_20261014202640.jpg/_tap_ugc.jpg"
+    }
+  ],
+  "acceptedStructuralRules": [
+    {
+      "id": "one-current-bloodline",
+      "rule": "初始构筑选择一个当前血脉；不把各血脉技能并集当成同一合法池。",
+      "evidence": [
+        "user-clarification",
+        "official-cultivation",
+        "bwiki-pinned"
+      ]
+    },
+    {
+      "id": "independent-source",
+      "rule": "按全部学习来源判断；可通过自学或技能石独立获得的技能，不因另一条血脉来源失配而删除。",
+      "evidence": [
+        "bwiki-pinned"
+      ],
+      "status": "来源数据推导的校验逻辑"
+    },
+    {
+      "id": "separate-wish-sources",
+      "rule": "共鸣魔法获得的愿力与特性动态生成的愿力分开建模；不能把首领血脉限制推广成所有愿力技能的全局禁令。",
+      "evidence": [
+        "bwiki-pinned"
+      ],
+      "examples": [
+        "skill_000232 裁决",
+        "skill_000233 滋养",
+        "skill_000234 点燃",
+        "skill_000235 净化"
+      ],
+      "status": "机制依赖，相关形态是否已实装仍单独核验"
+    },
+    {
+      "id": "one-team-resonance-slot",
+      "rule": "整队只选择一个共鸣，愿力强化、进化之力、草魔法互斥；个体血脉符合条件不赋予未装备魔法的发动权。",
+      "evidence": [
+        "user-correction-2026-10-15-team-resonance"
+      ],
+      "status": "用户确认关系的程序化约束"
+    },
+    {
+      "id": "finite-team-resonance-ledger",
+      "rule": "模型将额度保存在队伍本局资源中，不按精灵重新分配；换人和冷却结束不恢复次数，未核准数值不能默认无限。",
+      "evidence": [
+        "user-correction-2026-10-15-team-resonance"
+      ],
+      "status": "资源记录实现；具体额度及触发事件仍需实机核验"
+    }
+  ],
+  "pendingCurrentBattleRules": [
+    "当前常规6v6完整共鸣候选列表；已登记三者单选互斥，不据此推断没有其他候选",
+    "三种魔法次数与冷却的当前有效值、起止回合和取消时点；愿力2次/3回合已有上线公告基线，仍需后续版本复核；草魔法任意血脉已获S4说明支持",
+    "草魔法S4基础效果已读；待补数值计算基数、取整、换人继承、力竭中断与精确触发边界；不混入PVE补充次数",
+    "愿力冲击威力80、耗能2、双攻较高项、应对状态+150%的候选说明及完整结算；+150%不可误写为乘1.5",
+    "首领化每局额度、可选对象、信物门槛与首领形态准入",
+    "共鸣、换人、技能、入场特性以及同速时的事件顺序",
+    "首领化时生命、能量、增减益、技能槽和冷却的继承",
+    "污染、奇异和传说条件在目标模式中的准入与共存",
+    "血脉及共鸣选择何时对敌方可见；可见前不得传给策略"
+  ],
+  "implementation": {
+    "sourcePoolFiltering": "implemented",
+    "fourMoveSourceCheck": "implemented",
+    "knownResonancePrerequisiteCheck": "implemented-provisional",
+    "teamResonanceSingleSlot": "implemented",
+    "finiteTeamUsageLedger": "implemented-not-wired-to-battle-engine",
+    "numericLimitsCertified": false,
+    "pythonTestsPassed": 32,
+    "battleResonanceSettlement": "not-implemented",
+    "legacyEngineMigrated": false,
+    "formalTrainingStarted": false,
+    "photosynthesisAnyBloodlineCheck": "implemented-and-tested-effects-still-blocked"
+  },
+  "reviewRevision": "v4-executed-prerequisite-checks",
+  "officialDescriptionFindings": [
+    {
+      "id": "wish-historical-budget",
+      "sources": [
+        "launch"
+      ],
+      "maxUses": 2,
+      "cooldownTurns": 3,
+      "status": "historical-official-baseline-current-parameter-certification-pending"
+    },
+    {
+      "id": "photosynthesis-s4-description",
+      "sources": [
+        "s4",
+        "fix-1015"
+      ],
+      "bloodlineScope": "any-bloodline",
+      "immediateHealFraction": 0.15,
+      "endTurnHealFraction": 0.15,
+      "durationTurns": 3,
+      "doubleLightSpeedThirdTurnExtraTrigger": true,
+      "status": "official-description-reviewed-not-executed-or-game-calibrated",
+      "unknown": [
+        "current-use-budget",
+        "cooldown",
+        "healing-basis-and-rounding",
+        "switch-inheritance",
+        "death-interruption",
+        "exact-duration-boundary"
+      ]
+    }
+  ],
+  "engineeringVerification": "docs/evidence/mechanics-engine-checks-2026-10-15.json"
+}

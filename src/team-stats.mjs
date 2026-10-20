@@ -8,7 +8,8 @@ export const STAT_LABELS = Object.freeze({
 });
 export const STAT_KEYS = Object.keys(STAT_LABELS);
 export const IV_VALUES = Object.freeze([0, 7, 8, 9, 10]);
-export const BUILD_RULE_VERSION = "pvp-build-1-user-nature-10";
+export const BUILD_RULE_VERSION = "pvp-build-2-l60-g5-nature20";
+export const PANEL_SCOPE = Object.freeze({level: 60, growthStars: 5, evidence: "launch-game-panel-6-of-6", currentSeasonVerified: false});
 // Factual mappings from the current World BWIKI cultivation reference, not the
 // older browser game's 25-nature table. All 30 natures have distinct up/down stats.
 const pairs = {
@@ -54,6 +55,8 @@ export function presetBuild(creature, style = "offense", value = 10) {
   };
 }
 export function validateBuild(build) {
+  if (build && ((build.level !== undefined && build.level !== 60) || (build.growthStars !== undefined && build.growthStars !== 5)))
+    throw Error("当前面板仅支持60级、五星成长的PVP基准");
   if (!build || !Object.hasOwn(NATURES, build.nature))
     throw Error("请选择《世界》的有效性格");
   if (
@@ -67,23 +70,27 @@ export function validateBuild(build) {
   const count = STAT_KEYS.filter((k) => build.ivs[k] > 0).length;
   if (count < 1 || count > 3) throw Error("资质加成须有 1—3 项，不能六项全满");
 }
-/** Community PvP panel convention; inner and outer rounding are explicit. */
+/** Fixed level-60/five-star PVP panel; iv is the INITIAL aptitude (0/7/8/9/10).
+ * 3 * iv = 0.5 * (6 * initialIV); do not multiply it by six again.
+ * Two-stage rounding reproduces the six launch-version game-panel observations
+ * in docs/evidence/stat-panel-game-fixture.json. Current-season revalidation is pending.
+ */
 export function statPanel(base, iv = 0, hp = false, nature = 1) {
   if (
-    !Number.isFinite(base) ||
+    !Number.isSafeInteger(base) ||
     base < 0 ||
     !IV_VALUES.includes(iv) ||
-    ![0.9, 1, 1.1].includes(nature)
+    ![0.9, 1, 1.2].includes(nature)
   )
     throw Error("面板参数无效");
-  const core = Math.round((hp ? 1.7 : 1.1) * (base + 3 * iv)) + (hp ? 70 : 10);
-  return Math.round(core * nature) + (hp ? 100 : 50);
+  const core = Math.floor(((hp ? 17 : 11) * (base + 3 * iv) + 5) / 10) + (hp ? 70 : 10);
+  return Math.floor((core * Math.round(nature * 10) + 5) / 10) + (hp ? 100 : 50);
 }
 export function calculatePanel(creature, build) {
   validateBuild(build);
   const nature = NATURES[build.nature];
   const breakdown = STAT_KEYS.map((key) => {
-    const modifier = key === nature.up ? 1.1 : key === nature.down ? 0.9 : 1;
+    const modifier = key === nature.up ? 1.2 : key === nature.down ? 0.9 : 1;
     return {
       key,
       label: STAT_LABELS[key],
@@ -100,6 +107,7 @@ export function calculatePanel(creature, build) {
     };
   });
   return {
+    scope: PANEL_SCOPE,
     stats: Object.fromEntries(breakdown.map((r) => [r.key, r.actual])),
     breakdown,
   };

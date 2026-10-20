@@ -1,0 +1,397 @@
+{
+  "reviewedAt": "2026-10-18",
+  "method": "public-metadata-local-audio-transcription-and-selected-frame-inspection",
+  "records": [
+    {
+      "bvid": "BV1s2ga6tECt",
+      "url": "https://www.bilibili.com/video/BV1s2ga6tECt/",
+      "title": "【洛手pvp】思路讲解 极致轮转雨天队 版本强势 所有队都能打！",
+      "uploader": "山本小波",
+      "publishedAt": "2026-07-24T10:50:40+00:00",
+      "cid": 40256407051,
+      "durationSeconds": 2241,
+      "collectedAt": "2026-10-18T15:09:40.038385+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "588072fb5b94f54ce9153ffe4034d86da89ecc9741204feaf2fb9aa6a3952b5a",
+      "audioBytes": 18366277,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "6ceb7ff826b38b0c30dce69aacf67a5fa7ae9d980996862a907fdfeea429d63f",
+      "segments": 262,
+      "durationAfterVad": 773.264,
+      "evidenceUse": "historical-teaching-concepts-only",
+      "focusWindowsSeconds": [
+        [
+          0,
+          22
+        ],
+        [
+          140,
+          210
+        ],
+        [
+          780,
+          910
+        ]
+      ],
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1s2ga6tECt.asr.json",
+      "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV11kXmBCEUC",
+      "url": "https://www.bilibili.com/video/BV11kXmBCEUC/",
+      "title": "洛克王国世界第一毒队全网最详细最全面喂奶级教学！第一期龙星小灶！毒队全面答疑（个体性格等）技能石点位补充！不会打独角兽黑猫啮合？一个视频教会你！",
+      "uploader": "Roco-龙星",
+      "publishedAt": "2026-03-29T05:30:55+00:00",
+      "cid": 37064671442,
+      "durationSeconds": 686,
+      "collectedAt": "2026-10-18T15:08:02.139392+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "0f1179afe09f6503dcbdc6f6d3321a1e5db947cd1311dae2ab7c9cad16d03f39",
+      "audioBytes": 5669971,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "f9f6af7c790181975decab7279033888d90b3f8d0b11b3aa6d37a687bcbfc443",
+      "segments": 255,
+      "durationAfterVad": 567.808,
+      "evidenceUse": "historical-teaching-concepts-only",
+      "focusWindowsSeconds": [
+        [
+          20,
+          260
+        ],
+        [
+          269,
+          400
+        ],
+        [
+          443,
+          460
+        ]
+      ],
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV11kXmBCEUC.asr.json",
+      "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV1WmQEB9EdM",
+      "url": "https://www.bilibili.com/video/BV1WmQEB9EdM/",
+      "title": "倘若我把所有数值怪都加入队伍，你又该如何应对？独角兽多核队阵容详解与实战教学",
+      "uploader": "希灵empire",
+      "publishedAt": "2026-04-15T09:28:18+00:00",
+      "cid": 37525195476,
+      "durationSeconds": 794,
+      "collectedAt": "2026-10-18T15:06:46.233883+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "22d7cc5270ed1a2eb10d278637f9a03f4a403070f1628f0014a91e4450903120",
+      "audioBytes": 6564215,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "a8e05e37e2ff999f142b1488756964c9d631aa459564b7e859690ea4251c8a27",
+      "segments": 356,
+      "durationAfterVad": 777.76,
+      "evidenceUse": "historical-teaching-concepts-only",
+      "focusWindowsSeconds": [
+        [
+          39,
+          389
+        ],
+        [
+          391,
+          550
+        ]
+      ],
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1WmQEB9EdM.asr.json",
+      "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV1DA9NBPEsk",
+      "url": "https://www.bilibili.com/video/BV1DA9NBPEsk/",
+      "title": "【洛克王国世界】pvp入坑指南硬核知识，全图鉴速度线计算/所有词条解释/配队逻辑",
+      "uploader": "云中俞俞",
+      "publishedAt": "2026-04-03T03:51:39+00:00",
+      "cid": 37666291889,
+      "durationSeconds": 750,
+      "collectedAt": "2026-10-18T15:05:27.768963+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "487acaac72bc73ae2c315d71a510ada8ac4bf206582aee5e8e5c3f8e60911ff8",
+      "audioBytes": 6202708,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "49827cd584130db51ff112c172a603161a827dae8dd91b678af6113b86fbc652",
+      "segments": 351,
+      "durationAfterVad": 749.772375,
+      "evidenceUse": "historical-teaching-concepts-only",
+      "focusWindowsSeconds": [
+        [
+          330,
+          750
+        ]
+      ],
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1DA9NBPEsk.asr.json",
+      "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV1PDhn6UEax",
+      "url": "https://www.bilibili.com/video/BV1PDhn6UEax/",
+      "title": "槐与阴科研酷猫平衡队 火羽陨落瘦猫归来 S4横扫天梯拳打雨天脚踢狼灵！",
+      "uploader": "小泉-豪炎",
+      "publishedAt": "2026-09-22T14:53:19+00:00",
+      "cid": 42115731445,
+      "durationSeconds": 526,
+      "collectedAt": "2026-10-18T15:04:11.144278+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "73d2fa92c006c5e5c272a3feed891bad0f453a0a24ec9712fa235ac440a3c4fe",
+      "audioBytes": 4318060,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "42f4eb73c5a20c2c0e0ec529d4f37820ddfab65a2656fc04f8372f1b9a6cf182",
+      "segments": 49,
+      "durationAfterVad": 109.936,
+      "evidenceUse": "excluded-low-detail-or-unreliable-asr",
+      "focusWindowsSeconds": [],
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1PDhn6UEax.asr.json",
+      "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV1ErHt6vEik",
+      "url": "https://www.bilibili.com/video/BV1ErHt6vEik/",
+      "title": "S4雨天姐妹速通上大师！",
+      "uploader": "梦里全是吧唧吧唧",
+      "publishedAt": "2026-10-05T17:24:57+00:00",
+      "cid": 42493609412,
+      "durationSeconds": 939,
+      "collectedAt": "2026-10-18T15:04:36.359392+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "cc7649bc7d3f4a9c8835e2c3dfd66c410265199cb17ad2bcd027c8373edced5c",
+      "audioBytes": 7708285,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "8d49ce2f04f22f05b23180fa108794174b4b5db12508f5013cd5705e58efd938",
+      "segments": 6,
+      "durationAfterVad": 28.992,
+      "evidenceUse": "excluded-low-detail-or-unreliable-asr",
+      "focusWindowsSeconds": [],
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1ErHt6vEik.asr.json",
+      "note": "ASR proper names, numbers and timing require visual cross-check. No transcript is published."
+    },
+    {
+      "bvid": "BV1aYpY6uEUx",
+      "url": "https://www.bilibili.com/video/BV1aYpY6uEUx/",
+      "title": "【洛克时报49.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，环境沉淀趋于稳定了？来看看节后玩什么阵容",
+      "uploader": "树池来了",
+      "publishedAt": "2026-10-10T03:30:47+00:00",
+      "cid": 42613736066,
+      "durationSeconds": 390,
+      "collectedAt": "2026-10-18T15:43:03.533308+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "8bf1b6d9c12359df2775aebfee4202e5a823ce04407ccd5ec3b2d7b8cbb395b0",
+      "audioBytes": 3227241,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "a92a8fcb056791578c2e36848c38219f66831fe2b3466edd6ff9cd3215987324",
+      "segments": 177,
+      "durationAfterVad": 389.979125,
+      "evidenceUse": "versioned-author-commentary-and-study-hypotheses",
+      "focusWindowsSeconds": [
+        [
+          246,
+          289
+        ],
+        [
+          311,
+          378
+        ]
+      ],
+      "fullTranscriptRead": true,
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1aYpY6uEUx.asr.json",
+      "authorPerformanceClaimsIndependentlyVerified": false,
+      "note": "ASR names and numbers require cross-check; author rankings are not measured game results. No transcript is published.",
+      "framesInspected": []
+    },
+    {
+      "bvid": "BV11cJY6JE7Y",
+      "url": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "title": "【洛克时报51.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，我说想回到国庆之前，怎么回到上个赛季了？",
+      "uploader": "树池来了",
+      "publishedAt": "2026-10-17T03:40:58+00:00",
+      "cid": 42809296802,
+      "durationSeconds": 368,
+      "collectedAt": "2026-10-18T15:43:25.881230+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "5795d9020cce207768c303ca6a17c5e615b59d7d914e03de475771440b9c9a8d",
+      "audioBytes": 3037722,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "1d4b5fdb52cdb4a6def8f8fb63c021dabf8a7c60e292a199433f906d732aa109",
+      "segments": 172,
+      "durationAfterVad": 367.0378125,
+      "evidenceUse": "versioned-author-commentary-and-study-hypotheses",
+      "focusWindowsSeconds": [
+        [
+          41,
+          84
+        ],
+        [
+          107,
+          127
+        ],
+        [
+          238,
+          260
+        ],
+        [
+          283,
+          305
+        ],
+        [
+          328,
+          350
+        ]
+      ],
+      "fullTranscriptRead": true,
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV11cJY6JE7Y.asr.json",
+      "authorPerformanceClaimsIndependentlyVerified": false,
+      "note": "ASR names and numbers require cross-check; author rankings are not measured game results. No transcript is published.",
+      "videoSha256": "4e8966496a91892342c74b369087aa3bd78c4a0ad65d088dbbc64709c66c5cae",
+      "framesInspected": [
+        {
+          "requestedSecond": 50,
+          "actualSecond": 50.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "d1f9ff67355f225b8a14a4ffa4fe4bb54dfa0b813fe007e12e72d02cd4eea986"
+        },
+        {
+          "requestedSecond": 71,
+          "actualSecond": 71.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "9b6ea9d2b75c0517d56aaddc242628b175c17e85d3d12881c1b26b2e213494a3"
+        },
+        {
+          "requestedSecond": 115,
+          "actualSecond": 115.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "405321b65f7ce1bbb66201494c218b7aa6414cfc02250222bec0fb22c6c43c18"
+        },
+        {
+          "requestedSecond": 246,
+          "actualSecond": 246.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "3eb90a5b5a6b82a30343df1e3ea36df7ac4609e9f5b3580b50b27f56b1dddcad"
+        },
+        {
+          "requestedSecond": 291,
+          "actualSecond": 291.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "39db06dd195ec7f606eb13a248370c26d47813d364807d62ecaec827908c69e3"
+        },
+        {
+          "requestedSecond": 300,
+          "actualSecond": 300.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "61b137ce8c8e5bb170307c17d608c41981cbb6cc491dc13c523b3cf3a4877eb2"
+        },
+        {
+          "requestedSecond": 342,
+          "actualSecond": 342.0,
+          "width": 854,
+          "height": 466,
+          "sha256": "4cbb074fced89b740dc2f639a1c7de00797cb665cc8779f1fa949873627d12dc"
+        }
+      ],
+      "corrections": [
+        {
+          "rawAsr": "速动",
+          "resolved": "速冻",
+          "evidence": "01:11 title, 05:42 subtitle; Skills skill_000551 and Terms 1032",
+          "implication": "Apply opponent slow marks; do not model as a direct allied speed boost."
+        }
+      ]
+    },
+    {
+      "bvid": "BV1Q8YQ6JEFN",
+      "url": "https://www.bilibili.com/video/BV1Q8YQ6JEFN/",
+      "title": "洛克王国PVP攻略周报第三十期（S4最新周报）包含阵容一图流",
+      "uploader": "沐木-洛克王国世界",
+      "publishedAt": "2026-09-12T04:10:25+00:00",
+      "cid": 41814065319,
+      "durationSeconds": 302,
+      "collectedAt": "2026-10-18T15:43:46.409632+00:00",
+      "method": "public-audio-local-faster-whisper-small",
+      "audioSha256": "e0e634a5f3899e00a5752b603d61dc36994b95c0a2b23a9666b543f791e84594",
+      "audioBytes": 2492370,
+      "modelApiCalls": 0,
+      "modelApiTokens": 0,
+      "asrSha256": "dd538005a19e481a149fa2e77f4e036cab7f4d54012684a9342be5577f2e6364",
+      "segments": 131,
+      "durationAfterVad": 301.139625,
+      "evidenceUse": "versioned-author-commentary-and-study-hypotheses",
+      "focusWindowsSeconds": [
+        [
+          12,
+          37
+        ],
+        [
+          57,
+          78
+        ],
+        [
+          87,
+          113
+        ]
+      ],
+      "fullTranscriptRead": true,
+      "fullVideoWatched": false,
+      "gameReplayVerified": false,
+      "fullBuildValidated": false,
+      "privateTranscript": ".local/pvp-study/BV1Q8YQ6JEFN.asr.json",
+      "authorPerformanceClaimsIndependentlyVerified": false,
+      "note": "ASR names and numbers require cross-check; author rankings are not measured game results. No transcript is published.",
+      "framesInspected": []
+    }
+  ],
+  "modelApiCalls": 0,
+  "modelApiTokens": 0,
+  "battleTrainingStarted": false,
+  "gameReplayConformanceCases": 0,
+  "browserAttempt": "Background player reads timed out; public subtitle interfaces were empty or required login. Public audio used without account credentials.",
+  "storage": {
+    "audio": "E:/AI/Downloads/roco-pvp-study/20261018",
+    "privateWorkingNotes": ".local/pvp-study"
+  },
+  "limits": [
+    "Old-season teaching is not current-meta certification.",
+    "Two S4 videos excluded from gameplay claims.",
+    "Source metadata and local transcript hashes do not establish game-event correctness."
+  ],
+  "updatedAt": "2026-10-18T15:49:39.504686+00:00"
+}

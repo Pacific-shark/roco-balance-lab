@@ -1,0 +1,646 @@
+{
+  "version": "official-battle-review-v2-engine-checks",
+  "reviewedAt": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "scope": "常规6v6、60级、五星成长、最高常规形态；培养/血脉/四招/共鸣在合法范围联合择优",
+  "assessment": "share-with-caveats-not-training-ready",
+  "currentGameVersionCertified": false,
+  "completeHistoricalPatchCoverage": false,
+  "officialSourcesFullySpecifyEngine": false,
+  "formalTrainingAllowed": false,
+  "trainingRunsStartedThisReview": 0,
+  "historicalReconciliation": {
+    "reusedChecks": {
+      "S2": 111,
+      "S3": 128,
+      "S4": 158
+    },
+    "total": 397,
+    "countsAreNotBattleValidationTests": true,
+    "artifactRelativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/evaluation-baseline-v3.json",
+    "remainingCoverage": "未穷尽上线至目标版本的全部周更、热修及公告更正；先前字段对账不认证完整战斗机制。"
+  },
+  "sources": [
+    {
+      "id": "tutorial-2025",
+      "title": "魔法学院快报·战斗篇",
+      "url": "https://www.taptap.cn/moment/652567489254788736",
+      "publishedAt": "2025-03-22",
+      "effectiveFrom": null,
+      "provenance": "official-account-original",
+      "access": "已完整查看官方原图，1080×2558",
+      "limitation": "测试期；只取结构性概念，旧数值与活动规则不得覆盖正式服公告。"
+    },
+    {
+      "id": "launch",
+      "title": "上线小报特别刊：万字更新公告",
+      "url": "https://news.17173.com/content/03182026/104940843.shtml",
+      "publishedAt": "2026-03-18",
+      "effectiveFrom": null,
+      "provenance": "official-attributed-republication",
+      "access": "已读取署名洛克王国世界的转载全文；不是本次打开的官方原站全文",
+      "limitation": "上线基线；无法据此认证后续所有补丁都未修改。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/official-mechanics-review/launch.txt",
+        "sha256": "65ac4c1f7e96e2d4438cb023248d146612a3ee91b36feaf1ff5ad4cd9f939f46"
+      }
+    },
+    {
+      "id": "cultivation",
+      "title": "洛个明白：性格、天分、血脉、个体资质",
+      "url": "https://mp.weixin.qq.com/s/kP6WBAbVaxPVxMUnGdigoQ",
+      "publishedAt": "2026-04-02",
+      "effectiveFrom": null,
+      "provenance": "official-account-original",
+      "access": "前序血脉核查已在内置浏览器阅读原文，本轮复用记录",
+      "limitation": "支持血脉结构与首领示例，不包含完整当前PVP结算。"
+    },
+    {
+      "id": "s2",
+      "title": "S2赛季平衡性调整说明",
+      "url": "https://rocom.qq.com/web202507/sub/detail.html?newsid=18788872",
+      "publishedAt": "2026-05-21",
+      "effectiveFrom": null,
+      "provenance": "official-site-original",
+      "access": "已读取官网公开内容接口；与BWIKI转载交叉核对",
+      "limitation": "已读调整说明，不表示S2期间每次热修均已穷尽。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/official-mechanics-review/s2.txt",
+        "sha256": "951b6808379a767a23058e276f213371b801058f0ca4d18ac9615d5cc07c0831"
+      }
+    },
+    {
+      "id": "fix-0524",
+      "title": "近期调整与更新内容公告",
+      "url": "https://www.taptap.cn/moment/807717284377265364",
+      "publishedAt": "2026-05-24",
+      "effectiveFrom": "2026-05-24",
+      "provenance": "official-account-original",
+      "access": "已读官方正文",
+      "limitation": "修复内容不提供完整冷却计时顺序。"
+    },
+    {
+      "id": "s3",
+      "title": "S3版本战斗机制与平衡调整",
+      "url": "https://rocom.qq.com/web202507/sub/detail.html?newsid=18816201",
+      "publishedAt": "2026-07-13",
+      "effectiveFrom": "2026-07-16",
+      "provenance": "official-site-original-image",
+      "access": "复用前序逐段阅读，本轮重读实际回复量所在原图段",
+      "limitation": "具体改动已读，尚非整个赛季机制认证。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/s3-part-9900.png",
+        "sha256": "086d3dde298c27a555432d8ff474054e03b6acb5f41d687b0dc575ce3f3d4570"
+      },
+      "imageUrl": "https://static.gametalk.qq.com/image/467/1783969204_912da1cfd0ccd3f9d266dc57f40a5ea5.jpg"
+    },
+    {
+      "id": "s4",
+      "title": "S4版本战斗机制与平衡调整",
+      "url": "https://rocom.qq.com/web202507/sub/detail.html?newsid=18852676",
+      "publishedAt": "2026-09-07",
+      "effectiveFrom": "2026-09-10",
+      "provenance": "official-site-original-image",
+      "access": "官网页面及图片已读取；本轮重读平衡长图分段，明确光合治愈描述",
+      "limitation": "其后修复优先；具体效果不等于全部发动边界已知。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/s4-part-5.png",
+        "sha256": "d4c1f1b92e1e0b7d4c3681aaac7d0b99d8e110957a575b2c37fc232fb1acce64"
+      },
+      "imageUrl": "https://static.gametalk.qq.com/image/467/1788784828_c7f4b006f8d1b5c052b175359bad7041.jpg"
+    },
+    {
+      "id": "fix-0930",
+      "title": "9月30日版本更新公告",
+      "url": "https://www.taptap.cn/moment/854137912525063544?group_id=228326",
+      "publishedAt": null,
+      "effectiveFrom": "2026-09-30",
+      "provenance": "official-account-original-image",
+      "access": "已查看同时离场顺序原图；其余交互复用前序原图核查",
+      "limitation": "同速随机只直接支持公告指定的同时离场情境，不证明所有行动共用相同抽样规则。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/0930-switch-order.png",
+        "sha256": "6c0cf943d09595f8f93f9ba09f74f661a4becd3b7bfe400f3247526fbada0855"
+      }
+    },
+    {
+      "id": "fix-1015",
+      "title": "10月15日版本更新公告",
+      "url": "https://www.taptap.cn/moment/859530354707399378",
+      "publishedAt": "2026-10-14",
+      "effectiveFrom": "2026-10-15",
+      "provenance": "official-account-original-image",
+      "access": "本轮查看官方长图战斗修复第16—18项；并重读本地截图",
+      "limitation": "补丁明确修复方向，但不直接给出所有数值与取整。",
+      "localReviewArtifact": {
+        "relativeToTaskWorkspace": "work/roco-audit-20261015/version-followup/official-1015-combat-fixes.png",
+        "sha256": "9894d8a45dccaa94a5175b9ead580b2aacdede7ee389c8064c87224f43e12c39"
+      },
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/lsS7-9dwvy5mV4RpQolHjqtsCOH3_20261014202640.jpg/_tap_ugc.jpg"
+    },
+    {
+      "id": "grass-trial",
+      "title": "草系徽章试炼官方介绍",
+      "url": "https://www.bilibili.com/video/BV1eB3v6WEC7/",
+      "publishedAt": null,
+      "effectiveFrom": null,
+      "provenance": "official-account-video-description",
+      "access": "已读官方视频说明文字；未逐帧核查视频",
+      "limitation": "特殊活动玩法，单精灵/三个技能等规则不用于常规6v6。"
+    },
+    {
+      "id": "user-format",
+      "title": "用户确认研究模式与共鸣限制",
+      "url": null,
+      "publishedAt": null,
+      "effectiveFrom": null,
+      "provenance": "user-gameplay-clarification",
+      "access": "当前对话",
+      "limitation": "6v6、4魔力、聚能5、60级五星；共鸣单选互斥有限次数。尚不代替全套官方参数和实机验收。"
+    },
+    {
+      "id": "wish-tutorial-0427",
+      "title": "官方愿力强化教学：游戏装备说明界面",
+      "url": "https://www.taptap.cn/moment/797783824686647996",
+      "publishedAt": "2026-04-27",
+      "effectiveFrom": null,
+      "provenance": "official-account-original-video-game-ui",
+      "access": "前序已实际观察约35.65秒处暂停帧；本轮仅复用观察记录，没有重开或播放视频。",
+      "localFrameAvailable": false,
+      "limitation": "S1历史界面，不证明后续版本未改动；未声称完整观看视频。"
+    }
+  ],
+  "rules": [
+    {
+      "id": "resources",
+      "name": "赛制、魔力与聚能",
+      "acceptedStatement": "研究使用常规6v6；初始4魔力和聚能+5由用户确认。旧官方教程支持力竭扣魔力、归零终局。",
+      "evidence": [
+        "user-format",
+        "tutorial-2025"
+      ],
+      "implementationStatus": "partial-prototype",
+      "unresolved": [
+        "魔力额外扣除、同时力竭、复活及强制补位顺序",
+        "真实回合/超时终局；原型100回合只是截断"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "resources-1",
+          "scenario": "普通力竭及带额外魔力损失特性分别结算",
+          "status": "specified-not-executed"
+        },
+        {
+          "id": "resources-2",
+          "scenario": "同时力竭和无替补时复核终局次序",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "attack-type",
+      "name": "克制的攻击侧来源",
+      "acceptedStatement": "克制以使用技能的属性对防守方系别判断。",
+      "evidence": [
+        "tutorial-2025"
+      ],
+      "implementationStatus": "partial-prototype",
+      "unresolved": [
+        "现版本双属性、伤害通道、本系加成、减伤与取整完整链"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "attack-type-1",
+          "scenario": "同一精灵使用本系与非本系招式，分别对单/双属性目标核对伤害",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "counter",
+      "name": "应对的通用奖励",
+      "acceptedStatement": "上线调整取消应对成功的通用额外奖励；具体技能自己的应对效果需逐招登记。",
+      "evidence": [
+        "launch"
+      ],
+      "implementationStatus": "priority-not-game-verified",
+      "unresolved": [
+        "当前应对优先、先手、迅捷、打断与取消的关系"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "counter-1",
+          "scenario": "无独有奖励的应对技能不得凭通用规则获得下次先手",
+          "status": "specified-not-executed"
+        },
+        {
+          "id": "counter-2",
+          "scenario": "有明确先手奖励的具体技能单独核验",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "defense-cooldown",
+      "name": "随机防御与公共冷却",
+      "acceptedStatement": "随机获得防御招不能绕过公共防御冷却。",
+      "evidence": [
+        "fix-0524"
+      ],
+      "implementationStatus": "registered-acquired-defense-check-passed-dynamic-draw-not-implemented",
+      "unresolved": [
+        "冷却设置/递减时点、特定技能例外、抽到不可用招式时如何处理"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "defense-cooldown-1",
+          "scenario": "防御后的冷却期间，经借用、取念或巧变获得防御招；按实机检查抽取及执行结果",
+          "status": "specified-not-executed"
+        }
+      ],
+      "engineeringCheck": "acquired-defense-cooldown"
+    },
+    {
+      "id": "simultaneous-exit",
+      "name": "同时离场排序",
+      "acceptedStatement": "同时离场时高速方先离场并先换入；同速顺序随机。",
+      "evidence": [
+        "fix-0930"
+      ],
+      "implementationStatus": "isolated-order-contract-checked-legacy-fixed-tie-conflict-remains",
+      "unresolved": [
+        "精确采样分布、强制换人与主动换人混合、同回合重复触发的排序",
+        "完整离场/入场触发的交错关系，公告只明确各自先后"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "simultaneous-exit-1",
+          "scenario": "交换双方速度，对比退场/入场顺序",
+          "status": "specified-not-executed"
+        },
+        {
+          "id": "simultaneous-exit-2",
+          "scenario": "同速重复记录顺序；核准分布后再做采样与种子回放检查",
+          "status": "specified-not-executed"
+        }
+      ],
+      "engineeringCheck": "simultaneous-exit-order"
+    },
+    {
+      "id": "transmission",
+      "name": "传动与槽位",
+      "acceptedStatement": "上线说明将传动放在回合开始，按传动值向下移动且可叠加。",
+      "evidence": [
+        "launch"
+      ],
+      "implementationStatus": "not-implemented",
+      "unresolved": [
+        "多技能移动冲突、环绕、锁位、临时替换技能的身份及计数继承"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "transmission-1",
+          "scenario": "同时传动及传动叠加；覆盖四槽边界和愿力临时替换",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "actual-recovery",
+      "name": "回复与溢出",
+      "acceptedStatement": "S3系统发育与戏耍相关结算不把回复溢出计为收益。",
+      "evidence": [
+        "s3"
+      ],
+      "implementationStatus": "not-implemented-for-these-traits",
+      "unresolved": [
+        "按回复前缺口如何截断、转化收益与递归触发的顺序"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "actual-recovery-1",
+          "scenario": "满资源、仅缺少一点及大幅缺失三组状态对照",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "root",
+      "name": "禁足",
+      "acceptedStatement": "石锁/流沙施加的禁足期间不能离场，且不再新增禁足状态。",
+      "evidence": [
+        "s3"
+      ],
+      "implementationStatus": "not-implemented",
+      "unresolved": [
+        "强制离场例外、剩余回合边界、免疫/驱散与首领化交互"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "root-1",
+          "scenario": "禁足中再次施加，核对时长是否保持；解除边界测试",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "entry-chain",
+      "name": "入场与变更特性",
+      "acceptedStatement": "9月修复要求处理入场棘刺力竭后的诈死、回合末返场后的迎宾，以及取得冰钻后的即时触发条件。",
+      "evidence": [
+        "fix-0930"
+      ],
+      "implementationStatus": "not-implemented",
+      "unresolved": [
+        "其他入场触发和胜负判断的排序"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "entry-chain-1",
+          "scenario": "入场即因棘刺力竭且带诈死",
+          "status": "specified-not-executed"
+        },
+        {
+          "id": "entry-chain-2",
+          "scenario": "回合末返场遇迎宾",
+          "status": "specified-not-executed"
+        },
+        {
+          "id": "entry-chain-3",
+          "scenario": "铭记于月亮获得冰钻且不重新入场",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "reassemble",
+      "name": "重组附加伤害",
+      "acceptedStatement": "重组额外伤害应纳入防御类技能减伤。",
+      "evidence": [
+        "fix-1015"
+      ],
+      "implementationStatus": "not-implemented",
+      "unresolved": [
+        "多段、减伤叠加和取整在附加伤害上的精确顺序"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "reassemble-1",
+          "scenario": "有防御和无防御分别核对重组主段及额外伤害",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "bloodline",
+      "name": "初始配招与血脉",
+      "acceptedStatement": "修改血脉解锁相应技能，技能石有适用限制；首领血脉与进化之力配合有官方示例。",
+      "evidence": [
+        "cultivation",
+        "user-format"
+      ],
+      "implementationStatus": "source-checks-only",
+      "unresolved": [
+        "特殊血脉、传说条件、当前排位准入及分支开放"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "bloodline-1",
+          "scenario": "固定一种血脉后核对四招来源；具有独立自学/技能石来源的招式不能误删",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "resonance-slot",
+      "name": "共鸣位与团队额度",
+      "acceptedStatement": "三种已知共鸣互斥、占用团队单一装备位且有限次数，按用户补充登记。",
+      "evidence": [
+        "user-format"
+      ],
+      "implementationStatus": "ledger-not-wired-to-battle",
+      "unresolved": [
+        "发动/取消时机、完整候选列表、每种魔法的当前额度"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "resonance-slot-1",
+          "scenario": "同队不同对象共用次数；不能通过换人或冷却恢复新增额度",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "wish",
+      "name": "愿力强化额度",
+      "acceptedStatement": "上线公告及4月27日官方教学约35.65秒界面支持系别血脉、本回合替换首槽、每战2次/冷却3回合；保留为历史参数。",
+      "evidence": [
+        "launch",
+        "wish-tutorial-0427"
+      ],
+      "implementationStatus": "historical-parameters-only",
+      "unresolved": [
+        "后续补丁复核、冷却边界、愿力技能伤害通道和应对增幅"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "wish-1",
+          "scenario": "第一至第四回合分别尝试再发动；动作取消与额度耗尽另测",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "lord",
+      "name": "首领化",
+      "acceptedStatement": "官方教程支持首领血脉奇丽花响应进化之力变为奇丽果。",
+      "evidence": [
+        "cultivation"
+      ],
+      "implementationStatus": "prerequisites-only",
+      "unresolved": [
+        "当前额度、形态准入、首领化是否耗行动、生命能量状态及槽位继承"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "lord-1",
+          "scenario": "受伤/缺能/带状态时首领化；核对变身前后全部字段与事件",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "photosynthesis",
+      "name": "光合治愈",
+      "acceptedStatement": "S4明确任意血脉适用；即时回复15%，回合末再回复15%，持续3回合。",
+      "evidence": [
+        "s4"
+      ],
+      "implementationStatus": "any-bloodline-prerequisite-checked-effects-not-implemented",
+      "unresolved": [
+        "额度冷却、计算基数取整、当回合计数、换人/力竭及溢出边界"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "photosynthesis-1",
+          "scenario": "不同合法血脉目标；逐回合记生命与倒计时",
+          "status": "specified-not-executed"
+        },
+        {
+          "id": "photosynthesis-2",
+          "scenario": "治疗期间换人、力竭、满血和复活分别核验",
+          "status": "specified-not-executed"
+        }
+      ],
+      "engineeringCheck": "photosynthesis-bloodline-scope"
+    },
+    {
+      "id": "photosynthesis-extra",
+      "name": "双向光速与持续治疗",
+      "acceptedStatement": "10月15日修复光合治愈使用后第3回合未额外触发的问题。",
+      "evidence": [
+        "fix-1015"
+      ],
+      "implementationStatus": "not-implemented",
+      "unresolved": [
+        "各回合精确事件顺序，触发者离场或力竭时的条件"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "photosynthesis-extra-1",
+          "scenario": "有/无双向光速对照完整持续期，特别检查第三回合",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "weather-trait",
+      "name": "暴风雪与取得特性",
+      "acceptedStatement": "修复铭记于月亮取得捉迷藏后在暴风雪中错误施加能耗减益，包含冰系目标。",
+      "evidence": [
+        "fix-1015"
+      ],
+      "implementationStatus": "not-implemented",
+      "unresolved": [
+        "天气状态、印记、免疫、覆盖/替换与持续回合完整规则"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "weather-trait-1",
+          "scenario": "冰系/非冰系以及特性取得前后交叉对照",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "observations",
+      "name": "技能说明的揭示",
+      "acceptedStatement": "上线调整按对方实际用过的技能逐个展示说明，适用于闪耀大赛等。",
+      "evidence": [
+        "launch"
+      ],
+      "implementationStatus": "new-observation-interface-not-migrated",
+      "unresolved": [
+        "当前UI精度、队伍预览、后台资源、培养/血脉/共鸣公开时点和槽位位置"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "observations-1",
+          "scenario": "初登场、使用一招、离场再登场逐字段记录可见信息；隐藏字段扰动不改变策略观察",
+          "status": "specified-not-executed"
+        }
+      ]
+    },
+    {
+      "id": "mode-separation",
+      "name": "模式隔离",
+      "acceptedStatement": "活动玩法与常规6v6分开；不能混入草系试炼单精灵三个技能或命运对决随机队伍规则。",
+      "evidence": [
+        "grass-trial",
+        "fix-1015",
+        "tutorial-2025"
+      ],
+      "implementationStatus": "scope-declared-not-game-certified",
+      "unresolved": [
+        "具体排位当前准入与全部整队限制"
+      ],
+      "sourceStatementReviewed": true,
+      "currentVersionGameVerified": false,
+      "cases": [
+        {
+          "id": "mode-separation-1",
+          "scenario": "按玩法配置分别加载；不把活动特例写成全局默认",
+          "status": "specified-not-executed"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "reviewedRules": 19,
+    "specifiedCases": 25,
+    "executedGameComparisonCasesThisReview": 0
+  },
+  "criticalUnresolved": [
+    "当前模式合法性和影响结论的历史改动覆盖",
+    "当前面板与完整伤害链、上限突破及取整实机样例",
+    "应对/先手/换人/共鸣/力竭/回合末的关键事件顺序",
+    "愿力、首领化、光合治愈全部发动与继承条件",
+    "状态印记/天气/槽位/动态技能依赖及随机分布",
+    "玩家可见信息核验与旧学习器迁移",
+    "范围内所有机制完成后才能验收AI能力和冻结正式评估预算"
+  ],
+  "acceptance": {
+    "sourceTextIsNotGameValidation": true,
+    "unknownMechanismBlocksAffectedBuild": true,
+    "numericFixturesMustMatchExactly": true,
+    "eventSequencesMustMatch": true,
+    "randomDistributionMustBeSourcedNotAssumedUniform": true,
+    "noFormalTrainingBeforeRequiredChecksPass": true
+  },
+  "engineeringVerification": {
+    "path": "docs/evidence/mechanics-engine-checks-2026-10-15.json",
+    "nodeFocusedTestsPassed": 21,
+    "pythonTestsPassed": 32,
+    "distinctNodeTestsPassedAcrossRuns": 40,
+    "currentVersionGameComparisonCases": 0,
+    "formalTrainingRuns": 0,
+    "inMemoryUnitRegressionEpisodes": 300
+  },
+  "trainingRunsStartedThisReviewScope": "formal-pilot-runs-only; unit regression episodes recorded separately"
+}

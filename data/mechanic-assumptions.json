@@ -1,0 +1,9 @@
+[
+  {"id":"evolution-uses","status":"user-confirmed","claim":"进化之力每局一次","source":"用户实战补充，2026-10-16","value":1},
+  {"id":"resonance-regular-action","status":"user-confirmed","claim":"共鸣不占普通行动","source":"用户实战补充，2026-10-16","value":false},
+  {"id":"wish-expiry","status":"user-confirmed","claim":"愿力临时替换当回合不用，下回合消失","source":"用户实战补充，2026-10-16"},
+  {"id":"grass-bench-healing","status":"hypothesis","claim":"换下后停止回血","source":"用户提出：应该不回，尚非确定实测","value":false,"executionEnabled":false,"unresolved":["效果是否保留","持续回合是否继续减少","重新上场是否恢复触发"]},
+  {"id":"grass-max-uses","status":"pending","claim":"草魔法当前每局次数","value":null},
+  {"id":"lord-hp-inheritance","status":"pending","claim":"首领化生命继承比例与取整","value":null},
+  {"id":"rank-team-preview","status":"player-reports","claim":"玩家记录支持大师明牌、大师以下暗牌；配招、血脉、共鸣字段未核准","source":"https://www.taptap.cn/moment/803064688114925608"}
+]

@@ -1,0 +1,14 @@
+{
+  "version": "pilot-capability-spec-v1",
+  "status": "awaiting-current-game-fixtures-and-policy-evaluation",
+  "policyCapabilityPassed": false,
+  "note": "Each case requires a positive, an opportunity-cost counterexample and an interaction case. These are evaluation specifications, not fabricated match results.",
+  "cases": [
+    {"id":"resource-planning","target":"水灵","question":"减耗能否改变后续连续出招，何时应保留能量？","positive":"关键技能能在后续回合兑现","counterexample":"无效聚能或为减耗浪费可取胜的行动","evidenceNeeded":["逐回合能耗","减耗持续与离场规则","可接受动作或结果集合"]},
+    {"id":"sustain-tradeoff","target":"魔力猫","question":"进攻和回血之间的取舍是否正确？","positive":"续航改变存活或下一次行动机会","counterexample":"满血回复、过度防守错过进攻窗口","evidenceNeeded":["实际生命变化","有效与溢出回复","后续行动与结算顺序"]},
+    {"id":"setup-and-counterplay","target":"火神","question":"强化何时值得，面对反制是否能换计划？","positive":"强化产生后续突破机会","counterexample":"可被击倒时盲目强化或空转","evidenceNeeded":["双攻增益","离场处理","对手已公开信息"]},
+    {"id":"turn-order-and-pivot","target":"岚鸟","question":"先于敌方攻击的收益如何与速度、先手和换人交互？","positive":"正确利用已知顺序和有效攻击机会","counterexample":"不读取隐藏速度就假设必定先手","evidenceNeeded":["真实出手顺序","同速与优先判定","公开信息时点"]},
+    {"id":"bench-preheat","target":"布克棱岩","question":"后台预热到何时，入场才有价值？","positive":"队友地系行为使其获得可用能量","counterexample":"未预热入场后只能无效消耗回合","evidenceNeeded":["后台能量","第一次入场与再入场差异","技能消耗和上限"]},
+    {"id":"support-delayed-return","target":"奇丽花","question":"富养化占用一回合后，队友能否兑现收益？","positive":"实际回能推动队友更早完成关键行动","counterexample":"队友满能量时无效供给，或因此错失击倒","evidenceNeeded":["技能与特性分别归因","受益者实际能量","支援前后资源链","机会成本"]}
+  ]
+}

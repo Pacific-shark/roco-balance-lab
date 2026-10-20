@@ -61,9 +61,9 @@ function MemberEditor({ member, creature, onApply }) {
             <tr>
               <th>属性</th>
               <th>种族值</th>
-              <th>资质</th>
+              <th>初始资质</th>
               <th>性格修正</th>
-              <th>实际面板</th>
+              <th>五星60级面板</th>
             </tr>
           </thead>
           <tbody>
@@ -91,7 +91,7 @@ function MemberEditor({ member, creature, onApply }) {
                 </td>
                 <td>
                   {NATURES[draft.nature].up === k
-                    ? "+10%"
+                    ? "+20%"
                     : NATURES[draft.nature].down === k
                       ? "−10%"
                       : "—"}

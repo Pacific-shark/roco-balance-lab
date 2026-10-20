@@ -1,0 +1,4155 @@
+{
+  "reviewedAt": "2026-10-18",
+  "forms": 259,
+  "uniqueTraits": 207,
+  "groups": 18,
+  "sourceSha256": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
+  "sourceRevisionCheck": {
+    "checkedAt": "2026-10-18T15:08:04.327915+00:00",
+    "currentGameVersionCertified": false,
+    "modules": [
+      {
+        "name": "Catalog",
+        "snapshotRevision": 18675,
+        "observedRevision": 18675,
+        "observedModifiedAt": "2026-10-15T02:53:27Z"
+      },
+      {
+        "name": "Index",
+        "snapshotRevision": 18679,
+        "observedRevision": 18679,
+        "observedModifiedAt": "2026-10-15T02:53:31Z"
+      },
+      {
+        "name": "Skills",
+        "snapshotRevision": 16558,
+        "observedRevision": 16558,
+        "observedModifiedAt": "2026-09-26T08:35:58Z"
+      },
+      {
+        "name": "Learnsets",
+        "snapshotRevision": 13094,
+        "observedRevision": 13094,
+        "observedModifiedAt": "2026-09-12T18:07:44Z"
+      },
+      {
+        "name": "Terms",
+        "snapshotRevision": 7078,
+        "observedRevision": 7078,
+        "observedModifiedAt": "2026-09-09T10:00:15Z"
+      },
+      {
+        "name": "Evolutions",
+        "snapshotRevision": 18677,
+        "observedRevision": 18677,
+        "observedModifiedAt": "2026-10-15T02:53:29Z"
+      },
+      {
+        "name": "Config",
+        "snapshotRevision": 18676,
+        "observedRevision": 18676,
+        "observedModifiedAt": "2026-10-15T02:53:28Z"
+      }
+    ],
+    "status": "same-revisions"
+  },
+  "modeLegalityCertified": false,
+  "trainingStarted": false,
+  "simulatorCoverageFilterApplied": false,
+  "rows": [
+    {
+      "number": "001",
+      "id": "pet_000004",
+      "name": "迪莫",
+      "types": [
+        "光系"
+      ],
+      "traitId": "skill_000101",
+      "trait": "最好的伙伴",
+      "description": "造成克制伤害后，获得攻防速+20%，并回复2能量。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_30019219e28a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/迪莫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "004",
+      "id": "pet_000007",
+      "name": "魔力猫",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000003",
+      "trait": "氧循环",
+      "description": "使用草系技能后，回复10%生命。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_154c2e3a71a1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/魔力猫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "007",
+      "id": "pet_000006",
+      "name": "火神",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000064",
+      "trait": "助燃",
+      "description": "使用火系技能后，获得双攻+20%。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_521b9a804a08",
+      "sourceUrl": "https://wiki.biligame.com/nrc/火神",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "010",
+      "id": "pet_000005",
+      "name": "水灵",
+      "types": [
+        "水系"
+      ],
+      "traitId": "skill_000030",
+      "trait": "浸润",
+      "description": "使用水系技能后，全技能能耗-1。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_0c8c2164bed3",
+      "sourceUrl": "https://wiki.biligame.com/nrc/水灵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "011",
+      "id": "pet_000011",
+      "name": "鸭吉吉（蓬松的样子）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000013",
+      "trait": "挺起胸脯",
+      "description": "携带的能耗为1的技能，威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_730e76b36e4a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鸭吉吉（蓬松的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "011",
+      "id": "pet_000033",
+      "name": "鸭吉吉（紧实的样子）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000013",
+      "trait": "挺起胸脯",
+      "description": "携带的能耗为1的技能，威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_3f919bbdde59",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鸭吉吉（紧实的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "011",
+      "id": "pet_000353",
+      "name": "鸭吉吉（急急急鸭）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000013",
+      "trait": "挺起胸脯",
+      "description": "携带的能耗为1的技能，威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_7750ee2b25be",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鸭吉吉（急急急鸭）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "011",
+      "id": "pet_000354",
+      "name": "鸭吉吉（等一等鸭）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000013",
+      "trait": "挺起胸脯",
+      "description": "携带的能耗为1的技能，威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_3f919bbdde59",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鸭吉吉（等一等鸭）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "011",
+      "id": "pet_000393",
+      "name": "鸭吉吉（燃了鸭）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000013",
+      "trait": "挺起胸脯",
+      "description": "携带的能耗为1的技能，威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_730e76b36e4a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鸭吉吉（燃了鸭）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "011",
+      "id": "pet_000513",
+      "name": "鸭吉吉（起来鸭）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000013",
+      "trait": "挺起胸脯",
+      "description": "携带的能耗为1的技能，威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_3f919bbdde59",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鸭吉吉（起来鸭）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "014",
+      "id": "pet_000049",
+      "name": "水泡壳",
+      "types": [
+        "水系"
+      ],
+      "traitId": "skill_000031",
+      "trait": "缩壳",
+      "description": "携带的防御技能能耗-2。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_e6d9fa964c4d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/水泡壳",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "014",
+      "id": "pet_000411",
+      "name": "水泡壳（蜕皮时的样子）",
+      "types": [
+        "水系"
+      ],
+      "traitId": "skill_000031",
+      "trait": "缩壳",
+      "description": "携带的防御技能能耗-2。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_d30bc0b122ac",
+      "sourceUrl": "https://wiki.biligame.com/nrc/水泡壳（蜕皮时的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "017",
+      "id": "pet_000044",
+      "name": "花影羚羊",
+      "types": [
+        "幽系",
+        "恶系"
+      ],
+      "traitId": "skill_000014",
+      "trait": "碰瓷",
+      "description": "自己使用恶系技能后，敌方失去2能量。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_58c7d71f594e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/花影羚羊",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "020",
+      "id": "pet_000034",
+      "name": "岚鸟",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000045",
+      "trait": "顺风",
+      "description": "若先于敌方攻击，本次技能威力+50%。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_dce1f36a054c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/岚鸟",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "020",
+      "id": "pet_000235",
+      "name": "岚鸟（春天的样子）",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000045",
+      "trait": "顺风",
+      "description": "若先于敌方攻击，本次技能威力+50%。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_4a9071bf5536",
+      "sourceUrl": "https://wiki.biligame.com/nrc/岚鸟（春天的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "020",
+      "id": "pet_000236",
+      "name": "岚鸟（夏天的样子）",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000045",
+      "trait": "顺风",
+      "description": "若先于敌方攻击，本次技能威力+50%。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_524cbfd158b3",
+      "sourceUrl": "https://wiki.biligame.com/nrc/岚鸟（夏天的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "020",
+      "id": "pet_000237",
+      "name": "岚鸟（秋天的样子）",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000045",
+      "trait": "顺风",
+      "description": "若先于敌方攻击，本次技能威力+50%。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_18249ecedfe9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/岚鸟（秋天的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "023",
+      "id": "pet_000133",
+      "name": "幻影灵菇",
+      "types": [
+        "幽系",
+        "草系"
+      ],
+      "traitId": "skill_000075",
+      "trait": "毒蘑菇",
+      "description": "回合结束时，偷取敌方场上所有精灵1能量。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_7e624e4ad6a2",
+      "sourceUrl": "https://wiki.biligame.com/nrc/幻影灵菇",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "026",
+      "id": "pet_000097",
+      "name": "石冠王蜥",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000026",
+      "trait": "刺肤",
+      "description": "每受到1次攻击伤害，对攻击自己的精灵造成50威力物理伤害。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_bcae74439b7e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/石冠王蜥",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "026",
+      "id": "pet_000400",
+      "name": "石冠王蜥（球球尾巴的样子）",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000026",
+      "trait": "刺肤",
+      "description": "每受到1次攻击伤害，对攻击自己的精灵造成50威力物理伤害。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_66937f330980",
+      "sourceUrl": "https://wiki.biligame.com/nrc/石冠王蜥（球球尾巴的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "029",
+      "id": "pet_000094",
+      "name": "布克棱岩",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000025",
+      "trait": "地脉",
+      "description": "初始能量为0，入场前己方精灵每放1次地系技能，回复3能量。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_086687868830",
+      "sourceUrl": "https://wiki.biligame.com/nrc/布克棱岩",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "031",
+      "id": "pet_000036",
+      "name": "叮叮恶魔",
+      "types": [
+        "恶系",
+        "翼系"
+      ],
+      "traitId": "skill_000058",
+      "trait": "渴求",
+      "description": "入场时获得50%吸血。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_2e15e601b77f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/叮叮恶魔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "034",
+      "id": "pet_000124",
+      "name": "化蝶（平常的样子）",
+      "types": [
+        "虫系",
+        "萌系"
+      ],
+      "traitId": "skill_000104",
+      "trait": "化茧",
+      "description": "受到致命伤害时，获得1层萌化，并免疫此次伤害。（最多触发2次）",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_ba9df96a104e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/化蝶（平常的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "034",
+      "id": "pet_000371",
+      "name": "化蝶（幽冥眼的样子）",
+      "types": [
+        "虫系",
+        "萌系"
+      ],
+      "traitId": "skill_000104",
+      "trait": "化茧",
+      "description": "受到致命伤害时，获得1层萌化，并免疫此次伤害。（最多触发2次）",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_ba9df96a104e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/化蝶（幽冥眼的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "034",
+      "id": "pet_000372",
+      "name": "化蝶（喵喵的样子）",
+      "types": [
+        "虫系",
+        "萌系"
+      ],
+      "traitId": "skill_000104",
+      "trait": "化茧",
+      "description": "受到致命伤害时，获得1层萌化，并免疫此次伤害。（最多触发2次）",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_ba9df96a104e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/化蝶（喵喵的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "034",
+      "id": "pet_000373",
+      "name": "化蝶（奇丽花的样子）",
+      "types": [
+        "虫系",
+        "萌系"
+      ],
+      "traitId": "skill_000104",
+      "trait": "化茧",
+      "description": "受到致命伤害时，获得1层萌化，并免疫此次伤害。（最多触发2次）",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_ba9df96a104e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/化蝶（奇丽花的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "035",
+      "id": "pet_000056",
+      "name": "幽影树",
+      "types": [
+        "幽系",
+        "草系"
+      ],
+      "traitId": "skill_000072",
+      "trait": "小偷小摸",
+      "description": "入场时偷取敌方场上所有精灵2能量。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_49e1340238be",
+      "sourceUrl": "https://wiki.biligame.com/nrc/幽影树",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "038",
+      "id": "pet_000263",
+      "name": "卷胡巨獭",
+      "types": [
+        "普通系",
+        "水系"
+      ],
+      "traitId": "skill_000019",
+      "trait": "保守派",
+      "description": "总技能能耗小于4时，自己获得双防+80%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_839b49d63af5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卷胡巨獭",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "040",
+      "id": "pet_000257",
+      "name": "晶石蜗（西瓜碧玺的样子）",
+      "types": [
+        "光系",
+        "地系"
+      ],
+      "traitId": "skill_000001",
+      "trait": "偏振",
+      "description": "受到自己携带技能系别的攻击伤害-40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_6ae94796dcb1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/晶石蜗（西瓜碧玺的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "040",
+      "id": "pet_000349",
+      "name": "晶石蜗（莲花刚玉的样子）",
+      "types": [
+        "光系",
+        "地系"
+      ],
+      "traitId": "skill_000001",
+      "trait": "偏振",
+      "description": "受到自己携带技能系别的攻击伤害-40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_39d90658f2b1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/晶石蜗（莲花刚玉的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "040",
+      "id": "pet_000350",
+      "name": "晶石蜗（星彩榴石的样子）",
+      "types": [
+        "光系",
+        "地系"
+      ],
+      "traitId": "skill_000001",
+      "trait": "偏振",
+      "description": "受到自己携带技能系别的攻击伤害-40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_56613d2ffe0a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/晶石蜗（星彩榴石的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "040",
+      "id": "pet_000351",
+      "name": "晶石蜗（火山琉璃的样子）",
+      "types": [
+        "光系",
+        "地系"
+      ],
+      "traitId": "skill_000001",
+      "trait": "偏振",
+      "description": "受到自己携带技能系别的攻击伤害-40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_2263007cb3d3",
+      "sourceUrl": "https://wiki.biligame.com/nrc/晶石蜗（火山琉璃的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "040",
+      "id": "pet_000352",
+      "name": "晶石蜗（蓝锥矿的样子）",
+      "types": [
+        "光系",
+        "地系"
+      ],
+      "traitId": "skill_000001",
+      "trait": "偏振",
+      "description": "受到自己携带技能系别的攻击伤害-40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_6d7732f75ea8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/晶石蜗（蓝锥矿的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "040",
+      "id": "pet_000386",
+      "name": "晶石蜗（烧蓝黄金的样子）",
+      "types": [
+        "光系",
+        "地系"
+      ],
+      "traitId": "skill_000001",
+      "trait": "偏振",
+      "description": "受到自己携带技能系别的攻击伤害-40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_8149c2a246bc",
+      "sourceUrl": "https://wiki.biligame.com/nrc/晶石蜗（烧蓝黄金的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "043",
+      "id": "pet_000028",
+      "name": "奇丽花",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000006",
+      "trait": "养分重吸收",
+      "description": "回合结束时，回复3能量。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_bce7f46b0e0b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/奇丽花",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "046",
+      "id": "pet_000039",
+      "name": "卡瓦重（草地附近的样子）",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000007",
+      "trait": "诈死",
+      "description": "自己力竭时，少损失1点魔力。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_e698384f7033",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卡瓦重（草地附近的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "046",
+      "id": "pet_000244",
+      "name": "卡瓦重（火山附近的样子）",
+      "types": [
+        "草系",
+        "火系"
+      ],
+      "traitId": "skill_000007",
+      "trait": "诈死",
+      "description": "自己力竭时，少损失1点魔力。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_a06304060a3b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卡瓦重（火山附近的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "046",
+      "id": "pet_000245",
+      "name": "卡瓦重（沙地附近的样子）",
+      "types": [
+        "草系",
+        "地系"
+      ],
+      "traitId": "skill_000007",
+      "trait": "诈死",
+      "description": "自己力竭时，少损失1点魔力。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_f2e1375201c4",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卡瓦重（沙地附近的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "046",
+      "id": "pet_000246",
+      "name": "卡瓦重（雪山附近的样子）",
+      "types": [
+        "草系",
+        "冰系"
+      ],
+      "traitId": "skill_000007",
+      "trait": "诈死",
+      "description": "自己力竭时，少损失1点魔力。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_d8dd1381c0fa",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卡瓦重（雪山附近的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "048",
+      "id": "pet_000062",
+      "name": "音速犬",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000067",
+      "trait": "专注力",
+      "description": "入场首回合，获得物攻+100%。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_d48a3d9c7167",
+      "sourceUrl": "https://wiki.biligame.com/nrc/音速犬",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "048",
+      "id": "pet_000629",
+      "name": "音速犬（看守麦田的样子）",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000067",
+      "trait": "专注力",
+      "description": "入场首回合，获得物攻+100%。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_d48a3d9c7167",
+      "sourceUrl": "https://wiki.biligame.com/nrc/音速犬（看守麦田的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "051",
+      "id": "pet_000089",
+      "name": "蹦床松鼠",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000016",
+      "trait": "囤积",
+      "description": "每有1能量，获得双防+10%。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_a25cc1df4094",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蹦床松鼠",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "053",
+      "id": "pet_000295",
+      "name": "嘟嘟锅",
+      "types": [
+        "毒系"
+      ],
+      "traitId": "skill_000097",
+      "trait": "复方汤剂",
+      "description": "在场时，双方回合结束时的中毒效果会额外触发1次。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_95b5a3f848c6",
+      "sourceUrl": "https://wiki.biligame.com/nrc/嘟嘟锅",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "056",
+      "id": "pet_000326",
+      "name": "幽冥眼（睁眼的样子）",
+      "types": [
+        "幽系"
+      ],
+      "traitId": "skill_000074",
+      "trait": "惊吓",
+      "description": "能量等于0的精灵，无法对自己造成伤害。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_496bcbf4bb15",
+      "sourceUrl": "https://wiki.biligame.com/nrc/幽冥眼（睁眼的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "056",
+      "id": "pet_000382",
+      "name": "幽冥眼（闭眼的样子）",
+      "types": [
+        "幽系"
+      ],
+      "traitId": "skill_000074",
+      "trait": "惊吓",
+      "description": "能量等于0的精灵，无法对自己造成伤害。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_884ef1fb01ac",
+      "sourceUrl": "https://wiki.biligame.com/nrc/幽冥眼（闭眼的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "058",
+      "id": "pet_000343",
+      "name": "梦悠悠（穿旧睡衣的样子）",
+      "types": [
+        "幽系"
+      ],
+      "traitId": "skill_000077",
+      "trait": "做噩梦",
+      "description": "敌方精灵离场后，更换入场的精灵失去3能量。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_98f244c3857b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/梦悠悠（穿旧睡衣的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "058",
+      "id": "pet_000345",
+      "name": "梦悠悠（穿星星睡衣的样子）",
+      "types": [
+        "幽系",
+        "光系"
+      ],
+      "traitId": "skill_000077",
+      "trait": "做噩梦",
+      "description": "敌方精灵离场后，更换入场的精灵失去3能量。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_575e40caa183",
+      "sourceUrl": "https://wiki.biligame.com/nrc/梦悠悠（穿星星睡衣的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "059",
+      "id": "pet_000392",
+      "name": "兽花蕾",
+      "types": [
+        "光系",
+        "草系"
+      ],
+      "traitId": "skill_000121",
+      "trait": "稀兽花宝",
+      "description": "根据自己的血脉，入场时获得不同效果。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_ab0b0ad019ac",
+      "sourceUrl": "https://wiki.biligame.com/nrc/兽花蕾",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "062",
+      "id": "pet_000148",
+      "name": "巨噬针鼹",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000015",
+      "trait": "壮胆",
+      "description": "队伍存在虫系精灵，自己获得双攻+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_2b8f47b5428e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/巨噬针鼹",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "065",
+      "id": "pet_000018",
+      "name": "蹦蹦花（海神球形态）",
+      "types": [
+        "草系",
+        "毒系"
+      ],
+      "traitId": "skill_000005",
+      "trait": "生物碱",
+      "description": "使用草系技能时，敌方获得2层中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_9ff4f99d7ee5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蹦蹦花（海神球形态）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "065",
+      "id": "pet_000253",
+      "name": "蹦蹦花（彩玉球形态）",
+      "types": [
+        "草系",
+        "毒系"
+      ],
+      "traitId": "skill_000005",
+      "trait": "生物碱",
+      "description": "使用草系技能时，敌方获得2层中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_e8525e7e0f86",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蹦蹦花（彩玉球形态）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "065",
+      "id": "pet_000254",
+      "name": "蹦蹦花（短毛球形态）",
+      "types": [
+        "草系",
+        "毒系"
+      ],
+      "traitId": "skill_000005",
+      "trait": "生物碱",
+      "description": "使用草系技能时，敌方获得2层中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_3085be4a15be",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蹦蹦花（短毛球形态）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "065",
+      "id": "pet_000255",
+      "name": "蹦蹦花（象牙球形态）",
+      "types": [
+        "草系",
+        "毒系"
+      ],
+      "traitId": "skill_000005",
+      "trait": "生物碱",
+      "description": "使用草系技能时，敌方获得2层中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_84d887a2e777",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蹦蹦花（象牙球形态）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "068",
+      "id": "pet_000169",
+      "name": "电球咩咩",
+      "types": [
+        "电系"
+      ],
+      "traitId": "skill_000079",
+      "trait": "快充",
+      "description": "离场时回复10能量。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_fcebc7374ebe",
+      "sourceUrl": "https://wiki.biligame.com/nrc/电球咩咩",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "070",
+      "id": "pet_000024",
+      "name": "蒲公英娃娃",
+      "types": [
+        "草系",
+        "萌系"
+      ],
+      "traitId": "skill_000004",
+      "trait": "勇敢",
+      "description": "携带的能耗大于3的技能，威力+40%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_1f83cc8864f6",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蒲公英娃娃",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "072",
+      "id": "pet_000041",
+      "name": "伊贝粉粉",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000009",
+      "trait": "腐植循环",
+      "description": "每回复1能量，同时回复5%生命。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_e543f3154e20",
+      "sourceUrl": "https://wiki.biligame.com/nrc/伊贝粉粉",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "075",
+      "id": "pet_000091",
+      "name": "瞌睡王",
+      "types": [
+        "普通系",
+        "武系"
+      ],
+      "traitId": "skill_000090",
+      "trait": "慢热型",
+      "description": "初始能量为0，入场前己方精灵每成功应对1次，回复5能量。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_779fba07d63c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/瞌睡王",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "078",
+      "id": "pet_000271",
+      "name": "千棘盔",
+      "types": [
+        "水系",
+        "毒系"
+      ],
+      "traitId": "skill_000034",
+      "trait": "溶解扩散",
+      "description": "每携带1个毒系技能进入战斗，水系技能使敌方获得1层中毒。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_fd52da128793",
+      "sourceUrl": "https://wiki.biligame.com/nrc/千棘盔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "078",
+      "id": "pet_000378",
+      "name": "千棘盔（磨损的样子）",
+      "types": [
+        "水系",
+        "毒系"
+      ],
+      "traitId": "skill_000034",
+      "trait": "溶解扩散",
+      "description": "每携带1个毒系技能进入战斗，水系技能使敌方获得1层中毒。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_149799c7847d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/千棘盔（磨损的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "079",
+      "id": "pet_000193",
+      "name": "菊花梨",
+      "types": [
+        "萌系"
+      ],
+      "traitId": "skill_000094",
+      "trait": "无忧无虑",
+      "description": "可获得的萌化层数不受限制。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_3af6029bf27a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/菊花梨",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "081",
+      "id": "pet_000171",
+      "name": "星光狮（星光能量的样子）",
+      "types": [
+        "电系"
+      ],
+      "traitId": "skill_000080",
+      "trait": "电流刺激",
+      "description": "携带的攻击技能获得迸发：威力+40。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_8a57fc0b3131",
+      "sourceUrl": "https://wiki.biligame.com/nrc/星光狮（星光能量的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "081",
+      "id": "pet_000347",
+      "name": "星光狮（月光能量的样子）",
+      "types": [
+        "电系",
+        "光系"
+      ],
+      "traitId": "skill_000080",
+      "trait": "电流刺激",
+      "description": "携带的攻击技能获得迸发：威力+40。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_1bcd6a623782",
+      "sourceUrl": "https://wiki.biligame.com/nrc/星光狮（月光能量的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "084",
+      "id": "pet_000143",
+      "name": "花魁蜂后",
+      "types": [
+        "虫系",
+        "翼系"
+      ],
+      "traitId": "skill_000053",
+      "trait": "虫群鼓舞",
+      "description": "队伍中每有1只其他的虫系精灵，自己入场时获得攻防速+10%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_dc3ea63c96eb",
+      "sourceUrl": "https://wiki.biligame.com/nrc/花魁蜂后",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "087",
+      "id": "pet_000130",
+      "name": "朔夜伊芙",
+      "types": [
+        "恶系"
+      ],
+      "traitId": "skill_000062",
+      "trait": "嫁祸",
+      "description": "自己每失去25%生命，连击数+2。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_508c3189ccde",
+      "sourceUrl": "https://wiki.biligame.com/nrc/朔夜伊芙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "090",
+      "id": "pet_000280",
+      "name": "翠顶夫人",
+      "types": [
+        "翼系",
+        "水系"
+      ],
+      "traitId": "skill_000047",
+      "trait": "洁癖",
+      "description": "离场后，自己的增益和减益会被更换入场的精灵继承。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_b6f849975efa",
+      "sourceUrl": "https://wiki.biligame.com/nrc/翠顶夫人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "091",
+      "id": "pet_000446",
+      "name": "黑羽夫人",
+      "types": [
+        "翼系",
+        "恶系"
+      ],
+      "traitId": "skill_000130",
+      "trait": "孤傲",
+      "description": "敌方精灵离场后，其增益和减益会被更换入场的精灵继承。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_2aa39945afd7",
+      "sourceUrl": "https://wiki.biligame.com/nrc/黑羽夫人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "092",
+      "id": "pet_000060",
+      "name": "锤头鹳",
+      "types": [
+        "翼系",
+        "水系"
+      ],
+      "traitId": "skill_000050",
+      "trait": "快锤",
+      "description": "携带的能耗小于3的技能，获得迅捷。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_e7335fe3769d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/锤头鹳",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "094",
+      "id": "pet_000032",
+      "name": "魔草巫灵",
+      "types": [
+        "草系",
+        "幻系"
+      ],
+      "traitId": "skill_000008",
+      "trait": "木桶戏法",
+      "description": "离场后，更换入场的精灵以木桶状态登场。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_ff28de86e93a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/魔草巫灵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "095",
+      "id": "pet_000046",
+      "name": "记忆石",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000023",
+      "trait": "不移",
+      "description": "携带的无额外效果的攻击技能，威力+30%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_694c641e3258",
+      "sourceUrl": "https://wiki.biligame.com/nrc/记忆石",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "098",
+      "id": "pet_000156",
+      "name": "咔咔鸟",
+      "types": [
+        "翼系",
+        "普通系"
+      ],
+      "traitId": "skill_000046",
+      "trait": "咔咔冲刺",
+      "description": "若先于敌方行动，行动后获得连击数+1。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_769b5d25393c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/咔咔鸟",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "101",
+      "id": "pet_000127",
+      "name": "花衣蝶",
+      "types": [
+        "虫系",
+        "草系"
+      ],
+      "traitId": "skill_000055",
+      "trait": "花精灵",
+      "description": "回合结束时，己方队伍获得1次随机奉献。",
+      "group": "奉献与群体成长",
+      "learnsetId": "learnset_55dd2d9085be",
+      "sourceUrl": "https://wiki.biligame.com/nrc/花衣蝶",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "104",
+      "id": "pet_000228",
+      "name": "魔眷鸟",
+      "types": [
+        "萌系",
+        "翼系"
+      ],
+      "traitId": "skill_000095",
+      "trait": "自由飘",
+      "description": "自己每有1层萌化，获得连击数+3。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_a7a80cc93271",
+      "sourceUrl": "https://wiki.biligame.com/nrc/魔眷鸟",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "107",
+      "id": "pet_000015",
+      "name": "罗隐",
+      "types": [
+        "地系",
+        "恶系"
+      ],
+      "traitId": "skill_000024",
+      "trait": "石头大餐",
+      "description": "能量不足时，消耗5%生命，代替1能量。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_bbf1abd782b9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/罗隐",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "110",
+      "id": "pet_000106",
+      "name": "彩蝶鲨",
+      "types": [
+        "水系",
+        "翼系"
+      ],
+      "traitId": "skill_000033",
+      "trait": "水翼推进",
+      "description": "己方精灵每使用1次水系技能，自己入场时获得全技能能耗-1。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_004cf28eac87",
+      "sourceUrl": "https://wiki.biligame.com/nrc/彩蝶鲨",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "112",
+      "id": "pet_000150",
+      "name": "巨灵石",
+      "types": [
+        "地系",
+        "幽系"
+      ],
+      "traitId": "skill_000027",
+      "trait": "石天平",
+      "description": "若使用技能能耗高于敌方，回合结束敌方失去能耗之差的能量。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_c18fb95d10a1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/巨灵石",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "115",
+      "id": "pet_000100",
+      "name": "仪式巨像",
+      "types": [
+        "地系",
+        "幻系"
+      ],
+      "traitId": "skill_000029",
+      "trait": "观星",
+      "description": "敌方每有1层星陨印记，自己的地系技能威力+20%。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_d4bd6711431e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/仪式巨像",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "117",
+      "id": "pet_000055",
+      "name": "白金独角兽",
+      "types": [
+        "光系"
+      ],
+      "traitId": "skill_000002",
+      "trait": "目空",
+      "description": "携带的非光系技能，威力+25%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_2fd4de26ed36",
+      "sourceUrl": "https://wiki.biligame.com/nrc/白金独角兽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "120",
+      "id": "pet_000304",
+      "name": "风滚暮虫（金黄的样子）",
+      "types": [
+        "普通系",
+        "虫系"
+      ],
+      "traitId": "skill_000022",
+      "trait": "共鸣",
+      "description": "携带的「虫鸣」技能威力+20。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_f9e7b55c2bad",
+      "sourceUrl": "https://wiki.biligame.com/nrc/风滚暮虫（金黄的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "120",
+      "id": "pet_000396",
+      "name": "风滚暮虫（枯叶的样子）",
+      "types": [
+        "普通系",
+        "虫系"
+      ],
+      "traitId": "skill_000022",
+      "trait": "共鸣",
+      "description": "携带的「虫鸣」技能威力+20。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_4bf8e0a6c72f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/风滚暮虫（枯叶的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "122",
+      "id": "pet_000445",
+      "name": "黑猫巫师",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000123",
+      "trait": "预警",
+      "description": "若敌方技能足够击败自己，回合开始时自己获得速度+50。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_7d180f57f514",
+      "sourceUrl": "https://wiki.biligame.com/nrc/黑猫巫师",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "124",
+      "id": "pet_000058",
+      "name": "影狸",
+      "types": [
+        "幽系",
+        "毒系"
+      ],
+      "traitId": "skill_000073",
+      "trait": "下黑手",
+      "description": "敌方精灵离场后，更换入场的精灵获得5层中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_2990c7cbd49d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/影狸",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "127",
+      "id": "pet_000139",
+      "name": "古啦多",
+      "types": [
+        "毒系",
+        "地系"
+      ],
+      "traitId": "skill_000096",
+      "trait": "毒牙",
+      "description": "使敌方获得中毒时，也会使其获得物攻-40%和速度-40。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_55bcd174f525",
+      "sourceUrl": "https://wiki.biligame.com/nrc/古啦多",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "130",
+      "id": "pet_000206",
+      "name": "怖哭菇",
+      "types": [
+        "幻系"
+      ],
+      "traitId": "skill_000100",
+      "trait": "吸积盘",
+      "description": "回合结束时，敌方获得2层星陨印记。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_444b1b381c5c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/怖哭菇",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "131",
+      "id": "pet_000010",
+      "name": "恶魔狼",
+      "types": [
+        "恶系"
+      ],
+      "traitId": "skill_000059",
+      "trait": "悲悯",
+      "description": "己方队伍中每有1只力竭的精灵，自己获得双攻+30%。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_2dd0be3da46e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/恶魔狼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "133",
+      "id": "pet_000339",
+      "name": "电企鹅",
+      "types": [
+        "冰系",
+        "电系"
+      ],
+      "traitId": "skill_000163",
+      "trait": "超负荷",
+      "description": "攻击技能获得迸发：敌方获得全技能能耗+1。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_53e99c3f5e01",
+      "sourceUrl": "https://wiki.biligame.com/nrc/电企鹅",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "136",
+      "id": "pet_000153",
+      "name": "雪巨人",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000041",
+      "trait": "结晶水",
+      "description": "初始能量为0，入场前己方精灵每放1次冰系技能，回复3能量。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_e96061379a46",
+      "sourceUrl": "https://wiki.biligame.com/nrc/雪巨人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "138",
+      "id": "pet_000219",
+      "name": "獠牙猪",
+      "types": [
+        "冰系",
+        "地系"
+      ],
+      "traitId": "skill_000042",
+      "trait": "冻土",
+      "description": "每携带1个冰系技能进入战斗，地系技能威力+10%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_6ee3e37d8238",
+      "sourceUrl": "https://wiki.biligame.com/nrc/獠牙猪",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "141",
+      "id": "pet_000274",
+      "name": "雪灵",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000044",
+      "trait": "冰封",
+      "description": "在场时，敌方全技能能耗+1。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_738460df43e9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/雪灵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "144",
+      "id": "pet_000112",
+      "name": "雪影娃娃",
+      "types": [
+        "冰系",
+        "萌系"
+      ],
+      "traitId": "skill_000039",
+      "trait": "捉迷藏",
+      "description": "使敌方获得冻结时，也会使其获得全技能能耗+1。",
+      "group": "能量与能耗压制",
+      "learnsetId": "learnset_ae3e9c322f63",
+      "sourceUrl": "https://wiki.biligame.com/nrc/雪影娃娃",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "146",
+      "id": "pet_000330",
+      "name": "权杖-V",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000105",
+      "trait": "机械变式",
+      "description": "若回合内自己携带的技能位置发生变化，该技能能耗永久-1。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_da3187da31e6",
+      "sourceUrl": "https://wiki.biligame.com/nrc/权杖-V",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "149",
+      "id": "pet_000068",
+      "name": "尖嘴狐仙",
+      "types": [
+        "火系",
+        "冰系"
+      ],
+      "traitId": "skill_000068",
+      "trait": "灵魂灼伤",
+      "description": "冰系技能使敌方获得4层灼烧，火系技能使敌方获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_a6d55f97412b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/尖嘴狐仙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "152",
+      "id": "pet_000319",
+      "name": "圣羽翼王",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000113",
+      "trait": "飓风",
+      "description": "对本精灵的技能，若其他翼系精灵携带相同技能，则获得迅捷。被敌方精灵击败时，自己额外损失1点魔力。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_ddb62523ae7b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣羽翼王",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "155",
+      "id": "pet_000461",
+      "name": "针叶巡林",
+      "types": [
+        "草系",
+        "武系"
+      ],
+      "traitId": "skill_000147",
+      "trait": "野性感官",
+      "description": "应对成功后，下次行动先手+1。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_1caa64c6298c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/针叶巡林",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "158",
+      "id": "pet_000467",
+      "name": "炽心勇狮",
+      "types": [
+        "火系",
+        "武系"
+      ],
+      "traitId": "skill_000145",
+      "trait": "圣火骑士",
+      "description": "应对成功后，下次攻击威力翻倍。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_3f5bf3903db8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/炽心勇狮",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "161",
+      "id": "pet_000464",
+      "name": "游蛇魔使",
+      "types": [
+        "水系",
+        "武系"
+      ],
+      "traitId": "skill_000146",
+      "trait": "思维之盾",
+      "description": "应对成功后，下次行动技能能耗-5。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_4230605ea34a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/游蛇魔使",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "162",
+      "id": "pet_000397",
+      "name": "公平鸽",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000122",
+      "trait": "衡量",
+      "description": "入场时，复制敌方的增益。在场时，若敌方获得增益自己也会获得。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_b94ce0dc9da1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/公平鸽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "162",
+      "id": "pet_000630",
+      "name": "公平鸽（称量的样子）",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000122",
+      "trait": "衡量",
+      "description": "入场时，复制敌方的增益。在场时，若敌方获得增益自己也会获得。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_b94ce0dc9da1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/公平鸽（称量的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "164",
+      "id": "pet_000203",
+      "name": "怒目怂猫",
+      "types": [
+        "武系"
+      ],
+      "traitId": "skill_000092",
+      "trait": "威慑",
+      "description": "打断敌方时，自己获得双攻+30%，被打断的技能进入2回合冷却。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_0b474a0dc01c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/怒目怂猫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "167",
+      "id": "pet_000118",
+      "name": "皇家狮鹫（崖间地的样子）",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000049",
+      "trait": "乘风连击",
+      "description": "使用翼系技能后，获得连击数+1。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_9d978eb3fa75",
+      "sourceUrl": "https://wiki.biligame.com/nrc/皇家狮鹫（崖间地的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "167",
+      "id": "pet_000370",
+      "name": "皇家狮鹫（高山地的样子）",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000049",
+      "trait": "乘风连击",
+      "description": "使用翼系技能后，获得连击数+1。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_9cabb2bcf7b0",
+      "sourceUrl": "https://wiki.biligame.com/nrc/皇家狮鹫（高山地的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "170",
+      "id": "pet_000121",
+      "name": "芋香巨角蛛",
+      "types": [
+        "虫系",
+        "毒系"
+      ],
+      "traitId": "skill_000052",
+      "trait": "毒腺",
+      "description": "使用能耗小于等于1的技能时，敌方获得4层中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_0b9c796d8d9c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/芋香巨角蛛",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "173",
+      "id": "pet_000405",
+      "name": "嗜波螺",
+      "types": [
+        "地系",
+        "水系"
+      ],
+      "traitId": "skill_000125",
+      "trait": "消波块",
+      "description": "每携带1个水系技能进入战斗，地系技能能耗-1。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_97b57fa139de",
+      "sourceUrl": "https://wiki.biligame.com/nrc/嗜波螺",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "173",
+      "id": "pet_000408",
+      "name": "嗜波螺（被污染的样子）",
+      "types": [
+        "地系",
+        "水系"
+      ],
+      "traitId": "skill_000125",
+      "trait": "消波块",
+      "description": "每携带1个水系技能进入战斗，地系技能能耗-1。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_9dfad126b349",
+      "sourceUrl": "https://wiki.biligame.com/nrc/嗜波螺（被污染的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "176",
+      "id": "pet_000307",
+      "name": "九幽菇",
+      "types": [
+        "地系",
+        "草系"
+      ],
+      "traitId": "skill_000116",
+      "trait": "多人宿舍",
+      "description": "自己的能量可以超过能量上限。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_1f2c87c89fa6",
+      "sourceUrl": "https://wiki.biligame.com/nrc/九幽菇",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "178",
+      "id": "pet_000422",
+      "name": "斑枭",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000131",
+      "trait": "逐魂鸟",
+      "description": "能耗小于等于1的攻击技能，无法对自己造成伤害。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_9c5714da2924",
+      "sourceUrl": "https://wiki.biligame.com/nrc/斑枭",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "180",
+      "id": "pet_000059",
+      "name": "卷毛鸭",
+      "types": [
+        "草系",
+        "武系"
+      ],
+      "traitId": "skill_000115",
+      "trait": "得寸进尺",
+      "description": "天气为雨天，或处于其他水系环境中时，获得双攻+100%。",
+      "group": "天气与环境条件",
+      "learnsetId": "learnset_f216fa5ce1f9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卷毛鸭",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "182",
+      "id": "pet_000190",
+      "name": "海豹船长",
+      "types": [
+        "武系",
+        "水系"
+      ],
+      "traitId": "skill_000091",
+      "trait": "身经百练",
+      "description": "己方精灵每应对1次，自己入场时水系和武系技能威力+20%。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_44835ae2b88f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/海豹船长",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "184",
+      "id": "pet_000417",
+      "name": "圆号鱼",
+      "types": [
+        "水系"
+      ],
+      "traitId": "skill_000127",
+      "trait": "泛音列",
+      "description": "使用状态技能后，敌方获得「聒噪」技能的效果，持续3回合。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_ca8baabd57b8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圆号鱼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "187",
+      "id": "pet_000103",
+      "name": "卡洛儿",
+      "types": [
+        "水系",
+        "萌系"
+      ],
+      "traitId": "skill_000032",
+      "trait": "守护者",
+      "description": "己方其他精灵每有1层萌化，自己入场时全技能能耗-1。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_efeacb6049ee",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卡洛儿",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "189",
+      "id": "pet_000433",
+      "name": "棋骑士（白子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000164",
+      "trait": "腾挪",
+      "description": "攻击技能应对1次后，回满能量和生命，变为棋绮后。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_3276b25281f8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋骑士（白子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "189",
+      "id": "pet_000438",
+      "name": "棋骑士（黑子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000134",
+      "trait": "腾挪",
+      "description": "攻击技能应对1次后，回满能量和生命，变为棋绮后。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_1a8d2ac1b270",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋骑士（黑子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "190",
+      "id": "pet_000435",
+      "name": "棋齐垒（白子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000165",
+      "trait": "保卫",
+      "description": "防御技能应对2次后，回满能量和生命，变为棋绮后。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_dde72fdf745a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋齐垒（白子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "190",
+      "id": "pet_000440",
+      "name": "棋齐垒（黑子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000135",
+      "trait": "保卫",
+      "description": "防御技能应对2次后，回满能量和生命，变为棋绮后。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_b8dd47080f5d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋齐垒（黑子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "191",
+      "id": "pet_000436",
+      "name": "棋祈督（白子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000166",
+      "trait": "好象坏象",
+      "description": "状态技能应对1次后，回满能量和生命，变为棋绮后。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_9340ab38ae95",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋祈督（白子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "191",
+      "id": "pet_000441",
+      "name": "棋祈督（黑子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000136",
+      "trait": "好象坏象",
+      "description": "状态技能应对1次后，回满能量和生命，变为棋绮后。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_246262da7de9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋祈督（黑子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "192",
+      "id": "pet_000434",
+      "name": "棋绮后（白子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000114",
+      "trait": "渗透",
+      "description": "己方精灵每使用1次武系或地系技能，自己入场时获得攻防+5%。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_b62d50929930",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋绮后（白子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "192",
+      "id": "pet_000439",
+      "name": "棋绮后（黑子）",
+      "types": [
+        "武系",
+        "地系"
+      ],
+      "traitId": "skill_000114",
+      "trait": "渗透",
+      "description": "己方精灵每使用1次武系或地系技能，自己入场时获得攻防+5%。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_61835624402c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/棋绮后（黑子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "194",
+      "id": "pet_000214",
+      "name": "流浪鼠",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000028",
+      "trait": "奔波命",
+      "description": "使用防御技能后，回合结束时脱离。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_d146cd43a307",
+      "sourceUrl": "https://wiki.biligame.com/nrc/流浪鼠",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "194",
+      "id": "pet_000633",
+      "name": "流浪鼠（搬运果实的样子）",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000028",
+      "trait": "奔波命",
+      "description": "使用防御技能后，回合结束时脱离。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_d146cd43a307",
+      "sourceUrl": "https://wiki.biligame.com/nrc/流浪鼠（搬运果实的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "197",
+      "id": "pet_000086",
+      "name": "白发路路",
+      "types": [
+        "草系",
+        "萌系"
+      ],
+      "traitId": "skill_000010",
+      "trait": "营养液泡",
+      "description": "获得增益时，额外获得层数+2。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_a14791bca602",
+      "sourceUrl": "https://wiki.biligame.com/nrc/白发路路",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "200",
+      "id": "pet_000302",
+      "name": "梦想三三",
+      "types": [
+        "萌系"
+      ],
+      "traitId": "skill_000021",
+      "trait": "鼓气",
+      "description": "使用能耗为3的技能时，获得双攻和双防+20%。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_92ef4d1f71f4",
+      "sourceUrl": "https://wiki.biligame.com/nrc/梦想三三",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "202",
+      "id": "pet_000402",
+      "name": "鳗尾兽",
+      "types": [
+        "地系",
+        "草系"
+      ],
+      "traitId": "skill_000124",
+      "trait": "铃兰晚钟",
+      "description": "首次入场时，失去自己一半的当前生命。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_f3e48c303b4a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鳗尾兽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "202",
+      "id": "pet_000635",
+      "name": "鳗尾兽（果壳铃的样子）",
+      "types": [
+        "地系",
+        "草系"
+      ],
+      "traitId": "skill_000124",
+      "trait": "铃兰晚钟",
+      "description": "首次入场时，失去自己一半的当前生命。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_f3e48c303b4a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/鳗尾兽（果壳铃的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "204",
+      "id": "pet_000331",
+      "name": "伊兰亚龙",
+      "types": [
+        "龙系"
+      ],
+      "traitId": "skill_000089",
+      "trait": "嫉妒",
+      "description": "蓄力状态下，可以使用任一携带技能。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_c46ffdcea848",
+      "sourceUrl": "https://wiki.biligame.com/nrc/伊兰亚龙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "206",
+      "id": "pet_000166",
+      "name": "酷拉",
+      "types": [
+        "电系"
+      ],
+      "traitId": "skill_000078",
+      "trait": "噼啪！",
+      "description": "入场后首次行动，所选技能使用次数+1。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_bd4f54a2faa9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/酷拉",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "209",
+      "id": "pet_000174",
+      "name": "荆棘电环",
+      "types": [
+        "电系"
+      ],
+      "traitId": "skill_000081",
+      "trait": "防过载保护",
+      "description": "每次行动后脱离。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_61abf901ad63",
+      "sourceUrl": "https://wiki.biligame.com/nrc/荆棘电环",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "211",
+      "id": "pet_000484",
+      "name": "迷迷箱怪",
+      "types": [
+        "机械系",
+        "幻系"
+      ],
+      "traitId": "skill_000133",
+      "trait": "虚假宝箱",
+      "description": "自己力竭时，敌方获得攻防+20%。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_5ccca003e3ca",
+      "sourceUrl": "https://wiki.biligame.com/nrc/迷迷箱怪",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "213",
+      "id": "pet_000192",
+      "name": "寒音蛇",
+      "types": [
+        "萌系",
+        "毒系"
+      ],
+      "traitId": "skill_000093",
+      "trait": "拨浪鼓",
+      "description": "己方精灵每使用1次状态技能，自己入场时毒系和萌系技能威力+10。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_137d00efb173",
+      "sourceUrl": "https://wiki.biligame.com/nrc/寒音蛇",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "215",
+      "id": "pet_000158",
+      "name": "恶魔红钻",
+      "types": [
+        "虫系",
+        "恶系"
+      ],
+      "traitId": "skill_000054",
+      "trait": "振奋虫心",
+      "description": "主动击败敌方后，己方队伍获得5次随机奉献。",
+      "group": "奉献与群体成长",
+      "learnsetId": "learnset_cd08970ba0b7",
+      "sourceUrl": "https://wiki.biligame.com/nrc/恶魔红钻",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "218",
+      "id": "pet_000083",
+      "name": "烈火守护",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000071",
+      "trait": "蒸汽膨胀",
+      "description": "己方精灵每使用1次火系技能，自己入场时获得全技能威力+10。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_7ba3675ad293",
+      "sourceUrl": "https://wiki.biligame.com/nrc/烈火守护",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "219",
+      "id": "pet_000412",
+      "name": "里拉鳐",
+      "types": [
+        "水系"
+      ],
+      "traitId": "skill_000126",
+      "trait": "吟游之弦",
+      "description": "赋予的印记不会替换其他印记，而是同时生效。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_72024889a7b8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/里拉鳐",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "220",
+      "id": "pet_000334",
+      "name": "海枝枝（碧蓝珊瑚）",
+      "types": [
+        "水系",
+        "幽系"
+      ],
+      "traitId": "skill_000117",
+      "trait": "珊瑚骨",
+      "description": "敌方精灵离场时，自己获得全技能能耗-3。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_f2aaf7370f22",
+      "sourceUrl": "https://wiki.biligame.com/nrc/海枝枝（碧蓝珊瑚）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "220",
+      "id": "pet_000335",
+      "name": "海枝枝（杏黄百合）",
+      "types": [
+        "水系",
+        "幽系"
+      ],
+      "traitId": "skill_000117",
+      "trait": "珊瑚骨",
+      "description": "敌方精灵离场时，自己获得全技能能耗-3。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_ddd4cc31a15d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/海枝枝（杏黄百合）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "220",
+      "id": "pet_000336",
+      "name": "海枝枝（洋红沙丁）",
+      "types": [
+        "水系",
+        "幽系"
+      ],
+      "traitId": "skill_000117",
+      "trait": "珊瑚骨",
+      "description": "敌方精灵离场时，自己获得全技能能耗-3。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_5bca48a53c1d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/海枝枝（洋红沙丁）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "220",
+      "id": "pet_000337",
+      "name": "海枝枝（翠绿纶布）",
+      "types": [
+        "水系",
+        "幽系"
+      ],
+      "traitId": "skill_000117",
+      "trait": "珊瑚骨",
+      "description": "敌方精灵离场时，自己获得全技能能耗-3。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_6645d27e8095",
+      "sourceUrl": "https://wiki.biligame.com/nrc/海枝枝（翠绿纶布）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "223",
+      "id": "pet_000185",
+      "name": "波多西",
+      "types": [
+        "机械系",
+        "地系"
+      ],
+      "traitId": "skill_000087",
+      "trait": "定向精炼",
+      "description": "己方精灵每使用1次防御技能，自己入场时机械系和地系技能威力+10%。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_7d4de0e59908",
+      "sourceUrl": "https://wiki.biligame.com/nrc/波多西",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "225",
+      "id": "pet_000187",
+      "name": "翼龙",
+      "types": [
+        "龙系",
+        "翼系"
+      ],
+      "traitId": "skill_000088",
+      "trait": "暴食",
+      "description": "携带的龙系技能获得迅捷。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_484b8db601b5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/翼龙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "228",
+      "id": "pet_000290",
+      "name": "爵士鹿",
+      "types": [
+        "电系"
+      ],
+      "traitId": "skill_000084",
+      "trait": "蓄电池",
+      "description": "每入场1次，永久获得双攻+30%。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_1efa2545bed0",
+      "sourceUrl": "https://wiki.biligame.com/nrc/爵士鹿",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "230",
+      "id": "pet_000328",
+      "name": "声波缇塔",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000128",
+      "trait": "向心力",
+      "description": "1号和2号位技能获得传动1和威力+30。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_87230f93064b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/声波缇塔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "233",
+      "id": "pet_000212",
+      "name": "高脚鹬",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000018",
+      "trait": "起飞加速",
+      "description": "本场战斗首次使用的技能获得迅捷。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_85a9f74b8c4d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/高脚鹬",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000115",
+      "name": "圣代甜甜（樱桃巧克力口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（樱桃巧克力口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000359",
+      "name": "圣代甜甜（樱桃草莓口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（樱桃草莓口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000360",
+      "name": "圣代甜甜（樱桃抹茶口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（樱桃抹茶口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000361",
+      "name": "圣代甜甜（蓝莓巧克力口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（蓝莓巧克力口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000362",
+      "name": "圣代甜甜（蓝莓草莓口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（蓝莓草莓口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000363",
+      "name": "圣代甜甜（蓝莓抹茶口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（蓝莓抹茶口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000364",
+      "name": "圣代甜甜（杨桃巧克力口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（杨桃巧克力口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000365",
+      "name": "圣代甜甜（杨桃草莓口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（杨桃草莓口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "236",
+      "id": "pet_000366",
+      "name": "圣代甜甜（杨桃抹茶口味）",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000043",
+      "trait": "加个雪球",
+      "description": "使敌方获得冻结时，也会使其获得2层冻结。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5100adf92040",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣代甜甜（杨桃抹茶口味）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "238",
+      "id": "pet_000453",
+      "name": "月亮砣（上弦的样子）",
+      "types": [
+        "毒系",
+        "萌系"
+      ],
+      "traitId": "skill_000138",
+      "trait": "耐活王",
+      "description": "敌方受到中毒效果伤害时，自己回复等量生命。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_0e4e9bf970e9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/月亮砣（上弦的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "238",
+      "id": "pet_000455",
+      "name": "月亮砣（下弦的样子）",
+      "types": [
+        "毒系",
+        "萌系"
+      ],
+      "traitId": "skill_000138",
+      "trait": "耐活王",
+      "description": "敌方受到中毒效果伤害时，自己回复等量生命。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_ea574edabfa3",
+      "sourceUrl": "https://wiki.biligame.com/nrc/月亮砣（下弦的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "241",
+      "id": "pet_000313",
+      "name": "龙鱼",
+      "types": [
+        "水系",
+        "龙系"
+      ],
+      "traitId": "skill_000037",
+      "trait": "洄游",
+      "description": "每次进入蓄力状态，获得全技能能耗永久-2。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_c420e417bad6",
+      "sourceUrl": "https://wiki.biligame.com/nrc/龙鱼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "243",
+      "id": "pet_000223",
+      "name": "闪电鳗鱼",
+      "types": [
+        "电系",
+        "水系"
+      ],
+      "traitId": "skill_000083",
+      "trait": "生物电",
+      "description": "携带的电系技能获得迸发：能耗-2。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_9c631bd35e7e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/闪电鳗鱼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "245",
+      "id": "pet_000109",
+      "name": "琉璃水母",
+      "types": [
+        "水系",
+        "毒系"
+      ],
+      "traitId": "skill_000038",
+      "trait": "扩散侵蚀",
+      "description": "使用水系技能后，敌方获得中毒，获得层数等于中毒印记层数的2倍。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_f71a094bdb58",
+      "sourceUrl": "https://wiki.biligame.com/nrc/琉璃水母",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "248",
+      "id": "pet_000142",
+      "name": "裘卡",
+      "types": [
+        "毒系"
+      ],
+      "traitId": "skill_000098",
+      "trait": "蚀刻",
+      "description": "回合结束时，敌方每2层中毒转化为1层中毒印记。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_7d35dafc7c73",
+      "sourceUrl": "https://wiki.biligame.com/nrc/裘卡",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "251",
+      "id": "pet_000076",
+      "name": "火焰猿",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000065",
+      "trait": "散热",
+      "description": "初始能量为0，入场前己方精灵每放1次火系技能，回复3能量。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_e5f88d6dc896",
+      "sourceUrl": "https://wiki.biligame.com/nrc/火焰猿",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "254",
+      "id": "pet_000217",
+      "name": "冰钻布鲁斯",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000040",
+      "trait": "冰钻",
+      "description": "敌方携带技能总能耗每有1点，自己攻击时威力+10%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_0972b2f08efa",
+      "sourceUrl": "https://wiki.biligame.com/nrc/冰钻布鲁斯",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "257",
+      "id": "pet_000284",
+      "name": "红绒十字",
+      "types": [
+        "火系",
+        "萌系"
+      ],
+      "traitId": "skill_000070",
+      "trait": "仁心",
+      "description": "敌方受到灼烧伤害时，自己回复等量生命。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_7bc39a140001",
+      "sourceUrl": "https://wiki.biligame.com/nrc/红绒十字",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "260",
+      "id": "pet_000425",
+      "name": "乌拉塔（极昼的样子）",
+      "types": [
+        "恶系",
+        "火系"
+      ],
+      "traitId": "skill_000154",
+      "trait": "恶魔的晚宴",
+      "description": "主动击败敌方精灵时，自己永久获得双攻+50%。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_9f50bee6a7c9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/乌拉塔（极昼的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "260",
+      "id": "pet_000428",
+      "name": "乌拉塔（极夜的样子）",
+      "types": [
+        "恶系",
+        "冰系"
+      ],
+      "traitId": "skill_000154",
+      "trait": "恶魔的晚宴",
+      "description": "主动击败敌方精灵时，自己永久获得双攻+50%。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_1af5c6c5a675",
+      "sourceUrl": "https://wiki.biligame.com/nrc/乌拉塔（极夜的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "262",
+      "id": "pet_000431",
+      "name": "帕帕斯卡",
+      "types": [
+        "机械系",
+        "翼系"
+      ],
+      "traitId": "skill_000132",
+      "trait": "翼轴",
+      "description": "1号位技能获得迅捷和传动1。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_98f7c8a6ea33",
+      "sourceUrl": "https://wiki.biligame.com/nrc/帕帕斯卡",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "265",
+      "id": "pet_000179",
+      "name": "立方人",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000085",
+      "trait": "盲拧",
+      "description": "回合开始时，技能顺序打乱，4号位的技能能耗-4。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_f6449800dead",
+      "sourceUrl": "https://wiki.biligame.com/nrc/立方人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "268",
+      "id": "pet_000079",
+      "name": "绅士鸡",
+      "types": [
+        "火系",
+        "武系"
+      ],
+      "traitId": "skill_000119",
+      "trait": "指挥家",
+      "description": "应对成功后，永久获得双攻+30%。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_2f256889bba7",
+      "sourceUrl": "https://wiki.biligame.com/nrc/绅士鸡",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "269",
+      "id": "pet_000080",
+      "name": "武者鸡",
+      "types": [
+        "火系",
+        "武系"
+      ],
+      "traitId": "skill_000066",
+      "trait": "斗技",
+      "description": "应对成功后，获得全技能威力永久+30。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_5d0ec8344375",
+      "sourceUrl": "https://wiki.biligame.com/nrc/武者鸡",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "271",
+      "id": "pet_000497",
+      "name": "绒光优优",
+      "types": [
+        "地系",
+        "光系"
+      ],
+      "traitId": "skill_000155",
+      "trait": "哨兵",
+      "description": "回合开始时若敌方技能足够击败自己，自己获得速度+50，行动后脱离。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_37282f08cc36",
+      "sourceUrl": "https://wiki.biligame.com/nrc/绒光优优",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "272",
+      "id": "pet_000348",
+      "name": "噼啪鸟",
+      "types": [
+        "电系",
+        "翼系"
+      ],
+      "traitId": "skill_000120",
+      "trait": "连续负荷",
+      "description": "自己技能的迸发效果延长1回合。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_108521c9bdb5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/噼啪鸟",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "273",
+      "id": "pet_000308",
+      "name": "深蓝鲸",
+      "types": [
+        "水系"
+      ],
+      "traitId": "skill_000035",
+      "trait": "倾轧",
+      "description": "携带的技能受能耗变化效果的影响翻倍。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_fd37e278031c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/深蓝鲸",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "276",
+      "id": "pet_000065",
+      "name": "格兰球",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000012",
+      "trait": "生长",
+      "description": "回合结束时，回复12%生命。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_5d9922c1c037",
+      "sourceUrl": "https://wiki.biligame.com/nrc/格兰球",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "279",
+      "id": "pet_000021",
+      "name": "遁地鼠（枯水期的样子）",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000017",
+      "trait": "警惕",
+      "description": "回合结束时，若自己能量为0则脱离。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_4d074d17f430",
+      "sourceUrl": "https://wiki.biligame.com/nrc/遁地鼠（枯水期的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "279",
+      "id": "pet_000357",
+      "name": "遁地鼠（储水时的样子）",
+      "types": [
+        "地系"
+      ],
+      "traitId": "skill_000017",
+      "trait": "警惕",
+      "description": "回合结束时，若自己能量为0则脱离。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_1ab12db39eba",
+      "sourceUrl": "https://wiki.biligame.com/nrc/遁地鼠（储水时的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "281",
+      "id": "pet_000450",
+      "name": "混乱鱿彩",
+      "types": [
+        "幽系",
+        "恶系"
+      ],
+      "traitId": "skill_000157",
+      "trait": "涂鸦",
+      "description": "使用非本系技能时威力+50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_95f11887ef71",
+      "sourceUrl": "https://wiki.biligame.com/nrc/混乱鱿彩",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "282",
+      "id": "pet_000451",
+      "name": "秩序鱿墨",
+      "types": [
+        "幽系",
+        "萌系"
+      ],
+      "traitId": "skill_000158",
+      "trait": "绝对秩序",
+      "description": "受到非敌方系别的技能攻击时伤害-50%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_37d460cb4d20",
+      "sourceUrl": "https://wiki.biligame.com/nrc/秩序鱿墨",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "284",
+      "id": "pet_000012",
+      "name": "铠甲虫",
+      "types": [
+        "虫系"
+      ],
+      "traitId": "skill_000057",
+      "trait": "坚韧铠甲",
+      "description": "每受到1次攻击伤害，己方队伍获得1次随机奉献。",
+      "group": "奉献与群体成长",
+      "learnsetId": "learnset_b04b99dccb26",
+      "sourceUrl": "https://wiki.biligame.com/nrc/铠甲虫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "286",
+      "id": "pet_000430",
+      "name": "圣剑-X",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000110",
+      "trait": "正位宝剑",
+      "description": "仅可以使用1号位技能。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_e909aeb06995",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣剑-X",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "288",
+      "id": "pet_000391",
+      "name": "泥吼牙",
+      "types": [
+        "地系",
+        "翼系"
+      ],
+      "traitId": "skill_000111",
+      "trait": "无差别过滤",
+      "description": "在场时，所有精灵连击数固定为2。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_287ee8c5ee06",
+      "sourceUrl": "https://wiki.biligame.com/nrc/泥吼牙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "290",
+      "id": "pet_000225",
+      "name": "寂灭骨龙",
+      "types": [
+        "龙系",
+        "幽系"
+      ],
+      "traitId": "skill_000129",
+      "trait": "不朽",
+      "description": "力竭4回合后复活。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_e1c7b7e68094",
+      "sourceUrl": "https://wiki.biligame.com/nrc/寂灭骨龙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "292",
+      "id": "pet_000333",
+      "name": "厉毒修萝",
+      "types": [
+        "毒系",
+        "恶系"
+      ],
+      "traitId": "skill_000108",
+      "trait": "侵蚀",
+      "description": "敌方每有1层中毒效果，自己获得连击数+1。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_e3194c197ce1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/厉毒修萝",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "295",
+      "id": "pet_000161",
+      "name": "龙息帕尔",
+      "types": [
+        "恶系"
+      ],
+      "traitId": "skill_000060",
+      "trait": "付给恶魔的赎价",
+      "description": "击败敌方精灵时，敌方额外损失1点魔力。被敌方精灵击败时，自己额外损失1点魔力。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_639c2d6a9a31",
+      "sourceUrl": "https://wiki.biligame.com/nrc/龙息帕尔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "297",
+      "id": "pet_000469",
+      "name": "捕尘长绒",
+      "types": [
+        "虫系",
+        "地系"
+      ],
+      "traitId": "skill_000152",
+      "trait": "扫拖一体",
+      "description": "回合结束时驱散敌方1层印记，且驱散后己方队伍获得1次随机奉献。",
+      "group": "奉献与群体成长",
+      "learnsetId": "learnset_cc12f8e7865f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/捕尘长绒",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "298",
+      "id": "pet_000470",
+      "name": "食尘短绒",
+      "types": [
+        "虫系",
+        "地系"
+      ],
+      "traitId": "skill_000153",
+      "trait": "特殊清洁场景",
+      "description": "回合结束时偷取敌方1层印记。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_02a116a93021",
+      "sourceUrl": "https://wiki.biligame.com/nrc/食尘短绒",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "301",
+      "id": "pet_000473",
+      "name": "画间法师手",
+      "types": [
+        "普通系",
+        "幻系"
+      ],
+      "traitId": "skill_000140",
+      "trait": "灰色肖像",
+      "description": "攻击会使敌方已有的减益层数+3。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_a333037c2b72",
+      "sourceUrl": "https://wiki.biligame.com/nrc/画间法师手",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "302",
+      "id": "pet_000474",
+      "name": "画间沉铁兽",
+      "types": [
+        "普通系",
+        "武系"
+      ],
+      "traitId": "skill_000141",
+      "trait": "变形活画",
+      "description": "行动时，敌方每有1层增益，本次行动技能威力+10%，速度+5。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_87c8775aa30f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/画间沉铁兽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "305",
+      "id": "pet_000477",
+      "name": "古卷执政官",
+      "types": [
+        "普通系",
+        "幻系"
+      ],
+      "traitId": "skill_000142",
+      "trait": "图书守卫者",
+      "description": "入场时，若自己魔力值为1，自己获得双攻+100%。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_162d888d1617",
+      "sourceUrl": "https://wiki.biligame.com/nrc/古卷执政官",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "306",
+      "id": "pet_000478",
+      "name": "古卷匣魔像",
+      "types": [
+        "普通系",
+        "武系"
+      ],
+      "traitId": "skill_000143",
+      "trait": "构装契约者",
+      "description": "入场时，若敌方魔力值为1，自己获得双防+100%。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_4b252576ba78",
+      "sourceUrl": "https://wiki.biligame.com/nrc/古卷匣魔像",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "309",
+      "id": "pet_000209",
+      "name": "绒仙子",
+      "types": [
+        "光系",
+        "虫系"
+      ],
+      "traitId": "skill_000102",
+      "trait": "绒粉星光",
+      "description": "攻击时，若敌方血脉是非本系的系别血脉，技能威力+100%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_c5094bed9e74",
+      "sourceUrl": "https://wiki.biligame.com/nrc/绒仙子",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "312",
+      "id": "pet_000260",
+      "name": "疾光千兽",
+      "types": [
+        "光系"
+      ],
+      "traitId": "skill_000103",
+      "trait": "月光审判",
+      "description": "攻击时，若敌方血脉是首领血脉，技能威力+100%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_ef98503a3308",
+      "sourceUrl": "https://wiki.biligame.com/nrc/疾光千兽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "314",
+      "id": "pet_000413",
+      "name": "抹茶布丁",
+      "types": [
+        "水系",
+        "草系"
+      ],
+      "traitId": "skill_000106",
+      "trait": "茶多酚",
+      "description": "离场后，更换入场的精灵回复20%生命且免疫寄生。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_07d26614ee23",
+      "sourceUrl": "https://wiki.biligame.com/nrc/抹茶布丁",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "315",
+      "id": "pet_000414",
+      "name": "椰浆布丁",
+      "types": [
+        "水系",
+        "冰系"
+      ],
+      "traitId": "skill_000150",
+      "trait": "吉利丁片",
+      "description": "离场后，更换入场的精灵获得双防+20%且免疫冻结。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_0c5710dafe2b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/椰浆布丁",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "316",
+      "id": "pet_000415",
+      "name": "熔岩布丁",
+      "types": [
+        "水系",
+        "火系"
+      ],
+      "traitId": "skill_000151",
+      "trait": "美拉德反应",
+      "description": "离场后，更换入场的精灵获得双攻+20%且免疫灼烧。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_9306f2980993",
+      "sourceUrl": "https://wiki.biligame.com/nrc/熔岩布丁",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "319",
+      "id": "pet_000322",
+      "name": "陨星虫",
+      "types": [
+        "虫系"
+      ],
+      "traitId": "skill_000056",
+      "trait": "契约的形状",
+      "description": "根据捕捉所用的咕噜球，入场时获得不同效果。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_78db2061204f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/陨星虫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "321",
+      "id": "pet_000310",
+      "name": "利灯鱼",
+      "types": [
+        "水系",
+        "电系"
+      ],
+      "traitId": "skill_000036",
+      "trait": "对流",
+      "description": "自己的能耗增加变为能耗降低；能耗降低变为能耗增加。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_14ace81ced8e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/利灯鱼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "322",
+      "id": "pet_000358",
+      "name": "月牙雪熊",
+      "types": [
+        "冰系",
+        "幻系"
+      ],
+      "traitId": "skill_000109",
+      "trait": "月牙雪糕",
+      "description": "使用攻击技能时，敌方每有1层冻结，在攻击前使其获得1层星陨印记。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_73c41a60cf36",
+      "sourceUrl": "https://wiki.biligame.com/nrc/月牙雪熊",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "324",
+      "id": "pet_000480",
+      "name": "窃光蚊",
+      "types": [
+        "恶系",
+        "光系"
+      ],
+      "traitId": "skill_000148",
+      "trait": "血型吸引",
+      "description": "敌方每携带1种系别的技能，自己攻击时威力+10。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_4e4be8347526",
+      "sourceUrl": "https://wiki.biligame.com/nrc/窃光蚊",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "326",
+      "id": "pet_000341",
+      "name": "燃薪虫",
+      "types": [
+        "火系",
+        "草系"
+      ],
+      "traitId": "skill_000107",
+      "trait": "煤渣草",
+      "description": "在场时，所有灼烧的衰减变为增长。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_1aad6e4f91dc",
+      "sourceUrl": "https://wiki.biligame.com/nrc/燃薪虫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "329",
+      "id": "pet_000136",
+      "name": "夜枭",
+      "types": [
+        "幽系"
+      ],
+      "traitId": "skill_000076",
+      "trait": "搜刮",
+      "description": "敌方每使用1次「聚能」技能或更换精灵，自己入场时获得魔攻+20%。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_f6aeef0899e6",
+      "sourceUrl": "https://wiki.biligame.com/nrc/夜枭",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "331",
+      "id": "pet_000176",
+      "name": "小皮球",
+      "types": [
+        "电系",
+        "幻系"
+      ],
+      "traitId": "skill_000082",
+      "trait": "星地善良",
+      "description": "回合结束时，若场上的己方精灵能量等于0，自己立即替换此精灵。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_ef3b20ac0795",
+      "sourceUrl": "https://wiki.biligame.com/nrc/小皮球",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "334",
+      "id": "pet_000182",
+      "name": "贝古斯",
+      "types": [
+        "机械系",
+        "火系"
+      ],
+      "traitId": "skill_000086",
+      "trait": "贪心算法",
+      "description": "1号位技能获得传动1，且使用后使敌方获得6层灼烧。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_1f3e2a4a0849",
+      "sourceUrl": "https://wiki.biligame.com/nrc/贝古斯",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "336",
+      "id": "pet_000265",
+      "name": "粉耳星兔",
+      "types": [
+        "幻系"
+      ],
+      "traitId": "skill_000020",
+      "trait": "双向光速",
+      "description": "在场时，双方回合结束时的效果会额外触发1次。",
+      "group": "回合末结算控制",
+      "learnsetId": "learnset_b43f43fb9806",
+      "sourceUrl": "https://wiki.biligame.com/nrc/粉耳星兔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "337",
+      "id": "pet_000385",
+      "name": "落陨星兔",
+      "types": [
+        "幻系",
+        "幽系"
+      ],
+      "traitId": "skill_000139",
+      "trait": "陨落",
+      "description": "在场时，双方回合结束时的效果不会触发。",
+      "group": "回合末结算控制",
+      "learnsetId": "learnset_d87a7140508a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/落陨星兔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "339",
+      "id": "pet_000375",
+      "name": "上岸蛙",
+      "types": [
+        "幻系"
+      ],
+      "traitId": "skill_000159",
+      "trait": "张弛有度",
+      "description": "周末时自己获得双攻+40%，其他时间获得双防+40%。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_a066ff6da361",
+      "sourceUrl": "https://wiki.biligame.com/nrc/上岸蛙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "341",
+      "id": "pet_000516",
+      "name": "雅丹鬃",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000167",
+      "trait": "天通地明",
+      "description": "攻击时，若敌方血脉是污染血脉，技能威力+100%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_1b43774a777b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/雅丹鬃",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "344",
+      "id": "pet_000299",
+      "name": "春花兔",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000011",
+      "trait": "系统发育",
+      "description": "获得能量或生命时，会将等量的能量或生命随机分配给场下的精灵。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_582a19597d69",
+      "sourceUrl": "https://wiki.biligame.com/nrc/春花兔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "347",
+      "id": "pet_000298",
+      "name": "暮星辰",
+      "types": [
+        "幻系",
+        "翼系"
+      ],
+      "traitId": "skill_000112",
+      "trait": "守望星",
+      "description": "触发星陨印记时仅消耗一半层数，仍造成满层伤害。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_70cdb49d4f13",
+      "sourceUrl": "https://wiki.biligame.com/nrc/暮星辰",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "350",
+      "id": "pet_000510",
+      "name": "机幕方舟",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000168",
+      "trait": "狂欢开始",
+      "description": "在场时，背包里会变化出随机精灵，随机精灵只能与本精灵相互更换。本精灵受到的克制伤害+25%。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_09ce6e70eec5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/机幕方舟",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "353",
+      "id": "pet_000316",
+      "name": "凡鹰",
+      "types": [
+        "翼系"
+      ],
+      "traitId": "skill_000048",
+      "trait": "展翅",
+      "description": "在场时，自己携带的普通系技能变为翼系技能，若后于敌方行动，自己受到的伤害+25%。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_177e9d0aff6d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/凡鹰",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "355",
+      "id": "pet_000419",
+      "name": "雪怪",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000173",
+      "trait": "大雪球",
+      "description": "自己使用2次不同的冰系技能后，敌方获得4层冻结，随后特性重置。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_7bde100db577",
+      "sourceUrl": "https://wiki.biligame.com/nrc/雪怪",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "357",
+      "id": "pet_000448",
+      "name": "爆焰喷喷",
+      "types": [
+        "火系",
+        "龙系"
+      ],
+      "traitId": "skill_000174",
+      "trait": "大火球",
+      "description": "自己使用2次不同的火系技能后，下次技能无需蓄力，随后特性重置。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_efd7db96df24",
+      "sourceUrl": "https://wiki.biligame.com/nrc/爆焰喷喷",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "359",
+      "id": "pet_000507",
+      "name": "音碟吼",
+      "types": [
+        "普通系",
+        "机械系"
+      ],
+      "traitId": "skill_000169",
+      "trait": "换碟",
+      "description": "自己携带的音波弹/音爆/金属噪音/午夜噪音威力提升，且获得巧变：同系别技能。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_1ed25f85a5ea",
+      "sourceUrl": "https://wiki.biligame.com/nrc/音碟吼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "361",
+      "id": "pet_000487",
+      "name": "加油蟹（两只海葵的样子）",
+      "types": [
+        "水系",
+        "萌系"
+      ],
+      "traitId": "skill_000170",
+      "trait": "拉拉队长",
+      "description": "若自己在萌化状态下再获得萌化会解除萌化。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_cc63960aafc8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/加油蟹（两只海葵的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "361",
+      "id": "pet_000514",
+      "name": "加油蟹（单只海葵的样子）",
+      "types": [
+        "水系",
+        "萌系"
+      ],
+      "traitId": "skill_000170",
+      "trait": "拉拉队长",
+      "description": "若自己在萌化状态下再获得萌化会解除萌化。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_cc63960aafc8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/加油蟹（单只海葵的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "364",
+      "id": "pet_000389",
+      "name": "小丑公爵",
+      "types": [
+        "恶系"
+      ],
+      "traitId": "skill_000171",
+      "trait": "戏耍",
+      "description": "自己无法回复生命，而是将回复生命变为敌方扣除等量生命。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_aaec4385ffea",
+      "sourceUrl": "https://wiki.biligame.com/nrc/小丑公爵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "366",
+      "id": "pet_000491",
+      "name": "烟花伯爵",
+      "types": [
+        "火系",
+        "毒系"
+      ],
+      "traitId": "skill_000161",
+      "trait": "焰色反应",
+      "description": "在场时，衰减的灼烧变为相同层数的中毒。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_5d4422a5ef69",
+      "sourceUrl": "https://wiki.biligame.com/nrc/烟花伯爵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "368",
+      "id": "pet_000493",
+      "name": "咕德帽帽",
+      "types": [
+        "幽系"
+      ],
+      "traitId": "skill_000160",
+      "trait": "魔术帽",
+      "description": "在场时，场上双方携带的技能获得巧变：同系别技能。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_ed265a595ac8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/咕德帽帽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "370",
+      "id": "pet_000512",
+      "name": "霹雳迪迪",
+      "types": [
+        "电系",
+        "光系"
+      ],
+      "traitId": "skill_000172",
+      "trait": "安可",
+      "description": "使用光系技能后，回合结束时自己返场。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_3aae8b244250",
+      "sourceUrl": "https://wiki.biligame.com/nrc/霹雳迪迪",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "372",
+      "id": "pet_000501",
+      "name": "巨鼓象",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000162",
+      "trait": "合拍",
+      "description": "本回合与敌方使用的技能在系别/类型/能耗上每有1项相同，回合结束时获得物攻和物防永久+10%。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_a3fb9eaf9f23",
+      "sourceUrl": "https://wiki.biligame.com/nrc/巨鼓象",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "374",
+      "id": "pet_000201",
+      "name": "帅帅魔偶",
+      "types": [
+        "幻系"
+      ],
+      "traitId": "skill_000099",
+      "trait": "盲从",
+      "description": "可以携带多个复写/借用/取念技能，非幻系技能能耗-2。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_c85930989fca",
+      "sourceUrl": "https://wiki.biligame.com/nrc/帅帅魔偶",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "375",
+      "id": "pet_000485",
+      "name": "学院呱呱",
+      "types": [
+        "武系"
+      ],
+      "traitId": "skill_000149",
+      "trait": "留学生",
+      "description": "自己全技能能耗+2，可以学习全部攻击技能石。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_5c7b0c7a7479",
+      "sourceUrl": "https://wiki.biligame.com/nrc/学院呱呱",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "378",
+      "id": "pet_000071",
+      "name": "火羽",
+      "types": [
+        "火系",
+        "翼系"
+      ],
+      "traitId": "skill_000069",
+      "trait": "不死鸟",
+      "description": "每场战斗1次，受到致命伤害时保留1血，且敌方获得15层灼烧。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_a6819896c382",
+      "sourceUrl": "https://wiki.biligame.com/nrc/火羽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "380",
+      "id": "pet_000524",
+      "name": "飞飞钥",
+      "types": [
+        "机械系",
+        "虫系"
+      ],
+      "traitId": "skill_000182",
+      "trait": "上锁",
+      "description": "敌方本回合使用的技能，冷却1回合。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_d56eb73dd957",
+      "sourceUrl": "https://wiki.biligame.com/nrc/飞飞钥",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "383",
+      "id": "pet_000325",
+      "name": "蝎子王",
+      "types": [
+        "恶系",
+        "地系"
+      ],
+      "traitId": "skill_000180",
+      "trait": "流沙统治者",
+      "description": "天气为沙暴时，自己获得速度+50。",
+      "group": "天气与环境条件",
+      "learnsetId": "learnset_48da798fb635",
+      "sourceUrl": "https://wiki.biligame.com/nrc/蝎子王",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "386",
+      "id": "pet_000522",
+      "name": "森巨人",
+      "types": [
+        "草系"
+      ],
+      "traitId": "skill_000181",
+      "trait": "盘根木",
+      "description": "初始生命为10%，入场前己方精灵每使用1次草系技能，回复30%生命。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_1b5589e33422",
+      "sourceUrl": "https://wiki.biligame.com/nrc/森巨人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "389",
+      "id": "pet_000287",
+      "name": "雷神之子",
+      "types": [
+        "电系"
+      ],
+      "traitId": "skill_000185",
+      "trait": "电子音乐",
+      "description": "天气为雷鸣时，使用电系技能后敌方获得引电。",
+      "group": "天气与环境条件",
+      "learnsetId": "learnset_55b444119fb5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/雷神之子",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "392",
+      "id": "pet_000277",
+      "name": "饮雪狂兽",
+      "types": [
+        "冰系"
+      ],
+      "traitId": "skill_000193",
+      "trait": "冰雪魂魄",
+      "description": "天气为暴风雪时，冰系技能威力+100%。",
+      "group": "天气与环境条件",
+      "learnsetId": "learnset_d784b0e4f37c",
+      "sourceUrl": "https://wiki.biligame.com/nrc/饮雪狂兽",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "395",
+      "id": "pet_000527",
+      "name": "火巨人",
+      "types": [
+        "火系"
+      ],
+      "traitId": "skill_000184",
+      "trait": "淬炼火",
+      "description": "入场前己方精灵每使用1次火系技能，获得攻防+10%，速度+10。（最多触发10次）",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_059e1193cf30",
+      "sourceUrl": "https://wiki.biligame.com/nrc/火巨人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "397",
+      "id": "pet_000195",
+      "name": "友爱星飞",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000183",
+      "trait": "友谊之果",
+      "description": "回合结束时，双方队伍中的所有精灵回复1能量。",
+      "group": "回合末结算控制",
+      "learnsetId": "learnset_c8d6155d968d",
+      "sourceUrl": "https://wiki.biligame.com/nrc/友爱星飞",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "399",
+      "id": "pet_000519",
+      "name": "克莱因龙",
+      "types": [
+        "龙系",
+        "萌系"
+      ],
+      "traitId": "skill_000179",
+      "trait": "莫比乌斯",
+      "description": "回合结束时，若自己的能量为0，则回复10能量。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_f51396ab1b3e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/克莱因龙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "402",
+      "id": "pet_000164",
+      "name": "邪眼巨魔",
+      "types": [
+        "恶系",
+        "虫系"
+      ],
+      "traitId": "skill_000061",
+      "trait": "瞳中倒影",
+      "description": "自己或其他精灵离场时，自己与更换入场的精灵交换血量百分比。",
+      "group": "轮转与入场收益",
+      "learnsetId": "learnset_2b0e1c5639a5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/邪眼巨魔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "405",
+      "id": "pet_000268",
+      "name": "夜游魔",
+      "types": [
+        "翼系",
+        "恶系"
+      ],
+      "traitId": "skill_000051",
+      "trait": "异类",
+      "description": "携带的翼系攻击技能获得选择：能耗+1，攻击时吸血50%。",
+      "group": "先后手、迅捷与连击",
+      "learnsetId": "learnset_3d027c9ae127",
+      "sourceUrl": "https://wiki.biligame.com/nrc/夜游魔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "408",
+      "id": "pet_000283",
+      "name": "障眼魔",
+      "types": [
+        "恶系",
+        "水系"
+      ],
+      "traitId": "skill_000063",
+      "trait": "滴眼液",
+      "description": "天气为雨天时，使用水系攻击技能时吸血50%。",
+      "group": "天气与环境条件",
+      "learnsetId": "learnset_ea5c89fcc368",
+      "sourceUrl": "https://wiki.biligame.com/nrc/障眼魔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "409",
+      "id": "pet_000367",
+      "name": "星云旅者",
+      "types": [
+        "翼系",
+        "幻系"
+      ],
+      "traitId": "skill_000118",
+      "trait": "与星星同行",
+      "description": "攻击时，将敌方所有印记变为相同层数的星陨印记。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_55336179c9a9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/星云旅者",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "411",
+      "id": "pet_000529",
+      "name": "珀尔鼬",
+      "types": [
+        "萌系"
+      ],
+      "traitId": "skill_000186",
+      "trait": "迎宾",
+      "description": "自己或其他精灵离场时，更换入场的精灵获得萌化。",
+      "group": "离场支援与资源传递",
+      "learnsetId": "learnset_3ae4110ead5e",
+      "sourceUrl": "https://wiki.biligame.com/nrc/珀尔鼬",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "413",
+      "id": "pet_000482",
+      "name": "溯源钟",
+      "types": [
+        "机械系",
+        "幻系"
+      ],
+      "traitId": "skill_000144",
+      "trait": "整点报时",
+      "description": "每场战斗1次，回合结束时，若自己累计消耗的能量恰好为12，则回满能量和生命。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_ced6a74681f3",
+      "sourceUrl": "https://wiki.biligame.com/nrc/溯源钟",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "416",
+      "id": "pet_000198",
+      "name": "加尔",
+      "types": [
+        "普通系",
+        "萌系"
+      ],
+      "traitId": "skill_000188",
+      "trait": "有求必应",
+      "description": "使用「选择」技能后，会额外使用1次另一种「选择」效果。使用任意技能后，该技能冷却1回合。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_4c6bc9bafa7f",
+      "sourceUrl": "https://wiki.biligame.com/nrc/加尔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "417",
+      "id": "pet_000199",
+      "name": "黑化加尔",
+      "types": [
+        "普通系",
+        "幽系"
+      ],
+      "traitId": "skill_000187",
+      "trait": "一意孤行",
+      "description": "使用「选择」技能后，会额外使用1次相同的「选择」效果。使用任意技能后，该技能冷却1回合。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_8117e55b27c8",
+      "sourceUrl": "https://wiki.biligame.com/nrc/黑化加尔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "419",
+      "id": "pet_000503",
+      "name": "胡桃王子",
+      "types": [
+        "机械系"
+      ],
+      "traitId": "skill_000191",
+      "trait": "守护之心",
+      "description": "双方场上每有1种不同的增益，自己获得物防+20%。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_6ef892ede0fd",
+      "sourceUrl": "https://wiki.biligame.com/nrc/胡桃王子",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "421",
+      "id": "pet_000505",
+      "name": "离心舞者",
+      "types": [
+        "幻系",
+        "机械系"
+      ],
+      "traitId": "skill_000192",
+      "trait": "和弦共振",
+      "description": "双方场上每有1种不同的印记，自己获得魔攻+50%。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_e6d475a125d4",
+      "sourceUrl": "https://wiki.biligame.com/nrc/离心舞者",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "424",
+      "id": "pet_000293",
+      "name": "徘徊爪爪",
+      "types": [
+        "萌系",
+        "毒系"
+      ],
+      "traitId": "skill_000189",
+      "trait": "猫精灵的礼物",
+      "description": "己方精灵每完整使用1次「选择」技能（「明」和「暗」各1次），自己入场时获得物攻+40%。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_4299219ba411",
+      "sourceUrl": "https://wiki.biligame.com/nrc/徘徊爪爪",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "426",
+      "id": "pet_000531",
+      "name": "炮米花",
+      "types": [
+        "草系",
+        "火系"
+      ],
+      "traitId": "skill_000175",
+      "trait": "爆裂玉米",
+      "description": "草系技能使敌方获得4层灼烧，火系技能使敌方获得1层寄生。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_2666d13c0ee5",
+      "sourceUrl": "https://wiki.biligame.com/nrc/炮米花",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "429",
+      "id": "pet_000458",
+      "name": "深渊蛙",
+      "types": [
+        "水系",
+        "武系"
+      ],
+      "traitId": "skill_000176",
+      "trait": "王子的诺言",
+      "description": "每回合各1次，获得增益时，同时获得全技能能耗-1，获得减益时，同时获得全技能能耗+1。",
+      "group": "增益放大与成长",
+      "learnsetId": "learnset_4c696a240c8b",
+      "sourceUrl": "https://wiki.biligame.com/nrc/深渊蛙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "431",
+      "id": "pet_000221",
+      "name": "卡拉波斯",
+      "types": [
+        "恶系"
+      ],
+      "traitId": "skill_000178",
+      "trait": "诅咒",
+      "description": "每受到1次技能攻击（不含连击），敌方获得1层暗涌印记。",
+      "group": "异常状态与持续损耗",
+      "learnsetId": "learnset_94327ed0cf07",
+      "sourceUrl": "https://wiki.biligame.com/nrc/卡拉波斯",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "433",
+      "id": "pet_000489",
+      "name": "流明坎德拉",
+      "types": [
+        "火系",
+        "光系"
+      ],
+      "traitId": "skill_000194",
+      "trait": "光度换算",
+      "description": "携带的火系技能获得选择：使用后失去15%生命，光系技能威力永久+30。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_01e3b22cf680",
+      "sourceUrl": "https://wiki.biligame.com/nrc/流明坎德拉",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "435",
+      "id": "pet_000499",
+      "name": "半朽蜜果灵",
+      "types": [
+        "幽系",
+        "草系"
+      ],
+      "traitId": "skill_000156",
+      "trait": "长久保存制法",
+      "description": "自己的聚能获得选择：偷取敌方3能量。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_0810e3d0cba4",
+      "sourceUrl": "https://wiki.biligame.com/nrc/半朽蜜果灵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "437",
+      "id": "pet_000495",
+      "name": "稻草守护者",
+      "types": [
+        "萌系",
+        "武系"
+      ],
+      "traitId": "skill_000177",
+      "trait": "守望者",
+      "description": "自己防御应对成功时，敌方获得萌化。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_6ce0e0292145",
+      "sourceUrl": "https://wiki.biligame.com/nrc/稻草守护者",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "437",
+      "id": "pet_000637",
+      "name": "稻草守护者（暖和的样子）",
+      "types": [
+        "萌系",
+        "武系"
+      ],
+      "traitId": "skill_000177",
+      "trait": "守望者",
+      "description": "自己防御应对成功时，敌方获得萌化。",
+      "group": "应对收益与行动限制",
+      "learnsetId": "learnset_6ce0e0292145",
+      "sourceUrl": "https://wiki.biligame.com/nrc/稻草守护者（暖和的样子）",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "439",
+      "id": "pet_000443",
+      "name": "壳栗丝鼠",
+      "types": [
+        "毒系",
+        "普通系"
+      ],
+      "traitId": "skill_000137",
+      "trait": "扎手",
+      "description": "每受到1次技能攻击（不含连击），敌方获得1层棘刺印记。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_240689c8b553",
+      "sourceUrl": "https://wiki.biligame.com/nrc/壳栗丝鼠",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "440",
+      "id": "pet_000517",
+      "name": "睡铃雪影娃娃",
+      "types": [
+        "冰系",
+        "草系"
+      ],
+      "traitId": "skill_000190",
+      "trait": "安眠",
+      "description": "王国入夜后，进入战斗时获得全技能能耗+2，回合结束时自己回复5%生命和1能量。",
+      "group": "个人资源循环与耐久",
+      "learnsetId": "learnset_4e2956335290",
+      "sourceUrl": "https://wiki.biligame.com/nrc/睡铃雪影娃娃",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "442",
+      "id": "pet_000596",
+      "name": "宝藏沙狐",
+      "types": [
+        "普通系"
+      ],
+      "traitId": "skill_000195",
+      "trait": "博物",
+      "description": "在场时，识破精灵的变化效果，解除其伪装。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_83dcba097878",
+      "sourceUrl": "https://wiki.biligame.com/nrc/宝藏沙狐",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "445",
+      "id": "pet_000608",
+      "name": "银月狼王",
+      "types": [
+        "幽系",
+        "幻系"
+      ],
+      "traitId": "skill_000196",
+      "trait": "铭记于月亮",
+      "description": "获得自己击败的精灵的特性，每次攻击后自己失去5%生命。",
+      "group": "血脉、形态、信息与特性变化",
+      "learnsetId": "learnset_162b16b43e43",
+      "sourceUrl": "https://wiki.biligame.com/nrc/银月狼王",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "448",
+      "id": "pet_000611",
+      "name": "月使鹭纳",
+      "types": [
+        "翼系",
+        "冰系"
+      ],
+      "traitId": "skill_000198",
+      "trait": "冷光源",
+      "description": "若上回合双方有精灵使用翼系技能，本回合自己携带的冰系技能威力+100%。",
+      "group": "跨回合系别响应",
+      "learnsetId": "learnset_da630e35c0e9",
+      "sourceUrl": "https://wiki.biligame.com/nrc/月使鹭纳",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "451",
+      "id": "pet_000601",
+      "name": "圣凯布米龙",
+      "types": [
+        "火系",
+        "虫系"
+      ],
+      "traitId": "skill_000197",
+      "trait": "热成像",
+      "description": "若上回合双方有精灵使用火系技能，本回合自己携带的虫系技能威力+100%。",
+      "group": "跨回合系别响应",
+      "learnsetId": "learnset_3d550ce8167a",
+      "sourceUrl": "https://wiki.biligame.com/nrc/圣凯布米龙",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "453",
+      "id": "pet_000613",
+      "name": "智辉章脑",
+      "types": [
+        "光系",
+        "水系"
+      ],
+      "traitId": "skill_000200",
+      "trait": "基因编辑",
+      "description": "自己携带技能的基础能耗，变为上回合双方使用的技能能耗之和。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_1828f13f54f1",
+      "sourceUrl": "https://wiki.biligame.com/nrc/智辉章脑",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "454",
+      "id": "pet_000598",
+      "name": "未完虫",
+      "types": [
+        "幽系",
+        "虫系"
+      ],
+      "traitId": "skill_000203",
+      "trait": "正模标本",
+      "description": "自己队伍中的其他精灵，在力竭1回合后会变为未完虫。",
+      "group": "生命、力竭与魔力胜负",
+      "learnsetId": "learnset_5a018ea812fd",
+      "sourceUrl": "https://wiki.biligame.com/nrc/未完虫",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "456",
+      "id": "pet_000603",
+      "name": "玳塔",
+      "types": [
+        "幻系"
+      ],
+      "traitId": "skill_000206",
+      "trait": "乌龟塔理论",
+      "description": "每受到1次攻击伤害，敌方获得3层星陨印记。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_16a117108611",
+      "sourceUrl": "https://wiki.biligame.com/nrc/玳塔",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "458",
+      "id": "pet_000605",
+      "name": "测风蝉",
+      "types": [
+        "翼系",
+        "机械系"
+      ],
+      "traitId": "skill_000201",
+      "trait": "风速仪",
+      "description": "携带的技能每累计传动8，自己获得1层风起印记。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_8937d853acf7",
+      "sourceUrl": "https://wiki.biligame.com/nrc/测风蝉",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "460",
+      "id": "pet_000615",
+      "name": "黑手浣熊",
+      "types": [
+        "恶系"
+      ],
+      "traitId": "skill_000202",
+      "trait": "翻垃圾桶",
+      "description": "入场时自己未携带的技能位置会变为敌方最近使用过的技能，且能耗-2。",
+      "group": "技能槽、传动、复制与变招",
+      "learnsetId": "learnset_aac3cf890bff",
+      "sourceUrl": "https://wiki.biligame.com/nrc/黑手浣熊",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "462",
+      "id": "pet_000617",
+      "name": "摇铃魔偶",
+      "types": [
+        "幽系"
+      ],
+      "traitId": "skill_000204",
+      "trait": "盗魂铃",
+      "description": "初始能量为0，首次入场前敌方每聚能1次，回复5能量（可突破上限），在场时自己回复的能量-4。",
+      "group": "队伍历史预热",
+      "learnsetId": "learnset_76a86cb172ea",
+      "sourceUrl": "https://wiki.biligame.com/nrc/摇铃魔偶",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "463",
+      "id": "pet_000597",
+      "name": "星星眼",
+      "types": [
+        "幻系"
+      ],
+      "traitId": "skill_000205",
+      "trait": "宇宙之眼",
+      "description": "敌方每有1层星陨印记，自己获得物防+10%。",
+      "group": "印记生产、转换与处理",
+      "learnsetId": "learnset_3cfab3d879db",
+      "sourceUrl": "https://wiki.biligame.com/nrc/星星眼",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "465",
+      "id": "pet_000619",
+      "name": "布灵布灵",
+      "types": [
+        "幻系",
+        "光系"
+      ],
+      "traitId": "skill_000207",
+      "trait": "旧玩具",
+      "description": "己方精灵每使用过1个不同系别的技能，自己入场时获得双攻+10%。",
+      "group": "构筑条件与打击面",
+      "learnsetId": "learnset_7ecee35fafd0",
+      "sourceUrl": "https://wiki.biligame.com/nrc/布灵布灵",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    },
+    {
+      "number": "466",
+      "id": "pet_000622",
+      "name": "果实立方人",
+      "types": [
+        "机械系",
+        "草系"
+      ],
+      "traitId": "skill_000199",
+      "trait": "秋收",
+      "description": "处于草系环境中时，机械系技能威力+50%。",
+      "group": "天气与环境条件",
+      "learnsetId": "learnset_7e2d29a294cc",
+      "sourceUrl": "https://wiki.biligame.com/nrc/果实立方人",
+      "status": "source-text-read; live-build-and-replay-not-verified"
+    }
+  ],
+  "provenance": {
+    "capturedAt": "2026-10-15T08:12:01.341611+00:00",
+    "modules": [
+      {
+        "name": "Catalog",
+        "revision": 18675,
+        "modifiedAt": "2026-10-15T02:53:27Z",
+        "sha256": "96e6dd6248a395ec7dbc810ad90c9953eb2657d2a68d2e410405ae87b99f3e04",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Catalog?oldid=18675"
+      },
+      {
+        "name": "Index",
+        "revision": 18679,
+        "modifiedAt": "2026-10-15T02:53:31Z",
+        "sha256": "306b98944964adf4945f13fb932507719cf217439cb6a595f708512e03d04bc7",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Index?oldid=18679"
+      },
+      {
+        "name": "Skills",
+        "revision": 16558,
+        "modifiedAt": "2026-09-26T08:35:58Z",
+        "sha256": "ce511bcc0b05af8fef439ba12cb1f698892d4a1fbd56f14f73ec4af0b71a6a6d",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Skills?oldid=16558"
+      },
+      {
+        "name": "Learnsets",
+        "revision": 13094,
+        "modifiedAt": "2026-09-12T18:07:44Z",
+        "sha256": "c6976bb30f5d7cec5ffc275f772a3edc8b769d45b39b7daddec3f670f31923d5",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Learnsets?oldid=13094"
+      },
+      {
+        "name": "Terms",
+        "revision": 7078,
+        "modifiedAt": "2026-09-09T10:00:15Z",
+        "sha256": "f1830685d31732d3634f8857e14eec75b85ea56b923ceef218ede18182056488",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Terms?oldid=7078"
+      },
+      {
+        "name": "Evolutions",
+        "revision": 18677,
+        "modifiedAt": "2026-10-15T02:53:29Z",
+        "sha256": "26c8131c063845e8f59d60f5d46ea3b68fa2a3b29025b153e0699d2026647a13",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Evolutions?oldid=18677"
+      },
+      {
+        "name": "Config",
+        "revision": 18676,
+        "modifiedAt": "2026-10-15T02:53:28Z",
+        "sha256": "ee872c5771eb93cddacf4bdbc3c970d8ee18a110c4863a92463f8ec7b4b7f9df",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Config?oldid=18676"
+      }
+    ],
+    "source": "洛克王国：世界 BWIKI 及贡献者",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "currentGameVersionCertified": false,
+    "description": "固定社区资料修订，不代表全部当前排位合法或实机认证"
+  }
+}

@@ -1,21 +1,32 @@
 {
   "name": "roco-balance-lab",
-  "version": "0.2.1",
+  "version": "0.4.0",
   "private": true,
   "type": "module",
   "description": "A small, explainable balance experiment workbench for a game design portfolio",
   "scripts": {
+    "dex:export": "node scripts/export-dex.mjs",
+    "dex:package": "node scripts/package-dex.mjs",
     "dev": "vite --host 127.0.0.1 --port 4197 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4197 --strictPort",
+    "start": "node server/research-server.mjs",
+    "snapshot:export": "node scripts/export-catalog-snapshot.mjs",
+    "test:workbench": "node --test test/workbench.test.mjs",
     "test": "node --test test/*.test.mjs",
-    "experiment": "node scripts/experiment.mjs"
+    "audit:stats": "node scripts/audit-stat-formula.mjs",
+    "pilot:prepare": "python scripts/prepare-pilot.py",
+    "pilot:check": "node scripts/pilot-preflight.mjs",
+    "pilot:diagnostics": "node scripts/pilot-diagnostics.mjs",
+    "experiment": "node scripts/experiment.mjs",
+    "research": "node scripts/research.mjs"
   },
   "engines": {
-    "node": ">=22.12.0"
+    "node": ">=24.0.0"
   },
   "packageManager": "pnpm@11.25.0",
   "dependencies": {
+    "lucide-react": "^1.59.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },

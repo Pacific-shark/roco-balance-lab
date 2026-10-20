@@ -21,7 +21,7 @@ const data = JSON.parse(
     "utf8",
   ),
 );
-test("World natures cover all 30 distinct up/down pairs including HP, at +10%/-10%", () => {
+test("World natures cover all 30 distinct up/down pairs including HP, at five-star +20%/-10%", () => {
   const member = data.teams[0].members[0],
     creature = data.creatures[member.id];
   assert.equal(Object.keys(NATURES).length, 30);
@@ -31,18 +31,29 @@ test("World natures cover all 30 distinct up/down pairs including HP, at +10%/-1
   );
   for (const nature of Object.keys(NATURES)) {
     const rows = calculatePanel(creature, { ...member, nature }).breakdown;
-    assert.equal(rows.filter((r) => r.modifier === 1.1).length, 1);
+    assert.equal(rows.filter((r) => r.modifier === 1.2).length, 1);
     assert.equal(rows.filter((r) => r.modifier === 0.9).length, 1);
     assert.equal(rows.filter((r) => r.modifier === 1).length, 4);
   }
   assert.equal(statPanel(128, 10), 234);
-  assert.equal(statPanel(128, 10, false, 1.1), 252);
+  assert.equal(statPanel(128, 10, false, 1.2), 271);
   assert.equal(statPanel(121, 10, false, 0.9), 208);
   assert.ok(
     calculatePanel(creature, { ...member, nature: "踏实" }).stats.hp >
       calculatePanel(creature, { ...member, nature: "固执" }).stats.hp,
   );
-  assert.throws(() => statPanel(128, 10, false, 1.2), /无效/);
+  assert.throws(() => statPanel(128, 10, false, 1.1), /无效/);
+});
+test("six stats match an actual launch-game panel, with attack discriminating rounding order", async () => {
+  const fixture = JSON.parse(await readFile(new URL('../docs/evidence/stat-panel-game-fixture.json', import.meta.url)));
+  const build = { nature: fixture.nature, ivs: fixture.initialIVs, level: 60, growthStars: 5 };
+  const actual = calculatePanel({stats: fixture.baseStats}, build);
+  assert.deepEqual(actual.stats, fixture.observedPanel);
+  assert.equal(actual.stats.atk, 262);
+  assert.equal(Math.round((1.1 * (128 + 3 * 8) + 10) * 1.2) + 50, 263);
+  assert.equal(actual.scope.currentSeasonVerified, false);
+  assert.throws(() => calculatePanel({stats: fixture.baseStats}, {...build, level: 50}), /60级/);
+  assert.throws(() => calculatePanel({stats: fixture.baseStats}, {...build, growthStars: 4}), /五星/);
 });
 test("cultivation rejects six perfect stats and incomplete or impossible IV fields", () => {
   const m = structuredClone(data.teams[0].members[0]);
@@ -96,7 +107,7 @@ test("default search contains every three-perfect-IV allocation paired with ever
   }
 });
 
-test("published models restore the exact searched cultivation and reproduce their reported scores", async () => {
+test("old saved models are rejected after the five-star panel correction", async () => {
   const { evaluateTeams } = await import("../src/team-rl.mjs");
   for (const seed of [42, 137]) {
     const model = JSON.parse(
@@ -115,7 +126,7 @@ test("published models restore the exact searched cultivation and reproduce thei
       ),
     );
     const configured = { ...data, teams: model.trainingTeams };
-    assert.equal(teamConfigurationId(configured), model.configurationId);
+    assert.notEqual(teamConfigurationId(configured), model.configurationId);
     assert.equal(
       model.configurationSearch.afterConfigurationId,
       model.configurationId,
@@ -128,9 +139,8 @@ test("published models restore the exact searched cultivation and reproduce thei
         (r) => r.candidates === 600 && r.afterScore >= r.beforeScore,
       ),
     );
-    const actual = evaluateTeams(configured, model);
-    for (const key of ["ruleScore", "drawRate", "meanSwitches"])
-      assert.equal(actual[key], stored[key]);
+    assert.throws(() => evaluateTeams(configured, model), /版本/);
+    assert.equal(typeof stored.ruleScore, 'number');
   }
 });
 test("search freezes reference policies and opponents, preserves valid teams, and rejects worse full-scenario results", () => {

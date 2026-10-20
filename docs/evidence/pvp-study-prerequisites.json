@@ -1,0 +1,648 @@
+{
+  "kind": "pvp-study-prerequisite-audit",
+  "createdAt": "2026-10-19T09:33:40.016Z",
+  "sourceSha256": "66a7cf9513f1aecbb2d97b882ebbd3b03c43dd1c76f07a413c7ca2a9a0b5b8db",
+  "kernelVersion": "battle-kernel-3",
+  "programVersion": "battle-programs-3",
+  "cases": [
+    {
+      "id": "weekly51-electric-water",
+      "title": "电环水队",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "identifiedMembers": 6,
+      "members": [
+        {
+          "id": "pet_000005",
+          "name": "水灵",
+          "trait": {
+            "id": "skill_000030",
+            "name": "浸润",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000174",
+          "name": "荆棘电环",
+          "trait": {
+            "id": "skill_000081",
+            "name": "防过载保护",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000106",
+          "name": "彩蝶鲨",
+          "trait": {
+            "id": "skill_000033",
+            "name": "水翼推进",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000071",
+          "name": "火羽",
+          "trait": {
+            "id": "skill_000069",
+            "name": "不死鸟",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000217",
+          "name": "冰钻布鲁斯",
+          "trait": {
+            "id": "skill_000040",
+            "name": "冰钻",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000477",
+          "name": "古卷执政官",
+          "trait": {
+            "id": "skill_000142",
+            "name": "图书守卫者",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        }
+      ],
+      "knownMoves": [
+        {
+          "petId": "pet_000005",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 1,
+          "id": "skill_000424",
+          "name": "润泽",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000005",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 2,
+          "id": "skill_000429",
+          "name": "水泡盾",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000005",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 3,
+          "id": "skill_000420",
+          "name": "气泡",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000005",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 4,
+          "id": "skill_000547",
+          "name": "寒风吹",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000174",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 1,
+          "id": "skill_000551",
+          "name": "速冻",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000174",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 2,
+          "id": "skill_000332",
+          "name": "倾泻",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000174",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 3,
+          "id": "skill_000557",
+          "name": "冰点",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000174",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 4,
+          "id": "skill_000325",
+          "name": "晒太阳",
+          "status": "unsupported",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 1,
+          "id": "skill_000423",
+          "name": "天洪",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 2,
+          "id": "skill_000643",
+          "name": "贮藏",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": [
+            "幽血脉"
+          ],
+          "slot": 3,
+          "id": "skill_000753",
+          "name": "灵媒",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 4,
+          "id": "skill_000700",
+          "name": "回旋风暴",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000071",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 1,
+          "id": "skill_000749",
+          "name": "幽灵爆发",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000071",
+          "learningSource": [
+            "光血脉"
+          ],
+          "slot": 2,
+          "id": "skill_000458",
+          "name": "虹光冲击",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000071",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 3,
+          "id": "skill_000332",
+          "name": "倾泻",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000071",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 4,
+          "id": "skill_000385",
+          "name": "高温回火",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000217",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 1,
+          "id": "skill_000530",
+          "name": "暴风雪",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000217",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 2,
+          "id": "skill_000271",
+          "name": "力量增效",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000217",
+          "learningSource": [
+            "火血脉"
+          ],
+          "slot": 3,
+          "id": "skill_000376",
+          "name": "火焰冲锋",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000217",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 4,
+          "id": "skill_000312",
+          "name": "先发制人",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000477",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 1,
+          "id": "skill_000310",
+          "name": "湮灭",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000477",
+          "learningSource": [
+            "基础可学"
+          ],
+          "slot": 2,
+          "id": "skill_000312",
+          "name": "先发制人",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000477",
+          "learningSource": [
+            "光血脉"
+          ],
+          "slot": 3,
+          "id": "skill_000458",
+          "name": "虹光冲击",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000477",
+          "learningSource": [
+            "技能石"
+          ],
+          "slot": 4,
+          "id": "skill_000321",
+          "name": "彗星",
+          "status": "unsupported",
+          "gameVerified": false
+        }
+      ],
+      "fullBuildRecorded": false,
+      "recordedOrderedMoveSlots": 24,
+      "detailedConfigurationRecord": "data/pvp-baseline-electric-water.json",
+      "missingTraitIds": [],
+      "missingKnownMoveIds": [
+        "skill_000325",
+        "skill_000321"
+      ],
+      "unrecordedConfigurationFields": [
+        "exact-source-aptitude-values",
+        "resonance-execution-boundaries",
+        "current-mode-legality",
+        "full-game-conformance"
+      ],
+      "trainingAllowed": false
+    },
+    {
+      "id": "weekly51-water-sand",
+      "title": "水沙队",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "identifiedMembers": 6,
+      "members": [
+        {
+          "id": "pet_000005",
+          "name": "水灵",
+          "trait": {
+            "id": "skill_000030",
+            "name": "浸润",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000106",
+          "name": "彩蝶鲨",
+          "trait": {
+            "id": "skill_000033",
+            "name": "水翼推进",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000217",
+          "name": "冰钻布鲁斯",
+          "trait": {
+            "id": "skill_000040",
+            "name": "冰钻",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000071",
+          "name": "火羽",
+          "trait": {
+            "id": "skill_000069",
+            "name": "不死鸟",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000480",
+          "name": "窃光蚊",
+          "trait": {
+            "id": "skill_000148",
+            "name": "血型吸引",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000307",
+          "name": "九幽菇",
+          "trait": {
+            "id": "skill_000116",
+            "name": "多人宿舍",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        }
+      ],
+      "knownMoves": [
+        {
+          "petId": "pet_000005",
+          "learningSource": "skill_stones",
+          "id": "skill_000424",
+          "name": "润泽",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000005",
+          "learningSource": "native_skills",
+          "id": "skill_000429",
+          "name": "水泡盾",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": "skill_stones",
+          "id": "skill_000643",
+          "name": "贮藏",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": "native_skills",
+          "id": "skill_000423",
+          "name": "天洪",
+          "status": "compiled",
+          "gameVerified": false
+        }
+      ],
+      "fullBuildRecorded": false,
+      "recordedOrderedMoveSlots": null,
+      "detailedConfigurationRecord": null,
+      "missingTraitIds": [],
+      "missingKnownMoveIds": [],
+      "unrecordedConfigurationFields": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ],
+      "trainingAllowed": false
+    },
+    {
+      "id": "weekly51-pure-rain",
+      "title": "纯血雨天队",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "identifiedMembers": 6,
+      "members": [
+        {
+          "id": "pet_000005",
+          "name": "水灵",
+          "trait": {
+            "id": "skill_000030",
+            "name": "浸润",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000059",
+          "name": "卷毛鸭",
+          "trait": {
+            "id": "skill_000115",
+            "name": "得寸进尺",
+            "status": "unsupported",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000106",
+          "name": "彩蝶鲨",
+          "trait": {
+            "id": "skill_000033",
+            "name": "水翼推进",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000516",
+          "name": "雅丹鬃",
+          "trait": {
+            "id": "skill_000167",
+            "name": "天通地明",
+            "status": "unsupported",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000174",
+          "name": "荆棘电环",
+          "trait": {
+            "id": "skill_000081",
+            "name": "防过载保护",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000182",
+          "name": "贝古斯",
+          "trait": {
+            "id": "skill_000086",
+            "name": "贪心算法",
+            "status": "unsupported",
+            "gameVerified": false
+          }
+        }
+      ],
+      "knownMoves": [
+        {
+          "petId": "pet_000005",
+          "learningSource": "skill_stones",
+          "id": "skill_000424",
+          "name": "润泽",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000005",
+          "learningSource": "native_skills",
+          "id": "skill_000429",
+          "name": "水泡盾",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000174",
+          "learningSource": "skill_stones",
+          "id": "skill_000551",
+          "name": "速冻",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": "skill_stones",
+          "id": "skill_000643",
+          "name": "贮藏",
+          "status": "compiled",
+          "gameVerified": false
+        },
+        {
+          "petId": "pet_000106",
+          "learningSource": "native_skills",
+          "id": "skill_000423",
+          "name": "天洪",
+          "status": "compiled",
+          "gameVerified": false
+        }
+      ],
+      "fullBuildRecorded": false,
+      "recordedOrderedMoveSlots": null,
+      "detailedConfigurationRecord": null,
+      "missingTraitIds": [
+        "skill_000115",
+        "skill_000167",
+        "skill_000086"
+      ],
+      "missingKnownMoveIds": [],
+      "unrecordedConfigurationFields": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ],
+      "trainingAllowed": false
+    },
+    {
+      "id": "weekly51-rain-counter",
+      "title": "雨天杀手队（部分成员确认）",
+      "sourceUrl": "https://www.bilibili.com/video/BV11cJY6JE7Y/",
+      "identifiedMembers": 2,
+      "members": [
+        {
+          "id": "pet_000422",
+          "name": "斑枭",
+          "trait": {
+            "id": "skill_000131",
+            "name": "逐魂鸟",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        },
+        {
+          "id": "pet_000007",
+          "name": "魔力猫",
+          "trait": {
+            "id": "skill_000003",
+            "name": "氧循环",
+            "status": "compiled",
+            "gameVerified": false
+          }
+        }
+      ],
+      "knownMoves": [],
+      "fullBuildRecorded": false,
+      "recordedOrderedMoveSlots": null,
+      "detailedConfigurationRecord": null,
+      "missingTraitIds": [],
+      "missingKnownMoveIds": [],
+      "unrecordedConfigurationFields": [
+        "complete-ordered-moves-and-learning-conditions",
+        "bloodline-and-resonance-configuration",
+        "exact-cultivation",
+        "current-mode-legality",
+        "event-level-game-conformance",
+        "failure-and-counterplay-examples"
+      ],
+      "trainingAllowed": false
+    }
+  ],
+  "meaning": "Known dependencies of visually identified teams only; incomplete move slots, cultivation, bloodlines, resonance and game validation remain blockers. Not a training-admission implementation.",
+  "trainingRunsStarted": 0,
+  "modelApiCalls": 0
+}

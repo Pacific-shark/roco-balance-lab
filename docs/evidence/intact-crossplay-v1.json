@@ -1,0 +1,641 @@
+{
+  "protocol": "intact-traits-crossplay-v1",
+  "scope": "prototype-validation",
+  "status": "completed",
+  "traitsIntact": true,
+  "testSplitUsed": false,
+  "canPublishBalanceConclusion": false,
+  "apiTokens": 0,
+  "maxSeconds": 240,
+  "checkpoints": [
+    {
+      "id": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "architecture": "entity_mlp",
+      "seed": 42,
+      "trainingSteps": 32768,
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 42,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "parameterHashes": [
+        "ac0d0ebf72ceeb4b440fab0589f2a6322d331559c6f68996e9320e1815e437f0",
+        "d90a9f250d804963d99fcc07a92c699f1eebe3bc3ee58ce0e6c900e60f0bbb63"
+      ]
+    },
+    {
+      "id": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "architecture": "entity_mlp",
+      "seed": 137,
+      "trainingSteps": 32768,
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 137,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "parameterHashes": [
+        "5663d4965a3e7bcc229161bc9692068aca089521f739048bc90d6e1f8f4f610f",
+        "907901d98dba5ec228a95614c3f034ae10ae8e15eb7f87c3c59a1a8563be46ae"
+      ]
+    },
+    {
+      "id": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "architecture": "entity_mlp",
+      "seed": 256,
+      "trainingSteps": 32768,
+      "config": {
+        "architecture": "entity_mlp",
+        "seed": 256,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "parameterHashes": [
+        "1fc1e6d80ff79a88f85b99a5771d55ec218ede084e5fb40c701b8e52097db363",
+        "d7e3b401ce93e43f70c475568e8d92f62974c1bb8f657be01f12ac67c2e9c5d5"
+      ]
+    },
+    {
+      "id": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "architecture": "entity_gru",
+      "seed": 42,
+      "trainingSteps": 32768,
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 42,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "parameterHashes": [
+        "65aea51a3502c4cc2bf8405b734afc76dba41e098c622b7d4ffa159ad7d30e68",
+        "634c20acf04568b15a3a95ca2e8cff82a9a80a3b9b23a02d4f491f4542a03da2"
+      ]
+    },
+    {
+      "id": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "architecture": "entity_gru",
+      "seed": 137,
+      "trainingSteps": 32768,
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 137,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "parameterHashes": [
+        "b03a8e3f2dbb23b420cc1ff40603e7ef3cf9623790010b2d4b8df5829f873290",
+        "12d1e8268725e98680bb3867b3459a44d1950252d80e7b3ea763f905f8236741"
+      ]
+    },
+    {
+      "id": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "architecture": "entity_gru",
+      "seed": 256,
+      "trainingSteps": 32768,
+      "config": {
+        "architecture": "entity_gru",
+        "seed": 256,
+        "steps": 32768,
+        "envs": 4,
+        "horizon": 32,
+        "hidden": 64,
+        "epochs": 3,
+        "learningRate": 0.0003,
+        "threads": 1,
+        "maxSeconds": 480,
+        "shaping": 1.0,
+        "evalEvery": 8192,
+        "trainPool": 32
+      },
+      "parameterHashes": [
+        "7c7422f10ba74edb4e5faa7dde1bb1108ae8bc6e0c500e03c8e38b6446112d90",
+        "e6d0129c759a1c7ce223941d2d179a8a72c9dc3af9a951525a34fe1a75c0cab1"
+      ]
+    }
+  ],
+  "limitations": [
+    "Only two validation builds; repeated cases are not independent matchups.",
+    "The common frozen pool includes all supplied checkpoints, including each learner itself.",
+    "This is cross-play evaluation, not best-response training or a PSRO equilibrium.",
+    "No team-specific adaptation, optimal cultivation or current full-game claims."
+  ],
+  "environmentHash": "8db5d9bf522ab0d76abe0d97ec73992cf3dd3f7399d80d2dc8608e279f07ce1f",
+  "adapterHash": "f044cb8d296048b95d5780c5b577e1f0e19a24f7b1aa9f23210a501c116f029e",
+  "evaluatorSha256": "142fb69528e3be73f06b2eeb6e207154bdc10c048a3648644383fbb62e1b8e89",
+  "summary": [
+    {
+      "id": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "architecture": "entity_mlp",
+      "seed": 42,
+      "neuralPoolScore": 0.53125,
+      "worstPoolCheckpoint": 0.34375,
+      "ruleScore": 0.5625,
+      "battles": 224
+    },
+    {
+      "id": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "architecture": "entity_mlp",
+      "seed": 137,
+      "neuralPoolScore": 0.5260416666666666,
+      "worstPoolCheckpoint": 0.375,
+      "ruleScore": 0.3125,
+      "battles": 224
+    },
+    {
+      "id": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "architecture": "entity_mlp",
+      "seed": 256,
+      "neuralPoolScore": 0.4479166666666667,
+      "worstPoolCheckpoint": 0.34375,
+      "ruleScore": 0.21875,
+      "battles": 224
+    },
+    {
+      "id": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "architecture": "entity_gru",
+      "seed": 42,
+      "neuralPoolScore": 0.609375,
+      "worstPoolCheckpoint": 0.53125,
+      "ruleScore": 0.375,
+      "battles": 224
+    },
+    {
+      "id": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "architecture": "entity_gru",
+      "seed": 137,
+      "neuralPoolScore": 0.4947916666666667,
+      "worstPoolCheckpoint": 0.3125,
+      "ruleScore": 0.34375,
+      "battles": 224
+    },
+    {
+      "id": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "architecture": "entity_gru",
+      "seed": 256,
+      "neuralPoolScore": 0.6197916666666666,
+      "worstPoolCheckpoint": 0.46875,
+      "ruleScore": 0.53125,
+      "battles": 224
+    }
+  ],
+  "totalBattles": 1344,
+  "weightsUnchanged": true,
+  "elapsedSeconds": 69.45299999997951,
+  "architectures": {
+    "entity_mlp": {
+      "seeds": [
+        42,
+        137,
+        256
+      ],
+      "meanNeuralPoolScore": 0.501736111111111,
+      "meanRuleScore": 0.3645833333333333,
+      "minimumSeedNeuralPoolScore": 0.4479166666666667
+    },
+    "entity_gru": {
+      "seeds": [
+        42,
+        137,
+        256
+      ],
+      "meanNeuralPoolScore": 0.5746527777777778,
+      "meanRuleScore": 0.4166666666666667,
+      "minimumSeedNeuralPoolScore": 0.4947916666666667
+    }
+  },
+  "matrix": [
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "battles": 32,
+      "wins": 19,
+      "losses": 13,
+      "roundCaps": 0,
+      "meanScore": 0.59375
+    },
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "battles": 32,
+      "wins": 11,
+      "losses": 21,
+      "roundCaps": 0,
+      "meanScore": 0.34375
+    },
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "battles": 32,
+      "wins": 24,
+      "losses": 8,
+      "roundCaps": 0,
+      "meanScore": 0.75
+    },
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "battles": 32,
+      "wins": 21,
+      "losses": 11,
+      "roundCaps": 0,
+      "meanScore": 0.65625
+    },
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "battles": 32,
+      "wins": 14,
+      "losses": 18,
+      "roundCaps": 0,
+      "meanScore": 0.4375
+    },
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "battles": 32,
+      "wins": 13,
+      "losses": 19,
+      "roundCaps": 0,
+      "meanScore": 0.40625
+    },
+    {
+      "learner": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "opponent": "visible-rules",
+      "battles": 32,
+      "wins": 18,
+      "losses": 14,
+      "roundCaps": 0,
+      "meanScore": 0.5625
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "battles": 32,
+      "wins": 16,
+      "losses": 16,
+      "roundCaps": 0,
+      "meanScore": 0.5
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "battles": 32,
+      "wins": 14,
+      "losses": 18,
+      "roundCaps": 0,
+      "meanScore": 0.4375
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "battles": 32,
+      "wins": 22,
+      "losses": 10,
+      "roundCaps": 0,
+      "meanScore": 0.6875
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "battles": 32,
+      "wins": 19,
+      "losses": 13,
+      "roundCaps": 0,
+      "meanScore": 0.59375
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "battles": 32,
+      "wins": 12,
+      "losses": 20,
+      "roundCaps": 0,
+      "meanScore": 0.375
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "battles": 32,
+      "wins": 18,
+      "losses": 14,
+      "roundCaps": 0,
+      "meanScore": 0.5625
+    },
+    {
+      "learner": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "opponent": "visible-rules",
+      "battles": 32,
+      "wins": 10,
+      "losses": 22,
+      "roundCaps": 0,
+      "meanScore": 0.3125
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "battles": 32,
+      "wins": 12,
+      "losses": 20,
+      "roundCaps": 0,
+      "meanScore": 0.375
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "battles": 32,
+      "wins": 11,
+      "losses": 21,
+      "roundCaps": 0,
+      "meanScore": 0.34375
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "battles": 32,
+      "wins": 19,
+      "losses": 13,
+      "roundCaps": 0,
+      "meanScore": 0.59375
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "battles": 32,
+      "wins": 16,
+      "losses": 16,
+      "roundCaps": 0,
+      "meanScore": 0.5
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "battles": 32,
+      "wins": 11,
+      "losses": 21,
+      "roundCaps": 0,
+      "meanScore": 0.34375
+    },
+    {
+      "learner": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "opponent": "visible-rules",
+      "battles": 32,
+      "wins": 7,
+      "losses": 25,
+      "roundCaps": 0,
+      "meanScore": 0.21875
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "battles": 32,
+      "wins": 18,
+      "losses": 14,
+      "roundCaps": 0,
+      "meanScore": 0.5625
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "battles": 32,
+      "wins": 25,
+      "losses": 7,
+      "roundCaps": 0,
+      "meanScore": 0.78125
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "battles": 32,
+      "wins": 20,
+      "losses": 12,
+      "roundCaps": 0,
+      "meanScore": 0.625
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "battles": 32,
+      "wins": 20,
+      "losses": 12,
+      "roundCaps": 0,
+      "meanScore": 0.625
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    },
+    {
+      "learner": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "opponent": "visible-rules",
+      "battles": 32,
+      "wins": 12,
+      "losses": 20,
+      "roundCaps": 0,
+      "meanScore": 0.375
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "battles": 32,
+      "wins": 10,
+      "losses": 22,
+      "roundCaps": 0,
+      "meanScore": 0.3125
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "battles": 32,
+      "wins": 21,
+      "losses": 11,
+      "roundCaps": 0,
+      "meanScore": 0.65625
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "battles": 32,
+      "wins": 18,
+      "losses": 14,
+      "roundCaps": 0,
+      "meanScore": 0.5625
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "battles": 32,
+      "wins": 12,
+      "losses": 20,
+      "roundCaps": 0,
+      "meanScore": 0.375
+    },
+    {
+      "learner": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "opponent": "visible-rules",
+      "battles": 32,
+      "wins": 11,
+      "losses": 21,
+      "roundCaps": 0,
+      "meanScore": 0.34375
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "ea1e83e9acd032660a4ba9e74d7abdf3d35ce87c68085521d25ad9d1ea93e70a",
+      "battles": 32,
+      "wins": 21,
+      "losses": 11,
+      "roundCaps": 0,
+      "meanScore": 0.65625
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "14576ee185be092b52ac58b07fdf31a21c40122d3376ba433b2193ef1f76e426",
+      "battles": 32,
+      "wins": 15,
+      "losses": 17,
+      "roundCaps": 0,
+      "meanScore": 0.46875
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "158cc84c559067bddd82d83d4fe092a1b488cd70b616b33984182182f93b0ecc",
+      "battles": 32,
+      "wins": 22,
+      "losses": 10,
+      "roundCaps": 0,
+      "meanScore": 0.6875
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "ea064e9e831d33923c359a35c97c85c2ea1e4b20988bfdde3da5668fb2a0feca",
+      "battles": 32,
+      "wins": 23,
+      "losses": 9,
+      "roundCaps": 0,
+      "meanScore": 0.71875
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "f5782f1d77277372d937fc5f477417f18ced3b1bcd3a9b3b96ff2a6f081c1eda",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "battles": 32,
+      "wins": 21,
+      "losses": 11,
+      "roundCaps": 0,
+      "meanScore": 0.65625
+    },
+    {
+      "learner": "e9b2e86ff450a001d218c763ec4f78bf9b825b4eb588e82ec49e3fc95d5d8954",
+      "opponent": "visible-rules",
+      "battles": 32,
+      "wins": 17,
+      "losses": 15,
+      "roundCaps": 0,
+      "meanScore": 0.53125
+    }
+  ],
+  "rawReportSha256": "f133bcdb76d7472ec6796fe565e6a8255c8e563562e2b1caf290002391e0a61e",
+  "verification": {
+    "pythonLearningTests": 17,
+    "sourceHashMatches": true,
+    "rowOutcomesRecounted": true,
+    "neuralOpponentsLockedBeforeResults": true,
+    "traitsRemovedInAnyMatch": false,
+    "frontendChanged": false
+  }
+}

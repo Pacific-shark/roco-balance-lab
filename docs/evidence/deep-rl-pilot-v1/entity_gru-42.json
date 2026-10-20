@@ -1,0 +1,3031 @@
+{
+  "scope": "prototype-only",
+  "status": "completed",
+  "config": {
+    "architecture": "entity_gru",
+    "seed": 42,
+    "steps": 4096,
+    "envs": 4,
+    "horizon": 32,
+    "hidden": 64,
+    "epochs": 3,
+    "learningRate": 0.0003,
+    "threads": 1,
+    "maxSeconds": 120
+  },
+  "apiCalls": 0,
+  "apiTokens": 0,
+  "canPublishBalanceConclusion": false,
+  "trainingSteps": 4096,
+  "completedTrainingGames": 82,
+  "trainingRoundCaps": 1,
+  "opponentDecisionCounts": {
+    "self": 2294,
+    "rule": 506,
+    "history": 1296
+  },
+  "updates": [
+    {
+      "trainingSteps": 128,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 108,
+          "policyLoss": 0.03369104117155075,
+          "valueLoss": 0.10025914013385773,
+          "entropy": 1.9844362537066143,
+          "gradientNorm": 0.5281491403778394,
+          "approxKL": 8.268451251088512e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 70,
+          "policyLoss": 0.15851925810178122,
+          "valueLoss": 0.08324175009814401,
+          "entropy": 2.043604592482249,
+          "gradientNorm": 0.7159984347720941,
+          "approxKL": 1.6514621208330027e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 256,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -0.0001559865971406301,
+          "valueLoss": 0.028300431052533288,
+          "entropy": 2.0064829190572104,
+          "gradientNorm": 0.18697464217742285,
+          "approxKL": 7.227063179016113e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": 0.059119097888469696,
+          "valueLoss": 0.0024179891139889755,
+          "entropy": 2.159518599510193,
+          "gradientNorm": 0.14718822886546454,
+          "approxKL": 3.3279259999593097e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 384,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 105,
+          "policyLoss": 0.0480831740424037,
+          "valueLoss": 0.2878325916826725,
+          "entropy": 1.8830783764521282,
+          "gradientNorm": 1.2086398750543594,
+          "approxKL": 4.6866347898818123e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 114,
+          "policyLoss": -0.015760624160369236,
+          "valueLoss": 0.051671857945621014,
+          "entropy": 1.9473350246747334,
+          "gradientNorm": 0.524577222764492,
+          "approxKL": 2.8393791554985154e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 512,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 85,
+          "policyLoss": -0.10863545536994934,
+          "valueLoss": 0.13878568946771944,
+          "entropy": 1.9440938433011372,
+          "gradientNorm": 0.8622284885495901,
+          "approxKL": 5.180422562034437e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": 0.09751143306493759,
+          "valueLoss": 0.03680666287740072,
+          "entropy": 2.0304909149805703,
+          "gradientNorm": 0.3557443271080653,
+          "approxKL": 2.9957542816797894e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 640,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 76,
+          "policyLoss": 0.033036274214585624,
+          "valueLoss": 0.07744782612038155,
+          "entropy": 2.022091348965963,
+          "gradientNorm": 0.5382002517580986,
+          "approxKL": 8.228611202791095e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": 0.05804852147897085,
+          "valueLoss": 0.0193841690197587,
+          "entropy": 2.0207441051801047,
+          "gradientNorm": 0.3141369546453158,
+          "approxKL": 3.110617399215698e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 768,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 84,
+          "policyLoss": 0.3400927186012268,
+          "valueLoss": 0.2793131590199967,
+          "entropy": 1.8718867500623066,
+          "gradientNorm": 1.220412125190099,
+          "approxKL": 5.49353754782563e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 100,
+          "policyLoss": -0.005424047509829204,
+          "valueLoss": 0.01514837828775247,
+          "entropy": 1.9523646036783855,
+          "gradientNorm": 0.23306271682182947,
+          "approxKL": 5.018981911556845e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 896,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 121,
+          "policyLoss": 0.019768675168355305,
+          "valueLoss": 0.025863021844998002,
+          "entropy": 2.0070427457491555,
+          "gradientNorm": 0.30105092252294224,
+          "approxKL": 6.176547628911067e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 93,
+          "policyLoss": -0.04777888705333074,
+          "valueLoss": 0.012792348706473907,
+          "entropy": 1.977753182252248,
+          "gradientNorm": 0.16933472206195196,
+          "approxKL": 3.2137244865282355e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1024,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 120,
+          "policyLoss": -0.01848907272020976,
+          "valueLoss": 0.1797813413043817,
+          "entropy": 1.9673402309417725,
+          "gradientNorm": 0.7954338292280833,
+          "approxKL": 2.3850727792762427e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 72,
+          "policyLoss": -0.03434193134307861,
+          "valueLoss": 0.4323385376483202,
+          "entropy": 1.9693613648414612,
+          "gradientNorm": 1.3907259205977123,
+          "approxKL": 2.3841857525278934e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1152,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": -5.032929281393687e-05,
+          "valueLoss": 0.011833709198981524,
+          "entropy": 2.103346069653829,
+          "gradientNorm": 0.15641642113526663,
+          "approxKL": 2.2755314906438193e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": 0.02483164643247922,
+          "valueLoss": 0.006371338929360111,
+          "entropy": 2.1200097799301147,
+          "gradientNorm": 0.21579252431790033,
+          "approxKL": 5.153318246205648e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1280,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 126,
+          "policyLoss": -0.0022715514060109854,
+          "valueLoss": 0.18667131351927915,
+          "entropy": 2.022023320198059,
+          "gradientNorm": 0.4662940849860509,
+          "approxKL": 2.632588523473108e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 67,
+          "policyLoss": -0.2108930250008901,
+          "valueLoss": 0.0371301748479406,
+          "entropy": 1.9189430673917134,
+          "gradientNorm": 0.46797536810239154,
+          "approxKL": 8.412111629496621e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1408,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -9.124601880709331e-05,
+          "valueLoss": 0.18811263392368952,
+          "entropy": 1.9222814838091533,
+          "gradientNorm": 0.7458488196134567,
+          "approxKL": 5.559995770454407e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 101,
+          "policyLoss": 0.012880931297938028,
+          "valueLoss": 0.23740548943169415,
+          "entropy": 2.005138079325358,
+          "gradientNorm": 0.9288841473559538,
+          "approxKL": 6.558821361579703e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1536,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 117,
+          "policyLoss": -0.033888391529520355,
+          "valueLoss": 0.1624396527186036,
+          "entropy": 1.9821869134902954,
+          "gradientNorm": 0.6467244476079941,
+          "approxKL": 8.991157898208257e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": -0.0001373539368311564,
+          "valueLoss": 0.21877333871088922,
+          "entropy": 1.9763322075208027,
+          "gradientNorm": 0.7295174095779657,
+          "approxKL": 5.248002707958221e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1664,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": 0.07597224165995915,
+          "valueLoss": 0.16450424880410233,
+          "entropy": 1.9396259387334187,
+          "gradientNorm": 0.8520525470376015,
+          "approxKL": 1.9265959660212197e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 118,
+          "policyLoss": 0.0013554294904073079,
+          "valueLoss": 0.020290076926661033,
+          "entropy": 2.088771184285482,
+          "gradientNorm": 0.26447568585475284,
+          "approxKL": 1.005287970201607e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1792,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 102,
+          "policyLoss": 0.025523801644643147,
+          "valueLoss": 0.08526089166601498,
+          "entropy": 1.9684360822041829,
+          "gradientNorm": 0.5799750089645386,
+          "approxKL": 2.165327491828369e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": 2.327561378479004e-05,
+          "valueLoss": 0.15138800139538944,
+          "entropy": 2.0168975591659546,
+          "gradientNorm": 0.49080940956870717,
+          "approxKL": 3.275151054064433e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 1920,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 84,
+          "policyLoss": -0.10668239494164784,
+          "valueLoss": 0.12558960542082787,
+          "entropy": 1.948876937230428,
+          "gradientNorm": 0.5734687348206838,
+          "approxKL": 2.1213856697954725e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": 7.35620657602946e-06,
+          "valueLoss": 0.14075270543495813,
+          "entropy": 1.9399624864260356,
+          "gradientNorm": 0.4940325568119685,
+          "approxKL": 9.251137574513753e-08
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2048,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 93,
+          "policyLoss": 0.052953772246837616,
+          "valueLoss": 0.0679699529428035,
+          "entropy": 2.0386144320170083,
+          "gradientNorm": 0.3344277006884416,
+          "approxKL": 2.313775631535009e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -0.00012261668841044107,
+          "valueLoss": 0.07347254206736882,
+          "entropy": 1.8645985126495361,
+          "gradientNorm": 0.45826515058676404,
+          "approxKL": 3.411745031674703e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2176,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -0.0002597669760386149,
+          "valueLoss": 0.05430995657419165,
+          "entropy": 1.9446393251419067,
+          "gradientNorm": 0.20966005076964697,
+          "approxKL": 2.2828268508116403e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 104,
+          "policyLoss": 0.09065169095993042,
+          "valueLoss": 0.04060614613505701,
+          "entropy": 1.9548074007034302,
+          "gradientNorm": 0.2745237275958061,
+          "approxKL": 2.0203490909883234e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2304,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 97,
+          "policyLoss": 0.005880288779735565,
+          "valueLoss": 0.3546046366294225,
+          "entropy": 1.8336826364199321,
+          "gradientNorm": 1.2587222655614216,
+          "approxKL": 2.038429926187746e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 84,
+          "policyLoss": -0.15170960190395513,
+          "valueLoss": 0.3679735908905665,
+          "entropy": 1.8748572667439778,
+          "gradientNorm": 0.8272352615992228,
+          "approxKL": 3.6048926377318935e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2432,
+      "agents": [
+        {
+          "updates": 5,
+          "learnedDecisions": 64,
+          "policyLoss": -0.0002676136791706085,
+          "valueLoss": 0.08333309912122785,
+          "entropy": 1.9152140617370605,
+          "gradientNorm": 0.5474411368370056,
+          "approxKL": 6.211921572685242e-07
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 112,
+          "policyLoss": -0.061967939138412476,
+          "valueLoss": 0.16405284202968082,
+          "entropy": 1.910767376422882,
+          "gradientNorm": 0.5732628380258878,
+          "approxKL": 4.86512566529503e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2560,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 83,
+          "policyLoss": -0.04271533836921056,
+          "valueLoss": 0.12255028107513984,
+          "entropy": 2.0681482553482056,
+          "gradientNorm": 0.6087802400191625,
+          "approxKL": 1.6349520137737272e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": -3.3402194579442344e-05,
+          "valueLoss": 0.10585349301497142,
+          "entropy": 1.936728835105896,
+          "gradientNorm": 0.5736771076917648,
+          "approxKL": 5.704350769519806e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2688,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": -0.0007222245136896769,
+          "valueLoss": 0.1659555695950985,
+          "entropy": 2.021713674068451,
+          "gradientNorm": 0.5115954006711642,
+          "approxKL": 2.0298175513744354e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 102,
+          "policyLoss": 0.05132080614566803,
+          "valueLoss": 0.03413035774913927,
+          "entropy": 2.0036932031313577,
+          "gradientNorm": 0.29944510012865067,
+          "approxKL": 9.292747620293085e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2816,
+      "agents": [
+        {
+          "updates": 5,
+          "learnedDecisions": 50,
+          "policyLoss": -0.2132791814804076,
+          "valueLoss": 0.28985458314418794,
+          "entropy": 1.8747633457183839,
+          "gradientNorm": 1.4256868183612823,
+          "approxKL": 2.7388334274291994e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 113,
+          "policyLoss": -0.06914533178011577,
+          "valueLoss": 0.15880793457229933,
+          "entropy": 2.1229551235834756,
+          "gradientNorm": 0.6560877685745558,
+          "approxKL": 1.9845216835771375e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 2944,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 30,
+          "policyLoss": 0.07287175736079614,
+          "valueLoss": 0.010823443764820695,
+          "entropy": 2.027860482533773,
+          "gradientNorm": 0.3351018776496251,
+          "approxKL": 4.378923070665526e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 119,
+          "policyLoss": 0.01950262486934662,
+          "valueLoss": 0.06047545000910759,
+          "entropy": 1.9285999139149983,
+          "gradientNorm": 0.3727455635865529,
+          "approxKL": 1.811845732409741e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3072,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 123,
+          "policyLoss": 0.007803807655970256,
+          "valueLoss": 0.06308476735527317,
+          "entropy": 2.0386736194292703,
+          "gradientNorm": 0.4346119165420532,
+          "approxKL": 3.882625994341045e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -2.418706814448039e-05,
+          "valueLoss": 0.026183785249789555,
+          "entropy": 2.0002105633417764,
+          "gradientNorm": 0.1861247792840004,
+          "approxKL": 6.187086304028829e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3200,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 115,
+          "policyLoss": -0.06690271695454915,
+          "valueLoss": 0.16382911304632822,
+          "entropy": 1.9448349475860596,
+          "gradientNorm": 0.9129272798697153,
+          "approxKL": 2.495329672077181e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -8.024772008260091e-05,
+          "valueLoss": 0.1408149462658912,
+          "entropy": 1.9083328644434612,
+          "gradientNorm": 0.5738512612879276,
+          "approxKL": 6.048940122127533e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3328,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": -0.0007970699419577917,
+          "valueLoss": 0.17127375770360231,
+          "entropy": 1.8351810574531555,
+          "gradientNorm": 0.772863382473588,
+          "approxKL": 6.433576345443726e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 110,
+          "policyLoss": -0.06906568755706151,
+          "valueLoss": 0.13869145031397542,
+          "entropy": 1.9013274312019348,
+          "gradientNorm": 0.5259017224113146,
+          "approxKL": 8.700240066161768e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3456,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 124,
+          "policyLoss": -0.011221590141455332,
+          "valueLoss": 0.1110073138649265,
+          "entropy": 2.0512732664744058,
+          "gradientNorm": 0.5205558737119039,
+          "approxKL": 2.7382332253485706e-06
+        },
+        {
+          "updates": 5,
+          "learnedDecisions": 36,
+          "policyLoss": -0.4884859330124325,
+          "valueLoss": 0.774657255411148,
+          "entropy": 1.7414427518844604,
+          "gradientNorm": 1.9828547835350037,
+          "approxKL": 5.900859832763672e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3584,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -0.00015326340993245444,
+          "valueLoss": 0.09946134003500144,
+          "entropy": 1.9462626576423645,
+          "gradientNorm": 0.4638042052586873,
+          "approxKL": 4.7514525552590685e-06
+        },
+        {
+          "updates": 3,
+          "learnedDecisions": 32,
+          "policyLoss": -0.00022750099500020346,
+          "valueLoss": 0.008553084296484789,
+          "entropy": 2.1128852367401123,
+          "gradientNorm": 0.2176959216594696,
+          "approxKL": 2.7567148208618164e-07
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3712,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 90,
+          "policyLoss": 0.006285663694143295,
+          "valueLoss": 0.17626128842433295,
+          "entropy": 2.0271311004956565,
+          "gradientNorm": 0.5262542366981506,
+          "approxKL": 7.971887773313332e-06
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 77,
+          "policyLoss": -0.025403533906986315,
+          "valueLoss": 0.07703094246486823,
+          "entropy": 1.9898128310839336,
+          "gradientNorm": 0.33634840945402783,
+          "approxKL": 4.247928283499884e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3840,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 106,
+          "policyLoss": -0.0009866754213968913,
+          "valueLoss": 0.055413343477994204,
+          "entropy": 1.9933324058850606,
+          "gradientNorm": 0.32578130687276524,
+          "approxKL": 1.2641875931270382e-05
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 96,
+          "policyLoss": 2.199411392211914e-05,
+          "valueLoss": 0.06884201375457148,
+          "entropy": 1.8332701921463013,
+          "gradientNorm": 0.48801881074905396,
+          "approxKL": 1.244712620973587e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 3968,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 89,
+          "policyLoss": -0.05805652836958567,
+          "valueLoss": 0.19126376509666443,
+          "entropy": 2.064915716648102,
+          "gradientNorm": 0.5894693384567896,
+          "approxKL": 1.4072370883392674e-05
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 110,
+          "policyLoss": -0.03168374796708425,
+          "valueLoss": 0.15208026145895323,
+          "entropy": 2.026413917541504,
+          "gradientNorm": 0.7420902202526728,
+          "approxKL": 1.3371092843309877e-06
+        }
+      ]
+    },
+    {
+      "trainingSteps": 4096,
+      "agents": [
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -0.0007682045300801595,
+          "valueLoss": 0.04275744501501322,
+          "entropy": 2.0666274031003318,
+          "gradientNorm": 0.46847185492515564,
+          "approxKL": 2.1128760029872257e-05
+        },
+        {
+          "updates": 6,
+          "learnedDecisions": 128,
+          "policyLoss": -0.00019052624702453613,
+          "valueLoss": 0.08678433174888293,
+          "entropy": 2.097235838572184,
+          "gradientNorm": 0.4423426513870557,
+          "approxKL": 2.960674464702606e-06
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "10 forms / 42 skills, not full game",
+    "provisional visibility protocol",
+    "architectures use the same view; original omniscient linear agent is excluded",
+    "no optimal build search or balance conclusions",
+    "terminal prototype round caps receive zero return",
+    "model checkpoints do not resume in-flight episodes",
+    "validation results do not select teams or certify capability",
+    "test split remains unopened"
+  ],
+  "environmentHash": "22fe9e2ca7c502b1278ae7ec8e4323dea3f60d8d3d8df83f83161e001ad00289",
+  "dataVersion": "bwiki-team-2026-10-14-build1",
+  "schema": {
+    "version": "visible-vector-1-provisional",
+    "actionCount": 12,
+    "petCount": 12,
+    "petDim": 104,
+    "globalDim": 24,
+    "actionDim": 178,
+    "petNames": [
+      "present",
+      "own",
+      "active",
+      "hp",
+      "energy",
+      "fainted",
+      "age",
+      "statsKnown",
+      "species:pet_000005",
+      "species:pet_000006",
+      "species:pet_000007",
+      "species:pet_000028",
+      "species:pet_000034",
+      "species:pet_000065",
+      "species:pet_000076",
+      "species:pet_000083",
+      "species:pet_000094",
+      "species:pet_000522",
+      "type:光",
+      "type:冰",
+      "type:地",
+      "type:幻",
+      "type:幽",
+      "type:恶",
+      "type:普通",
+      "type:机械",
+      "type:武",
+      "type:毒",
+      "type:水",
+      "type:火",
+      "type:电",
+      "type:翼",
+      "type:草",
+      "type:萌",
+      "type:虫",
+      "type:龙",
+      "stat:hp",
+      "stat:atk",
+      "stat:def",
+      "stat:spa",
+      "stat:spd",
+      "stat:spe",
+      "trait:endEnergy",
+      "trait:endHeal",
+      "trait:fireBoost",
+      "trait:fireCharge",
+      "trait:fireEntry",
+      "trait:firstPower",
+      "trait:grassBenchHeal",
+      "trait:grassHeal",
+      "trait:groundCharge",
+      "trait:waterDiscount",
+      "boost:atk",
+      "boost:def",
+      "boost:spa",
+      "boost:spd",
+      "boost:spe",
+      "defenseCooldown",
+      "costReduction",
+      "powerBonus",
+      "nextAttack",
+      "everEntered",
+      "knownMove:skill_000246",
+      "knownMove:skill_000271",
+      "knownMove:skill_000273",
+      "knownMove:skill_000286",
+      "knownMove:skill_000303",
+      "knownMove:skill_000307",
+      "knownMove:skill_000312",
+      "knownMove:skill_000341",
+      "knownMove:skill_000342",
+      "knownMove:skill_000344",
+      "knownMove:skill_000346",
+      "knownMove:skill_000347",
+      "knownMove:skill_000350",
+      "knownMove:skill_000353",
+      "knownMove:skill_000356",
+      "knownMove:skill_000359",
+      "knownMove:skill_000361",
+      "knownMove:skill_000362",
+      "knownMove:skill_000366",
+      "knownMove:skill_000372",
+      "knownMove:skill_000376",
+      "knownMove:skill_000378",
+      "knownMove:skill_000379",
+      "knownMove:skill_000380",
+      "knownMove:skill_000381",
+      "knownMove:skill_000388",
+      "knownMove:skill_000392",
+      "knownMove:skill_000399",
+      "knownMove:skill_000401",
+      "knownMove:skill_000404",
+      "knownMove:skill_000418",
+      "knownMove:skill_000420",
+      "knownMove:skill_000421",
+      "knownMove:skill_000429",
+      "knownMove:skill_000434",
+      "knownMove:skill_000498",
+      "knownMove:skill_000504",
+      "knownMove:skill_000510",
+      "knownMove:skill_000519",
+      "knownMove:skill_000686",
+      "knownMove:skill_000687",
+      "knownMove:skill_000701"
+    ],
+    "globalNames": [
+      "lead",
+      "battle",
+      "replace",
+      "round",
+      "ownMagic",
+      "enemyMagic",
+      "unknown",
+      "historyLength",
+      "last:appearance",
+      "last:move",
+      "last:focus",
+      "last:ko",
+      "previousAction:0",
+      "previousAction:1",
+      "previousAction:2",
+      "previousAction:3",
+      "previousAction:4",
+      "previousAction:5",
+      "previousAction:6",
+      "previousAction:7",
+      "previousAction:8",
+      "previousAction:9",
+      "previousAction:10",
+      "previousAction:11"
+    ],
+    "actionNames": [
+      "attack",
+      "defense",
+      "status",
+      "focus",
+      "switch",
+      "wait",
+      "move:skill_000246",
+      "move:skill_000271",
+      "move:skill_000273",
+      "move:skill_000286",
+      "move:skill_000303",
+      "move:skill_000307",
+      "move:skill_000312",
+      "move:skill_000341",
+      "move:skill_000342",
+      "move:skill_000344",
+      "move:skill_000346",
+      "move:skill_000347",
+      "move:skill_000350",
+      "move:skill_000353",
+      "move:skill_000356",
+      "move:skill_000359",
+      "move:skill_000361",
+      "move:skill_000362",
+      "move:skill_000366",
+      "move:skill_000372",
+      "move:skill_000376",
+      "move:skill_000378",
+      "move:skill_000379",
+      "move:skill_000380",
+      "move:skill_000381",
+      "move:skill_000388",
+      "move:skill_000392",
+      "move:skill_000399",
+      "move:skill_000401",
+      "move:skill_000404",
+      "move:skill_000418",
+      "move:skill_000420",
+      "move:skill_000421",
+      "move:skill_000429",
+      "move:skill_000434",
+      "move:skill_000498",
+      "move:skill_000504",
+      "move:skill_000510",
+      "move:skill_000519",
+      "move:skill_000686",
+      "move:skill_000687",
+      "move:skill_000701",
+      "type:光",
+      "type:冰",
+      "type:地",
+      "type:幻",
+      "type:幽",
+      "type:恶",
+      "type:普通",
+      "type:机械",
+      "type:武",
+      "type:毒",
+      "type:水",
+      "type:火",
+      "type:电",
+      "type:翼",
+      "type:草",
+      "type:萌",
+      "type:虫",
+      "type:龙",
+      "power",
+      "cost",
+      "heal",
+      "energy",
+      "benchEnergy",
+      "guard",
+      "nextAttack",
+      "priority",
+      "actorOrSwitchTarget:present",
+      "actorOrSwitchTarget:own",
+      "actorOrSwitchTarget:active",
+      "actorOrSwitchTarget:hp",
+      "actorOrSwitchTarget:energy",
+      "actorOrSwitchTarget:fainted",
+      "actorOrSwitchTarget:age",
+      "actorOrSwitchTarget:statsKnown",
+      "actorOrSwitchTarget:species:pet_000005",
+      "actorOrSwitchTarget:species:pet_000006",
+      "actorOrSwitchTarget:species:pet_000007",
+      "actorOrSwitchTarget:species:pet_000028",
+      "actorOrSwitchTarget:species:pet_000034",
+      "actorOrSwitchTarget:species:pet_000065",
+      "actorOrSwitchTarget:species:pet_000076",
+      "actorOrSwitchTarget:species:pet_000083",
+      "actorOrSwitchTarget:species:pet_000094",
+      "actorOrSwitchTarget:species:pet_000522",
+      "actorOrSwitchTarget:type:光",
+      "actorOrSwitchTarget:type:冰",
+      "actorOrSwitchTarget:type:地",
+      "actorOrSwitchTarget:type:幻",
+      "actorOrSwitchTarget:type:幽",
+      "actorOrSwitchTarget:type:恶",
+      "actorOrSwitchTarget:type:普通",
+      "actorOrSwitchTarget:type:机械",
+      "actorOrSwitchTarget:type:武",
+      "actorOrSwitchTarget:type:毒",
+      "actorOrSwitchTarget:type:水",
+      "actorOrSwitchTarget:type:火",
+      "actorOrSwitchTarget:type:电",
+      "actorOrSwitchTarget:type:翼",
+      "actorOrSwitchTarget:type:草",
+      "actorOrSwitchTarget:type:萌",
+      "actorOrSwitchTarget:type:虫",
+      "actorOrSwitchTarget:type:龙",
+      "actorOrSwitchTarget:stat:hp",
+      "actorOrSwitchTarget:stat:atk",
+      "actorOrSwitchTarget:stat:def",
+      "actorOrSwitchTarget:stat:spa",
+      "actorOrSwitchTarget:stat:spd",
+      "actorOrSwitchTarget:stat:spe",
+      "actorOrSwitchTarget:trait:endEnergy",
+      "actorOrSwitchTarget:trait:endHeal",
+      "actorOrSwitchTarget:trait:fireBoost",
+      "actorOrSwitchTarget:trait:fireCharge",
+      "actorOrSwitchTarget:trait:fireEntry",
+      "actorOrSwitchTarget:trait:firstPower",
+      "actorOrSwitchTarget:trait:grassBenchHeal",
+      "actorOrSwitchTarget:trait:grassHeal",
+      "actorOrSwitchTarget:trait:groundCharge",
+      "actorOrSwitchTarget:trait:waterDiscount",
+      "actorOrSwitchTarget:boost:atk",
+      "actorOrSwitchTarget:boost:def",
+      "actorOrSwitchTarget:boost:spa",
+      "actorOrSwitchTarget:boost:spd",
+      "actorOrSwitchTarget:boost:spe",
+      "actorOrSwitchTarget:defenseCooldown",
+      "actorOrSwitchTarget:costReduction",
+      "actorOrSwitchTarget:powerBonus",
+      "actorOrSwitchTarget:nextAttack",
+      "actorOrSwitchTarget:everEntered",
+      "actorOrSwitchTarget:knownMove:skill_000246",
+      "actorOrSwitchTarget:knownMove:skill_000271",
+      "actorOrSwitchTarget:knownMove:skill_000273",
+      "actorOrSwitchTarget:knownMove:skill_000286",
+      "actorOrSwitchTarget:knownMove:skill_000303",
+      "actorOrSwitchTarget:knownMove:skill_000307",
+      "actorOrSwitchTarget:knownMove:skill_000312",
+      "actorOrSwitchTarget:knownMove:skill_000341",
+      "actorOrSwitchTarget:knownMove:skill_000342",
+      "actorOrSwitchTarget:knownMove:skill_000344",
+      "actorOrSwitchTarget:knownMove:skill_000346",
+      "actorOrSwitchTarget:knownMove:skill_000347",
+      "actorOrSwitchTarget:knownMove:skill_000350",
+      "actorOrSwitchTarget:knownMove:skill_000353",
+      "actorOrSwitchTarget:knownMove:skill_000356",
+      "actorOrSwitchTarget:knownMove:skill_000359",
+      "actorOrSwitchTarget:knownMove:skill_000361",
+      "actorOrSwitchTarget:knownMove:skill_000362",
+      "actorOrSwitchTarget:knownMove:skill_000366",
+      "actorOrSwitchTarget:knownMove:skill_000372",
+      "actorOrSwitchTarget:knownMove:skill_000376",
+      "actorOrSwitchTarget:knownMove:skill_000378",
+      "actorOrSwitchTarget:knownMove:skill_000379",
+      "actorOrSwitchTarget:knownMove:skill_000380",
+      "actorOrSwitchTarget:knownMove:skill_000381",
+      "actorOrSwitchTarget:knownMove:skill_000388",
+      "actorOrSwitchTarget:knownMove:skill_000392",
+      "actorOrSwitchTarget:knownMove:skill_000399",
+      "actorOrSwitchTarget:knownMove:skill_000401",
+      "actorOrSwitchTarget:knownMove:skill_000404",
+      "actorOrSwitchTarget:knownMove:skill_000418",
+      "actorOrSwitchTarget:knownMove:skill_000420",
+      "actorOrSwitchTarget:knownMove:skill_000421",
+      "actorOrSwitchTarget:knownMove:skill_000429",
+      "actorOrSwitchTarget:knownMove:skill_000434",
+      "actorOrSwitchTarget:knownMove:skill_000498",
+      "actorOrSwitchTarget:knownMove:skill_000504",
+      "actorOrSwitchTarget:knownMove:skill_000510",
+      "actorOrSwitchTarget:knownMove:skill_000519",
+      "actorOrSwitchTarget:knownMove:skill_000686",
+      "actorOrSwitchTarget:knownMove:skill_000687",
+      "actorOrSwitchTarget:knownMove:skill_000701"
+    ],
+    "information": "provisional player-view only; full-state policies are not comparable",
+    "actionSlots": [
+      "move:0",
+      "move:1",
+      "move:2",
+      "move:3",
+      "focus",
+      "switch:0",
+      "switch:1",
+      "switch:2",
+      "switch:3",
+      "switch:4",
+      "switch:5",
+      "wait"
+    ]
+  },
+  "split": {
+    "train": [
+      {
+        "id": "balanced",
+        "name": "混合队",
+        "members": [
+          {
+            "id": "pet_000007",
+            "moves": [
+              "skill_000246",
+              "skill_000359",
+              "skill_000342",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000006",
+            "moves": [
+              "skill_000378",
+              "skill_000381",
+              "skill_000379",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000005",
+            "moves": [
+              "skill_000418",
+              "skill_000420",
+              "skill_000421",
+              "skill_000429"
+            ],
+            "nature": "聪明",
+            "ivs": {
+              "hp": 10,
+              "atk": 0,
+              "def": 0,
+              "spa": 10,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000034",
+            "moves": [
+              "skill_000686",
+              "skill_000687",
+              "skill_000701",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000028",
+            "moves": [
+              "skill_000341",
+              "skill_000347",
+              "skill_000366",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000094",
+            "moves": [
+              "skill_000498",
+              "skill_000519",
+              "skill_000510",
+              "skill_000271"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          }
+        ]
+      },
+      {
+        "id": "grass",
+        "name": "草系预热队",
+        "members": [
+          {
+            "id": "pet_000028",
+            "moves": [
+              "skill_000341",
+              "skill_000347",
+              "skill_000366",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000007",
+            "moves": [
+              "skill_000246",
+              "skill_000359",
+              "skill_000342",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000522",
+            "moves": [
+              "skill_000356",
+              "skill_000372",
+              "skill_000353",
+              "skill_000350"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000065",
+            "moves": [
+              "skill_000342",
+              "skill_000359",
+              "skill_000346",
+              "skill_000361"
+            ],
+            "nature": "聪明",
+            "ivs": {
+              "hp": 10,
+              "atk": 0,
+              "def": 0,
+              "spa": 10,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000005",
+            "moves": [
+              "skill_000418",
+              "skill_000420",
+              "skill_000421",
+              "skill_000429"
+            ],
+            "nature": "聪明",
+            "ivs": {
+              "hp": 10,
+              "atk": 0,
+              "def": 0,
+              "spa": 10,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000034",
+            "moves": [
+              "skill_000686",
+              "skill_000687",
+              "skill_000701",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          }
+        ]
+      },
+      {
+        "id": "fire",
+        "name": "火系预热队",
+        "members": [
+          {
+            "id": "pet_000006",
+            "moves": [
+              "skill_000378",
+              "skill_000381",
+              "skill_000379",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000083",
+            "moves": [
+              "skill_000376",
+              "skill_000380",
+              "skill_000392",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000076",
+            "moves": [
+              "skill_000401",
+              "skill_000381",
+              "skill_000392",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000005",
+            "moves": [
+              "skill_000418",
+              "skill_000420",
+              "skill_000421",
+              "skill_000429"
+            ],
+            "nature": "聪明",
+            "ivs": {
+              "hp": 10,
+              "atk": 0,
+              "def": 0,
+              "spa": 10,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000034",
+            "moves": [
+              "skill_000686",
+              "skill_000687",
+              "skill_000701",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000094",
+            "moves": [
+              "skill_000498",
+              "skill_000519",
+              "skill_000510",
+              "skill_000271"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          }
+        ]
+      },
+      {
+        "id": "relay",
+        "name": "资源接力队",
+        "members": [
+          {
+            "id": "pet_000028",
+            "moves": [
+              "skill_000341",
+              "skill_000347",
+              "skill_000366",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000522",
+            "moves": [
+              "skill_000356",
+              "skill_000372",
+              "skill_000353",
+              "skill_000350"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000083",
+            "moves": [
+              "skill_000376",
+              "skill_000380",
+              "skill_000392",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000006",
+            "moves": [
+              "skill_000378",
+              "skill_000381",
+              "skill_000379",
+              "skill_000286"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000094",
+            "moves": [
+              "skill_000498",
+              "skill_000519",
+              "skill_000510",
+              "skill_000271"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 10,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 10
+            }
+          },
+          {
+            "id": "pet_000005",
+            "moves": [
+              "skill_000418",
+              "skill_000420",
+              "skill_000421",
+              "skill_000429"
+            ],
+            "nature": "聪明",
+            "ivs": {
+              "hp": 10,
+              "atk": 0,
+              "def": 0,
+              "spa": 10,
+              "spd": 0,
+              "spe": 10
+            }
+          }
+        ]
+      }
+    ],
+    "validation": [
+      {
+        "id": "search-c11b43e8",
+        "name": "自由配队",
+        "members": [
+          {
+            "id": "pet_000522",
+            "moves": [
+              "skill_000346",
+              "skill_000356",
+              "skill_000372",
+              "skill_000312"
+            ],
+            "nature": "天真",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 8,
+              "spa": 0,
+              "spd": 7,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000076",
+            "moves": [
+              "skill_000392",
+              "skill_000312",
+              "skill_000401",
+              "skill_000404"
+            ],
+            "nature": "冷静",
+            "ivs": {
+              "hp": 9,
+              "atk": 8,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 9
+            }
+          },
+          {
+            "id": "pet_000065",
+            "moves": [
+              "skill_000359",
+              "skill_000361",
+              "skill_000346",
+              "skill_000342"
+            ],
+            "nature": "勇敢",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 9,
+              "spa": 0,
+              "spd": 8,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000034",
+            "moves": [
+              "skill_000701",
+              "skill_000312",
+              "skill_000686",
+              "skill_000286"
+            ],
+            "nature": "踏实",
+            "ivs": {
+              "hp": 10,
+              "atk": 9,
+              "def": 10,
+              "spa": 0,
+              "spd": 0,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000005",
+            "moves": [
+              "skill_000429",
+              "skill_000420",
+              "skill_000418",
+              "skill_000303"
+            ],
+            "nature": "慎重",
+            "ivs": {
+              "hp": 10,
+              "atk": 7,
+              "def": 0,
+              "spa": 9,
+              "spd": 0,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000083",
+            "moves": [
+              "skill_000404",
+              "skill_000286",
+              "skill_000379",
+              "skill_000388"
+            ],
+            "nature": "急躁",
+            "ivs": {
+              "hp": 0,
+              "atk": 8,
+              "def": 0,
+              "spa": 8,
+              "spd": 0,
+              "spe": 7
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-e89d5243",
+        "name": "自由配队",
+        "members": [
+          {
+            "id": "pet_000083",
+            "moves": [
+              "skill_000392",
+              "skill_000404",
+              "skill_000376",
+              "skill_000388"
+            ],
+            "nature": "温顺",
+            "ivs": {
+              "hp": 0,
+              "atk": 8,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000034",
+            "moves": [
+              "skill_000686",
+              "skill_000312",
+              "skill_000687",
+              "skill_000286"
+            ],
+            "nature": "粗心",
+            "ivs": {
+              "hp": 0,
+              "atk": 10,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000028",
+            "moves": [
+              "skill_000366",
+              "skill_000307",
+              "skill_000341",
+              "skill_000361"
+            ],
+            "nature": "大胆",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 10,
+              "spa": 0,
+              "spd": 0,
+              "spe": 7
+            }
+          },
+          {
+            "id": "pet_000007",
+            "moves": [
+              "skill_000273",
+              "skill_000286",
+              "skill_000359",
+              "skill_000246"
+            ],
+            "nature": "忧郁",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 8,
+              "spa": 0,
+              "spd": 0,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000006",
+            "moves": [
+              "skill_000381",
+              "skill_000378",
+              "skill_000388",
+              "skill_000399"
+            ],
+            "nature": "粗心",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 9,
+              "spa": 0,
+              "spd": 10,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000065",
+            "moves": [
+              "skill_000359",
+              "skill_000346",
+              "skill_000361",
+              "skill_000342"
+            ],
+            "nature": "开朗",
+            "ivs": {
+              "hp": 0,
+              "atk": 7,
+              "def": 0,
+              "spa": 0,
+              "spd": 10,
+              "spe": 9
+            }
+          }
+        ]
+      }
+    ],
+    "test": [
+      {
+        "id": "search-e4933716",
+        "name": "自由配队",
+        "members": [
+          {
+            "id": "pet_000065",
+            "moves": [
+              "skill_000361",
+              "skill_000346",
+              "skill_000342",
+              "skill_000359"
+            ],
+            "nature": "勇敢",
+            "ivs": {
+              "hp": 8,
+              "atk": 0,
+              "def": 8,
+              "spa": 0,
+              "spd": 0,
+              "spe": 8
+            }
+          },
+          {
+            "id": "pet_000076",
+            "moves": [
+              "skill_000379",
+              "skill_000404",
+              "skill_000286",
+              "skill_000381"
+            ],
+            "nature": "害羞",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 9,
+              "spa": 0,
+              "spd": 7,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000083",
+            "moves": [
+              "skill_000388",
+              "skill_000286",
+              "skill_000376",
+              "skill_000380"
+            ],
+            "nature": "温顺",
+            "ivs": {
+              "hp": 8,
+              "atk": 0,
+              "def": 0,
+              "spa": 0,
+              "spd": 10,
+              "spe": 9
+            }
+          },
+          {
+            "id": "pet_000028",
+            "moves": [
+              "skill_000359",
+              "skill_000286",
+              "skill_000347",
+              "skill_000366"
+            ],
+            "nature": "大胆",
+            "ivs": {
+              "hp": 10,
+              "atk": 0,
+              "def": 10,
+              "spa": 0,
+              "spd": 0,
+              "spe": 8
+            }
+          },
+          {
+            "id": "pet_000522",
+            "moves": [
+              "skill_000346",
+              "skill_000362",
+              "skill_000353",
+              "skill_000356"
+            ],
+            "nature": "逞强",
+            "ivs": {
+              "hp": 7,
+              "atk": 0,
+              "def": 0,
+              "spa": 9,
+              "spd": 0,
+              "spe": 7
+            }
+          },
+          {
+            "id": "pet_000007",
+            "moves": [
+              "skill_000342",
+              "skill_000286",
+              "skill_000353",
+              "skill_000361"
+            ],
+            "nature": "热情",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 0,
+              "spa": 9,
+              "spd": 0,
+              "spe": 7
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-d68a66a6",
+        "name": "自由配队",
+        "members": [
+          {
+            "id": "pet_000005",
+            "moves": [
+              "skill_000421",
+              "skill_000429",
+              "skill_000286",
+              "skill_000303"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 7,
+              "spa": 0,
+              "spd": 10,
+              "spe": 7
+            }
+          },
+          {
+            "id": "pet_000522",
+            "moves": [
+              "skill_000356",
+              "skill_000346",
+              "skill_000350",
+              "skill_000362"
+            ],
+            "nature": "固执",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 9
+            }
+          },
+          {
+            "id": "pet_000076",
+            "moves": [
+              "skill_000392",
+              "skill_000404",
+              "skill_000381",
+              "skill_000401"
+            ],
+            "nature": "慎重",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 10,
+              "spa": 0,
+              "spd": 8,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000034",
+            "moves": [
+              "skill_000312",
+              "skill_000286",
+              "skill_000701",
+              "skill_000686"
+            ],
+            "nature": "理性",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 10,
+              "spa": 10,
+              "spd": 10,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000006",
+            "moves": [
+              "skill_000271",
+              "skill_000378",
+              "skill_000286",
+              "skill_000392"
+            ],
+            "nature": "坦率",
+            "ivs": {
+              "hp": 0,
+              "atk": 8,
+              "def": 0,
+              "spa": 0,
+              "spd": 0,
+              "spe": 0
+            }
+          },
+          {
+            "id": "pet_000094",
+            "moves": [
+              "skill_000510",
+              "skill_000504",
+              "skill_000286",
+              "skill_000271"
+            ],
+            "nature": "开朗",
+            "ivs": {
+              "hp": 0,
+              "atk": 0,
+              "def": 0,
+              "spa": 9,
+              "spd": 0,
+              "spe": 7
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "torchVersion": "2.14.1+cpu",
+  "trainerHash": "baf4e04b811f3ca6564153356e44339bb9d62420fab0ff2ad6afc0a899a3e119",
+  "initialHashes": [
+    "40a171354c3e337f792e57082c3523a51c0b16deee9c369b3f5f139f39665a24",
+    "4c9b92507a2c490abdb4c8fb1f1d6cf9b83f07de15f9761f7cef0aa35b12dc65"
+  ],
+  "parametersPerAgent": 69506,
+  "initialValidation": {
+    "split": "validation",
+    "battles": 32,
+    "wins": 0,
+    "losses": 32,
+    "roundCaps": 0,
+    "winFraction": 0.0,
+    "roundCapFraction": 0.0,
+    "meanReturn": -1.0,
+    "rows": [
+      {
+        "case": 0,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82026,
+        "return": -1,
+        "winner": 1,
+        "rounds": 11,
+        "decisions": 15,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 1,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82027,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 2,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82028,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 3,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82029,
+        "return": -1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 4,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82030,
+        "return": -1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 5,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82031,
+        "return": -1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 6,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82032,
+        "return": -1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 7,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82033,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 8,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82034,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 9,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82035,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 10,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82036,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 11,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82037,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 12,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82038,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 13,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82039,
+        "return": -1,
+        "winner": 0,
+        "rounds": 11,
+        "decisions": 15,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 14,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82040,
+        "return": -1,
+        "winner": 0,
+        "rounds": 19,
+        "decisions": 25,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 15,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82041,
+        "return": -1,
+        "winner": 0,
+        "rounds": 16,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 16,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82042,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 19,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 17,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82043,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 18,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82044,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 19,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82045,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 20,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82046,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 21,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82047,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 22,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82048,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 23,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82049,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 24,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82050,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 25,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82051,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 26,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82052,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 19,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 27,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82053,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 28,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82054,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 29,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82055,
+        "return": -1,
+        "winner": 0,
+        "rounds": 15,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 30,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82056,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 31,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82057,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      }
+    ],
+    "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+  },
+  "finalHashes": [
+    "9d4b6d3bc722bcaa4529dec7de150239fd9fb563796c92c7c5923b7e59243c7c",
+    "433ae835502f1095edac529e05ce3134ee918a52e3a3257311b76e5fcc9c87cd"
+  ],
+  "elapsedSeconds": 25.625,
+  "trainedValidation": {
+    "split": "validation",
+    "battles": 32,
+    "wins": 0,
+    "losses": 32,
+    "roundCaps": 0,
+    "winFraction": 0.0,
+    "roundCapFraction": 0.0,
+    "meanReturn": -1.0,
+    "rows": [
+      {
+        "case": 0,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82026,
+        "return": -1,
+        "winner": 1,
+        "rounds": 15,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 1,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82027,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 2,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82028,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 3,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82029,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 19,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 4,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82030,
+        "return": -1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 5,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82031,
+        "return": -1,
+        "winner": 0,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 6,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82032,
+        "return": -1,
+        "winner": 0,
+        "rounds": 11,
+        "decisions": 15,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 7,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82033,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 8,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82034,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 9,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82035,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 21,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 10,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82036,
+        "return": -1,
+        "winner": 1,
+        "rounds": 16,
+        "decisions": 22,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 11,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82037,
+        "return": -1,
+        "winner": 1,
+        "rounds": 13,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 12,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82038,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 17,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 13,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82039,
+        "return": -1,
+        "winner": 0,
+        "rounds": 11,
+        "decisions": 15,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 14,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82040,
+        "return": -1,
+        "winner": 0,
+        "rounds": 19,
+        "decisions": 25,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 15,
+        "team": 0,
+        "opponentTeam": 1,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82041,
+        "return": -1,
+        "winner": 0,
+        "rounds": 17,
+        "decisions": 23,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 16,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82042,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 19,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 17,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82043,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 18,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82044,
+        "return": -1,
+        "winner": 1,
+        "rounds": 12,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 19,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82045,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 20,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82046,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 21,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82047,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 22,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82048,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 23,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 0,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82049,
+        "return": -1,
+        "winner": 0,
+        "rounds": 12,
+        "decisions": 16,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 24,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82050,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 25,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82051,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 26,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82052,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 19,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 27,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 0,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82053,
+        "return": -1,
+        "winner": 1,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 28,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "attack",
+        "seed": 82054,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 29,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 0,
+        "opponentStyle": "support",
+        "seed": 82055,
+        "return": -1,
+        "winner": 0,
+        "rounds": 15,
+        "decisions": 20,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 30,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "attack",
+        "seed": 82056,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      },
+      {
+        "case": 31,
+        "team": 1,
+        "opponentTeam": 0,
+        "policy": 1,
+        "seat": 1,
+        "tieFirst": 1,
+        "opponentStyle": "support",
+        "seed": 82057,
+        "return": -1,
+        "winner": 0,
+        "rounds": 14,
+        "decisions": 18,
+        "endReason": "prototype-victory"
+      }
+    ],
+    "interpretation": "Two held-out configurations, simple visible-only rules; repeated seats are not independent matchups. Round caps are reported separately, not natural draws."
+  },
+  "validationReturnDelta": 0.0
+}
