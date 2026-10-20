@@ -282,6 +282,7 @@ export default function ResearchWorkbench({ onNavigate }) {
         <div className="wb-brand">洛克研究室</div>
         <nav aria-label="研究导航">
           <button aria-current="page">研究工作台</button>
+          <button onClick={() => window.location.assign(import.meta.env.BASE_URL)}>← 精灵图鉴</button>
           <button onClick={() => onNavigate("catalog")}>精灵资料</button>
           <button onClick={() => onNavigate("team")}>6v6 原型</button>
           <button onClick={viewPlan}>方法与边界</button>
