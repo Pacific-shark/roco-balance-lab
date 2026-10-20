@@ -1,0 +1,4211 @@
+{
+  "sourceManifest": {
+    "capturedAt": "2026-10-20T03:50:45.936789+00:00",
+    "modules": [
+      {
+        "name": "Catalog",
+        "revision": 18788,
+        "modifiedAt": "2026-10-19T12:28:23Z",
+        "sha256": "39d5212598ba2abb28007b6d4b1f7d9d42ff1a115a6f1e7ed5c1c8b255010018",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Catalog?oldid=18788"
+      },
+      {
+        "name": "Index",
+        "revision": 18793,
+        "modifiedAt": "2026-10-19T12:28:51Z",
+        "sha256": "0b50a4e8e503e89814e6f2176e40dc5d046895ec9ee0596d128f113457946098",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Index?oldid=18793"
+      },
+      {
+        "name": "Skills",
+        "revision": 18764,
+        "modifiedAt": "2026-10-19T12:08:03Z",
+        "sha256": "f6a9ab91a71575d5a03f6ba0e61dacad7add7a551f0c735e499ee4ead17dcbb0",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Skills?oldid=18764"
+      },
+      {
+        "name": "Learnsets",
+        "revision": 18761,
+        "modifiedAt": "2026-10-19T12:07:57Z",
+        "sha256": "752718e3f32c6ab2aa343a7e98bcb7147f5e0fdc604e35006c989dc8265b2981",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Learnsets?oldid=18761"
+      },
+      {
+        "name": "Terms",
+        "revision": 7078,
+        "modifiedAt": "2026-09-09T10:00:15Z",
+        "sha256": "f1830685d31732d3634f8857e14eec75b85ea56b923ceef218ede18182056488",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Terms?oldid=7078"
+      },
+      {
+        "name": "Evolutions",
+        "revision": 18790,
+        "modifiedAt": "2026-10-19T12:28:28Z",
+        "sha256": "3be3898910fc69e053283c6db54c000c7b49cf9fdb60237499e418a196d5ce47",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Evolutions?oldid=18790"
+      },
+      {
+        "name": "Config",
+        "revision": 18789,
+        "modifiedAt": "2026-10-19T12:28:25Z",
+        "sha256": "1e08f10653dc7e836f808b2fe496ce7cd842d85509eb521ab59f016f44926607",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Config?oldid=18789"
+      }
+    ],
+    "source": "洛克王国：世界 BWIKI 及贡献者",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "currentGameVersionCertified": false
+  },
+  "oldManifest": {
+    "capturedAt": "2026-10-15T08:12:01.341611+00:00",
+    "modules": [
+      {
+        "name": "Catalog",
+        "revision": 18675,
+        "modifiedAt": "2026-10-15T02:53:27Z",
+        "sha256": "96e6dd6248a395ec7dbc810ad90c9953eb2657d2a68d2e410405ae87b99f3e04",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Catalog?oldid=18675"
+      },
+      {
+        "name": "Index",
+        "revision": 18679,
+        "modifiedAt": "2026-10-15T02:53:31Z",
+        "sha256": "306b98944964adf4945f13fb932507719cf217439cb6a595f708512e03d04bc7",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Index?oldid=18679"
+      },
+      {
+        "name": "Skills",
+        "revision": 16558,
+        "modifiedAt": "2026-09-26T08:35:58Z",
+        "sha256": "ce511bcc0b05af8fef439ba12cb1f698892d4a1fbd56f14f73ec4af0b71a6a6d",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Skills?oldid=16558"
+      },
+      {
+        "name": "Learnsets",
+        "revision": 13094,
+        "modifiedAt": "2026-09-12T18:07:44Z",
+        "sha256": "c6976bb30f5d7cec5ffc275f772a3edc8b769d45b39b7daddec3f670f31923d5",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Learnsets?oldid=13094"
+      },
+      {
+        "name": "Terms",
+        "revision": 7078,
+        "modifiedAt": "2026-09-09T10:00:15Z",
+        "sha256": "f1830685d31732d3634f8857e14eec75b85ea56b923ceef218ede18182056488",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Terms?oldid=7078"
+      },
+      {
+        "name": "Evolutions",
+        "revision": 18677,
+        "modifiedAt": "2026-10-15T02:53:29Z",
+        "sha256": "26c8131c063845e8f59d60f5d46ea3b68fa2a3b29025b153e0699d2026647a13",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Evolutions?oldid=18677"
+      },
+      {
+        "name": "Config",
+        "revision": 18676,
+        "modifiedAt": "2026-10-15T02:53:28Z",
+        "sha256": "ee872c5771eb93cddacf4bdbc3c970d8ee18a110c4863a92463f8ec7b4b7f9df",
+        "url": "https://wiki.biligame.com/nrc/Module:Pets/data/Config?oldid=18676"
+      }
+    ],
+    "source": "洛克王国：世界 BWIKI 及贡献者",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "currentGameVersionCertified": false,
+    "description": "固定社区资料修订，不代表全部当前排位合法或实机认证"
+  },
+  "counts": {
+    "lord-special-mechanism": 65,
+    "highest-normal-candidate": 260,
+    "excluded-lower-form": 308
+  },
+  "latestModuleCounts": {
+    "Catalog": 633,
+    "Index": 8,
+    "Skills": 825,
+    "Learnsets": 312,
+    "Terms": 54,
+    "Evolutions": 279,
+    "Config": 5
+  },
+  "rawFieldChangeCounts": {
+    "Catalog": 698,
+    "Skills": 4507,
+    "Learnsets": 623,
+    "Evolutions": 1,
+    "Terms": 0,
+    "Config": 3
+  },
+  "identityMethod": "unique game_id per table; version-scoped internal IDs; remap learning references before comparison",
+  "skillIdRemapping": [
+    {
+      "gameId": "280001",
+      "name": "浪潮",
+      "oldId": "skill_000208",
+      "newId": "skill_000209"
+    },
+    {
+      "gameId": "280002",
+      "name": "深层氧循环",
+      "oldId": "skill_000209",
+      "newId": "skill_000210"
+    },
+    {
+      "gameId": "280003",
+      "name": "爆燃",
+      "oldId": "skill_000210",
+      "newId": "skill_000211"
+    },
+    {
+      "gameId": "280004",
+      "name": "“国王”的威严",
+      "oldId": "skill_000211",
+      "newId": "skill_000212"
+    },
+    {
+      "gameId": "280005",
+      "name": "水翼飞升",
+      "oldId": "skill_000212",
+      "newId": "skill_000213"
+    },
+    {
+      "gameId": "280006",
+      "name": "虫群突袭",
+      "oldId": "skill_000213",
+      "newId": "skill_000214"
+    },
+    {
+      "gameId": "280007",
+      "name": "地脉馈赠",
+      "oldId": "skill_000214",
+      "newId": "skill_000215"
+    },
+    {
+      "gameId": "280008",
+      "name": "高浓生物碱",
+      "oldId": "skill_000215",
+      "newId": "skill_000216"
+    },
+    {
+      "gameId": "280009",
+      "name": "夺目",
+      "oldId": "skill_000216",
+      "newId": "skill_000217"
+    },
+    {
+      "gameId": "280010",
+      "name": "完全偏振",
+      "oldId": "skill_000217",
+      "newId": "skill_000218"
+    },
+    {
+      "gameId": "280011",
+      "name": "坠星",
+      "oldId": "skill_000218",
+      "newId": "skill_000219"
+    },
+    {
+      "gameId": "280012",
+      "name": "抓到你了",
+      "oldId": "skill_000219",
+      "newId": "skill_000220"
+    },
+    {
+      "gameId": "280013",
+      "name": "养分内循环",
+      "oldId": "skill_000220",
+      "newId": "skill_000221"
+    },
+    {
+      "gameId": "280014",
+      "name": "全神贯注",
+      "oldId": "skill_000221",
+      "newId": "skill_000222"
+    },
+    {
+      "gameId": "280015",
+      "name": "大捞一笔",
+      "oldId": "skill_000222",
+      "newId": "skill_000223"
+    },
+    {
+      "gameId": "280016",
+      "name": "超级电池",
+      "oldId": "skill_000223",
+      "newId": "skill_000224"
+    },
+    {
+      "gameId": "280017",
+      "name": "宝剑王牌",
+      "oldId": "skill_000224",
+      "newId": "skill_000225"
+    },
+    {
+      "gameId": "280018",
+      "name": "游弋",
+      "oldId": "skill_000225",
+      "newId": "skill_000226"
+    },
+    {
+      "gameId": "280019",
+      "name": "御驾亲征",
+      "oldId": "skill_000226",
+      "newId": "skill_000227"
+    },
+    {
+      "gameId": "280020",
+      "name": "三鼓作气",
+      "oldId": "skill_000227",
+      "newId": "skill_000228"
+    },
+    {
+      "gameId": "280021",
+      "name": "先知",
+      "oldId": "skill_000228",
+      "newId": "skill_000229"
+    },
+    {
+      "gameId": "280022",
+      "name": "溶解腐蚀",
+      "oldId": "skill_000229",
+      "newId": "skill_000230"
+    },
+    {
+      "gameId": "280023",
+      "name": "破空",
+      "oldId": "skill_000230",
+      "newId": "skill_000231"
+    },
+    {
+      "gameId": "280024",
+      "name": "悼亡",
+      "oldId": "skill_000231",
+      "newId": "skill_000232"
+    },
+    {
+      "gameId": "280025",
+      "name": "裁决",
+      "oldId": "skill_000232",
+      "newId": "skill_000233"
+    },
+    {
+      "gameId": "280026",
+      "name": "滋养",
+      "oldId": "skill_000233",
+      "newId": "skill_000234"
+    },
+    {
+      "gameId": "280027",
+      "name": "点燃",
+      "oldId": "skill_000234",
+      "newId": "skill_000235"
+    },
+    {
+      "gameId": "280028",
+      "name": "净化",
+      "oldId": "skill_000235",
+      "newId": "skill_000236"
+    },
+    {
+      "gameId": "280029",
+      "name": "相争",
+      "oldId": "skill_000236",
+      "newId": "skill_000237"
+    },
+    {
+      "gameId": "280030",
+      "name": "盛宴",
+      "oldId": "skill_000237",
+      "newId": "skill_000238"
+    },
+    {
+      "gameId": "280031",
+      "name": "草木苏醒时",
+      "oldId": "skill_000238",
+      "newId": "skill_000239"
+    },
+    {
+      "gameId": "280032",
+      "name": "贪得无厌",
+      "oldId": "skill_000239",
+      "newId": "skill_000240"
+    },
+    {
+      "gameId": "280033",
+      "name": "噼啪噼啪！",
+      "oldId": "skill_000240",
+      "newId": "skill_000241"
+    },
+    {
+      "gameId": "280034",
+      "name": "齐鸣",
+      "oldId": "skill_000241",
+      "newId": "skill_000242"
+    },
+    {
+      "gameId": "280035",
+      "name": "强制过滤",
+      "oldId": "skill_000242",
+      "newId": "skill_000243"
+    },
+    {
+      "gameId": "280036",
+      "name": "扫荡",
+      "oldId": "skill_000243",
+      "newId": "skill_000244"
+    },
+    {
+      "gameId": "280037",
+      "name": "蒸汽革命",
+      "oldId": "skill_000244",
+      "newId": "skill_000245"
+    },
+    {
+      "gameId": "280038",
+      "name": "月相",
+      "oldId": "skill_000245",
+      "newId": "skill_000246"
+    },
+    {
+      "gameId": "7020360",
+      "name": "抓挠",
+      "oldId": "skill_000246",
+      "newId": "skill_000247"
+    },
+    {
+      "gameId": "7020370",
+      "name": "猛烈撞击",
+      "oldId": "skill_000247",
+      "newId": "skill_000248"
+    },
+    {
+      "gameId": "7020380",
+      "name": "飞踢",
+      "oldId": "skill_000248",
+      "newId": "skill_000249"
+    },
+    {
+      "gameId": "7020390",
+      "name": "扫尾",
+      "oldId": "skill_000249",
+      "newId": "skill_000250"
+    },
+    {
+      "gameId": "7020400",
+      "name": "迫近攻击",
+      "oldId": "skill_000250",
+      "newId": "skill_000251"
+    },
+    {
+      "gameId": "7020410",
+      "name": "音爆",
+      "oldId": "skill_000251",
+      "newId": "skill_000252"
+    },
+    {
+      "gameId": "7020420",
+      "name": "冲撞",
+      "oldId": "skill_000252",
+      "newId": "skill_000253"
+    },
+    {
+      "gameId": "7020430",
+      "name": "见招拆招",
+      "oldId": "skill_000253",
+      "newId": "skill_000254"
+    },
+    {
+      "gameId": "7020440",
+      "name": "触底强击",
+      "oldId": "skill_000254",
+      "newId": "skill_000255"
+    },
+    {
+      "gameId": "7020450",
+      "name": "突袭",
+      "oldId": "skill_000255",
+      "newId": "skill_000256"
+    },
+    {
+      "gameId": "7020460",
+      "name": "连续爪击",
+      "oldId": "skill_000256",
+      "newId": "skill_000257"
+    },
+    {
+      "gameId": "7020470",
+      "name": "追打",
+      "oldId": "skill_000257",
+      "newId": "skill_000258"
+    },
+    {
+      "gameId": "7020480",
+      "name": "旋转突击",
+      "oldId": "skill_000258",
+      "newId": "skill_000259"
+    },
+    {
+      "gameId": "7020490",
+      "name": "偷袭",
+      "oldId": "skill_000259",
+      "newId": "skill_000260"
+    },
+    {
+      "gameId": "7020500",
+      "name": "乱打",
+      "oldId": "skill_000260",
+      "newId": "skill_000261"
+    },
+    {
+      "gameId": "7020510",
+      "name": "乘胜追击",
+      "oldId": "skill_000261",
+      "newId": "skill_000262"
+    },
+    {
+      "gameId": "7020520",
+      "name": "阻断",
+      "oldId": "skill_000262",
+      "newId": "skill_000263"
+    },
+    {
+      "gameId": "7020530",
+      "name": "穿膛",
+      "oldId": "skill_000263",
+      "newId": "skill_000264"
+    },
+    {
+      "gameId": "7020540",
+      "name": "重击",
+      "oldId": "skill_000264",
+      "newId": "skill_000265"
+    },
+    {
+      "gameId": "7020550",
+      "name": "魔能爆",
+      "oldId": "skill_000265",
+      "newId": "skill_000266"
+    },
+    {
+      "gameId": "7020560",
+      "name": "垂死反击",
+      "oldId": "skill_000266",
+      "newId": "skill_000267"
+    },
+    {
+      "gameId": "7020570",
+      "name": "能量刃",
+      "oldId": "skill_000267",
+      "newId": "skill_000268"
+    },
+    {
+      "gameId": "7020580",
+      "name": "气势一击",
+      "oldId": "skill_000268",
+      "newId": "skill_000269"
+    },
+    {
+      "gameId": "7020590",
+      "name": "吞噬",
+      "oldId": "skill_000269",
+      "newId": "skill_000270"
+    },
+    {
+      "gameId": "7020600",
+      "name": "蓄能轰击",
+      "oldId": "skill_000270",
+      "newId": "skill_000271"
+    },
+    {
+      "gameId": "7020620",
+      "name": "力量增效",
+      "oldId": "skill_000271",
+      "newId": "skill_000272"
+    },
+    {
+      "gameId": "7020630",
+      "name": "魔法增效",
+      "oldId": "skill_000272",
+      "newId": "skill_000273"
+    },
+    {
+      "gameId": "7020640",
+      "name": "休息回复",
+      "oldId": "skill_000273",
+      "newId": "skill_000274"
+    },
+    {
+      "gameId": "7020650",
+      "name": "聒噪",
+      "oldId": "skill_000274",
+      "newId": "skill_000275"
+    },
+    {
+      "gameId": "7020660",
+      "name": "激怒",
+      "oldId": "skill_000275",
+      "newId": "skill_000276"
+    },
+    {
+      "gameId": "7020670",
+      "name": "咆哮",
+      "oldId": "skill_000276",
+      "newId": "skill_000277"
+    },
+    {
+      "gameId": "7020680",
+      "name": "锐利眼神",
+      "oldId": "skill_000277",
+      "newId": "skill_000278"
+    },
+    {
+      "gameId": "7020690",
+      "name": "快速移动",
+      "oldId": "skill_000278",
+      "newId": "skill_000279"
+    },
+    {
+      "gameId": "7020700",
+      "name": "伺机而动",
+      "oldId": "skill_000279",
+      "newId": "skill_000280"
+    },
+    {
+      "gameId": "7020710",
+      "name": "主场优势",
+      "oldId": "skill_000280",
+      "newId": "skill_000281"
+    },
+    {
+      "gameId": "7020720",
+      "name": "操控",
+      "oldId": "skill_000281",
+      "newId": "skill_000282"
+    },
+    {
+      "gameId": "7020730",
+      "name": "应激反应",
+      "oldId": "skill_000282",
+      "newId": "skill_000283"
+    },
+    {
+      "gameId": "7020740",
+      "name": "棘刺",
+      "oldId": "skill_000283",
+      "newId": "skill_000284"
+    },
+    {
+      "gameId": "7020760",
+      "name": "精神扰乱",
+      "oldId": "skill_000284",
+      "newId": "skill_000285"
+    },
+    {
+      "gameId": "7020770",
+      "name": "退化",
+      "oldId": "skill_000285",
+      "newId": "skill_000286"
+    },
+    {
+      "gameId": "7020780",
+      "name": "防御",
+      "oldId": "skill_000286",
+      "newId": "skill_000287"
+    },
+    {
+      "gameId": "7020790",
+      "name": "防反",
+      "oldId": "skill_000287",
+      "newId": "skill_000288"
+    },
+    {
+      "gameId": "7020800",
+      "name": "血气",
+      "oldId": "skill_000288",
+      "newId": "skill_000289"
+    },
+    {
+      "gameId": "7020810",
+      "name": "无畏之心",
+      "oldId": "skill_000289",
+      "newId": "skill_000290"
+    },
+    {
+      "gameId": "7020840",
+      "name": "借用",
+      "oldId": "skill_000290",
+      "newId": "skill_000291"
+    },
+    {
+      "gameId": "7020850",
+      "name": "取念",
+      "oldId": "skill_000294",
+      "newId": "skill_000295"
+    },
+    {
+      "gameId": "7020860",
+      "name": "复写",
+      "oldId": "skill_000298",
+      "newId": "skill_000299"
+    },
+    {
+      "gameId": "7020870",
+      "name": "落星",
+      "oldId": "skill_000302",
+      "newId": "skill_000303"
+    },
+    {
+      "gameId": "7020880",
+      "name": "拍击",
+      "oldId": "skill_000303",
+      "newId": "skill_000304"
+    },
+    {
+      "gameId": "7020890",
+      "name": "音波弹",
+      "oldId": "skill_000304",
+      "newId": "skill_000305"
+    },
+    {
+      "gameId": "7020900",
+      "name": "许愿星",
+      "oldId": "skill_000305",
+      "newId": "skill_000306"
+    },
+    {
+      "gameId": "7020910",
+      "name": "星星撞击",
+      "oldId": "skill_000306",
+      "newId": "skill_000307"
+    },
+    {
+      "gameId": "7020920",
+      "name": "能量炮",
+      "oldId": "skill_000307",
+      "newId": "skill_000308"
+    },
+    {
+      "gameId": "7020930",
+      "name": "压扁",
+      "oldId": "skill_000308",
+      "newId": "skill_000309"
+    },
+    {
+      "gameId": "7020940",
+      "name": "践踏",
+      "oldId": "skill_000309",
+      "newId": "skill_000310"
+    },
+    {
+      "gameId": "7020950",
+      "name": "湮灭",
+      "oldId": "skill_000310",
+      "newId": "skill_000311"
+    },
+    {
+      "gameId": "7020960",
+      "name": "打鼾",
+      "oldId": "skill_000311",
+      "newId": "skill_000312"
+    },
+    {
+      "gameId": "7020970",
+      "name": "先发制人",
+      "oldId": "skill_000312",
+      "newId": "skill_000313"
+    },
+    {
+      "gameId": "7020980",
+      "name": "天旋地转",
+      "oldId": "skill_000313",
+      "newId": "skill_000314"
+    },
+    {
+      "gameId": "7020990",
+      "name": "吨位压制",
+      "oldId": "skill_000314",
+      "newId": "skill_000315"
+    },
+    {
+      "gameId": "7021000",
+      "name": "以重制重",
+      "oldId": "skill_000315",
+      "newId": "skill_000316"
+    },
+    {
+      "gameId": "7021010",
+      "name": "当头棒喝",
+      "oldId": "skill_000316",
+      "newId": "skill_000317"
+    },
+    {
+      "gameId": "7021020",
+      "name": "后发制人",
+      "oldId": "skill_000317",
+      "newId": "skill_000318"
+    },
+    {
+      "gameId": "7021030",
+      "name": "加固",
+      "oldId": "skill_000318",
+      "newId": "skill_000319"
+    },
+    {
+      "gameId": "7021040",
+      "name": "鼓劲",
+      "oldId": "skill_000319",
+      "newId": "skill_000320"
+    },
+    {
+      "gameId": "7021050",
+      "name": "耀眼",
+      "oldId": "skill_000320",
+      "newId": "skill_000321"
+    },
+    {
+      "gameId": "7021060",
+      "name": "彗星",
+      "oldId": "skill_000321",
+      "newId": "skill_000322"
+    },
+    {
+      "gameId": "7021070",
+      "name": "消毒法",
+      "oldId": "skill_000322",
+      "newId": "skill_000323"
+    },
+    {
+      "gameId": "7021080",
+      "name": "三连破",
+      "oldId": "skill_000323",
+      "newId": "skill_000324"
+    },
+    {
+      "gameId": "7021090",
+      "name": "热身运动",
+      "oldId": "skill_000324",
+      "newId": "skill_000325"
+    },
+    {
+      "gameId": "7021100",
+      "name": "晒太阳",
+      "oldId": "skill_000325",
+      "newId": "skill_000326"
+    },
+    {
+      "gameId": "7021110",
+      "name": "有效预防",
+      "oldId": "skill_000326",
+      "newId": "skill_000327"
+    },
+    {
+      "gameId": "7021120",
+      "name": "嗜痛",
+      "oldId": "skill_000327",
+      "newId": "skill_000328"
+    },
+    {
+      "gameId": "7021130",
+      "name": "吓退",
+      "oldId": "skill_000328",
+      "newId": "skill_000329"
+    },
+    {
+      "gameId": "7021140",
+      "name": "埋伏",
+      "oldId": "skill_000329",
+      "newId": "skill_000330"
+    },
+    {
+      "gameId": "7021150",
+      "name": "逆袭",
+      "oldId": "skill_000330",
+      "newId": "skill_000331"
+    },
+    {
+      "gameId": "7021160",
+      "name": "摇篮曲",
+      "oldId": "skill_000331",
+      "newId": "skill_000332"
+    },
+    {
+      "gameId": "7021170",
+      "name": "倾泻",
+      "oldId": "skill_000332",
+      "newId": "skill_000333"
+    },
+    {
+      "gameId": "7021190",
+      "name": "吹散",
+      "oldId": "skill_000333",
+      "newId": "skill_000334"
+    },
+    {
+      "gameId": "7021210",
+      "name": "急中生智",
+      "oldId": "skill_000334",
+      "newId": "skill_000335"
+    },
+    {
+      "gameId": "7021220",
+      "name": "同频",
+      "oldId": "skill_000335",
+      "newId": "skill_000336"
+    },
+    {
+      "gameId": "7021230",
+      "name": "友谊满溢",
+      "oldId": "skill_000336",
+      "newId": "skill_000337"
+    },
+    {
+      "gameId": "7021280",
+      "name": "缓一缓",
+      "oldId": "skill_000337",
+      "newId": "skill_000338"
+    },
+    {
+      "gameId": "7030160",
+      "name": "种子弹",
+      "oldId": "skill_000338",
+      "newId": "skill_000339"
+    },
+    {
+      "gameId": "7030170",
+      "name": "荆棘爪",
+      "oldId": "skill_000339",
+      "newId": "skill_000340"
+    },
+    {
+      "gameId": "7030180",
+      "name": "仙人掌刺击",
+      "oldId": "skill_000340",
+      "newId": "skill_000341"
+    },
+    {
+      "gameId": "7030190",
+      "name": "刺藤",
+      "oldId": "skill_000341",
+      "newId": "skill_000342"
+    },
+    {
+      "gameId": "7030200",
+      "name": "藤绞",
+      "oldId": "skill_000342",
+      "newId": "skill_000343"
+    },
+    {
+      "gameId": "7030210",
+      "name": "光能聚集",
+      "oldId": "skill_000343",
+      "newId": "skill_000344"
+    },
+    {
+      "gameId": "7030220",
+      "name": "徒长",
+      "oldId": "skill_000344",
+      "newId": "skill_000345"
+    },
+    {
+      "gameId": "7030230",
+      "name": "盛开",
+      "oldId": "skill_000345",
+      "newId": "skill_000346"
+    },
+    {
+      "gameId": "7030240",
+      "name": "根吸收",
+      "oldId": "skill_000346",
+      "newId": "skill_000347"
+    },
+    {
+      "gameId": "7030250",
+      "name": "氧输送",
+      "oldId": "skill_000347",
+      "newId": "skill_000348"
+    },
+    {
+      "gameId": "7030260",
+      "name": "孢子",
+      "oldId": "skill_000348",
+      "newId": "skill_000349"
+    },
+    {
+      "gameId": "7030270",
+      "name": "芳香诱引",
+      "oldId": "skill_000349",
+      "newId": "skill_000350"
+    },
+    {
+      "gameId": "7030280",
+      "name": "丰饶",
+      "oldId": "skill_000350",
+      "newId": "skill_000351"
+    },
+    {
+      "gameId": "7030290",
+      "name": "移花接木",
+      "oldId": "skill_000351",
+      "newId": "skill_000352"
+    },
+    {
+      "gameId": "7030300",
+      "name": "光合作用",
+      "oldId": "skill_000352",
+      "newId": "skill_000353"
+    },
+    {
+      "gameId": "7030320",
+      "name": "酶浓度调整",
+      "oldId": "skill_000353",
+      "newId": "skill_000354"
+    },
+    {
+      "gameId": "7030330",
+      "name": "蜡质膜",
+      "oldId": "skill_000354",
+      "newId": "skill_000355"
+    },
+    {
+      "gameId": "7030340",
+      "name": "汲取",
+      "oldId": "skill_000355",
+      "newId": "skill_000356"
+    },
+    {
+      "gameId": "7030410",
+      "name": "飞叶",
+      "oldId": "skill_000356",
+      "newId": "skill_000357"
+    },
+    {
+      "gameId": "7030420",
+      "name": "种皮爆裂",
+      "oldId": "skill_000357",
+      "newId": "skill_000358"
+    },
+    {
+      "gameId": "7030430",
+      "name": "花香",
+      "oldId": "skill_000358",
+      "newId": "skill_000359"
+    },
+    {
+      "gameId": "7030440",
+      "name": "棘突",
+      "oldId": "skill_000359",
+      "newId": "skill_000360"
+    },
+    {
+      "gameId": "7030450",
+      "name": "孢子爆散",
+      "oldId": "skill_000360",
+      "newId": "skill_000361"
+    },
+    {
+      "gameId": "7030460",
+      "name": "叶绿光束",
+      "oldId": "skill_000361",
+      "newId": "skill_000362"
+    },
+    {
+      "gameId": "7030470",
+      "name": "顶端优势",
+      "oldId": "skill_000362",
+      "newId": "skill_000363"
+    },
+    {
+      "gameId": "7030480",
+      "name": "筛管奔流",
+      "oldId": "skill_000363",
+      "newId": "skill_000364"
+    },
+    {
+      "gameId": "7030490",
+      "name": "花炮",
+      "oldId": "skill_000364",
+      "newId": "skill_000365"
+    },
+    {
+      "gameId": "7030500",
+      "name": "聚盐",
+      "oldId": "skill_000365",
+      "newId": "skill_000366"
+    },
+    {
+      "gameId": "7030510",
+      "name": "富养化",
+      "oldId": "skill_000366",
+      "newId": "skill_000367"
+    },
+    {
+      "gameId": "7030520",
+      "name": "纤维化",
+      "oldId": "skill_000367",
+      "newId": "skill_000368"
+    },
+    {
+      "gameId": "7030530",
+      "name": "抽枝",
+      "oldId": "skill_000368",
+      "newId": "skill_000369"
+    },
+    {
+      "gameId": "7030560",
+      "name": "养分回流",
+      "oldId": "skill_000369",
+      "newId": "skill_000370"
+    },
+    {
+      "gameId": "7030570",
+      "name": "甜蜜陷阱",
+      "oldId": "skill_000370",
+      "newId": "skill_000371"
+    },
+    {
+      "gameId": "7030580",
+      "name": "撒花",
+      "oldId": "skill_000371",
+      "newId": "skill_000372"
+    },
+    {
+      "gameId": "7030590",
+      "name": "丰收",
+      "oldId": "skill_000372",
+      "newId": "skill_000373"
+    },
+    {
+      "gameId": "7030600",
+      "name": "补觉",
+      "oldId": "skill_000373",
+      "newId": "skill_000374"
+    },
+    {
+      "gameId": "7030610",
+      "name": "针刺射击",
+      "oldId": "skill_000374",
+      "newId": "skill_000375"
+    },
+    {
+      "gameId": "7030620",
+      "name": "麦芒",
+      "oldId": "skill_000375",
+      "newId": "skill_000376"
+    },
+    {
+      "gameId": "7040150",
+      "name": "火焰冲锋",
+      "oldId": "skill_000376",
+      "newId": "skill_000377"
+    },
+    {
+      "gameId": "7040160",
+      "name": "炎枪",
+      "oldId": "skill_000377",
+      "newId": "skill_000378"
+    },
+    {
+      "gameId": "7040170",
+      "name": "火苗",
+      "oldId": "skill_000378",
+      "newId": "skill_000379"
+    },
+    {
+      "gameId": "7040180",
+      "name": "闪燃",
+      "oldId": "skill_000379",
+      "newId": "skill_000380"
+    },
+    {
+      "gameId": "7040190",
+      "name": "双响炮",
+      "oldId": "skill_000380",
+      "newId": "skill_000381"
+    },
+    {
+      "gameId": "7040200",
+      "name": "吹火",
+      "oldId": "skill_000381",
+      "newId": "skill_000382"
+    },
+    {
+      "gameId": "7040210",
+      "name": "流星火雨",
+      "oldId": "skill_000382",
+      "newId": "skill_000383"
+    },
+    {
+      "gameId": "7040220",
+      "name": "持续高温",
+      "oldId": "skill_000383",
+      "newId": "skill_000384"
+    },
+    {
+      "gameId": "7040230",
+      "name": "易燃物质",
+      "oldId": "skill_000384",
+      "newId": "skill_000385"
+    },
+    {
+      "gameId": "7040240",
+      "name": "高温回火",
+      "oldId": "skill_000385",
+      "newId": "skill_000386"
+    },
+    {
+      "gameId": "7040250",
+      "name": "山火",
+      "oldId": "skill_000386",
+      "newId": "skill_000387"
+    },
+    {
+      "gameId": "7040260",
+      "name": "引燃",
+      "oldId": "skill_000387",
+      "newId": "skill_000388"
+    },
+    {
+      "gameId": "7040270",
+      "name": "热身",
+      "oldId": "skill_000388",
+      "newId": "skill_000389"
+    },
+    {
+      "gameId": "7040280",
+      "name": "充分燃烧",
+      "oldId": "skill_000389",
+      "newId": "skill_000390"
+    },
+    {
+      "gameId": "7040290",
+      "name": "天火",
+      "oldId": "skill_000390",
+      "newId": "skill_000391"
+    },
+    {
+      "gameId": "7040300",
+      "name": "火焰护盾",
+      "oldId": "skill_000391",
+      "newId": "skill_000392"
+    },
+    {
+      "gameId": "7040320",
+      "name": "火云车",
+      "oldId": "skill_000392",
+      "newId": "skill_000393"
+    },
+    {
+      "gameId": "7040330",
+      "name": "爆裂飞弹",
+      "oldId": "skill_000393",
+      "newId": "skill_000394"
+    },
+    {
+      "gameId": "7040340",
+      "name": "热气",
+      "oldId": "skill_000394",
+      "newId": "skill_000395"
+    },
+    {
+      "gameId": "7040350",
+      "name": "流火",
+      "oldId": "skill_000395",
+      "newId": "skill_000396"
+    },
+    {
+      "gameId": "7040360",
+      "name": "火爪",
+      "oldId": "skill_000396",
+      "newId": "skill_000397"
+    },
+    {
+      "gameId": "7040370",
+      "name": "火焰箭",
+      "oldId": "skill_000397",
+      "newId": "skill_000398"
+    },
+    {
+      "gameId": "7040380",
+      "name": "炙热波动",
+      "oldId": "skill_000398",
+      "newId": "skill_000399"
+    },
+    {
+      "gameId": "7040390",
+      "name": "火焰切割",
+      "oldId": "skill_000399",
+      "newId": "skill_000400"
+    },
+    {
+      "gameId": "7040400",
+      "name": "烈焰风暴",
+      "oldId": "skill_000400",
+      "newId": "skill_000401"
+    },
+    {
+      "gameId": "7040410",
+      "name": "炎息",
+      "oldId": "skill_000401",
+      "newId": "skill_000402"
+    },
+    {
+      "gameId": "7040420",
+      "name": "灼伤",
+      "oldId": "skill_000402",
+      "newId": "skill_000403"
+    },
+    {
+      "gameId": "7040430",
+      "name": "炎打",
+      "oldId": "skill_000403",
+      "newId": "skill_000404"
+    },
+    {
+      "gameId": "7040440",
+      "name": "怒火",
+      "oldId": "skill_000404",
+      "newId": "skill_000405"
+    },
+    {
+      "gameId": "7040450",
+      "name": "淬火",
+      "oldId": "skill_000405",
+      "newId": "skill_000406"
+    },
+    {
+      "gameId": "7040460",
+      "name": "燃尽",
+      "oldId": "skill_000406",
+      "newId": "skill_000407"
+    },
+    {
+      "gameId": "7040470",
+      "name": "焚毁",
+      "oldId": "skill_000407",
+      "newId": "skill_000408"
+    },
+    {
+      "gameId": "7040500",
+      "name": "焚烧烙印",
+      "oldId": "skill_000408",
+      "newId": "skill_000409"
+    },
+    {
+      "gameId": "7040610",
+      "name": "除厄",
+      "oldId": "skill_000409",
+      "newId": "skill_000410"
+    },
+    {
+      "gameId": "7040620",
+      "name": "阳火增辉",
+      "oldId": "skill_000410",
+      "newId": "skill_000411"
+    },
+    {
+      "gameId": "7040630",
+      "name": "花火",
+      "oldId": "skill_000411",
+      "newId": "skill_000412"
+    },
+    {
+      "gameId": "7040640",
+      "name": "暖气",
+      "oldId": "skill_000412",
+      "newId": "skill_000413"
+    },
+    {
+      "gameId": "7040650",
+      "name": "焚身",
+      "oldId": "skill_000413",
+      "newId": "skill_000414"
+    },
+    {
+      "gameId": "7040660",
+      "name": "野火",
+      "oldId": "skill_000414",
+      "newId": "skill_000415"
+    },
+    {
+      "gameId": "7040680",
+      "name": "焚尽",
+      "oldId": "skill_000415",
+      "newId": "skill_000416"
+    },
+    {
+      "gameId": "7040690",
+      "name": "暖阳",
+      "oldId": "skill_000416",
+      "newId": "skill_000417"
+    },
+    {
+      "gameId": "7040700",
+      "name": "星火",
+      "oldId": "skill_000417",
+      "newId": "skill_000418"
+    },
+    {
+      "gameId": "7050160",
+      "name": "甩水",
+      "oldId": "skill_000418",
+      "newId": "skill_000419"
+    },
+    {
+      "gameId": "7050170",
+      "name": "水弹枪",
+      "oldId": "skill_000419",
+      "newId": "skill_000420"
+    },
+    {
+      "gameId": "7050180",
+      "name": "气泡",
+      "oldId": "skill_000420",
+      "newId": "skill_000421"
+    },
+    {
+      "gameId": "7050190",
+      "name": "水炮",
+      "oldId": "skill_000421",
+      "newId": "skill_000422"
+    },
+    {
+      "gameId": "7050200",
+      "name": "水刃",
+      "oldId": "skill_000422",
+      "newId": "skill_000423"
+    },
+    {
+      "gameId": "7050210",
+      "name": "天洪",
+      "oldId": "skill_000423",
+      "newId": "skill_000424"
+    },
+    {
+      "gameId": "7050220",
+      "name": "润泽",
+      "oldId": "skill_000424",
+      "newId": "skill_000425"
+    },
+    {
+      "gameId": "7050230",
+      "name": "蓄水",
+      "oldId": "skill_000425",
+      "newId": "skill_000426"
+    },
+    {
+      "gameId": "7050240",
+      "name": "打湿",
+      "oldId": "skill_000426",
+      "newId": "skill_000427"
+    },
+    {
+      "gameId": "7050250",
+      "name": "落雨",
+      "oldId": "skill_000427",
+      "newId": "skill_000428"
+    },
+    {
+      "gameId": "7050260",
+      "name": "泡沫幻影",
+      "oldId": "skill_000428",
+      "newId": "skill_000429"
+    },
+    {
+      "gameId": "7050270",
+      "name": "水泡盾",
+      "oldId": "skill_000429",
+      "newId": "skill_000430"
+    },
+    {
+      "gameId": "7050280",
+      "name": "水环",
+      "oldId": "skill_000430",
+      "newId": "skill_000431"
+    },
+    {
+      "gameId": "7050290",
+      "name": "水光冲击",
+      "oldId": "skill_000431",
+      "newId": "skill_000432"
+    },
+    {
+      "gameId": "7050300",
+      "name": "水波术",
+      "oldId": "skill_000432",
+      "newId": "skill_000433"
+    },
+    {
+      "gameId": "7050320",
+      "name": "水弹",
+      "oldId": "skill_000433",
+      "newId": "skill_000434"
+    },
+    {
+      "gameId": "7050330",
+      "name": "泡沫",
+      "oldId": "skill_000434",
+      "newId": "skill_000435"
+    },
+    {
+      "gameId": "7050340",
+      "name": "肥皂泡",
+      "oldId": "skill_000435",
+      "newId": "skill_000436"
+    },
+    {
+      "gameId": "7050350",
+      "name": "水花四溅",
+      "oldId": "skill_000436",
+      "newId": "skill_000437"
+    },
+    {
+      "gameId": "7050360",
+      "name": "潮涌",
+      "oldId": "skill_000437",
+      "newId": "skill_000438"
+    },
+    {
+      "gameId": "7050370",
+      "name": "水幕冲击",
+      "oldId": "skill_000438",
+      "newId": "skill_000439"
+    },
+    {
+      "gameId": "7050380",
+      "name": "激流",
+      "oldId": "skill_000439",
+      "newId": "skill_000440"
+    },
+    {
+      "gameId": "7050390",
+      "name": "涌泉",
+      "oldId": "skill_000440",
+      "newId": "skill_000441"
+    },
+    {
+      "gameId": "7050400",
+      "name": "洗礼",
+      "oldId": "skill_000441",
+      "newId": "skill_000442"
+    },
+    {
+      "gameId": "7050410",
+      "name": "盐水浴",
+      "oldId": "skill_000442",
+      "newId": "skill_000443"
+    },
+    {
+      "gameId": "7050420",
+      "name": "潮汐",
+      "oldId": "skill_000443",
+      "newId": "skill_000444"
+    },
+    {
+      "gameId": "7050480",
+      "name": "叠浪",
+      "oldId": "skill_000444",
+      "newId": "skill_000445"
+    },
+    {
+      "gameId": "7050490",
+      "name": "沉溺",
+      "oldId": "skill_000445",
+      "newId": "skill_000446"
+    },
+    {
+      "gameId": "7050510",
+      "name": "清洗",
+      "oldId": "skill_000446",
+      "newId": "skill_000447"
+    },
+    {
+      "gameId": "7050530",
+      "name": "汇流",
+      "oldId": "skill_000447",
+      "newId": "skill_000448"
+    },
+    {
+      "gameId": "7060090",
+      "name": "闪光",
+      "oldId": "skill_000448",
+      "newId": "skill_000449"
+    },
+    {
+      "gameId": "7060100",
+      "name": "闪光冲击",
+      "oldId": "skill_000449",
+      "newId": "skill_000450"
+    },
+    {
+      "gameId": "7060120",
+      "name": "过曝",
+      "oldId": "skill_000450",
+      "newId": "skill_000451"
+    },
+    {
+      "gameId": "7060130",
+      "name": "折射",
+      "oldId": "skill_000451",
+      "newId": "skill_000452"
+    },
+    {
+      "gameId": "7060140",
+      "name": "漫反射",
+      "oldId": "skill_000452",
+      "newId": "skill_000453"
+    },
+    {
+      "gameId": "7060150",
+      "name": "镜像反射",
+      "oldId": "skill_000453",
+      "newId": "skill_000454"
+    },
+    {
+      "gameId": "7060160",
+      "name": "光球",
+      "oldId": "skill_000454",
+      "newId": "skill_000455"
+    },
+    {
+      "gameId": "7060170",
+      "name": "光之矛",
+      "oldId": "skill_000455",
+      "newId": "skill_000456"
+    },
+    {
+      "gameId": "7060180",
+      "name": "光刃",
+      "oldId": "skill_000456",
+      "newId": "skill_000457"
+    },
+    {
+      "gameId": "7060190",
+      "name": "脉冲光线",
+      "oldId": "skill_000457",
+      "newId": "skill_000458"
+    },
+    {
+      "gameId": "7060200",
+      "name": "虹光冲击",
+      "oldId": "skill_000458",
+      "newId": "skill_000459"
+    },
+    {
+      "gameId": "7060210",
+      "name": "折线冲击",
+      "oldId": "skill_000459",
+      "newId": "skill_000460"
+    },
+    {
+      "gameId": "7060220",
+      "name": "天光",
+      "oldId": "skill_000460",
+      "newId": "skill_000461"
+    },
+    {
+      "gameId": "7060230",
+      "name": "透射",
+      "oldId": "skill_000461",
+      "newId": "skill_000462"
+    },
+    {
+      "gameId": "7060240",
+      "name": "放晴",
+      "oldId": "skill_000462",
+      "newId": "skill_000463"
+    },
+    {
+      "gameId": "7060250",
+      "name": "点亮",
+      "oldId": "skill_000463",
+      "newId": "skill_000464"
+    },
+    {
+      "gameId": "7060260",
+      "name": "透镜实验",
+      "oldId": "skill_000464",
+      "newId": "skill_000465"
+    },
+    {
+      "gameId": "7060270",
+      "name": "色散",
+      "oldId": "skill_000465",
+      "newId": "skill_000466"
+    },
+    {
+      "gameId": "7060280",
+      "name": "分光",
+      "oldId": "skill_000466",
+      "newId": "skill_000467"
+    },
+    {
+      "gameId": "7060290",
+      "name": "闪光弹",
+      "oldId": "skill_000467",
+      "newId": "skill_000468"
+    },
+    {
+      "gameId": "7070010",
+      "name": "械斗",
+      "oldId": "skill_000468",
+      "newId": "skill_000469"
+    },
+    {
+      "gameId": "7070020",
+      "name": "齿轮扭矩",
+      "oldId": "skill_000469",
+      "newId": "skill_000470"
+    },
+    {
+      "gameId": "7070030",
+      "name": "钢钻",
+      "oldId": "skill_000470",
+      "newId": "skill_000471"
+    },
+    {
+      "gameId": "7070040",
+      "name": "钢铁洪流",
+      "oldId": "skill_000471",
+      "newId": "skill_000472"
+    },
+    {
+      "gameId": "7070050",
+      "name": "杠杆置换",
+      "oldId": "skill_000472",
+      "newId": "skill_000473"
+    },
+    {
+      "gameId": "7070060",
+      "name": "轴承支撑",
+      "oldId": "skill_000473",
+      "newId": "skill_000474"
+    },
+    {
+      "gameId": "7070070",
+      "name": "联动装置",
+      "oldId": "skill_000474",
+      "newId": "skill_000475"
+    },
+    {
+      "gameId": "7070080",
+      "name": "能量守恒",
+      "oldId": "skill_000475",
+      "newId": "skill_000476"
+    },
+    {
+      "gameId": "7070100",
+      "name": "拆卸",
+      "oldId": "skill_000476",
+      "newId": "skill_000477"
+    },
+    {
+      "gameId": "7070110",
+      "name": "离子震荡",
+      "oldId": "skill_000477",
+      "newId": "skill_000478"
+    },
+    {
+      "gameId": "7070120",
+      "name": "传感器",
+      "oldId": "skill_000478",
+      "newId": "skill_000479"
+    },
+    {
+      "gameId": "7070130",
+      "name": "金属噪音",
+      "oldId": "skill_000479",
+      "newId": "skill_000480"
+    },
+    {
+      "gameId": "7070140",
+      "name": "磁暴",
+      "oldId": "skill_000480",
+      "newId": "skill_000481"
+    },
+    {
+      "gameId": "7070150",
+      "name": "齿轮切开",
+      "oldId": "skill_000481",
+      "newId": "skill_000482"
+    },
+    {
+      "gameId": "7070160",
+      "name": "主轴",
+      "oldId": "skill_000482",
+      "newId": "skill_000483"
+    },
+    {
+      "gameId": "7070170",
+      "name": "啮合传递",
+      "oldId": "skill_000483",
+      "newId": "skill_000484"
+    },
+    {
+      "gameId": "7070200",
+      "name": "六自由度",
+      "oldId": "skill_000484",
+      "newId": "skill_000485"
+    },
+    {
+      "gameId": "7070210",
+      "name": "蒸汽进行曲",
+      "oldId": "skill_000485",
+      "newId": "skill_000486"
+    },
+    {
+      "gameId": "7070220",
+      "name": "轮班",
+      "oldId": "skill_000486",
+      "newId": "skill_000487"
+    },
+    {
+      "gameId": "7070230",
+      "name": "锁芯",
+      "oldId": "skill_000487",
+      "newId": "skill_000488"
+    },
+    {
+      "gameId": "7070240",
+      "name": "铁蒺藜",
+      "oldId": "skill_000488",
+      "newId": "skill_000489"
+    },
+    {
+      "gameId": "7070250",
+      "name": "减压阀",
+      "oldId": "skill_000489",
+      "newId": "skill_000490"
+    },
+    {
+      "gameId": "7070260",
+      "name": "排气",
+      "oldId": "skill_000490",
+      "newId": "skill_000491"
+    },
+    {
+      "gameId": "7070270",
+      "name": "相位移动",
+      "oldId": "skill_000491",
+      "newId": "skill_000492"
+    },
+    {
+      "gameId": "7070280",
+      "name": "微型斥候",
+      "oldId": "skill_000492",
+      "newId": "skill_000493"
+    },
+    {
+      "gameId": "7070290",
+      "name": "过山车",
+      "oldId": "skill_000493",
+      "newId": "skill_000494"
+    },
+    {
+      "gameId": "7070300",
+      "name": "绞轮",
+      "oldId": "skill_000494",
+      "newId": "skill_000495"
+    },
+    {
+      "gameId": "7070330",
+      "name": "广播",
+      "oldId": "skill_000495",
+      "newId": "skill_000496"
+    },
+    {
+      "gameId": "7070340",
+      "name": "拖拉机",
+      "oldId": "skill_000496",
+      "newId": "skill_000497"
+    },
+    {
+      "gameId": "7080110",
+      "name": "扬沙",
+      "oldId": "skill_000497",
+      "newId": "skill_000498"
+    },
+    {
+      "gameId": "7080120",
+      "name": "跺地",
+      "oldId": "skill_000498",
+      "newId": "skill_000499"
+    },
+    {
+      "gameId": "7080130",
+      "name": "地刺",
+      "oldId": "skill_000499",
+      "newId": "skill_000500"
+    },
+    {
+      "gameId": "7080140",
+      "name": "岩土暴击",
+      "oldId": "skill_000500",
+      "newId": "skill_000501"
+    },
+    {
+      "gameId": "7080150",
+      "name": "石锁",
+      "oldId": "skill_000501",
+      "newId": "skill_000502"
+    },
+    {
+      "gameId": "7080160",
+      "name": "裂石",
+      "oldId": "skill_000502",
+      "newId": "skill_000503"
+    },
+    {
+      "gameId": "7080170",
+      "name": "抛石",
+      "oldId": "skill_000503",
+      "newId": "skill_000504"
+    },
+    {
+      "gameId": "7080180",
+      "name": "地震",
+      "oldId": "skill_000504",
+      "newId": "skill_000505"
+    },
+    {
+      "gameId": "7080190",
+      "name": "流沙",
+      "oldId": "skill_000505",
+      "newId": "skill_000506"
+    },
+    {
+      "gameId": "7080200",
+      "name": "泥浆铠甲",
+      "oldId": "skill_000506",
+      "newId": "skill_000507"
+    },
+    {
+      "gameId": "7080210",
+      "name": "沙涌",
+      "oldId": "skill_000507",
+      "newId": "skill_000508"
+    },
+    {
+      "gameId": "7080220",
+      "name": "刺盾",
+      "oldId": "skill_000508",
+      "newId": "skill_000509"
+    },
+    {
+      "gameId": "7080230",
+      "name": "硬化",
+      "oldId": "skill_000509",
+      "newId": "skill_000510"
+    },
+    {
+      "gameId": "7080240",
+      "name": "壁垒",
+      "oldId": "skill_000510",
+      "newId": "skill_000511"
+    },
+    {
+      "gameId": "7080250",
+      "name": "遁地",
+      "oldId": "skill_000511",
+      "newId": "skill_000512"
+    },
+    {
+      "gameId": "7080270",
+      "name": "泥浆",
+      "oldId": "skill_000512",
+      "newId": "skill_000513"
+    },
+    {
+      "gameId": "7080280",
+      "name": "泥巴喷射",
+      "oldId": "skill_000513",
+      "newId": "skill_000514"
+    },
+    {
+      "gameId": "7080290",
+      "name": "落石",
+      "oldId": "skill_000514",
+      "newId": "skill_000515"
+    },
+    {
+      "gameId": "7080300",
+      "name": "热砂",
+      "oldId": "skill_000515",
+      "newId": "skill_000516"
+    },
+    {
+      "gameId": "7080310",
+      "name": "陨石",
+      "oldId": "skill_000516",
+      "newId": "skill_000517"
+    },
+    {
+      "gameId": "7080320",
+      "name": "鸣沙陷阱",
+      "oldId": "skill_000517",
+      "newId": "skill_000518"
+    },
+    {
+      "gameId": "7080330",
+      "name": "地陷",
+      "oldId": "skill_000518",
+      "newId": "skill_000519"
+    },
+    {
+      "gameId": "7080340",
+      "name": "岩脉崩毁",
+      "oldId": "skill_000519",
+      "newId": "skill_000520"
+    },
+    {
+      "gameId": "7080350",
+      "name": "震击",
+      "oldId": "skill_000520",
+      "newId": "skill_000521"
+    },
+    {
+      "gameId": "7080360",
+      "name": "石肤术",
+      "oldId": "skill_000521",
+      "newId": "skill_000522"
+    },
+    {
+      "gameId": "7080370",
+      "name": "钧势",
+      "oldId": "skill_000522",
+      "newId": "skill_000523"
+    },
+    {
+      "gameId": "7080380",
+      "name": "蓄势待发",
+      "oldId": "skill_000523",
+      "newId": "skill_000524"
+    },
+    {
+      "gameId": "7080400",
+      "name": "淤泥表皮",
+      "oldId": "skill_000524",
+      "newId": "skill_000525"
+    },
+    {
+      "gameId": "7080410",
+      "name": "不动如山",
+      "oldId": "skill_000525",
+      "newId": "skill_000526"
+    },
+    {
+      "gameId": "7080450",
+      "name": "扬尘",
+      "oldId": "skill_000526",
+      "newId": "skill_000527"
+    },
+    {
+      "gameId": "7080460",
+      "name": "沙石阵",
+      "oldId": "skill_000527",
+      "newId": "skill_000528"
+    },
+    {
+      "gameId": "7080470",
+      "name": "砂石冲撞",
+      "oldId": "skill_000528",
+      "newId": "skill_000529"
+    },
+    {
+      "gameId": "7090100",
+      "name": "风吹雪",
+      "oldId": "skill_000529",
+      "newId": "skill_000530"
+    },
+    {
+      "gameId": "7090110",
+      "name": "暴风雪",
+      "oldId": "skill_000530",
+      "newId": "skill_000531"
+    },
+    {
+      "gameId": "7090120",
+      "name": "冰晶坠",
+      "oldId": "skill_000531",
+      "newId": "skill_000532"
+    },
+    {
+      "gameId": "7090130",
+      "name": "冰雹",
+      "oldId": "skill_000532",
+      "newId": "skill_000533"
+    },
+    {
+      "gameId": "7090140",
+      "name": "极寒领域",
+      "oldId": "skill_000533",
+      "newId": "skill_000534"
+    },
+    {
+      "gameId": "7090150",
+      "name": "冰冻光线",
+      "oldId": "skill_000534",
+      "newId": "skill_000535"
+    },
+    {
+      "gameId": "7090160",
+      "name": "霜降",
+      "oldId": "skill_000535",
+      "newId": "skill_000536"
+    },
+    {
+      "gameId": "7090170",
+      "name": "瞬间零度",
+      "oldId": "skill_000536",
+      "newId": "skill_000537"
+    },
+    {
+      "gameId": "7090180",
+      "name": "雾气环绕",
+      "oldId": "skill_000537",
+      "newId": "skill_000538"
+    },
+    {
+      "gameId": "7090190",
+      "name": "霜天",
+      "oldId": "skill_000538",
+      "newId": "skill_000539"
+    },
+    {
+      "gameId": "7090200",
+      "name": "冰天雪地",
+      "oldId": "skill_000539",
+      "newId": "skill_000540"
+    },
+    {
+      "gameId": "7090210",
+      "name": "冰墙",
+      "oldId": "skill_000540",
+      "newId": "skill_000541"
+    },
+    {
+      "gameId": "7090230",
+      "name": "冰锥",
+      "oldId": "skill_000541",
+      "newId": "skill_000542"
+    },
+    {
+      "gameId": "7090240",
+      "name": "冷风",
+      "oldId": "skill_000542",
+      "newId": "skill_000543"
+    },
+    {
+      "gameId": "7090250",
+      "name": "冰爪",
+      "oldId": "skill_000543",
+      "newId": "skill_000544"
+    },
+    {
+      "gameId": "7090260",
+      "name": "打雪仗",
+      "oldId": "skill_000544",
+      "newId": "skill_000545"
+    },
+    {
+      "gameId": "7090270",
+      "name": "滚雪球",
+      "oldId": "skill_000545",
+      "newId": "skill_000546"
+    },
+    {
+      "gameId": "7090280",
+      "name": "丢冰块",
+      "oldId": "skill_000546",
+      "newId": "skill_000547"
+    },
+    {
+      "gameId": "7090290",
+      "name": "寒风吹",
+      "oldId": "skill_000547",
+      "newId": "skill_000548"
+    },
+    {
+      "gameId": "7090300",
+      "name": "雪球",
+      "oldId": "skill_000548",
+      "newId": "skill_000549"
+    },
+    {
+      "gameId": "7090310",
+      "name": "碎冰冰",
+      "oldId": "skill_000549",
+      "newId": "skill_000550"
+    },
+    {
+      "gameId": "7090320",
+      "name": "冰捆缚",
+      "oldId": "skill_000550",
+      "newId": "skill_000551"
+    },
+    {
+      "gameId": "7090330",
+      "name": "速冻",
+      "oldId": "skill_000551",
+      "newId": "skill_000552"
+    },
+    {
+      "gameId": "7090340",
+      "name": "冰蛋壳",
+      "oldId": "skill_000552",
+      "newId": "skill_000553"
+    },
+    {
+      "gameId": "7090350",
+      "name": "雪替身",
+      "oldId": "skill_000553",
+      "newId": "skill_000554"
+    },
+    {
+      "gameId": "7090360",
+      "name": "冰锋横扫",
+      "oldId": "skill_000554",
+      "newId": "skill_000555"
+    },
+    {
+      "gameId": "7090370",
+      "name": "冬至",
+      "oldId": "skill_000555",
+      "newId": "skill_000556"
+    },
+    {
+      "gameId": "7090390",
+      "name": "霜冻",
+      "oldId": "skill_000556",
+      "newId": "skill_000557"
+    },
+    {
+      "gameId": "7090400",
+      "name": "冰点",
+      "oldId": "skill_000557",
+      "newId": "skill_000558"
+    },
+    {
+      "gameId": "7090430",
+      "name": "冷凝",
+      "oldId": "skill_000558",
+      "newId": "skill_000559"
+    },
+    {
+      "gameId": "7090440",
+      "name": "寒潮",
+      "oldId": "skill_000559",
+      "newId": "skill_000560"
+    },
+    {
+      "gameId": "7090450",
+      "name": "冰裂",
+      "oldId": "skill_000560",
+      "newId": "skill_000561"
+    },
+    {
+      "gameId": "7090460",
+      "name": "雪原狩猎",
+      "oldId": "skill_000561",
+      "newId": "skill_000562"
+    },
+    {
+      "gameId": "7090470",
+      "name": "打喷嚏",
+      "oldId": "skill_000562",
+      "newId": "skill_000563"
+    },
+    {
+      "gameId": "7100120",
+      "name": "龙吼",
+      "oldId": "skill_000563",
+      "newId": "skill_000564"
+    },
+    {
+      "gameId": "7100130",
+      "name": "吹炎",
+      "oldId": "skill_000564",
+      "newId": "skill_000565"
+    },
+    {
+      "gameId": "7100140",
+      "name": "怨力打击",
+      "oldId": "skill_000565",
+      "newId": "skill_000566"
+    },
+    {
+      "gameId": "7100150",
+      "name": "升龙咆哮",
+      "oldId": "skill_000566",
+      "newId": "skill_000567"
+    },
+    {
+      "gameId": "7100160",
+      "name": "龙之利爪",
+      "oldId": "skill_000567",
+      "newId": "skill_000568"
+    },
+    {
+      "gameId": "7100170",
+      "name": "龙吟",
+      "oldId": "skill_000568",
+      "newId": "skill_000569"
+    },
+    {
+      "gameId": "7100180",
+      "name": "架势",
+      "oldId": "skill_000569",
+      "newId": "skill_000570"
+    },
+    {
+      "gameId": "7100190",
+      "name": "龙爪",
+      "oldId": "skill_000570",
+      "newId": "skill_000571"
+    },
+    {
+      "gameId": "7100200",
+      "name": "龙息环爆",
+      "oldId": "skill_000571",
+      "newId": "skill_000572"
+    },
+    {
+      "gameId": "7100210",
+      "name": "角击",
+      "oldId": "skill_000572",
+      "newId": "skill_000573"
+    },
+    {
+      "gameId": "7100220",
+      "name": "龙炮",
+      "oldId": "skill_000573",
+      "newId": "skill_000574"
+    },
+    {
+      "gameId": "7100230",
+      "name": "隼鳞",
+      "oldId": "skill_000574",
+      "newId": "skill_000575"
+    },
+    {
+      "gameId": "7100240",
+      "name": "龙威",
+      "oldId": "skill_000575",
+      "newId": "skill_000576"
+    },
+    {
+      "gameId": "7100250",
+      "name": "龙血",
+      "oldId": "skill_000576",
+      "newId": "skill_000577"
+    },
+    {
+      "gameId": "7100260",
+      "name": "绵里藏针",
+      "oldId": "skill_000577",
+      "newId": "skill_000578"
+    },
+    {
+      "gameId": "7100300",
+      "name": "龙守望",
+      "oldId": "skill_000578",
+      "newId": "skill_000579"
+    },
+    {
+      "gameId": "7100320",
+      "name": "守护咒",
+      "oldId": "skill_000579",
+      "newId": "skill_000580"
+    },
+    {
+      "gameId": "7110010",
+      "name": "导电撞击",
+      "oldId": "skill_000580",
+      "newId": "skill_000581"
+    },
+    {
+      "gameId": "7110180",
+      "name": "电弧",
+      "oldId": "skill_000581",
+      "newId": "skill_000582"
+    },
+    {
+      "gameId": "7110190",
+      "name": "触电",
+      "oldId": "skill_000582",
+      "newId": "skill_000583"
+    },
+    {
+      "gameId": "7110200",
+      "name": "超导",
+      "oldId": "skill_000583",
+      "newId": "skill_000584"
+    },
+    {
+      "gameId": "7110210",
+      "name": "引雷",
+      "oldId": "skill_000584",
+      "newId": "skill_000585"
+    },
+    {
+      "gameId": "7110220",
+      "name": "闪击折返",
+      "oldId": "skill_000585",
+      "newId": "skill_000586"
+    },
+    {
+      "gameId": "7110230",
+      "name": "落雷",
+      "oldId": "skill_000586",
+      "newId": "skill_000587"
+    },
+    {
+      "gameId": "7110240",
+      "name": "雷暴",
+      "oldId": "skill_000587",
+      "newId": "skill_000588"
+    },
+    {
+      "gameId": "7110250",
+      "name": "麻痹",
+      "oldId": "skill_000588",
+      "newId": "skill_000589"
+    },
+    {
+      "gameId": "7110260",
+      "name": "增程电池",
+      "oldId": "skill_000589",
+      "newId": "skill_000590"
+    },
+    {
+      "gameId": "7110270",
+      "name": "加大功率",
+      "oldId": "skill_000590",
+      "newId": "skill_000591"
+    },
+    {
+      "gameId": "7110280",
+      "name": "集中",
+      "oldId": "skill_000591",
+      "newId": "skill_000592"
+    },
+    {
+      "gameId": "7110290",
+      "name": "电流",
+      "oldId": "skill_000592",
+      "newId": "skill_000593"
+    },
+    {
+      "gameId": "7110300",
+      "name": "球状闪电",
+      "oldId": "skill_000593",
+      "newId": "skill_000594"
+    },
+    {
+      "gameId": "7110310",
+      "name": "磁干扰",
+      "oldId": "skill_000594",
+      "newId": "skill_000595"
+    },
+    {
+      "gameId": "7110320",
+      "name": "离子火花",
+      "oldId": "skill_000595",
+      "newId": "skill_000596"
+    },
+    {
+      "gameId": "7110330",
+      "name": "交叉闪电",
+      "oldId": "skill_000596",
+      "newId": "skill_000597"
+    },
+    {
+      "gameId": "7110340",
+      "name": "超导加速",
+      "oldId": "skill_000597",
+      "newId": "skill_000598"
+    },
+    {
+      "gameId": "7110350",
+      "name": "双联脉冲",
+      "oldId": "skill_000598",
+      "newId": "skill_000599"
+    },
+    {
+      "gameId": "7110360",
+      "name": "过载回路",
+      "oldId": "skill_000599",
+      "newId": "skill_000600"
+    },
+    {
+      "gameId": "7110370",
+      "name": "远程访问",
+      "oldId": "skill_000600",
+      "newId": "skill_000601"
+    },
+    {
+      "gameId": "7110380",
+      "name": "感电",
+      "oldId": "skill_000601",
+      "newId": "skill_000602"
+    },
+    {
+      "gameId": "7110390",
+      "name": "强制重启",
+      "oldId": "skill_000602",
+      "newId": "skill_000603"
+    },
+    {
+      "gameId": "7110410",
+      "name": "电离爆破",
+      "oldId": "skill_000603",
+      "newId": "skill_000604"
+    },
+    {
+      "gameId": "7110420",
+      "name": "电磁偏转",
+      "oldId": "skill_000604",
+      "newId": "skill_000605"
+    },
+    {
+      "gameId": "7110440",
+      "name": "惊雷",
+      "oldId": "skill_000605",
+      "newId": "skill_000606"
+    },
+    {
+      "gameId": "7110450",
+      "name": "通电",
+      "oldId": "skill_000606",
+      "newId": "skill_000607"
+    },
+    {
+      "gameId": "7110460",
+      "name": "踏雷",
+      "oldId": "skill_000607",
+      "newId": "skill_000608"
+    },
+    {
+      "gameId": "7120060",
+      "name": "毒针",
+      "oldId": "skill_000608",
+      "newId": "skill_000609"
+    },
+    {
+      "gameId": "7120070",
+      "name": "腐蚀酸液",
+      "oldId": "skill_000609",
+      "newId": "skill_000610"
+    },
+    {
+      "gameId": "7120080",
+      "name": "连续毒针",
+      "oldId": "skill_000610",
+      "newId": "skill_000611"
+    },
+    {
+      "gameId": "7120090",
+      "name": "毒囊",
+      "oldId": "skill_000611",
+      "newId": "skill_000612"
+    },
+    {
+      "gameId": "7120100",
+      "name": "毒液渗透",
+      "oldId": "skill_000612",
+      "newId": "skill_000613"
+    },
+    {
+      "gameId": "7120110",
+      "name": "感染病",
+      "oldId": "skill_000613",
+      "newId": "skill_000614"
+    },
+    {
+      "gameId": "7120120",
+      "name": "毒孢子",
+      "oldId": "skill_000614",
+      "newId": "skill_000615"
+    },
+    {
+      "gameId": "7120130",
+      "name": "毒雾",
+      "oldId": "skill_000615",
+      "newId": "skill_000616"
+    },
+    {
+      "gameId": "7120140",
+      "name": "剧毒",
+      "oldId": "skill_000616",
+      "newId": "skill_000617"
+    },
+    {
+      "gameId": "7120150",
+      "name": "以毒攻毒",
+      "oldId": "skill_000617",
+      "newId": "skill_000618"
+    },
+    {
+      "gameId": "7120160",
+      "name": "落井下毒",
+      "oldId": "skill_000618",
+      "newId": "skill_000619"
+    },
+    {
+      "gameId": "7120180",
+      "name": "毒泡泡",
+      "oldId": "skill_000619",
+      "newId": "skill_000620"
+    },
+    {
+      "gameId": "7120190",
+      "name": "溃烂触碰",
+      "oldId": "skill_000620",
+      "newId": "skill_000621"
+    },
+    {
+      "gameId": "7120200",
+      "name": "毒沼",
+      "oldId": "skill_000621",
+      "newId": "skill_000622"
+    },
+    {
+      "gameId": "7120210",
+      "name": "瘴气喷射",
+      "oldId": "skill_000622",
+      "newId": "skill_000623"
+    },
+    {
+      "gameId": "7120220",
+      "name": "鸩毒",
+      "oldId": "skill_000623",
+      "newId": "skill_000624"
+    },
+    {
+      "gameId": "7120230",
+      "name": "腐化",
+      "oldId": "skill_000624",
+      "newId": "skill_000625"
+    },
+    {
+      "gameId": "7120240",
+      "name": "疫病吐息",
+      "oldId": "skill_000625",
+      "newId": "skill_000626"
+    },
+    {
+      "gameId": "7120250",
+      "name": "不可接触",
+      "oldId": "skill_000626",
+      "newId": "skill_000627"
+    },
+    {
+      "gameId": "7120260",
+      "name": "毒誓",
+      "oldId": "skill_000627",
+      "newId": "skill_000628"
+    },
+    {
+      "gameId": "7120270",
+      "name": "溶解",
+      "oldId": "skill_000628",
+      "newId": "skill_000629"
+    },
+    {
+      "gameId": "7120280",
+      "name": "过敏原",
+      "oldId": "skill_000629",
+      "newId": "skill_000630"
+    },
+    {
+      "gameId": "7120290",
+      "name": "重金属粉尘",
+      "oldId": "skill_000630",
+      "newId": "skill_000631"
+    },
+    {
+      "gameId": "7120300",
+      "name": "毒肽",
+      "oldId": "skill_000631",
+      "newId": "skill_000632"
+    },
+    {
+      "gameId": "7130100",
+      "name": "啃咬",
+      "oldId": "skill_000632",
+      "newId": "skill_000633"
+    },
+    {
+      "gameId": "7130110",
+      "name": "飞断",
+      "oldId": "skill_000633",
+      "newId": "skill_000634"
+    },
+    {
+      "gameId": "7130120",
+      "name": "虫群过境",
+      "oldId": "skill_000634",
+      "newId": "skill_000635"
+    },
+    {
+      "gameId": "7130130",
+      "name": "虫群",
+      "oldId": "skill_000635",
+      "newId": "skill_000636"
+    },
+    {
+      "gameId": "7130140",
+      "name": "虫网",
+      "oldId": "skill_000636",
+      "newId": "skill_000637"
+    },
+    {
+      "gameId": "7130150",
+      "name": "虫击",
+      "oldId": "skill_000637",
+      "newId": "skill_000638"
+    },
+    {
+      "gameId": "7130160",
+      "name": "虫鸣",
+      "oldId": "skill_000638",
+      "newId": "skill_000639"
+    },
+    {
+      "gameId": "7130170",
+      "name": "捆缚",
+      "oldId": "skill_000639",
+      "newId": "skill_000640"
+    },
+    {
+      "gameId": "7130180",
+      "name": "假寐",
+      "oldId": "skill_000640",
+      "newId": "skill_000641"
+    },
+    {
+      "gameId": "7130190",
+      "name": "虫茧",
+      "oldId": "skill_000641",
+      "newId": "skill_000642"
+    },
+    {
+      "gameId": "7130200",
+      "name": "虫群智慧",
+      "oldId": "skill_000642",
+      "newId": "skill_000643"
+    },
+    {
+      "gameId": "7130210",
+      "name": "贮藏",
+      "oldId": "skill_000643",
+      "newId": "skill_000644"
+    },
+    {
+      "gameId": "7130220",
+      "name": "掩护",
+      "oldId": "skill_000644",
+      "newId": "skill_000645"
+    },
+    {
+      "gameId": "7130240",
+      "name": "蛰针",
+      "oldId": "skill_000645",
+      "newId": "skill_000646"
+    },
+    {
+      "gameId": "7130250",
+      "name": "虫刺",
+      "oldId": "skill_000646",
+      "newId": "skill_000647"
+    },
+    {
+      "gameId": "7130260",
+      "name": "噬心",
+      "oldId": "skill_000647",
+      "newId": "skill_000648"
+    },
+    {
+      "gameId": "7130270",
+      "name": "尾后针",
+      "oldId": "skill_000648",
+      "newId": "skill_000649"
+    },
+    {
+      "gameId": "7130280",
+      "name": "虫蛊",
+      "oldId": "skill_000649",
+      "newId": "skill_000650"
+    },
+    {
+      "gameId": "7130290",
+      "name": "翅刃",
+      "oldId": "skill_000650",
+      "newId": "skill_000651"
+    },
+    {
+      "gameId": "7130300",
+      "name": "网缚",
+      "oldId": "skill_000651",
+      "newId": "skill_000652"
+    },
+    {
+      "gameId": "7130310",
+      "name": "食腐",
+      "oldId": "skill_000652",
+      "newId": "skill_000653"
+    },
+    {
+      "gameId": "7130320",
+      "name": "虫结阵",
+      "oldId": "skill_000653",
+      "newId": "skill_000654"
+    },
+    {
+      "gameId": "7130330",
+      "name": "振翅",
+      "oldId": "skill_000654",
+      "newId": "skill_000655"
+    },
+    {
+      "gameId": "7130340",
+      "name": "拟寄生",
+      "oldId": "skill_000655",
+      "newId": "skill_000656"
+    },
+    {
+      "gameId": "7130350",
+      "name": "草虫冲击",
+      "oldId": "skill_000656",
+      "newId": "skill_000657"
+    },
+    {
+      "gameId": "7130360",
+      "name": "信息素",
+      "oldId": "skill_000657",
+      "newId": "skill_000658"
+    },
+    {
+      "gameId": "7130370",
+      "name": "迁飞扩散",
+      "oldId": "skill_000658",
+      "newId": "skill_000659"
+    },
+    {
+      "gameId": "7140050",
+      "name": "寸拳",
+      "oldId": "skill_000659",
+      "newId": "skill_000660"
+    },
+    {
+      "gameId": "7140060",
+      "name": "崩拳",
+      "oldId": "skill_000660",
+      "newId": "skill_000661"
+    },
+    {
+      "gameId": "7140070",
+      "name": "散手",
+      "oldId": "skill_000661",
+      "newId": "skill_000662"
+    },
+    {
+      "gameId": "7140080",
+      "name": "无影脚",
+      "oldId": "skill_000662",
+      "newId": "skill_000663"
+    },
+    {
+      "gameId": "7140090",
+      "name": "斩断",
+      "oldId": "skill_000663",
+      "newId": "skill_000664"
+    },
+    {
+      "gameId": "7140100",
+      "name": "反击拳",
+      "oldId": "skill_000664",
+      "newId": "skill_000665"
+    },
+    {
+      "gameId": "7140120",
+      "name": "技巧打击",
+      "oldId": "skill_000665",
+      "newId": "skill_000666"
+    },
+    {
+      "gameId": "7140130",
+      "name": "截拳",
+      "oldId": "skill_000666",
+      "newId": "skill_000667"
+    },
+    {
+      "gameId": "7140140",
+      "name": "化劲",
+      "oldId": "skill_000667",
+      "newId": "skill_000668"
+    },
+    {
+      "gameId": "7140150",
+      "name": "破绽",
+      "oldId": "skill_000668",
+      "newId": "skill_000669"
+    },
+    {
+      "gameId": "7140160",
+      "name": "破防",
+      "oldId": "skill_000669",
+      "newId": "skill_000670"
+    },
+    {
+      "gameId": "7140170",
+      "name": "气沉丹田",
+      "oldId": "skill_000670",
+      "newId": "skill_000671"
+    },
+    {
+      "gameId": "7140180",
+      "name": "硬门",
+      "oldId": "skill_000671",
+      "newId": "skill_000672"
+    },
+    {
+      "gameId": "7140190",
+      "name": "听桥",
+      "oldId": "skill_000672",
+      "newId": "skill_000673"
+    },
+    {
+      "gameId": "7140210",
+      "name": "气波",
+      "oldId": "skill_000673",
+      "newId": "skill_000674"
+    },
+    {
+      "gameId": "7140220",
+      "name": "爆冲",
+      "oldId": "skill_000674",
+      "newId": "skill_000675"
+    },
+    {
+      "gameId": "7140230",
+      "name": "缠丝劲",
+      "oldId": "skill_000675",
+      "newId": "skill_000676"
+    },
+    {
+      "gameId": "7140240",
+      "name": "贯手",
+      "oldId": "skill_000676",
+      "newId": "skill_000677"
+    },
+    {
+      "gameId": "7140250",
+      "name": "影袭",
+      "oldId": "skill_000677",
+      "newId": "skill_000678"
+    },
+    {
+      "gameId": "7140260",
+      "name": "一拳",
+      "oldId": "skill_000678",
+      "newId": "skill_000679"
+    },
+    {
+      "gameId": "7140270",
+      "name": "叠势",
+      "oldId": "skill_000679",
+      "newId": "skill_000680"
+    },
+    {
+      "gameId": "7140280",
+      "name": "提气",
+      "oldId": "skill_000680",
+      "newId": "skill_000681"
+    },
+    {
+      "gameId": "7140290",
+      "name": "预备势",
+      "oldId": "skill_000681",
+      "newId": "skill_000682"
+    },
+    {
+      "gameId": "7140300",
+      "name": "防御反击",
+      "oldId": "skill_000682",
+      "newId": "skill_000683"
+    },
+    {
+      "gameId": "7140330",
+      "name": "马步",
+      "oldId": "skill_000683",
+      "newId": "skill_000684"
+    },
+    {
+      "gameId": "7140340",
+      "name": "驱赶",
+      "oldId": "skill_000684",
+      "newId": "skill_000685"
+    },
+    {
+      "gameId": "7140360",
+      "name": "回旋踢",
+      "oldId": "skill_000685",
+      "newId": "skill_000686"
+    },
+    {
+      "gameId": "7150050",
+      "name": "啄击",
+      "oldId": "skill_000686",
+      "newId": "skill_000687"
+    },
+    {
+      "gameId": "7150060",
+      "name": "扇风",
+      "oldId": "skill_000687",
+      "newId": "skill_000688"
+    },
+    {
+      "gameId": "7150080",
+      "name": "翼击",
+      "oldId": "skill_000688",
+      "newId": "skill_000689"
+    },
+    {
+      "gameId": "7150090",
+      "name": "疾风刺",
+      "oldId": "skill_000689",
+      "newId": "skill_000690"
+    },
+    {
+      "gameId": "7150110",
+      "name": "龙卷风",
+      "oldId": "skill_000690",
+      "newId": "skill_000691"
+    },
+    {
+      "gameId": "7150120",
+      "name": "乘风",
+      "oldId": "skill_000691",
+      "newId": "skill_000692"
+    },
+    {
+      "gameId": "7150130",
+      "name": "风起",
+      "oldId": "skill_000692",
+      "newId": "skill_000693"
+    },
+    {
+      "gameId": "7150140",
+      "name": "暴风眼",
+      "oldId": "skill_000693",
+      "newId": "skill_000694"
+    },
+    {
+      "gameId": "7150150",
+      "name": "风墙",
+      "oldId": "skill_000694",
+      "newId": "skill_000695"
+    },
+    {
+      "gameId": "7150170",
+      "name": "疾风涡轮",
+      "oldId": "skill_000695",
+      "newId": "skill_000696"
+    },
+    {
+      "gameId": "7150180",
+      "name": "鸣叫",
+      "oldId": "skill_000696",
+      "newId": "skill_000697"
+    },
+    {
+      "gameId": "7150190",
+      "name": "鹰爪",
+      "oldId": "skill_000697",
+      "newId": "skill_000698"
+    },
+    {
+      "gameId": "7150200",
+      "name": "羽刃",
+      "oldId": "skill_000698",
+      "newId": "skill_000699"
+    },
+    {
+      "gameId": "7150210",
+      "name": "风矢",
+      "oldId": "skill_000699",
+      "newId": "skill_000700"
+    },
+    {
+      "gameId": "7150220",
+      "name": "回旋风暴",
+      "oldId": "skill_000700",
+      "newId": "skill_000701"
+    },
+    {
+      "gameId": "7150240",
+      "name": "俯冲猛击",
+      "oldId": "skill_000701",
+      "newId": "skill_000702"
+    },
+    {
+      "gameId": "7150250",
+      "name": "闪击",
+      "oldId": "skill_000702",
+      "newId": "skill_000703"
+    },
+    {
+      "gameId": "7150260",
+      "name": "飞羽",
+      "oldId": "skill_000703",
+      "newId": "skill_000704"
+    },
+    {
+      "gameId": "7150270",
+      "name": "风隐",
+      "oldId": "skill_000704",
+      "newId": "skill_000705"
+    },
+    {
+      "gameId": "7150300",
+      "name": "羽化加速",
+      "oldId": "skill_000705",
+      "newId": "skill_000706"
+    },
+    {
+      "gameId": "7150310",
+      "name": "羽翼庇护",
+      "oldId": "skill_000706",
+      "newId": "skill_000707"
+    },
+    {
+      "gameId": "7150320",
+      "name": "疾风连袭",
+      "oldId": "skill_000707",
+      "newId": "skill_000708"
+    },
+    {
+      "gameId": "7150350",
+      "name": "远行",
+      "oldId": "skill_000708",
+      "newId": "skill_000709"
+    },
+    {
+      "gameId": "7150360",
+      "name": "试飞",
+      "oldId": "skill_000709",
+      "newId": "skill_000710"
+    },
+    {
+      "gameId": "7150370",
+      "name": "超声波",
+      "oldId": "skill_000710",
+      "newId": "skill_000711"
+    },
+    {
+      "gameId": "7150380",
+      "name": "飞箭",
+      "oldId": "skill_000711",
+      "newId": "skill_000712"
+    },
+    {
+      "gameId": "7150390",
+      "name": "俯冲",
+      "oldId": "skill_000712",
+      "newId": "skill_000713"
+    },
+    {
+      "gameId": "7150400",
+      "name": "月影交错",
+      "oldId": "skill_000713",
+      "newId": "skill_000714"
+    },
+    {
+      "gameId": "7150410",
+      "name": "惊鸿一瞥",
+      "oldId": "skill_000714",
+      "newId": "skill_000715"
+    },
+    {
+      "gameId": "7150420",
+      "name": "无风",
+      "oldId": "skill_000715",
+      "newId": "skill_000716"
+    },
+    {
+      "gameId": "7160130",
+      "name": "飞吻",
+      "oldId": "skill_000716",
+      "newId": "skill_000717"
+    },
+    {
+      "gameId": "7160140",
+      "name": "超级糖果",
+      "oldId": "skill_000717",
+      "newId": "skill_000718"
+    },
+    {
+      "gameId": "7160150",
+      "name": "砂糖弹球",
+      "oldId": "skill_000718",
+      "newId": "skill_000719"
+    },
+    {
+      "gameId": "7160160",
+      "name": "生日蛋糕",
+      "oldId": "skill_000719",
+      "newId": "skill_000720"
+    },
+    {
+      "gameId": "7160170",
+      "name": "示弱",
+      "oldId": "skill_000720",
+      "newId": "skill_000721"
+    },
+    {
+      "gameId": "7160180",
+      "name": "赤子之心",
+      "oldId": "skill_000721",
+      "newId": "skill_000722"
+    },
+    {
+      "gameId": "7160190",
+      "name": "反弹",
+      "oldId": "skill_000722",
+      "newId": "skill_000723"
+    },
+    {
+      "gameId": "7160200",
+      "name": "甜心续航",
+      "oldId": "skill_000723",
+      "newId": "skill_000724"
+    },
+    {
+      "gameId": "7160210",
+      "name": "破罐破摔",
+      "oldId": "skill_000724",
+      "newId": "skill_000725"
+    },
+    {
+      "gameId": "7160220",
+      "name": "鞭打",
+      "oldId": "skill_000725",
+      "newId": "skill_000726"
+    },
+    {
+      "gameId": "7160230",
+      "name": "魅惑",
+      "oldId": "skill_000726",
+      "newId": "skill_000727"
+    },
+    {
+      "gameId": "7160240",
+      "name": "碰爪",
+      "oldId": "skill_000727",
+      "newId": "skill_000728"
+    },
+    {
+      "gameId": "7160250",
+      "name": "撒娇",
+      "oldId": "skill_000728",
+      "newId": "skill_000729"
+    },
+    {
+      "gameId": "7160260",
+      "name": "爆米花爆破",
+      "oldId": "skill_000729",
+      "newId": "skill_000730"
+    },
+    {
+      "gameId": "7160270",
+      "name": "击鼓传花",
+      "oldId": "skill_000730",
+      "newId": "skill_000731"
+    },
+    {
+      "gameId": "7160280",
+      "name": "月光合奏",
+      "oldId": "skill_000731",
+      "newId": "skill_000732"
+    },
+    {
+      "gameId": "7160290",
+      "name": "捧杀",
+      "oldId": "skill_000732",
+      "newId": "skill_000733"
+    },
+    {
+      "gameId": "7160330",
+      "name": "拆礼物",
+      "oldId": "skill_000733",
+      "newId": "skill_000734"
+    },
+    {
+      "gameId": "7160340",
+      "name": "委屈",
+      "oldId": "skill_000734",
+      "newId": "skill_000735"
+    },
+    {
+      "gameId": "7160350",
+      "name": "可爱",
+      "oldId": "skill_000735",
+      "newId": "skill_000736"
+    },
+    {
+      "gameId": "7160360",
+      "name": "转圈圈",
+      "oldId": "skill_000736",
+      "newId": "skill_000737"
+    },
+    {
+      "gameId": "7160370",
+      "name": "蹦跶",
+      "oldId": "skill_000737",
+      "newId": "skill_000738"
+    },
+    {
+      "gameId": "7160380",
+      "name": "加油",
+      "oldId": "skill_000738",
+      "newId": "skill_000739"
+    },
+    {
+      "gameId": "7160390",
+      "name": "耍赖",
+      "oldId": "skill_000739",
+      "newId": "skill_000740"
+    },
+    {
+      "gameId": "7160400",
+      "name": "做好事",
+      "oldId": "skill_000740",
+      "newId": "skill_000741"
+    },
+    {
+      "gameId": "7170090",
+      "name": "鬼火",
+      "oldId": "skill_000741",
+      "newId": "skill_000742"
+    },
+    {
+      "gameId": "7170100",
+      "name": "惊吓盒子",
+      "oldId": "skill_000742",
+      "newId": "skill_000743"
+    },
+    {
+      "gameId": "7170110",
+      "name": "背袭",
+      "oldId": "skill_000743",
+      "newId": "skill_000744"
+    },
+    {
+      "gameId": "7170120",
+      "name": "坟场搏击",
+      "oldId": "skill_000744",
+      "newId": "skill_000745"
+    },
+    {
+      "gameId": "7170130",
+      "name": "恶作剧",
+      "oldId": "skill_000745",
+      "newId": "skill_000746"
+    },
+    {
+      "gameId": "7170140",
+      "name": "降灵",
+      "oldId": "skill_000746",
+      "newId": "skill_000747"
+    },
+    {
+      "gameId": "7170150",
+      "name": "报复",
+      "oldId": "skill_000747",
+      "newId": "skill_000748"
+    },
+    {
+      "gameId": "7170160",
+      "name": "恐吓",
+      "oldId": "skill_000748",
+      "newId": "skill_000749"
+    },
+    {
+      "gameId": "7170170",
+      "name": "幽灵爆发",
+      "oldId": "skill_000749",
+      "newId": "skill_000750"
+    },
+    {
+      "gameId": "7170190",
+      "name": "诡刺",
+      "oldId": "skill_000750",
+      "newId": "skill_000751"
+    },
+    {
+      "gameId": "7170200",
+      "name": "幻象",
+      "oldId": "skill_000751",
+      "newId": "skill_000752"
+    },
+    {
+      "gameId": "7170210",
+      "name": "午夜噪音",
+      "oldId": "skill_000752",
+      "newId": "skill_000753"
+    },
+    {
+      "gameId": "7170220",
+      "name": "灵媒",
+      "oldId": "skill_000753",
+      "newId": "skill_000754"
+    },
+    {
+      "gameId": "7170230",
+      "name": "灵光",
+      "oldId": "skill_000754",
+      "newId": "skill_000755"
+    },
+    {
+      "gameId": "7170240",
+      "name": "嘲弄",
+      "oldId": "skill_000755",
+      "newId": "skill_000756"
+    },
+    {
+      "gameId": "7170250",
+      "name": "勾魂",
+      "oldId": "skill_000756",
+      "newId": "skill_000757"
+    },
+    {
+      "gameId": "7170260",
+      "name": "虚化",
+      "oldId": "skill_000757",
+      "newId": "skill_000758"
+    },
+    {
+      "gameId": "7170280",
+      "name": "魔镜",
+      "oldId": "skill_000758",
+      "newId": "skill_000759"
+    },
+    {
+      "gameId": "7170290",
+      "name": "撞鬼",
+      "oldId": "skill_000759",
+      "newId": "skill_000760"
+    },
+    {
+      "gameId": "7170300",
+      "name": "入梦",
+      "oldId": "skill_000760",
+      "newId": "skill_000761"
+    },
+    {
+      "gameId": "7170310",
+      "name": "吃独食",
+      "oldId": "skill_000761",
+      "newId": "skill_000762"
+    },
+    {
+      "gameId": "7170330",
+      "name": "小型打劫",
+      "oldId": "skill_000762",
+      "newId": "skill_000763"
+    },
+    {
+      "gameId": "7170340",
+      "name": "回收",
+      "oldId": "skill_000763",
+      "newId": "skill_000764"
+    },
+    {
+      "gameId": "7170350",
+      "name": "掠影",
+      "oldId": "skill_000764",
+      "newId": "skill_000765"
+    },
+    {
+      "gameId": "7170360",
+      "name": "离魂术",
+      "oldId": "skill_000765",
+      "newId": "skill_000766"
+    },
+    {
+      "gameId": "7180070",
+      "name": "魔爪",
+      "oldId": "skill_000766",
+      "newId": "skill_000767"
+    },
+    {
+      "gameId": "7180080",
+      "name": "恶能量",
+      "oldId": "skill_000767",
+      "newId": "skill_000768"
+    },
+    {
+      "gameId": "7180090",
+      "name": "蝙蝠",
+      "oldId": "skill_000768",
+      "newId": "skill_000769"
+    },
+    {
+      "gameId": "7180100",
+      "name": "撕裂",
+      "oldId": "skill_000769",
+      "newId": "skill_000770"
+    },
+    {
+      "gameId": "7180110",
+      "name": "撕咬",
+      "oldId": "skill_000770",
+      "newId": "skill_000771"
+    },
+    {
+      "gameId": "7180120",
+      "name": "暗突袭",
+      "oldId": "skill_000771",
+      "newId": "skill_000772"
+    },
+    {
+      "gameId": "7180130",
+      "name": "极限撕裂",
+      "oldId": "skill_000772",
+      "newId": "skill_000773"
+    },
+    {
+      "gameId": "7180140",
+      "name": "灾厄",
+      "oldId": "skill_000773",
+      "newId": "skill_000774"
+    },
+    {
+      "gameId": "7180150",
+      "name": "彼岸之手",
+      "oldId": "skill_000774",
+      "newId": "skill_000775"
+    },
+    {
+      "gameId": "7180160",
+      "name": "贪婪",
+      "oldId": "skill_000775",
+      "newId": "skill_000776"
+    },
+    {
+      "gameId": "7180170",
+      "name": "力量吞噬",
+      "oldId": "skill_000776",
+      "newId": "skill_000777"
+    },
+    {
+      "gameId": "7180180",
+      "name": "欺诈契约",
+      "oldId": "skill_000777",
+      "newId": "skill_000778"
+    },
+    {
+      "gameId": "7180190",
+      "name": "恶意逃离",
+      "oldId": "skill_000778",
+      "newId": "skill_000779"
+    },
+    {
+      "gameId": "7180200",
+      "name": "隐藏条款",
+      "oldId": "skill_000779",
+      "newId": "skill_000780"
+    },
+    {
+      "gameId": "7180210",
+      "name": "等价交换",
+      "oldId": "skill_000780",
+      "newId": "skill_000781"
+    },
+    {
+      "gameId": "7180230",
+      "name": "恶念交换",
+      "oldId": "skill_000781",
+      "newId": "skill_000782"
+    },
+    {
+      "gameId": "7180240",
+      "name": "迫害",
+      "oldId": "skill_000782",
+      "newId": "skill_000783"
+    },
+    {
+      "gameId": "7180250",
+      "name": "掠夺",
+      "oldId": "skill_000783",
+      "newId": "skill_000784"
+    },
+    {
+      "gameId": "7180260",
+      "name": "黑手",
+      "oldId": "skill_000784",
+      "newId": "skill_000785"
+    },
+    {
+      "gameId": "7180270",
+      "name": "诋毁",
+      "oldId": "skill_000785",
+      "newId": "skill_000786"
+    },
+    {
+      "gameId": "7180280",
+      "name": "栽赃",
+      "oldId": "skill_000786",
+      "newId": "skill_000787"
+    },
+    {
+      "gameId": "7180290",
+      "name": "跌落",
+      "oldId": "skill_000787",
+      "newId": "skill_000788"
+    },
+    {
+      "gameId": "7180300",
+      "name": "骗局",
+      "oldId": "skill_000788",
+      "newId": "skill_000789"
+    },
+    {
+      "gameId": "7180310",
+      "name": "牵连",
+      "oldId": "skill_000789",
+      "newId": "skill_000790"
+    },
+    {
+      "gameId": "7180320",
+      "name": "暗箱操作",
+      "oldId": "skill_000790",
+      "newId": "skill_000791"
+    },
+    {
+      "gameId": "7180330",
+      "name": "虚假破产",
+      "oldId": "skill_000791",
+      "newId": "skill_000792"
+    },
+    {
+      "gameId": "7180340",
+      "name": "趁火打劫",
+      "oldId": "skill_000792",
+      "newId": "skill_000793"
+    },
+    {
+      "gameId": "7180350",
+      "name": "伪造账单",
+      "oldId": "skill_000793",
+      "newId": "skill_000794"
+    },
+    {
+      "gameId": "7180380",
+      "name": "限时特惠",
+      "oldId": "skill_000794",
+      "newId": "skill_000795"
+    },
+    {
+      "gameId": "7180390",
+      "name": "纺纱",
+      "oldId": "skill_000795",
+      "newId": "skill_000796"
+    },
+    {
+      "gameId": "7180400",
+      "name": "血契",
+      "oldId": "skill_000796",
+      "newId": "skill_000797"
+    },
+    {
+      "gameId": "7180410",
+      "name": "困兽",
+      "oldId": "skill_000797",
+      "newId": "skill_000798"
+    },
+    {
+      "gameId": "7180420",
+      "name": "下注",
+      "oldId": "skill_000798",
+      "newId": "skill_000799"
+    },
+    {
+      "gameId": "7180430",
+      "name": "杂耍",
+      "oldId": "skill_000799",
+      "newId": "skill_000800"
+    },
+    {
+      "gameId": "7180440",
+      "name": "假冒",
+      "oldId": "skill_000800",
+      "newId": "skill_000801"
+    },
+    {
+      "gameId": "7180450",
+      "name": "掉包",
+      "oldId": "skill_000801",
+      "newId": "skill_000802"
+    },
+    {
+      "gameId": "7180460",
+      "name": "暴打",
+      "oldId": "skill_000802",
+      "newId": "skill_000803"
+    },
+    {
+      "gameId": "7190210",
+      "name": "念力膨胀",
+      "oldId": "skill_000803",
+      "newId": "skill_000804"
+    },
+    {
+      "gameId": "7190220",
+      "name": "空间压迫",
+      "oldId": "skill_000804",
+      "newId": "skill_000805"
+    },
+    {
+      "gameId": "7190230",
+      "name": "坍缩",
+      "oldId": "skill_000805",
+      "newId": "skill_000806"
+    },
+    {
+      "gameId": "7190240",
+      "name": "四维降解",
+      "oldId": "skill_000806",
+      "newId": "skill_000807"
+    },
+    {
+      "gameId": "7190250",
+      "name": "偷师",
+      "oldId": "skill_000807",
+      "newId": "skill_000808"
+    },
+    {
+      "gameId": "7190260",
+      "name": "多维击打",
+      "oldId": "skill_000808",
+      "newId": "skill_000809"
+    },
+    {
+      "gameId": "7190270",
+      "name": "错乱",
+      "oldId": "skill_000809",
+      "newId": "skill_000810"
+    },
+    {
+      "gameId": "7190280",
+      "name": "超维投射",
+      "oldId": "skill_000810",
+      "newId": "skill_000811"
+    },
+    {
+      "gameId": "7190290",
+      "name": "星轨裂变",
+      "oldId": "skill_000811",
+      "newId": "skill_000812"
+    },
+    {
+      "gameId": "7190300",
+      "name": "星链",
+      "oldId": "skill_000812",
+      "newId": "skill_000813"
+    },
+    {
+      "gameId": "7190310",
+      "name": "超新星馈赠",
+      "oldId": "skill_000813",
+      "newId": "skill_000814"
+    },
+    {
+      "gameId": "7190320",
+      "name": "心灵洞悉",
+      "oldId": "skill_000814",
+      "newId": "skill_000815"
+    },
+    {
+      "gameId": "7190330",
+      "name": "二律背反",
+      "oldId": "skill_000815",
+      "newId": "skill_000816"
+    },
+    {
+      "gameId": "7190350",
+      "name": "粒子对撞",
+      "oldId": "skill_000816",
+      "newId": "skill_000817"
+    },
+    {
+      "gameId": "7190360",
+      "name": "星云漩涡",
+      "oldId": "skill_000817",
+      "newId": "skill_000818"
+    },
+    {
+      "gameId": "7190370",
+      "name": "双星",
+      "oldId": "skill_000818",
+      "newId": "skill_000819"
+    },
+    {
+      "gameId": "7190380",
+      "name": "针状物",
+      "oldId": "skill_000819",
+      "newId": "skill_000820"
+    },
+    {
+      "gameId": "7190390",
+      "name": "大爆炸",
+      "oldId": "skill_000820",
+      "newId": "skill_000821"
+    },
+    {
+      "gameId": "7190400",
+      "name": "冥想",
+      "oldId": "skill_000821",
+      "newId": "skill_000822"
+    },
+    {
+      "gameId": "7190410",
+      "name": "许愿池",
+      "oldId": "skill_000822",
+      "newId": "skill_000823"
+    },
+    {
+      "gameId": "7190420",
+      "name": "星痕",
+      "oldId": "skill_000823",
+      "newId": "skill_000824"
+    },
+    {
+      "gameId": "7190430",
+      "name": "叠加态",
+      "oldId": "skill_000824",
+      "newId": "skill_000825"
+    },
+    {
+      "gameId": "7190440",
+      "name": "天体吸积",
+      "oldId": "skill_000825",
+      "newId": "skill_000826"
+    },
+    {
+      "gameId": "7190450",
+      "name": "薄纱环",
+      "oldId": "skill_000826",
+      "newId": "skill_000827"
+    },
+    {
+      "gameId": "7190460",
+      "name": "重组",
+      "oldId": "skill_000827",
+      "newId": "skill_000828"
+    },
+    {
+      "gameId": "7190470",
+      "name": "月蚀",
+      "oldId": "skill_000828",
+      "newId": "skill_000829"
+    },
+    {
+      "gameId": "7190480",
+      "name": "仰望夜空",
+      "oldId": "skill_000829",
+      "newId": "skill_000830"
+    },
+    {
+      "gameId": "7190490",
+      "name": "观测者效应",
+      "oldId": "skill_000830",
+      "newId": "skill_000831"
+    },
+    {
+      "gameId": "7190500",
+      "name": "量子涨落",
+      "oldId": "skill_000831",
+      "newId": "skill_000832"
+    },
+    {
+      "gameId": "7190510",
+      "name": "奇点",
+      "oldId": "skill_000832",
+      "newId": "skill_000833"
+    },
+    {
+      "gameId": "7190520",
+      "name": "引力偏转",
+      "oldId": "skill_000833",
+      "newId": "skill_000834"
+    }
+  ],
+  "semanticSkillChanges": [
+    {
+      "gameId": "200326",
+      "before": null,
+      "after": [
+        "skill_000208",
+        {
+          "category": "特性",
+          "desc": "使用技能水弹后，敌方获得双攻+10%，双防-10%。",
+          "element": "无系别",
+          "energy": 0,
+          "game_id": 200326,
+          "icon": "Feature_200326.png",
+          "name": "吐水"
+        }
+      ]
+    }
+  ],
+  "semanticPetBattleChanges": [
+    {
+      "gameId": "3784",
+      "before": null,
+      "after": [
+        "pet_000620",
+        {
+          "can_double_ride": true,
+          "can_ride": true,
+          "catch_threshold": [
+            1000
+          ],
+          "class": "自然类精灵",
+          "description": "云梦豚对水特别挑，水稍微脏一点，它就会耷拉下小小的胸鳍不肯游动。很依赖长江豚，游到哪儿都要贴在它身边半个身位，只有天特别好的时候才敢自己钻出水面看一眼太阳，看两秒又躲到长江豚肚子底下。",
+          "ecology": {
+            "eggs": [
+              {
+                "description": "参与活动「小豚安家记」获得的珍贵精灵蛋，经过孵化可以得到“了不起”天分、且拥有量身定制资质、“同乘”特长的云梦豚。",
+                "fixed_aptitudes": [
+                  {
+                    "stat": "生命",
+                    "value": 8
+                  },
+                  {
+                    "stat": "魔攻",
+                    "value": 8
+                  },
+                  {
+                    "stat": "速度",
+                    "value": 8
+                  }
+                ],
+                "fixed_nature": "胆小",
+                "fixed_nature_negative": "物攻",
+                "fixed_nature_positive": "速度",
+                "icon": "Item_150006.png",
+                "name": "云梦豚的蛋",
+                "sources": [
+                  "参与活动「小豚安家记」"
+                ]
+              }
+            ],
+            "fruits": [
+              {
+                "description": "通过观察其花纹可以看出，这是云梦豚的果实。",
+                "icon": "Item_108244.png",
+                "name": "云梦豚的果实",
+                "sources": [
+                  "完成长江豚的图鉴课题获得"
+                ],
+                "wisdom_tree": false
+              }
+            ]
+          },
+          "egg_group": [
+            13
+          ],
+          "egg_size": {
+            "huge_min": 11074,
+            "max": 11200,
+            "min": 4900,
+            "mini_max": 5026,
+            "unit": "g"
+          },
+          "evolution_id": "evolution_03e5b95fb668",
+          "feature_skill_id": "skill_000208",
+          "game_id": 3784,
+          "handbook_id": "handbook_000467",
+          "handbook_show_topics": true,
+          "has_shiny": false,
+          "height": "0.34~0.51M",
+          "id": "pet_000620",
+          "image": {
+            "egg": "Item_107249.png",
+            "fruits": [
+              "Item_108244.png"
+            ],
+            "has_egg": true,
+            "has_fruit": true,
+            "head": "PetAvatar_3784.png",
+            "illustration": "PetPortrait_img_Wat_ZhuZhuTun1_001_Res.png",
+            "shiny": "PetPortrait_img_Wat_ZhuZhuTun1_101_Res.png"
+          },
+          "learnset_id": "learnset_82c460e52064",
+          "move_type": "地面",
+          "name": "云梦豚",
+          "number": "467",
+          "perception_range": 40,
+          "relation_key": "水系",
+          "release": {
+            "date": "2026-09-10",
+            "version": "1.1.1"
+          },
+          "siblings": {},
+          "stage": 1,
+          "stats": {
+            "atk": 37,
+            "def": 87,
+            "hp": 77,
+            "spa": 101,
+            "spd": 94,
+            "spe": 84
+          },
+          "submit_reward": 3000,
+          "talent_pool_id": 1001,
+          "title": "云梦豚",
+          "types": [
+            "水系"
+          ],
+          "weight": "14~28KG"
+        }
+      ]
+    },
+    {
+      "gameId": "3785",
+      "before": null,
+      "after": [
+        "pet_000621",
+        {
+          "can_double_ride": true,
+          "can_ride": true,
+          "catch_threshold": [
+            250
+          ],
+          "class": "自然类精灵",
+          "description": "长江豚从东方玄玉顺着江水一路游来，最终在回填山涧停了下来。它每天清晨带着云梦豚沿河巡游，划开一道水痕。岸边的洛克管叫它们“山涧上的蓝影\"，只要它还在这片水里游着，河水就干净得能看见底下的鹅卵石。",
+          "ecology": {
+            "acquisition_pet_id": "pet_000620"
+          },
+          "egg_group": [
+            13
+          ],
+          "egg_size": {
+            "huge_min": 11074,
+            "max": 11200,
+            "min": 4900,
+            "mini_max": 5026,
+            "unit": "g"
+          },
+          "evolution_id": "evolution_03e5b95fb668",
+          "feature_skill_id": "skill_000208",
+          "game_id": 3785,
+          "handbook_id": "handbook_000468",
+          "handbook_show_topics": true,
+          "has_shiny": false,
+          "height": "1.34~1.76M",
+          "id": "pet_000621",
+          "image": {
+            "egg": "Item_107249.png",
+            "fruits": [
+              "Item_108244.png"
+            ],
+            "has_egg": true,
+            "has_fruit": true,
+            "head": "PetAvatar_3785.png",
+            "illustration": "PetPortrait_img_Wat_ZhuZhuTun3_001_Res.png",
+            "shiny": "PetPortrait_img_Wat_ZhuZhuTun3_101_Res.png"
+          },
+          "learnset_id": "learnset_82c460e52064",
+          "move_type": "地面",
+          "name": "长江豚",
+          "number": "468",
+          "perception_range": 40,
+          "relation_key": "水系",
+          "release": {
+            "date": "2026-09-10",
+            "version": "1.1.1"
+          },
+          "siblings": {},
+          "stage": 2,
+          "stats": {
+            "atk": 46,
+            "def": 109,
+            "hp": 96,
+            "spa": 126,
+            "spd": 117,
+            "spe": 105
+          },
+          "submit_reward": 3000,
+          "talent_pool_id": 1001,
+          "title": "长江豚",
+          "types": [
+            "水系"
+          ],
+          "weight": "59~101KG"
+        }
+      ]
+    }
+  ],
+  "semanticLearnsetChanges": [],
+  "configChanges": [
+    {
+      "path": "/build_form/versions",
+      "before": [
+        {
+          "current": false,
+          "id": "s1-2026-05-07",
+          "label": "S1 赛季 5月7日数据"
+        },
+        {
+          "current": false,
+          "id": "s2-2026-05-21",
+          "label": "S2 赛季 5月21日数据"
+        },
+        {
+          "current": false,
+          "id": "s2-2026-05-28",
+          "label": "S2 赛季 5月28日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-07-17",
+          "label": "S3 赛季 7月17日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-07-30",
+          "label": "S3 赛季 7月30日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-08-18",
+          "label": "S3 赛季 8月18日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-08-20",
+          "label": "S3 赛季 8月20日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-08-27",
+          "label": "S3 赛季 8月27日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-10",
+          "label": "S4 月涌狂想 9月10日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-17",
+          "label": "S4 月涌狂想 9月17日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-24",
+          "label": "S4 月涌狂想 9月24日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-30",
+          "label": "S4 月涌狂想 9月30日数据"
+        },
+        {
+          "current": true,
+          "id": "s4-2026-10-15",
+          "label": "S4 月涌狂想 10月15日数据"
+        }
+      ],
+      "after": [
+        {
+          "current": false,
+          "id": "s1-2026-05-07",
+          "label": "S1 赛季 5月7日数据"
+        },
+        {
+          "current": false,
+          "id": "s2-2026-05-21",
+          "label": "S2 赛季 5月21日数据"
+        },
+        {
+          "current": false,
+          "id": "s2-2026-05-28",
+          "label": "S2 赛季 5月28日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-07-17",
+          "label": "S3 赛季 7月17日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-07-30",
+          "label": "S3 赛季 7月30日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-08-18",
+          "label": "S3 赛季 8月18日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-08-20",
+          "label": "S3 赛季 8月20日数据"
+        },
+        {
+          "current": false,
+          "id": "s3-2026-08-27",
+          "label": "S3 赛季 8月27日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-10",
+          "label": "S4 月涌狂想 9月10日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-17",
+          "label": "S4 月涌狂想 9月17日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-24",
+          "label": "S4 月涌狂想 9月24日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-09-30",
+          "label": "S4 月涌狂想 9月30日数据"
+        },
+        {
+          "current": false,
+          "id": "s4-2026-10-15",
+          "label": "S4 月涌狂想 10月15日数据"
+        },
+        {
+          "current": true,
+          "id": "s4-2026-10-16",
+          "label": "S4 月涌狂想 10月15日PC数据（1016交付包）"
+        }
+      ]
+    },
+    {
+      "path": "/current_version",
+      "before": "s4-2026-10-15",
+      "after": "s4-2026-10-16"
+    },
+    {
+      "path": "/pet_count",
+      "before": 631,
+      "after": 633
+    }
+  ],
+  "requiredMoves": 579,
+  "requiredTraits": 208,
+  "formalTrainingAllowed": false
+}

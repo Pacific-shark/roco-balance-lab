@@ -1,0 +1,790 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-10-20T04:06:37.937063+00:00",
+  "timezone": "Asia/Shanghai",
+  "report": "docs/pvp-research-report-v1-2026-10-20.md",
+  "scope": "research-only; no new battle training or engine changes",
+  "sources": [
+    {
+      "source": {
+        "bvid": "BV1epp96iEoS",
+        "url": "https://www.bilibili.com/video/BV1epp96iEoS/",
+        "title": "博弈失败  恶魔书王一穿3拯救对局  核爆彗星终结比赛",
+        "uploader": "埃玛--",
+        "cid": 42680321059,
+        "publishedAt": "2026-10-12T10:44:07+00:00",
+        "durationSeconds": 341,
+        "description": "",
+        "collectedAt": "2026-10-20T03:51:00.653506+00:00",
+        "method": "public-audio-local-faster-whisper-small",
+        "modelApiCalls": 0,
+        "modelApiTokens": 0,
+        "gameReplayVerified": false,
+        "audioSha256": "6264e446355ad041f18e6748c0e7ac676bc68d0adac2352ea39f24023943abc9",
+        "audioBytes": 2800875
+      },
+      "transcriptSegments": 43,
+      "asrIsNotAuthoritative": true,
+      "videoSha256": "96bca7476b07593cc824883e61250564b525c0fc4fdcd63ef995f39b61bdc8f8",
+      "manuallyInspectedFrames": [
+        {
+          "requestedSecond": 294.0,
+          "actualSecond": 294.0,
+          "path": "BV1epp96iEoS.frame-0294.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "44bf437764389b76be05536618b67755e54567f3842d6df5487ed31f0c236e9d"
+        },
+        {
+          "requestedSecond": 300.0,
+          "actualSecond": 300.0,
+          "path": "BV1epp96iEoS.frame-0300.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "8346243acbe3252f49a1f1fbfbf3085839ad8be6245c202adaed82098e789604"
+        },
+        {
+          "requestedSecond": 306.0,
+          "actualSecond": 306.0,
+          "path": "BV1epp96iEoS.frame-0306.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "6befa0a5a7ebb72a53bf613538c22e0ce1a24b317fa0c21621964a9d8d67d9ea"
+        },
+        {
+          "requestedSecond": 314.0,
+          "actualSecond": 314.0,
+          "path": "BV1epp96iEoS.frame-0314.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "9cf7db2657fb123e4afd33cba6bcafdbca10b96afe68fec0aa471301400712b0"
+        },
+        {
+          "requestedSecond": 324.0,
+          "actualSecond": 324.0,
+          "path": "BV1epp96iEoS.frame-0324.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "4cd7851a04b51f58259a717263dfe3aa029b82095006ddd14ce2b04cbf3700ed"
+        },
+        {
+          "requestedSecond": 328.0,
+          "actualSecond": 328.0,
+          "path": "BV1epp96iEoS.frame-0328.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "0bc60067cbba8f4b83a9a34bbe062c1a9ec0923b22df9052065bc185fcabfd03"
+        },
+        {
+          "requestedSecond": 332.0,
+          "actualSecond": 332.0,
+          "path": "BV1epp96iEoS.frame-0332.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "d968697ed2302bf9fba8e7801333246ce2cf8eb0acb1d6a8eb8fe460b4f1a09e"
+        },
+        {
+          "requestedSecond": 336.0,
+          "actualSecond": 336.0,
+          "path": "BV1epp96iEoS.frame-0336.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "143aa1d0b31417d9dbd0e9603363de428093659864ced9f01957adaf9fab5b73"
+        },
+        {
+          "requestedSecond": 325.0,
+          "actualSecond": 325.0,
+          "path": "BV1epp96iEoS.frame-0325.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "2c905a046d0de9d0b542d156a98297c6f735a4221f2a795e44cf658eacc65468"
+        },
+        {
+          "requestedSecond": 326.0,
+          "actualSecond": 326.0,
+          "path": "BV1epp96iEoS.frame-0326.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "f140ad7f7df4bb5c976b7bb433685407f9a8ddd4b3009b13cc98a83269d08349"
+        },
+        {
+          "requestedSecond": 329.0,
+          "actualSecond": 329.0,
+          "path": "BV1epp96iEoS.frame-0329.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "8f486ce0e61b18a0073f0adb16eeee7f68eeb8e65dc79e70b8f64415faed41a4"
+        },
+        {
+          "requestedSecond": 334.0,
+          "actualSecond": 334.0,
+          "path": "BV1epp96iEoS.frame-0334.00.png",
+          "width": 852,
+          "height": 480,
+          "sha256": "91d4b625295dd842cdac50733d91f3b7be7814c2e2e8bae7e687d9fd088b55af"
+        }
+      ],
+      "fullVideoVisuallyReviewed": false
+    },
+    {
+      "source": {
+        "bvid": "BV1E7nE6KEKB",
+        "url": "https://www.bilibili.com/video/BV1E7nE6KEKB/",
+        "title": "布鲁斯居然也会晒太阳嘛？会不会太过分了点～",
+        "uploader": "小桃夭喵",
+        "cid": 42864807579,
+        "publishedAt": "2026-10-19T05:22:48+00:00",
+        "durationSeconds": 275,
+        "description": "-",
+        "collectedAt": "2026-10-20T03:51:09.698286+00:00",
+        "method": "public-audio-local-faster-whisper-small",
+        "modelApiCalls": 0,
+        "modelApiTokens": 0,
+        "gameReplayVerified": false,
+        "audioSha256": "3c00b526e3ee6ef4b6a2522a3338e13249990d747d622508b032e2ac3a607da8",
+        "audioBytes": 2272849
+      },
+      "transcriptSegments": 82,
+      "asrIsNotAuthoritative": true,
+      "videoSha256": "df69d881181be69d5013c6928f607c75704061904710ee01870f7820f8c8886e",
+      "manuallyInspectedFrames": [
+        {
+          "requestedSecond": 78.0,
+          "actualSecond": 78.0,
+          "path": "BV1E7nE6KEKB.frame-0078.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "337defc8395e612c035e427ab36cf5c41bf90dba6e7f3b1ae183e03bde99ce89"
+        },
+        {
+          "requestedSecond": 84.0,
+          "actualSecond": 84.0,
+          "path": "BV1E7nE6KEKB.frame-0084.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "ca459d82fa28a66a638e558a8151854f813dc7bc931270466ea1623952fcd75b"
+        },
+        {
+          "requestedSecond": 89.0,
+          "actualSecond": 89.0,
+          "path": "BV1E7nE6KEKB.frame-0089.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "8e46a1caac6d6d7846d3f01d7bb416cb16d9af393edbde057e0ae950d2d7b605"
+        },
+        {
+          "requestedSecond": 92.0,
+          "actualSecond": 92.0,
+          "path": "BV1E7nE6KEKB.frame-0092.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "2e44ffc8549c7f73394dc58e46adb734e8ce05db9bbb9b0a294257a7e1e60e51"
+        },
+        {
+          "requestedSecond": 95.0,
+          "actualSecond": 95.0,
+          "path": "BV1E7nE6KEKB.frame-0095.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "493518a060e444f15ea3e1fbb542cb5d7b0451698dafce900fb7511b210291bb"
+        },
+        {
+          "requestedSecond": 98.0,
+          "actualSecond": 98.0,
+          "path": "BV1E7nE6KEKB.frame-0098.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "76f5e9b06e1a760d36de95b473d736a88d4636cb9533ea8fb396d97d8fa2bf2c"
+        },
+        {
+          "requestedSecond": 102.0,
+          "actualSecond": 102.0,
+          "path": "BV1E7nE6KEKB.frame-0102.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "d8eeaa891d2eb1eccabb203d0d0f57c8f8c0bc4c1e95077f39fa83575b89fe20"
+        },
+        {
+          "requestedSecond": 94.0,
+          "actualSecond": 94.0,
+          "path": "BV1E7nE6KEKB.frame-0094.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "aafa4505bec149897fe9cb762d460e9c03deac8349e97aef79d556e013f83764"
+        },
+        {
+          "requestedSecond": 96.0,
+          "actualSecond": 96.0,
+          "path": "BV1E7nE6KEKB.frame-0096.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "7798d3a17ee516a1abf46c60b0584c97c8893262aa45bb39db51bfa8fcc0003e"
+        },
+        {
+          "requestedSecond": 100.0,
+          "actualSecond": 100.0,
+          "path": "BV1E7nE6KEKB.frame-0100.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "548ae2db27dfbb489a94c794f62ac384f19ca1b75b322c91473d77b51c95d033"
+        },
+        {
+          "requestedSecond": 79.0,
+          "actualSecond": 79.0,
+          "path": "BV1E7nE6KEKB.frame-0079.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "2476584e82d6e7718cb4dbf93cad01c0f060438b5e2c9ffd061003b1632f4b7c"
+        },
+        {
+          "requestedSecond": 80.0,
+          "actualSecond": 80.0,
+          "path": "BV1E7nE6KEKB.frame-0080.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "5c8fee73ede89c96614b73acb1c9d5294994da9cde15576654d536ef2abc2475"
+        },
+        {
+          "requestedSecond": 81.0,
+          "actualSecond": 81.0,
+          "path": "BV1E7nE6KEKB.frame-0081.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "36d9a83ed7d877110c25b301854ab6ae931121469f79fb290150074966a19d70"
+        },
+        {
+          "requestedSecond": 82.0,
+          "actualSecond": 82.0,
+          "path": "BV1E7nE6KEKB.frame-0082.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "b02d102d2d10dd181ba682cc56fd820a7c6307a53d840a6e4cb51830f853c9b9"
+        },
+        {
+          "requestedSecond": 83.0,
+          "actualSecond": 83.0,
+          "path": "BV1E7nE6KEKB.frame-0083.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "22f573c70f1e842b55cbe37a6c4d45a77ebaa320dae40372b2139f13045585b8"
+        },
+        {
+          "requestedSecond": 85.0,
+          "actualSecond": 85.0,
+          "path": "BV1E7nE6KEKB.frame-0085.00.png",
+          "width": 854,
+          "height": 384,
+          "sha256": "6fd0160e1130a2e061d42e49465cc4647fa1c332b8716dbc62bb882821a75865"
+        }
+      ],
+      "fullVideoVisuallyReviewed": false
+    }
+  ],
+  "sourceRevisionCheck": {
+    "url": "https://wiki.biligame.com/nrc/api.php?action=query&prop=revisions&rvprop=ids%7Ctimestamp&titles=Module%3APets%2Fdata%2FCatalog%7CModule%3APets%2Fdata%2FIndex%7CModule%3APets%2Fdata%2FSkills%7CModule%3APets%2Fdata%2FLearnsets%7CModule%3APets%2Fdata%2FTerms%7CModule%3APets%2Fdata%2FEvolutions%7CModule%3APets%2Fdata%2FConfig&format=json",
+    "response": {
+      "batchcomplete": "",
+      "query": {
+        "normalized": [
+          {
+            "from": "Module:Pets/data/Catalog",
+            "to": "模块:Pets/data/Catalog"
+          },
+          {
+            "from": "Module:Pets/data/Index",
+            "to": "模块:Pets/data/Index"
+          },
+          {
+            "from": "Module:Pets/data/Skills",
+            "to": "模块:Pets/data/Skills"
+          },
+          {
+            "from": "Module:Pets/data/Learnsets",
+            "to": "模块:Pets/data/Learnsets"
+          },
+          {
+            "from": "Module:Pets/data/Terms",
+            "to": "模块:Pets/data/Terms"
+          },
+          {
+            "from": "Module:Pets/data/Evolutions",
+            "to": "模块:Pets/data/Evolutions"
+          },
+          {
+            "from": "Module:Pets/data/Config",
+            "to": "模块:Pets/data/Config"
+          }
+        ],
+        "pages": {
+          "6395": {
+            "pageid": 6395,
+            "ns": 828,
+            "title": "模块:Pets/data/Catalog",
+            "revisions": [
+              {
+                "revid": 18788,
+                "parentid": 18755,
+                "timestamp": "2026-10-19T12:28:23Z"
+              }
+            ]
+          },
+          "6393": {
+            "pageid": 6393,
+            "ns": 828,
+            "title": "模块:Pets/data/Config",
+            "revisions": [
+              {
+                "revid": 18789,
+                "parentid": 18756,
+                "timestamp": "2026-10-19T12:28:25Z"
+              }
+            ]
+          },
+          "6398": {
+            "pageid": 6398,
+            "ns": 828,
+            "title": "模块:Pets/data/Evolutions",
+            "revisions": [
+              {
+                "revid": 18790,
+                "parentid": 18757,
+                "timestamp": "2026-10-19T12:28:28Z"
+              }
+            ]
+          },
+          "6394": {
+            "pageid": 6394,
+            "ns": 828,
+            "title": "模块:Pets/data/Index",
+            "revisions": [
+              {
+                "revid": 18793,
+                "parentid": 18760,
+                "timestamp": "2026-10-19T12:28:51Z"
+              }
+            ]
+          },
+          "6397": {
+            "pageid": 6397,
+            "ns": 828,
+            "title": "模块:Pets/data/Learnsets",
+            "revisions": [
+              {
+                "revid": 18761,
+                "parentid": 13094,
+                "timestamp": "2026-10-19T12:07:57Z"
+              }
+            ]
+          },
+          "6396": {
+            "pageid": 6396,
+            "ns": 828,
+            "title": "模块:Pets/data/Skills",
+            "revisions": [
+              {
+                "revid": 18764,
+                "parentid": 16558,
+                "timestamp": "2026-10-19T12:08:03Z"
+              }
+            ]
+          },
+          "6401": {
+            "pageid": 6401,
+            "ns": 828,
+            "title": "模块:Pets/data/Terms",
+            "revisions": [
+              {
+                "revid": 7078,
+                "parentid": 6608,
+                "timestamp": "2026-09-09T10:00:15Z"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "weeklySeriesCheck": {
+    "checkedAt": "2026-10-20T03:54:11.934224+00:00",
+    "url": "https://api.bilibili.com/x/web-interface/view?bvid=BV11cJY6JE7Y",
+    "episodes": [
+      {
+        "bvid": "BV1RPw4zHE8r",
+        "title": "【洛克王国世界】线下试玩会实机体验报告，至少10种改动，骨龙大砍、炫彩孵蛋、氪金礼包、新精灵雅丹鬃马头。"
+      },
+      {
+        "bvid": "BV1qJApzUE5R",
+        "title": "【洛克王国世界】洛克王国世界抢学号封号公示！手机电脑官方设备推荐清单！公测线下福利汇总！"
+      },
+      {
+        "bvid": "BV1q3QZBQEWb",
+        "title": "【洛克王国世界】洛克世界即将公测，掌握这4点开荒快人一步"
+      },
+      {
+        "bvid": "BV1RJXnByEPa",
+        "title": "【洛克王国世界】洛克王国世界9大开荒宠物推荐，早日助你破鼎"
+      },
+      {
+        "bvid": "BV1WdXKB9Et5",
+        "title": "【洛克王国】从夯到拉点评洛克王国世界精灵，开荒精灵排行榜哪些必练超模？哪些后期崛起？一期视频给你讲清楚"
+      },
+      {
+        "bvid": "BV1wVXLB5EoS",
+        "title": "【洛克王国】开荒组队阵容如何选？配队焚诀来咯！技能/技能获取/个体值/性格/配队。一个视频帮你铺平通往后期的大路！"
+      },
+      {
+        "bvid": "BV15kXYBEEnh",
+        "title": "【洛克王国】2分钟快速毕业毒队，性格/个体值/技能/配队选择"
+      },
+      {
+        "bvid": "BV1LC9EB5EP8",
+        "title": "【洛克王国】从夯到拉点评洛克王国世界PVP精灵，PVP精灵排行榜哪些强度超标？哪些可能后续或成热门崛起？一期视频给你讲清楚"
+      },
+      {
+        "bvid": "BV1V99FBREwL",
+        "title": "【洛克王国】3分钟带你毕业自爆狼王队登上大师，最新阵容/性格/个体值/技能"
+      },
+      {
+        "bvid": "BV1HYQMBWEdf",
+        "title": "【洛克王国】三分钟带你毕业水刃翼王队登上大师，最新阵容/性格/个体值/技能"
+      },
+      {
+        "bvid": "BV1knDDBBEes",
+        "title": "【洛克王国】什么叫我在洛克王国练运镜？"
+      },
+      {
+        "bvid": "BV14AQ8BWEWi",
+        "title": "【洛克王国】洛竞时报！竞技场PVP热门及科研阵容一览，哪些主流阵容有了更新？哪些阵容有趣好玩？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1eVdqBeEyh",
+        "title": "【洛克时报2.0】洛克王国竞技场PVP热门及科研阵容一览，主流阵容更新了啥？哪些偷分的科研阵容悄悄横行天梯了？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1kmdrBoEc6",
+        "title": "【洛克时报3.0】竞技场PVP热门及、科研及萌新阵容一览，主流阵容更新了啥？又有哪些偷分的科研阵容悄悄横行天梯了？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1G4oLBMEL9",
+        "title": "【洛克时报4.0】竞技场PVP热门、科研及官方赛事阵容一览！主流阵容何去何从？谁家科研阵容又整新活？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1CW9zBUETr",
+        "title": "【洛克时报5.0】竞技场PVP热门、科研及官方赛事阵容一览。主流阵容又添新贵？科研阵容狼雨归来？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1EwR7B7ETk",
+        "title": "【洛克时报6.0】竞技场PVP热门及科研阵容一览，主流阵容依然平衡与体系队两开花？科研整活期期不重样？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1vzR1BREmH",
+        "title": "【洛克时报7.0】竞技场PVP热门及科研阵容一览，星辰队、蓄势队两开花？猛攻队已加入竞技场爽玩套餐？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1uVdgBSEkt",
+        "title": "【洛克王国】PVP月度排行榜！从夯到拉评价5月所有精灵PVP竞技场强度！哪些精灵崭露头角？哪些精灵跌下神坛？哪些精灵制霸天梯？"
+      },
+      {
+        "bvid": "BV1iSRQBGEnU",
+        "title": "【洛克时报8.0】竞技场PVP科研、热门及比赛阵容一览，各体系队百花齐放？科研阵容依然有新活？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1CJ5M6aE3C",
+        "title": "【洛克时报9.0】洛克王国世界竞技场PVP萌新、科研及热门阵容一览，各体系队与马头战况如何？冠军嘉宾现身讲解？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1aeLg69EEw",
+        "title": "【洛克时报10.0】竞技场PVP萌新、科研及热门阵容一览，反马头队与马头队战况如何？科研阵容有什么新活？一个视频告诉你"
+      },
+      {
+        "bvid": "BV12xLF6JEAf",
+        "title": "【洛克周迅1.0】5.15-5.22洛克王国咨询汇总！S2新版本有哪些改动？哪些活动临近结束？哪些新活动即将开启？一个视频告诉你"
+      },
+      {
+        "bvid": "BV1HALB6SEZ9",
+        "title": "【洛克时报11.0】竞技场PVP萌新、科研及热门阵容一览，赛季末最后一舞大盘点？精灵登场率如何？一个视频告诉你"
+      },
+      {
+        "bvid": "BV15YGq6bEu8",
+        "title": "【洛克时报12.0】S2竞技场PVP萌新、科研及热门阵容一览，新赛季如何最速仰冲大师？新精灵新阵容崛起了什么？"
+      },
+      {
+        "bvid": "BV1RfVA6iED2",
+        "title": "【洛克时报13.0】S2竞技场PVP萌新、科研及热门阵容一览，仰冲大师阵容再更新？新体系队与平衡队又活了啥？"
+      },
+      {
+        "bvid": "BV1W9Vu6NE7f",
+        "title": "【洛克时报14.0】S2竞技场PVP萌新、科研及热门阵容一览，狼火地体系队三足鼎立？传说精灵机幕方舟队初显成效？"
+      },
+      {
+        "bvid": "BV1iHVz6BEuM",
+        "title": "【洛克时报15.0】S2竞技场PVP萌新、科研及热门阵容一览，方舟体系队百花齐放？平衡队又开始崭露头角？"
+      },
+      {
+        "bvid": "BV11V7S6bEig",
+        "title": "【洛克时报16.0】S2竞技场PVP萌新、科研及热门阵容一图流，平衡队又开始流行天梯？体系队何去何从？"
+      },
+      {
+        "bvid": "BV1e1Ej6HEoY",
+        "title": "【洛克时报17.0】S2竞技场PVP萌新、科研及热门阵容一图流，加油马头又王朝了？你是说罗隐差点打进顶分队？"
+      },
+      {
+        "bvid": "BV1aJER6XEuf",
+        "title": "【洛克王国】从夯到拉锐评竞技场阵容排行榜，S2赛季现阶段各体系队及平衡队强度如何？萌新选择什么阵容玩？"
+      },
+      {
+        "bvid": "BV1RpJH6vEwJ",
+        "title": "【洛克时报18.0】S2竞技场PVP萌新、科研及热门阵容一图流，平衡、轮转、加油队三分天下？体系队何去何从？"
+      },
+      {
+        "bvid": "BV1G6ju6REGb",
+        "title": "【洛克时报19.0】S2竞技场PVP萌新、科研及热门阵容一图流，我体系队加了方舟也不是不能一战！各系队伍境况如何？"
+      },
+      {
+        "bvid": "BV1Dfj76CEnY",
+        "title": "【洛克时报20.0】S2竞技场PVP萌新、科研及热门阵容一图流，新传说精灵凡鹰登场！哪些阵容还能上分使用？"
+      },
+      {
+        "bvid": "BV1gMj16pEsX",
+        "title": "【洛克时报21.0】S2竞技场PVP萌新、科研及热门阵容一图流，凡鹰说它还能抢救一下？虫队虫鸣好像能玩？"
+      },
+      {
+        "bvid": "BV1s6786uEr3",
+        "title": "【洛克榨菜】第1期 博弈全错之人！"
+      },
+      {
+        "bvid": "BV16G7n6iEGi",
+        "title": "【洛克时报22.0】S2竞技场PVP萌新、科研及热门阵容一图流，我说停停马头又王朝了？幽队出现小高潮"
+      },
+      {
+        "bvid": "BV1gXKS6kEmX",
+        "title": "【洛克王国世界】哪个幽系精灵最强？从夯到拉幽系精灵强度排行榜，一个专攻能量和轮切特性的系别"
+      },
+      {
+        "bvid": "BV19pKZ6NEF2",
+        "title": "【洛克时报23.0】S2竞技场PVP萌新、科研及热门阵容一图流，上分！猛猛上分！赛季末地刺队依然能玩！"
+      },
+      {
+        "bvid": "BV1aBMc6yES1",
+        "title": "【洛克时报24.0】S2竞技场PVP萌新、科研及热门阵容一图流，要缓上、慢上、有节奏的上分，要体系、轮转、平衡队百花齐放"
+      },
+      {
+        "bvid": "BV18KMx6CEQ9",
+        "title": "【洛克时报24.0plus】S2竞技场PVP萌新、科研及热门阵容一图流，决战天梯之巅特供版！看看巅峰玩家们都在干嘛"
+      },
+      {
+        "bvid": "BV1hHN46rEjc",
+        "title": "【洛克时报25.0】S2竞技场PVP萌新、科研及热门阵容一图流，最后一舞！S2赛季末最后的上分时刻"
+      },
+      {
+        "bvid": "BV1fAKg6kEBX",
+        "title": "【洛克王国世界】从夯到拉锐评S3赛季新精灵，哪些精灵可能超模？哪些精灵偏娱乐？"
+      },
+      {
+        "bvid": "BV1o8KF65EnX",
+        "title": "【洛克时报25.0】S2竞技场PVP萌新、科研及热门阵容一图流，最后一舞！S2赛季末最后的上分时刻"
+      },
+      {
+        "bvid": "BV1CGK86MEGf",
+        "title": "【洛克时报27.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，百花齐放、百相争鸣的大航海时代来临！各体系队登场天梯！"
+      },
+      {
+        "bvid": "BV1TQ3g6BEJq",
+        "title": "【洛克时报28.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，加尔双形态选择队登场，体系队与平衡队依旧百花齐放"
+      },
+      {
+        "bvid": "BV1313v6UEby",
+        "title": "【洛克时报29.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，黑加尔打赢预选赛成为热门，瞌睡王力大砖飞或成高分答案？"
+      },
+      {
+        "bvid": "BV18RG36EE8J",
+        "title": "【洛克时报30.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，新精灵武斗酷猫强度如何？体系队依然强势？"
+      },
+      {
+        "bvid": "BV1uuuF6zE6E",
+        "title": "【洛克时报31.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，天梯各体系队大混战，来看看有什么上分新阵容？"
+      },
+      {
+        "bvid": "BV1bmuu6eEBg",
+        "title": "【洛克时报32.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，你的意思是萌队王朝啦？S3是平衡队最拉的一个版本"
+      },
+      {
+        "bvid": "BV1fRuv6REzr",
+        "title": "【洛克时报33.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，鸽鸽救我！萌队与火队统治天梯的日子"
+      },
+      {
+        "bvid": "BV19ag36jEN4",
+        "title": "【洛克时报34.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，连一刻也没有为萌队火队的腰斩难过（大笑），下面登场的是雨一直下"
+      },
+      {
+        "bvid": "BV11hbr6PE8d",
+        "title": "【洛克时报35.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，一鲸落万物生，各种体系平衡队开始出现，你大牌姐又来了！"
+      },
+      {
+        "bvid": "BV1XM8C6QEib",
+        "title": "【洛克时报36.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，环境如此混乱，恶魔男爵能否登场？"
+      },
+      {
+        "bvid": "BV1rHh361EsD",
+        "title": "【洛克时报37.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，光合治愈真王朝了！？"
+      },
+      {
+        "bvid": "BV1Te4k6NEFr",
+        "title": "【洛克时报38.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，赛季进入尾声，大家都上大师了吗？"
+      },
+      {
+        "bvid": "BV1Watg6uEwz",
+        "title": "【洛克时报39.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，大家觉得赛季末环境平衡吗？"
+      },
+      {
+        "bvid": "BV1qhtm6vEdY",
+        "title": "【洛克时报40.0】S3新赛季竞技场PVP萌新、科研及热门阵容一图流，再见了所有的草魔法（悲）"
+      },
+      {
+        "bvid": "BV1sCYQ66EQ6",
+        "title": "【洛克时报41.0】S4新赛季竞技场PVP萌新、科研及热门阵容一图流，欢迎来到星陨主题版本！"
+      },
+      {
+        "bvid": "BV1uweE6WEC6",
+        "title": "【洛克时报42.0】S4新赛季竞技场PVP萌新、科研及热门阵容一图流，狼王来了，平衡队的青天就有了！"
+      },
+      {
+        "bvid": "BV1N8hk6rErM",
+        "title": "【洛克时报44.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，我宣布这就是最平衡的版本，快拿出你喜欢的精灵加入混战吧！"
+      },
+      {
+        "bvid": "BV15Gh96XEg6",
+        "title": "【洛克时报45.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，粉天帝大驾光临，星陨队在哪发财？"
+      },
+      {
+        "bvid": "BV1HwaE6iEhC",
+        "title": "【洛克时报46.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，怎么全是小熊？狼王快出来救一下！"
+      },
+      {
+        "bvid": "BV1VzHh6YE4y",
+        "title": "【洛克时报47.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，什么队都能进，粉天帝真王朝了吧（）"
+      },
+      {
+        "bvid": "BV1vCHZ6yES4",
+        "title": "【洛克时报48.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，闪耀大赛也就图一乐，真对战还得看每晚八点"
+      },
+      {
+        "bvid": "BV1aYpY6uEUx",
+        "title": "【洛克时报49.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，环境沉淀趋于稳定了？来看看节后玩什么阵容"
+      },
+      {
+        "bvid": "BV1arWF6mEmC",
+        "title": "【洛克时报50.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，腥风血雨竞技场，风和日丽向阳天"
+      },
+      {
+        "bvid": "BV11cJY6JE7Y",
+        "title": "【洛克时报51.0】S4赛季竞技场PVP萌新、科研及热门阵容一图流，我说想回到国庆之前，怎么回到上个赛季了？"
+      }
+    ]
+  },
+  "observations": [
+    {
+      "id": "comet-terminal-example",
+      "bvid": "BV1epp96iEoS",
+      "seconds": [
+        326,
+        328,
+        334,
+        336
+      ],
+      "observed": [
+        "326: UI names 彗星 and cost 0",
+        "328: damage floating text 616 against 海豹船长",
+        "334-336: own battle settlement lists 古卷执政官 defeating 海豹船长; four total opponent defeats listed"
+      ],
+      "inference": "An observed PvP finishing sequence supports a win using Comet in this published sample.",
+      "notEstablished": [
+        "exact terminal vs self-consumption event order",
+        "complete player magic/HP state beneath watermark",
+        "post-2026-10-15 behavior",
+        "all simultaneous-KO or PvE rules"
+      ],
+      "engineConformanceTestPassed": false
+    },
+    {
+      "id": "sun-disappearance-example",
+      "bvid": "BV1E7nE6KEKB",
+      "seconds": [
+        89,
+        94,
+        96,
+        98
+      ],
+      "observed": [
+        "94: UI names 冰钻布鲁斯 using 晒太阳",
+        "a green icon with counter 3 disappears afterwards",
+        "pink layered icon and green leaf-like icon remain"
+      ],
+      "notEstablished": [
+        "tooltip identity of each icon",
+        "which trait-generated buffs are dispellable",
+        "complete permanent-effect classification"
+      ],
+      "engineConformanceTestPassed": false
+    },
+    {
+      "id": "photosynthesis-partial-heal",
+      "bvid": "BV1E7nE6KEKB",
+      "seconds": [
+        78,
+        79,
+        82,
+        89
+      ],
+      "observed": [
+        "78: own HP 292/490",
+        "82: visible healing +73",
+        "89: own HP 438/490"
+      ],
+      "arithmetic": {
+        "maxHp": 490,
+        "fifteenPercent": 73.5,
+        "floor": 73,
+        "endpointDifference": 146
+      },
+      "inference": "The visible +73 is consistent with floor(0.15*490); endpoint increase is 2*73.",
+      "notEstablished": [
+        "complete event attribution between endpoints",
+        "full duration",
+        "quota/cooldown",
+        "off-field persistence"
+      ],
+      "engineConformanceTestPassed": false
+    }
+  ],
+  "excludedSearchEvidence": [
+    "SEO pages mixing pre-release magic, PvE activities and current PvP rules",
+    "Comet grass-badge trial loss title: different mode, not a PvP rule"
+  ],
+  "newTrainingRuns": 0,
+  "battleEngineModified": false,
+  "modelApiCallsForASR": 0,
+  "previousVerificationReused": {
+    "path": "docs/evidence/pvp-baseline-detail-verification-2026-10-19.json",
+    "newlyRerun": false,
+    "javascriptPassed": 144,
+    "regressionGames": 80
+  },
+  "hashes": {
+    "data/catalog-s4-20261016-review.json": "311c2c34effc196f0a97fcf135f80e4d63e45e5ca701e557be57816f986ce5d4",
+    "docs/evidence/pvp-source-diff-2026-10-20.json": "594455ae8ee8639b50563672f737e22c4f0549d698e112545dac0c79daf1b4f3",
+    "scripts/audit-source-refresh.py": "de9bf37e57bd10d8e42c554d725440bb5ccf192767c5b34e9e6e109fd8eb3f59",
+    "src/battle-kernel.mjs": "d41a496850b0eea759d6878cddf821948f8f38641813472c6ea9019c2c049f25",
+    "src/battle-programs.mjs": "e5a695544b442b59bc16c55483a5f155e47813972b4647e0bda976cf668390c4"
+  },
+  "thisReviewValidation": {
+    "semanticDiffReproduced": true,
+    "selfComparisonPassed": true,
+    "ambiguousGameIdRejected": true,
+    "learningReferencesChecked": 31303,
+    "baselineSlotsMappedByGameId": 24,
+    "brokenReportLocalLinks": 0,
+    "engineHashesUnchangedFromPreviousVerification": true,
+    "newBattleTestsRun": 0
+  }
+}
