@@ -90,7 +90,8 @@
       "gameReplayVerified": false,
       "modeLegalityCertified": false,
       "id": "weekly51-water-sand",
-      "title": "水沙队",
+      "title": "水鲨队",
+      "titleCorrection": "2026-10-20 用户纠正：鲨指彩蝶鲨。保留原内部 id，避免历史资料引用失效。",
       "authorCategory": "热门阵容上分队",
       "frameSeconds": [
         115

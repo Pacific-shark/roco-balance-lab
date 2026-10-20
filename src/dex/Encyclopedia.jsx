@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState, useRef } from "react";
 import {
   Icon,
   Portrait,
@@ -11,10 +11,12 @@ import SkillPool from "./SkillPool.jsx";
 import "./dex.css";
 
 function CatalogRail({ data, byId, selected, onSelect }) {
+  const listRef = useRef(null);
   const [query, setQuery] = useState("");
   const [type, setType] = useState("");
   const [form, setForm] = useState("");
   const [page, setPage] = useState(0);
+  const [open, setOpen] = useState(false);
   const filtered = useMemo(() => {
     const q = query.trim().replace(/^#/, "").toLowerCase();
     return data.creatures.filter(
@@ -34,108 +36,153 @@ function CatalogRail({ data, byId, selected, onSelect }) {
   );
   const pages = Math.max(1, Math.ceil(filtered.length / 30));
   const safePage = Math.min(page, pages - 1);
+  useEffect(() => {
+    const list = listRef.current;
+    const item = list?.querySelector('[aria-current="true"]');
+    if (
+      list &&
+      item &&
+      (!window.matchMedia("(max-width: 760px)").matches || open)
+    ) {
+      list.scrollTop +=
+        item.getBoundingClientRect().top - list.getBoundingClientRect().top - 8;
+    }
+  }, [selected, open]);
   const change = (setter, value) => {
     setter(value);
     setPage(0);
   };
   return (
-    <aside className="dex-rail" aria-label="精灵列表">
-      <label className="dex-search">
-        <Icon name="search" size={18} />
-        <input
-          type="search"
-          aria-label="搜索精灵名称或图鉴编号"
-          placeholder="名称 / 图鉴编号"
-          value={query}
-          onChange={(e) => change(setQuery, e.target.value)}
-        />
-      </label>
-      <div className="dex-filters">
-        <select
-          aria-label="属性筛选"
-          value={type}
-          onChange={(e) => change(setType, e.target.value)}
-        >
-          <option value="">全部属性</option>
-          {types.map((t) => (
-            <option key={t}>{t}</option>
-          ))}
-        </select>
-        <select
-          aria-label="形态筛选"
-          value={form}
-          onChange={(e) => change(setForm, e.target.value)}
-        >
-          <option value="">全部形态</option>
-          <option value="final">最终形态</option>
-          <option value="evolving">可进化形态</option>
-          <option value="lord">首领形态</option>
-        </select>
-      </div>
-      <div className="dex-list-label">
-        <h2>图鉴列表</h2>
-        <span>{filtered.length} 条形态</span>
-      </div>
-      <div className="dex-creature-list">
-        {filtered.slice(safePage * 30, safePage * 30 + 30).map((c) => (
-          <button
-            key={c.id}
-            className={`dex-list-item ${selected === c.id ? "selected" : ""}`}
-            aria-current={selected === c.id ? "true" : undefined}
-            aria-label={`查看${c.title ?? c.name}图鉴 ${c.number}`}
-            onClick={() => onSelect(c.id)}
-          >
-            <Portrait key={c.id} creature={c} />
-            <span>
-              <small>
-                #{c.number}
-                {c.form === "lord" ? " · 首领" : ""}
-              </small>
-              <b>{c.title ?? c.name}</b>
-            </span>
-            <i>{c.types[0]?.replace("系", "")}</i>
-          </button>
-        ))}
-        {!filtered.length && (
-          <div className="dex-rail-empty">
-            <p>没有找到匹配的精灵</p>
+    <aside
+      className={`dex-rail ${open ? "is-open" : ""}`}
+      aria-label="精灵列表"
+    >
+      <button
+        className="dex-mobile-catalog-toggle"
+        aria-expanded={open}
+        aria-controls="dex-catalog-content"
+        onClick={() => setOpen((v) => !v)}
+      >
+        <Portrait key={selected} creature={byId.get(selected)} />
+        <span>
+          选择精灵 <b>{byId.get(selected)?.name}</b>
+        </span>
+        <Icon name={open ? "close" : "chevron"} size={20} />
+      </button>
+      <div id="dex-catalog-content" className="dex-catalog-content">
+        <label className="dex-search">
+          <Icon name="search" size={18} />
+          <input
+            type="search"
+            aria-label="搜索精灵名称或图鉴编号"
+            placeholder="名称 / 编号"
+            value={query}
+            onChange={(e) => change(setQuery, e.target.value)}
+          />
+          {query && (
             <button
+              type="button"
+              aria-label="清除搜索"
+              onClick={() => change(setQuery, "")}
+            >
+              <Icon name="close" size={16} />
+            </button>
+          )}
+        </label>
+        <div className="dex-filters">
+          <label>
+            <span>属性</span>
+            <select
+              aria-label="属性筛选"
+              value={type}
+              onChange={(e) => change(setType, e.target.value)}
+            >
+              <option value="">全部属性</option>
+              {types.map((t) => (
+                <option key={t}>{t}</option>
+              ))}
+            </select>
+            <Icon name="chevron" size={15} />
+          </label>
+          <label>
+            <span>形态</span>
+            <select
+              aria-label="形态筛选"
+              value={form}
+              onChange={(e) => change(setForm, e.target.value)}
+            >
+              <option value="">全部形态</option>
+              <option value="final">最终形态</option>
+              <option value="evolving">可进化形态</option>
+              <option value="lord">首领形态</option>
+            </select>
+            <Icon name="chevron" size={15} />
+          </label>
+        </div>
+        <div className="dex-list-label">
+          <h2>精灵列表</h2>
+          <span>{filtered.length} 条形态</span>
+        </div>
+        <div className="dex-creature-list" ref={listRef}>
+          {filtered.slice(safePage * 30, safePage * 30 + 30).map((c) => (
+            <button
+              key={c.id}
+              className={`dex-list-item ${selected === c.id ? "selected" : ""}`}
+              aria-current={selected === c.id ? "true" : undefined}
+              aria-label={`查看${c.title ?? c.name}图鉴 ${c.number}`}
               onClick={() => {
-                setQuery("");
-                setType("");
-                setForm("");
-                setPage(0);
+                onSelect(c.id);
+                setOpen(false);
               }}
             >
-              清除筛选
+              <Portrait key={c.id} creature={c} />
+              <span>
+                <small>
+                  #{c.number}
+                  {c.form === "lord" ? " · 首领" : ""}
+                </small>
+                <b>{c.title ?? c.name}</b>
+              </span>
+              <i>{c.types[0]?.replace("系", "")}</i>
             </button>
-          </div>
-        )}
+          ))}
+          {!filtered.length && (
+            <div className="dex-rail-empty">
+              <p>没有找到匹配的精灵</p>
+              <button
+                onClick={() => {
+                  setQuery("");
+                  setType("");
+                  setForm("");
+                  setPage(0);
+                }}
+              >
+                清除筛选
+              </button>
+            </div>
+          )}
+        </div>
+        <div className="dex-list-pagination">
+          <button
+            aria-label="上一页精灵"
+            disabled={!safePage}
+            onClick={() => setPage(safePage - 1)}
+          >
+            <Icon name="back" size={18} />
+          </button>
+          <span>
+            {safePage + 1} / {pages}
+          </span>
+          <button
+            aria-label="下一页精灵"
+            disabled={safePage === pages - 1}
+            onClick={() => setPage(safePage + 1)}
+          >
+            <Icon name="arrow" size={18} />
+          </button>
+        </div>
+        <p className="dex-rail-foot">含各阶段与首领形态</p>
       </div>
-      <div className="dex-list-pagination">
-        <button
-          aria-label="上一页精灵"
-          disabled={!safePage}
-          onClick={() => setPage(safePage - 1)}
-        >
-          ‹
-        </button>
-        <span>
-          {safePage + 1} / {pages}
-        </span>
-        <button
-          aria-label="下一页精灵"
-          disabled={safePage === pages - 1}
-          onClick={() => setPage(safePage + 1)}
-        >
-          ›
-        </button>
-      </div>
-      <p className="dex-rail-foot">
-        含各阶段与特殊形态
-        <br />
-        当前：{byId.get(selected)?.name}
-      </p>
     </aside>
   );
 }
@@ -176,7 +223,7 @@ function Evolution({ creature, data, byId, onSelect }) {
                 .filter((e) => byId.has(e.id))
                 .map((e) => (
                   <button key={e.id} onClick={() => onSelect(e.id)}>
-                    {e.name} ↗
+                    {e.name} <Icon name="external" size={12} />
                   </button>
                 ))}
             </div>
@@ -190,12 +237,16 @@ function Overview({ creature, data, byId, onSelect }) {
   const trait = data.skills[creature.trait];
   const total = Object.values(creature.stats).reduce((a, b) => a + b, 0);
   return (
-    <section className="dex-overview" aria-label={`${creature.name}基础资料`}>
-      <div className="dex-identity">
+    <section
+      id="dex-overview"
+      className="dex-overview"
+      aria-label={`${creature.name}基础资料`}
+    >
+      <div className="dex-profile">
         <div className="dex-identity-heading">
           <div>
             <span className="dex-number">#{creature.number}</span>
-            <h1>{creature.name}</h1>
+            <h1>{creature.title ?? creature.name}</h1>
           </div>
           <div className="dex-types">
             {creature.types.map((t) => (
@@ -206,15 +257,15 @@ function Overview({ creature, data, byId, onSelect }) {
             )}
           </div>
         </div>
+        <div className="dex-intro">
+          <p className="dex-description">{creature.description}</p>
+          <div className="dex-size">
+            <span>身高 {creature.height ?? "—"}</span>
+            <span>体重 {creature.weight ?? "—"}</span>
+          </div>
+        </div>
         <div className="dex-art">
           <Portrait key={creature.id} creature={creature} large eager />
-        </div>
-      </div>
-      <div className="dex-intro">
-        <p className="dex-description">{creature.description}</p>
-        <div className="dex-size">
-          <span>身高 {creature.height ?? "—"}</span>
-          <span>体重 {creature.weight ?? "—"}</span>
         </div>
         <Evolution
           creature={creature}
@@ -224,30 +275,50 @@ function Overview({ creature, data, byId, onSelect }) {
         />
       </div>
       <div className="dex-stats-trait">
-        <div className="dex-stats-heading">
-          <h2>种族值</h2>
-          <span>
-            总和 <strong>{total}</strong>
-          </span>
-        </div>
-        <dl className="dex-stats">
-          {Object.entries(STAT_NAMES).map(([key, name]) => (
-            <div key={key}>
-              <dt>{name}</dt>
-              <dd>
-                <span className="dex-stat-track">
-                  <i
-                    style={{
-                      width: `${Math.min(100, (creature.stats[key] / 200) * 100)}%`,
-                    }}
+        <div className="dex-stat-panel">
+          <div className="dex-stats-heading">
+            <h2>种族值</h2>
+            <span>
+              总和 <strong>{total}</strong>
+            </span>
+          </div>
+          <dl className="dex-stats">
+            {Object.entries(STAT_NAMES).map(([key, name]) => (
+              <div key={key} className={`dex-stat-${key}`}>
+                <dt>
+                  <Icon
+                    name={
+                      {
+                        hp: "heart",
+                        atk: "sword",
+                        def: "shield",
+                        spa: "spark",
+                        spd: "shield",
+                        spe: "wind",
+                      }[key]
+                    }
+                    size={18}
                   />
-                </span>
-                <b>{creature.stats[key]}</b>
-              </dd>
-            </div>
-          ))}
-        </dl>
+                  {name}
+                </dt>
+                <dd>
+                  <span className="dex-stat-track">
+                    <i
+                      style={{
+                        width: `${Math.min(100, (creature.stats[key] / 200) * 100)}%`,
+                      }}
+                    />
+                  </span>
+                  <b>{creature.stats[key]}</b>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
         <div className="dex-trait">
+          <div className="dex-trait-emblem">
+            <Icon name="spark" size={88} />
+          </div>
           <span>固有特性</span>
           <h3>{trait.name}</h3>
           <SkillDescription skill={trait} />
@@ -280,12 +351,20 @@ function LoadedDex({ data }) {
     setId(nextId);
     const params = new URLSearchParams({ pet: nextId });
     window.history.replaceState(null, "", `#${params}`);
-    document.title = `${byId.get(nextId).name} · 洛克图鉴`;
+    document.title = `${byId.get(nextId).title ?? byId.get(nextId).name} · 精灵资料`;
   };
   useEffect(() => {
-    document.title = `${creature.name} · 洛克图鉴`;
+    document.title = `${creature.title ?? creature.name} · 精灵资料`;
     const onHash = () => {
-      if (window.location.hash === "#dex-main") return;
+      if (
+        [
+          "#dex-main",
+          "#dex-overview",
+          "#dex-teams-heading",
+          "#dex-pool-heading",
+        ].includes(window.location.hash)
+      )
+        return;
       setId(
         new URLSearchParams(window.location.hash.slice(1)).get("pet") ??
           "pet_000005",
@@ -299,24 +378,6 @@ function LoadedDex({ data }) {
       <a className="dex-skip" href="#dex-main">
         跳到精灵资料
       </a>
-      <header className="dex-header">
-        <a className="dex-brand" href={import.meta.env.BASE_URL}>
-          <Icon name="book" size={26} />
-          <strong>洛克图鉴</strong>
-        </a>
-        <nav aria-label="主导航">
-          <a href={import.meta.env.BASE_URL} aria-current="page">
-            精灵图鉴
-          </a>
-          {!import.meta.env.VITE_DEX_STATIC_ONLY && (
-            <a href={`${import.meta.env.BASE_URL}research.html`}>
-              <Icon name="flask" size={17} />
-              研究工作台
-            </a>
-          )}
-        </nav>
-        <span className="dex-header-note">洛克王国：世界</span>
-      </header>
       <CatalogRail
         data={data}
         byId={byId}
@@ -337,11 +398,18 @@ function LoadedDex({ data }) {
           byId={byId}
           onOpen={onSelect}
         />
-        <SkillPool key={`skills:${creature.id}`} creature={creature} data={data} />
+        <SkillPool
+          key={`skills:${creature.id}`}
+          creature={creature}
+          data={data}
+        />
         <footer className="dex-footer">
           <span>
             资料快照 {data.meta.capturedAt.slice(0, 10)} · {data.meta.version}
           </span>
+          {!import.meta.env.VITE_DEX_STATIC_ONLY && (
+            <a href={`${import.meta.env.BASE_URL}research.html`}>研究工作台</a>
+          )}
           <span>
             <a href={data.meta.sourceUrl} target="_blank" rel="noreferrer">
               BWIKI 社区资料
@@ -387,9 +455,11 @@ export default function Encyclopedia() {
   if (!data)
     return (
       <div className="dex-loading" role="status">
-        <Icon name="book" size={36} />
-        <h1>洛克图鉴</h1>
-        <p>{error ? "暂时没能加载图鉴资料" : "正在展开图鉴…"}</p>
+        <span className="dex-loading-orbit" aria-hidden="true" />
+        <h1>{error ? "暂时没能加载资料" : "正在加载精灵资料"}</h1>
+        <p>
+          {error ? "请检查网络连接后重试。" : "立绘、种族值与配队即将显示。"}
+        </p>
         {error && (
           <button onClick={() => setAttempt((v) => v + 1)}>重新加载</button>
         )}

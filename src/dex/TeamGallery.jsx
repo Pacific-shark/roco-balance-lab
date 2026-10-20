@@ -21,6 +21,11 @@ function MemberBuild({ member, creature, data, onOpen }) {
             查看图鉴 <Icon name="arrow" size={13} />
           </button>
         </h3>
+        <div className="dex-member-types">
+          {creature.types.map((type) => (
+            <TypeTag key={type} type={type} />
+          ))}
+        </div>
         <p className="dex-role">
           {member.role ?? "成员已确认，具体定位与配置待补录。"}
         </p>
@@ -54,10 +59,14 @@ function MemberBuild({ member, creature, data, onOpen }) {
             </dd>
           </div>
         </dl>
-        <p className="dex-member-trait">
-          <span>固有特性</span>
-          <b>{trait.name}</b> · {trait.description}
-        </p>
+        <details className="dex-member-trait">
+          <summary>
+            <span>固有特性</span>
+            <b>{trait.name}</b>
+            <Icon name="chevron" size={15} />
+          </summary>
+          <SkillDescription skill={trait} />
+        </details>
         {member.nature && (
           <small className="dex-muted">
             性格与天分方向按本套案例记录，未做最优培养验证。
@@ -75,21 +84,42 @@ function MemberBuild({ member, creature, data, onOpen }) {
               const s = data.skills[id];
               return (
                 <article className="dex-move" key={id}>
-                  <div className="dex-move-title">
-                    <strong>{s.name}</strong>
-                    <TypeTag type={s.type} />
-                    <span className="dex-cost">
-                      能耗 <b>{s.cost ?? "—"}</b>
-                    </span>
+                  <span
+                    className="dex-move-index"
+                    aria-label={`技能槽 ${i + 1}`}
+                  >
+                    {i + 1}
+                  </span>
+                  <div className="dex-move-body">
+                    <div className="dex-move-title">
+                      <strong>{s.name}</strong>
+                      <TypeTag type={s.type} />
+                      <span className="dex-move-meta">
+                        {s.damageClass ?? s.category}
+                        <span>
+                          威力 <b>{s.power ?? "—"}</b>
+                        </span>
+                      </span>
+                      <span className="dex-cost">
+                        <Icon name="drop" size={15} />
+                        <span className="dex-sr-only">能耗</span>
+                        <b>{s.cost ?? "—"}</b>
+                      </span>
+                    </div>
+                    <p>{s.description}</p>
+                    <details className="dex-move-reason">
+                      <summary>
+                        配招解析
+                        <Icon name="chevron" size={13} />
+                      </summary>
+                      <p>{member.slotReasons[i]}</p>
+                      {s.notes?.map((note, index) => (
+                        <p key={index}>
+                          <b>{note.note ?? note.name}</b> {note.desc}
+                        </p>
+                      ))}
+                    </details>
                   </div>
-                  <div className="dex-move-meta">
-                    {s.damageClass ?? s.category} · 威力 {s.power ?? "—"}
-                  </div>
-                  <SkillDescription skill={s} />
-                  <details className="dex-move-reason">
-                    <summary>为什么带这招</summary>
-                    <p>{member.slotReasons[i]}</p>
-                  </details>
                 </article>
               );
             })}
@@ -149,6 +179,11 @@ function SelectedTeam({ team, data, byId, selectedCreature, onOpen }) {
           >
             <span className="dex-avatar-ring">
               <Portrait key={m.id} creature={byId.get(m.id)} />
+              {member.id === m.id && (
+                <i className="dex-selected-check">
+                  <Icon name="check" size={14} />
+                </i>
+              )}
             </span>
             <span>{m.name}</span>
           </button>
@@ -193,14 +228,14 @@ export default function TeamGallery({ creature, data, byId, onOpen }) {
   };
   return (
     <section className="dex-teams" aria-labelledby="dex-teams-heading">
-      <div className="dex-section-heading">
-        <h2 id="dex-teams-heading">配队参考</h2>
-        <span>
-          {teams.length ? `${teams.length} 套公开案例` : "持续收录中"}
-        </span>
-      </div>
-      {selected ? (
-        <>
+      <div className="dex-team-toolbar">
+        <div className="dex-section-heading">
+          <h2 id="dex-teams-heading">配队参考</h2>
+          <span>
+            {teams.length ? `${teams.length} 套公开案例` : "持续收录中"}
+          </span>
+        </div>
+        {selected && (
           <div className="dex-team-tabs" role="group" aria-label="选择配队">
             {teams.map((team) => (
               <button
@@ -213,6 +248,10 @@ export default function TeamGallery({ creature, data, byId, onOpen }) {
               </button>
             ))}
           </div>
+        )}
+      </div>
+      {selected ? (
+        <>
           <SelectedTeam
             key={selected.id}
             team={selected}

@@ -1,4 +1,40 @@
 import React, { useState } from "react";
+import {
+  Search,
+  BookOpen,
+  ChevronRight,
+  ChevronDown,
+  ChevronLeft,
+  X,
+  Check,
+  Heart,
+  Sword,
+  Shield,
+  Sparkles,
+  Wind,
+  Droplet,
+  ExternalLink,
+  Leaf,
+  FlaskConical,
+} from "lucide-react";
+const ICONS = {
+  search: Search,
+  book: BookOpen,
+  arrow: ChevronRight,
+  chevron: ChevronDown,
+  back: ChevronLeft,
+  close: X,
+  check: Check,
+  heart: Heart,
+  sword: Sword,
+  shield: Shield,
+  spark: Sparkles,
+  wind: Wind,
+  drop: Droplet,
+  external: ExternalLink,
+  leaf: Leaf,
+  flask: FlaskConical,
+};
 
 export const STAT_NAMES = {
   hp: "生命",
@@ -29,50 +65,10 @@ export const TYPE_COLORS = {
   幻系: "#8170b6",
 };
 export function Icon({ name, size = 20 }) {
-  const paths = {
-    search: (
-      <>
-        <circle cx="10.5" cy="10.5" r="6.5" />
-        <path d="m16 16 4.5 4.5" />
-      </>
-    ),
-    book: (
-      <>
-        <path d="M12 5v16M3 4c4-1 6 0 9 1 3-1 5-2 9-1v15c-4-1-6 0-9 2-3-2-5-3-9-2Z" />
-      </>
-    ),
-    arrow: <path d="m9 5 7 7-7 7" />,
-    external: (
-      <>
-        <path d="M14 4h6v6M20 4l-9 9M10 5H4v15h15v-6" />
-      </>
-    ),
-    leaf: (
-      <>
-        <path d="M20 3C9 2 3 6 4 13s11 9 14 0c1-3 1-7 2-10ZM3 22 15 9" />
-      </>
-    ),
-    flask: (
-      <>
-        <path d="M9 3h6M10 3v7L4 20h16l-6-10V3M7 15h10" />
-      </>
-    ),
-  };
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.7"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      {paths[name]}
-    </svg>
-  );
+  const Component = ICONS[name];
+  return Component ? (
+    <Component size={size} strokeWidth={1.8} aria-hidden="true" />
+  ) : null;
 }
 export function TypeTag({ type }) {
   return (

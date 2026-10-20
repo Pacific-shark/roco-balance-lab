@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import { TypeTag, SkillDescription } from "./shared.jsx";
+import { TypeTag, SkillDescription, Icon } from "./shared.jsx";
 
 const METHODS = {
   native: "基础可学",
@@ -84,6 +84,7 @@ export default function SkillPool({ creature, data }) {
           <span>威力</span>
           <span>能耗</span>
           <span>学习条件</span>
+          <span aria-hidden="true" />
         </div>
         {rows.map((entry, index) => {
           const skill = data.skills[entry.skill];
@@ -101,6 +102,9 @@ export default function SkillPool({ creature, data }) {
                 <span className="dex-skill-name">
                   <b>{skill.name}</b>
                   <TypeTag type={skill.type} />
+                  <span className="dex-skill-mobile-class">
+                    {skill.damageClass ?? skill.category}
+                  </span>
                 </span>
                 <span>{skill.damageClass ?? skill.category}</span>
                 <span>{skill.power ?? "—"}</span>
@@ -108,11 +112,12 @@ export default function SkillPool({ creature, data }) {
                 <span className="dex-learning-condition">
                   {condition || METHODS[entry.method]}
                 </span>
+                <Icon name="chevron" size={17} />
               </summary>
               <div className="dex-skill-expanded">
                 <SkillDescription skill={skill} />
                 <a href={skill.source} target="_blank" rel="noreferrer">
-                  查看原词条 ↗
+                  查看原词条 <Icon name="external" size={13} />
                 </a>
               </div>
             </details>
